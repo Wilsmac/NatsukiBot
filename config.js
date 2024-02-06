@@ -13,18 +13,10 @@ import { en, es, id, ar, pt } from "./lib/idiomas/total-idiomas.js"
 // [ES] > Agrega el número que será Bot y los que serán propietarios.
 // [EN] > Add the number that will be Bot and those that will be owners.
 global.owner = [
-["573183650526", '𝙊𝙬𝙣𝙚𝙧 💖🐈', true], //𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 💖🐈
-["573026191480"], 
-["5492266466080"], 
-["593968585383"], 
-["51982233590"],
-["5492266613038"],
-["51948705559"],
-["51948273587"],
-["51906662557"],
-["5217441298510"], 
-["5217294888993"], 
-["5493794093626"]]
+["50250101139", 'Wilmer', true], //FantasyBot-MD
+["50258115623"], 
+["51996416792"]
+]
 
 global.mods = []
 global.prems = []
@@ -57,7 +49,7 @@ global.confirmCode = "" // No tocar esto : Do not touch this line
 global.lenguajeGB = es
 global.mid = esDefault
 global.version_language = '1.0 (MID-GB)'
-
+global.lenguajeCD = es
 // [ES] > Si "default_language" esta vacío, su idioma predeterminado será Español o se usará el idioma que cada usuario haya seleccionado al momento de registrarse. 
 // [EN] > If "default_language" is empty, your default language will be Spanish or the language that each user has selected at the time of registration will be used.
 // • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
@@ -121,11 +113,11 @@ global.moment = moment
 // [ES] > Agregate a ti, colaboradores o ayudates, aparecerá en el comando de lista de contactos.
 // [EN] > Adding yourself, collaborators or helpers will appear in the contact list command.
 global.official = [ // Agregate si eres Owner
-["593968263524", 'Gata Dios 💻', 1], 
-["5492266466080", '𝗗𝗲𝘀𝗮𝗿𝗿𝗼𝗹𝗹𝗮𝗱𝗼𝗿 𝗢𝗳𝗶𝗰𝗶𝗮𝗹 💻', 1],  
-["5217294888993", '𝗗𝗲𝘀𝗮𝗿𝗿𝗼𝗹𝗹𝗮𝗱𝗼𝗿 𝗢𝗳𝗶𝗰𝗶𝗮𝗹 💻', 1],
-["5521989092076", '𝗗𝗲𝘀𝗮𝗿𝗿𝗼𝗹𝗹𝗮𝗱𝗼𝗿𝗮 𝗢𝗳𝗶𝗰𝗶𝗮𝗹 💻', 1],
-["5491173694367", 'Soporte', 1]]
+["50250101139", 'Wilmer ofc', 1], 
+["50258115623", '𝗗𝗲𝘀𝗮𝗿𝗿𝗼𝗹𝗹𝗮𝗱𝗼𝗿 𝗢𝗳𝗶𝗰𝗶𝗮𝗹 💻', 1],  
+["51996416792", '𝗗𝗲𝘀𝗮𝗿𝗿𝗼𝗹𝗹𝗮𝗱𝗼𝗿 𝗢𝗳𝗶𝗰𝗶𝗮𝗹 💻', 1],
+["50250101139", '𝗗𝗲𝘀𝗮𝗿𝗿𝗼𝗹𝗹𝗮𝗱𝗼𝗿𝗮 𝗢𝗳𝗶𝗰𝗶𝗮𝗹 💻', 1],
+["50258115623", 'Soporte', 1]]
 
 global.mail = '' // Add email
 global.desc = '' // Add short description (20 caractres max)
@@ -133,8 +125,8 @@ global.desc2 = '' // Add long description (90 caractres max) (Este parámetro se
 global.country = '' // Add country, example: 🇪🇨
 // • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
 
-global.packname = "𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 🐈"
-global.author = "𝙂𝙖𝙩𝙖 𝘿𝙞𝙤𝙨"
+global.packname = "𝑭𝒂𝒏𝒕𝒂𝒔𝒚𝑩𝒐𝒕-𝑴𝑫"
+global.author = "𝑾𝒊𝒍𝒎𝒆𝒓 𝒐𝒇𝒄"
 
 // • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
 // [ES] > CUENTAS E INFORMACIÓN DE VERSIONES DEL BOT, POR FAVOR 
@@ -142,7 +134,7 @@ global.author = "𝙂𝙖𝙩𝙖 𝘿𝙞𝙤𝙨"
 // [EN] > ACCOUNTS AND BOT VERSION INFORMATION, PLEASE KEEP THIS UNCHANGED, WE STRIVE DAILY TO PROVIDE YOU WITH A BOT FOR THE COMMUNITY, BE GRATEFUL
 global.vs = "1.7.0"
 global.vsJB = "2.5 (Beta)"
-global.gt = "𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿"
+global.gt = "𝑭𝒂𝒏𝒕𝒂𝒔𝒚𝑩𝒐𝒕-𝑴𝑫"
 
 global.yt = "https://youtube.com/@gatadios"
 global.yt2 = "https://www.youtube.com/watch?v=Ko019wvu2Tc&t=71s"
