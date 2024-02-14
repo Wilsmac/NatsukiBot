@@ -8,7 +8,7 @@ if (process.send) { process.send('uptime')
 _muptime = await new Promise(resolve => { process.once('message', resolve) 
 setTimeout(resolve, 2000) }) * 1000}
 let uptime = clockString(_uptime)
-let bio = `${global.packname} ║ ✅ ${uptime} ⌛ ║ ⒼⒷ 𓃠 #donar #menu #serbot #gruposgb #fantasy 💻 By GLOBAL-GB `
+let bio = `🌺 𝙏𝙞𝙚𝙢𝙥𝙤 𝙖𝙘𝙩𝙞𝙫𝙤 » ☃️ ${uptime} ☃️ 🌺 • 🌹𝘽𝙤𝙩 𝙖𝙘𝙩𝙞𝙫𝙤 »  ${global.packname} 𝙑1 Ⓒ︎Ⓓ︎ • 𝑩𝒚 𝑾𝒊𝒍𝒎𝒆𝒓 𝒐𝒇𝒄 🌻 `
 await this.updateProfileStatus(bio).catch(_ => _)
 setting.status = new Date() * 1
 } 
@@ -19,5 +19,5 @@ function clockString(ms) {
   let h = isNaN(ms) ? '--' : Math.floor(ms / 3600000) % 24
   let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60
   let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
-  return [d, ' » ', h, ' ・ ', m, ' ・ ', s].map(v => v.toString().padStart(2, 0)).join('') 
+  return [d, ' ✫ ', h, ' ✫ ', m, ' ✫ ', s].map(v => v.toString().padStart(2, 0)).join('') 
 } 
