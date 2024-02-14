@@ -33,10 +33,10 @@ if (/^reglas|normas|Reglas$/i.test(m.text) ) { //sin prefijo
 
 }
 
-/* if (/^hola|halo|hello|hi$/i.test(m.text) ) { //sin prefijo 
-     conn.reply(m.chat, `Hola :D`, fkontak, m)
+if (/^hola|halo|hello|hi$/i.test(m.text) ) { //sin prefijo 
+     conn.reply(m.chat, `tu naríz contra mis bolas 😆🫵🏻`, fkontak, m)
 
- }*/
+ }
  
 if (/^¿que es un bot?|Que es un bot|Que es gatabot?$/i.test(m.text) ) { //sem prefixo
     conn.reply(m.chat, `╭┄〔 *${wm}* 〕┄⊱
