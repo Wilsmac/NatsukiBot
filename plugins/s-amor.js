@@ -1,9 +1,9 @@
-import { sticker } from '../lib/sticker.js'
+/*import { sticker } from '../lib/sticker.js'
 let handler = async(m, { conn }) => {
 if (!db.data.chats[m.chat].stickers && m.isGroup) throw 0
 
-let nombre = '🐈 𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿'
-let nombre2 = '𝙂𝙖𝙩𝙖 𝘿𝙞𝙤𝙨' 
+let nombre = ''
+let nombre2 = '' 
  
 const s = [
 'https://media1.giphy.com/media/2dQ3FMaMFccpi/giphy.gif?cid=ecf05e476azkdvh2cu7b567gbpgyc6q7qd38pklqp12npygv&rid=giphy.gif&ct=g',
@@ -44,4 +44,4 @@ handler.customPrefix = /lindo|linda|cariño|love|corazón|bonita|bonito/i
 handler.command = new RegExp
 handler.exp = 50
 export default handler
-const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms))
+const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms))*/
