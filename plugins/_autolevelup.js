@@ -57,7 +57,7 @@ conn.reply(m.chat, `*${lenguajeGB.smsAutoLv7()} 5!!* 🏆
 𓃠 *${especialCant * 1} ${global.rpgshop.emoticon(especial)}*
 𓃠 *${especialCant2 * 1} ${global.rpgshop.emoticon(especial2)}*
 𓃠 *${especialCant3 * 1} ${global.rpgshop.emoticon(especial3)}*
-𓃠 *${especialCant4 * 1} ${global.rpgshop.emoticon(especial4)}*`, m, {contextInfo: {externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, title: gt, body: ' 😻 𝗦𝘂𝗽𝗲𝗿 𝗚𝗮𝘁𝗮𝗕𝗼𝘁-𝗠𝗗 - 𝗪𝗵𝗮𝘁𝘀𝗔𝗽𝗽 ', previewType: 0, thumbnail: gataImg.getRandom(), sourceUrl: accountsgb.getRandom()}}}) 
+𓃠 *${especialCant4 * 1} ${global.rpgshop.emoticon(especial4)}*`, m, {contextInfo: {externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, title: gt, body: ' 𝑭𝒂𝒏𝒕𝒂𝒔𝒚𝑩𝒐𝒕-𝑴𝑫 𝐕1 𝑩𝒚 𝑾𝒊𝒍𝒎𝒆𝒓 𝒐𝒇𝒄 ', previewType: 0, thumbnail: gataImg.getRandom(), sourceUrl: accountsgb.getRandom()}}}) 
 user[especial] += especialCant * 1
 user[especial2] += especialCant2 * 1
 user[especial3] += especialCant3 * 1
