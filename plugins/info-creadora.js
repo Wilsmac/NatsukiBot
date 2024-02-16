@@ -1,4 +1,3 @@
-//CÓDIGO CREADO GRACIAS A https://github.com/Azami19 & https://github.com/GataNina-Li
 //Puedes editar el país,enlaces, los números se editan desde el config.js
 import fetch from 'node-fetch'
 
@@ -29,7 +28,7 @@ lugar = official[0][0] == String(contact[0]) ? '🇺🇸 Estados Unidos' : offic
 enlace = official[0][0] == String(contact[0]) ? 'https://github.com/Wilsmac' : official[1][0] == String(contact[0]) ? 'https://github.com/Wilsmac' : official[2][0] == String(contact[0]) ? 'https://github.com/Wilsmac' : official[3][0] == String(contact[0]) ? 'https://github.com/Wilsmac' : md 
    
 lista.push([number, ofc, nombre, description, official[3][0] == String(contact[0]) ? null : correo, lugar, enlace, bio, official[1][0] == String(contact[0]) ? 'https://www.youtube.com/wilmer.oficial' : null]) }  
-lista.push([conn.user.jid.split('@')[0], await conn.getName(conn.user.jid), packname, lenguajeGB.smsContacto8(), mail === '' ? 'centergatabot@gmail.com' : mail, lenguajeGB.smsContacto7(), md, bioBot, yt, ig, fb, paypal, nna])
+lista.push([conn.user.jid.split('@')[0], await conn.getName(conn.user.jid), packname, lenguajeGB.smsContacto8(), mail === '' ? 'wilsmac68@gmail.com' : mail, lenguajeGB.smsContacto7(), md, bioBot, yt, ig, fb, paypal, nna])
 await conn.sendFile(m.chat, pp, 'lp.jpg', cat, fkontak, false, { contextInfo: {externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, title: gt, body: ' 𝑾𝒊𝒍𝒎𝒆𝒓 𝒐𝒇𝒄 ', previewType: 0, thumbnail: imagen4, sourceUrl: accountsgb.getRandom()}}})
 await conn.sendContactArray(m.chat, lista, null, { quoted: fkontak })
   
