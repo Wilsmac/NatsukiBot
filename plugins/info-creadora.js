@@ -8,7 +8,7 @@ let contact, number, ofc, nombre, description, correo, lugar, enlace, biog
 let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
 let pp = gataImg.getRandom()	
 const cat = `
-${bot}
+${global.packname} 𝒃𝒚 ${global.author}
 𝙰 𝙲𝙾𝙽𝚃𝙸𝙽𝚄𝙰𝙲𝙸𝙾𝙽 𝚂𝙴 𝙴𝙽𝚅𝙸𝙰𝚁𝙰 𝙴𝙻 𝙲𝙾𝙽𝚃𝙰𝙲𝚃𝙾 𝙳𝙴 𝙼𝙸𝚂 𝙿𝚁𝙾𝙿𝙸𝙴𝚃𝙰𝚁𝙸𝙾(𝙰)`
 let biografiaBot = await conn.fetchStatus(conn.user.jid.split('@')[0] + '@s.whatsapp.net').catch(_ => 'undefined')
 let bioBot = biografiaBot.status?.toString() || `${desc2 == '' ? lenguajeGB.smsContacto1() : desc2}`
