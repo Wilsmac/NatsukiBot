@@ -13,26 +13,25 @@ if (command === 'play') {
 additionalText = '𝘼𝙐𝘿𝙄𝙊 🔊'
 } else if (command === 'play2') {
 additionalText = '𝙑𝙄𝘿𝙀𝙊 🎥'}
-let captionvid = `𓆩 𓃠 𓆪 ✧═══ ${vs} ═══✧ 𓆩 𓃠 𓆪*
-
-ও ${mid.smsYT1}
-»  ${yt_play[0].title}
-﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘
-ও ${mid.smsYT15}
-» ${yt_play[0].ago}
-﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘
-ও ${mid.smsYT5}
-» ${secondString(yt_play[0].duration.seconds)}
-﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘
-ও  ${mid.smsYT10}
-» ${MilesNumber(yt_play[0].views)}
-﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘
-ও  ${mid.smsYT4}
-» ${yt_play[0].url}
-﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘
-ও ${mid.smsAguarde(additionalText)}
-
-*𓆩 𓃠 𓆪 ✧═══ ${vs} ═══✧ 𓆩 𓃠 𓆪*`  
+let captionvid = `*┈┈┈┈『${vs}』┈┈┈┈*
+    
+🌺 𝑻𝑰𝑻𝑼𝑳𝑶
+   ${yt_play[0].title}
+╰━─━─━──━─≪✠≫─━─━──━─━╯
+🌹 𝑷𝑼𝑩𝑳𝑰𝑪𝑨𝑫𝑶
+  ${yt_play[0].ago}
+╰━─━─━──━─≪✠≫─━─━──━─━╯
+🌺 𝑫𝑼𝑹𝑨𝑪𝑰𝑶𝑵
+  ${secondString(yt_play[0].duration.seconds)}
+╰━─━─━──━─≪✠≫─━─━──━─━╯
+🌹 𝑽𝑰𝑺𝑻𝑨𝑺
+  ${MilesNumber(yt_play[0].views)}
+╰━─━─━──━─≪✠≫─━─━──━─━╯
+🌺 𝑼𝑹𝑳
+𖤍 ${yt_play[0].url}
+╰━─━─━──━─≪✠≫─━─━──━─━╯
+🌹 𝑬𝑵𝑽𝑰𝑨𝑫𝑶 ${additionalText}, 𝑨𝑮𝑼𝑨𝑹𝑫𝑬 𝑼𝑵 𝑴𝑶𝑴𝑬𝑵𝑻𝑶 𝑷𝑶𝑹 𝑭𝑨𝑽𝑶𝑹..
+*✧══════•❁❀❁•══════✧*`  
 await conn.sendMessage(m.chat, {
 text: captionvid,
 contextInfo: {
@@ -67,7 +66,7 @@ const dataRE = await fetch(`https://api.akuari.my.id/downloader/youtube?link=${y
 const dataRET = await dataRE.json()
 await conn.sendMessage(m.chat, { audio: { url: dataRET.mp3[1].url }, mimetype: 'audio/mpeg', contextInfo: {
 externalAdReply: {
-title: yt_play[0].title,
+title: "en un momento envío su audio",
 body: "",
 thumbnailUrl: yt_play[0].thumbnail, 
 mediaType: 1,
