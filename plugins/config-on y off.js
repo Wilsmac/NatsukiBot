@@ -436,6 +436,208 @@ ${lenguajeGB.smsConfi7()}
 ${lenguajeGB.smsConfi8()}
 ${m.isGroup ? `` : `${lenguajeGB.smsConfi9()}`}
 
+╰▭ׄ▭ׅ▭ׅ▭ׄ▭ׅ▭ׄ  ✿ໍ ▭ׅ▭ׄ▭ׅ▭ׅ▭ׄ▭ׅ╯
+
+ඬ⃟🌹 ${lenguajeGB.smsParaAdmins()} ${m.isGroup ? chat.welcome ? '✅' : '❌' : lenguajeGB.smsNoGg()}
+ඬ⃟🌹 ${usedPrefix + command} welcome
+ඬ⃟🌹 ${lenguajeGB.smsWel2()}
+
+╰▭ׄ▭ׅ▭ׅ▭ׄ▭ׅ▭ׄ  ✿ໍ ▭ׅ▭ׄ▭ׅ▭ׅ▭ׄ▭ׅ╯
+
+ඬ⃟🌹 ${lenguajeGB.smsParaAdmins()} ${m.isGroup ? chat.detect ? '✅' : '❌' : lenguajeGB.smsNoGg()}
+ඬ⃟🌹 ${usedPrefix + command} detec
+ඬ⃟🌹 ${lenguajeGB.smsDete2()}
+
+╰▭ׄ▭ׅ▭ׅ▭ׄ▭ׅ▭ׄ  ✿ໍ ▭ׅ▭ׄ▭ׅ▭ׅ▭ׄ▭ׅ╯
+
+ඬ⃟🌹 ${lenguajeGB.smsParaAdYOw()} ${m.isGroup ? chat.autolevelup ? '✅' : '❌' : lenguajeGB.smsNoGg()} 
+ඬ⃟🌹 ${usedPrefix + command} autolevelup
+ඬ⃟🌹 ${lenguajeGB.smsANivel2()}
+
+╰▭ׄ▭ׅ▭ׅ▭ׄ▭ׅ▭ׄ  ✿ໍ ▭ׅ▭ׄ▭ׅ▭ׅ▭ׄ▭ׅ╯
+
+ඬ⃟🌹 ${lenguajeGB.smsParaOw()} ${bot.restrict ? '✅' : '❌'}
+ඬ⃟🌹 ${usedPrefix + command} restrict
+ඬ⃟🌹 ${lenguajeGB.smsRestri2()}
+
+╰▭ׄ▭ׅ▭ׅ▭ׄ▭ׅ▭ׄ  ✿ໍ ▭ׅ▭ׄ▭ׅ▭ׅ▭ׄ▭ׅ╯
+
+ඬ⃟🌹 ${lenguajeGB.smsParaOw()} ${bot.antiCall ? '✅' : '❌'}
+ඬ⃟🌹 ${usedPrefix + command} antiCall
+ඬ⃟🌹 ${lenguajeGB.smsLlamar2()}
+
+╰▭ׄ▭ׅ▭ׅ▭ׄ▭ׅ▭ׄ  ✿ໍ ▭ׅ▭ׄ▭ׅ▭ׅ▭ׄ▭ׅ╯
+
+ඬ⃟🌹 ${lenguajeGB.smsParaOw()} ${bot.antiSpam ? '✅' : '❌'}
+ඬ⃟🌹 ${usedPrefix + command} antiSpam
+ඬ⃟🌹 ${lenguajeGB.smsAntiSp2()}
+
+╰▭ׄ▭ׅ▭ׅ▭ׄ▭ׅ▭ׄ  ✿ໍ ▭ׅ▭ׄ▭ׅ▭ׅ▭ׄ▭ׅ╯
+
+ඬ⃟🌹 ${lenguajeGB.smsParaOw()} ${global.opts['self'] ? '❌' : '✅'}
+ඬ⃟🌹 ${usedPrefix + command} self
+ඬ⃟🌹 ${lenguajeGB.smsModP2()}
+
+╰▭ׄ▭ׅ▭ׅ▭ׄ▭ׅ▭ׄ  ✿ໍ ▭ׅ▭ׄ▭ׅ▭ׅ▭ׄ▭ׅ╯
+
+ඬ⃟🌹 ${lenguajeGB.smsParaAdmins()} ${m.isGroup ? chat.modoadmin ? '✅' : '❌' : lenguajeGB.smsNoGg()} 
+ඬ⃟🌹 ${usedPrefix + command} modoadmin
+ඬ⃟🌹 ${lenguajeGB.smsModAd2()}
+
+╰▭ׄ▭ׅ▭ׅ▭ׄ▭ׅ▭ׄ  ✿ໍ ▭ׅ▭ׄ▭ׅ▭ׅ▭ׄ▭ׅ╯
+
+ඬ⃟🌹 ${lenguajeGB.smsParaOw()} ${global.opts['autoread'] ? '✅' : '❌'}
+ඬ⃟🌹 ${usedPrefix + command} autoread
+ඬ⃟🌹 ${lenguajeGB.smsLect1()}
+
+╰▭ׄ▭ׅ▭ׅ▭ׄ▭ׅ▭ׄ  ✿ໍ ▭ׅ▭ׄ▭ׅ▭ׅ▭ׄ▭ׅ╯
+
+ඬ⃟🌹 ${lenguajeGB.smsParaOw()} ${bot.temporal ? '✅' : '❌'}
+ඬ⃟🌹 ${usedPrefix + command} temporal
+ඬ⃟🌹 ${lenguajeGB.smsTempo2()}
+
+╰▭ׄ▭ׅ▭ׅ▭ׄ▭ׅ▭ׄ  ✿ໍ ▭ׅ▭ׄ▭ׅ▭ׅ▭ׄ▭ׅ╯
+
+ඬ⃟🌹 ${lenguajeGB.smsParaAdmins()} ${m.isGroup ? chat.stickers ? '✅' : '❌' : lenguajeGB.smsNoGg()}
+ඬ⃟🌹 ${usedPrefix + command} stickers
+ඬ⃟🌹 ${lenguajeGB.smsStik1()}
+
+╰▭ׄ▭ׅ▭ׅ▭ׄ▭ׅ▭ׄ  ✿ໍ ▭ׅ▭ׄ▭ׅ▭ׅ▭ׄ▭ׅ╯
+
+ඬ⃟🌹 ${lenguajeGB.smsParaAdmins()} ${m.isGroup ? chat.autosticker ? '✅' : '❌' : lenguajeGB.smsNoGg()}
+ඬ⃟🌹 ${usedPrefix + command} autosticker
+ඬ⃟🌹 ${lenguajeGB.smsStickA2()}
+
+╰▭ׄ▭ׅ▭ׅ▭ׄ▭ׅ▭ׄ  ✿ໍ ▭ׅ▭ׄ▭ׅ▭ׅ▭ׄ▭ׅ╯
+
+ඬ⃟🌹 ${lenguajeGB.smsParaAdYOw()} ${m.isGroup ? chat.reaction ? '✅' : '❌' : lenguajeGB.smsNoGg()}    
+ඬ⃟🌹 ${usedPrefix + command} reaction
+ඬ⃟🌹 ${lenguajeGB.smsReacc2()}
+
+╰▭ׄ▭ׅ▭ׅ▭ׄ▭ׅ▭ׄ  ✿ໍ ▭ׅ▭ׄ▭ׅ▭ׅ▭ׄ▭ׅ╯
+
+ඬ⃟🌹 ${lenguajeGB.smsParaAdYOw()} ${m.isGroup ? chat.audios ? '✅' : '❌' : lenguajeGB.smsNoGg()}
+ඬ⃟🌹 ${usedPrefix + command} audios
+ඬ⃟🌹 ${lenguajeGB.smsAudi2()}
+
+╰▭ׄ▭ׅ▭ׅ▭ׄ▭ׅ▭ׄ  ✿ໍ ▭ׅ▭ׄ▭ׅ▭ׅ▭ׄ▭ׅ╯
+
+ඬ⃟🌹 ${lenguajeGB.smsParaAdmins()} ${m.isGroup ? chat.antitoxic ? '✅' : '❌' : lenguajeGB.smsNoGg()}
+ඬ⃟🌹 ${usedPrefix + command} antitoxic
+ඬ⃟🌹 ${lenguajeGB.smsAntitoc2()}
+
+╰▭ׄ▭ׅ▭ׅ▭ׄ▭ׅ▭ׄ  ✿ໍ ▭ׅ▭ׄ▭ׅ▭ׅ▭ׄ▭ׅ╯
+
+ඬ⃟🌹 ${lenguajeGB.smsParaAdYOw()} ${m.isGroup ? chat.antiver ? '✅' : '❌' : lenguajeGB.smsNoGg()}
+ඬ⃟🌹 ${usedPrefix + command} antiver
+ඬ⃟🌹 ${lenguajeGB.smsModOb2()}
+
+╰▭ׄ▭ׅ▭ׅ▭ׄ▭ׅ▭ׄ  ✿ໍ ▭ׅ▭ׄ▭ׅ▭ׅ▭ׄ▭ׅ╯
+
+ඬ⃟🌹 ${lenguajeGB.smsParaAdYOw()} ${m.isGroup ? chat.delete ? '✅' : '❌' : lenguajeGB.smsNoGg()}
+ඬ⃟🌹 ${usedPrefix + command} delete
+ඬ⃟🌹 ${lenguajeGB.smsAntiEli2()}
+
+╰▭ׄ▭ׅ▭ׅ▭ׄ▭ׅ▭ׄ  ✿ໍ ▭ׅ▭ׄ▭ׅ▭ׅ▭ׄ▭ׅ╯
+
+ඬ⃟🌹 ${lenguajeGB.smsParaAdmins()} ${m.isGroup ? chat.antifake ? '✅' : '❌' : lenguajeGB.smsNoGg()}
+ඬ⃟🌹 ${usedPrefix + command} antifake
+ඬ⃟🌹 ${lenguajeGB.smsAntiInt2()}
+
+╰▭ׄ▭ׅ▭ׅ▭ׄ▭ׅ▭ׄ  ✿ໍ ▭ׅ▭ׄ▭ׅ▭ׅ▭ׄ▭ׅ╯
+
+ඬ⃟🌹 ${lenguajeGB.smsParaAdmins()} ${m.isGroup ? chat.antiLink ? '✅' : '❌' : lenguajeGB.smsNoGg()}
+ඬ⃟🌹 ${usedPrefix + command} antiLink
+ඬ⃟🌹 ${lenguajeGB.smsAntiE2()}
+
+╰▭ׄ▭ׅ▭ׅ▭ׄ▭ׅ▭ׄ  ✿ໍ ▭ׅ▭ׄ▭ׅ▭ׅ▭ׄ▭ׅ╯
+
+ඬ⃟🌹 ${lenguajeGB.smsParaAdmins()} ${m.isGroup ? chat.antiLink2 ? '✅' : '❌' : lenguajeGB.smsNoGg()}
+ඬ⃟🌹 ${usedPrefix + command} antiLink2
+ඬ⃟🌹 ${lenguajeGB.smsAntiEE2()}
+
+╰▭ׄ▭ׅ▭ׅ▭ׄ▭ׅ▭ׄ  ✿ໍ ▭ׅ▭ׄ▭ׅ▭ׅ▭ׄ▭ׅ╯
+
+ඬ⃟🌹 ${lenguajeGB.smsParaAdmins()} ${m.isGroup ? chat.antiTiktok ? '✅' : '❌' : lenguajeGB.smsNoGg()} 
+ඬ⃟🌹 ${usedPrefix + command} antiTiktok
+ඬ⃟🌹 ${lenguajeGB.smsAntiTT2()}
+
+╰▭ׄ▭ׅ▭ׅ▭ׄ▭ׅ▭ׄ  ✿ໍ ▭ׅ▭ׄ▭ׅ▭ׅ▭ׄ▭ׅ╯
+
+ඬ⃟🌹 ${lenguajeGB.smsParaAdmins()} ${m.isGroup ? chat.antiYoutube ? '✅' : '❌' : lenguajeGB.smsNoGg()}
+ඬ⃟🌹 ${usedPrefix + command} antiYoutube
+ඬ⃟🌹 ${lenguajeGB.smsAntiYT2()}
+
+╰▭ׄ▭ׅ▭ׅ▭ׄ▭ׅ▭ׄ  ✿ໍ ▭ׅ▭ׄ▭ׅ▭ׅ▭ׄ▭ׅ╯
+
+ඬ⃟🌹 ${lenguajeGB.smsParaAdmins()} ${m.isGroup ? chat.antiTelegram ? '✅' : '❌' : lenguajeGB.smsNoGg()}
+ඬ⃟🌹 ${usedPrefix + command} antiTelegram
+ඬ⃟🌹 ${lenguajeGB.smsAntiTEL2()}
+
+╰▭ׄ▭ׅ▭ׅ▭ׄ▭ׅ▭ׄ  ✿ໍ ▭ׅ▭ׄ▭ׅ▭ׅ▭ׄ▭ׅ╯
+
+ඬ⃟🌹 ${lenguajeGB.smsParaAdmins()} ${m.isGroup ? chat.antiFacebook ? '✅' : '❌' : lenguajeGB.smsNoGg()} 
+ඬ⃟🌹 ${usedPrefix + command} antiFacebook
+ඬ⃟🌹 ${lenguajeGB.smsAntiFB2()}
+
+╰▭ׄ▭ׅ▭ׅ▭ׄ▭ׅ▭ׄ  ✿ໍ ▭ׅ▭ׄ▭ׅ▭ׅ▭ׄ▭ׅ╯
+
+ඬ⃟🌹 ${lenguajeGB.smsParaAdmins()} ${m.isGroup ? chat.antiInstagram ? '✅' : '❌' : lenguajeGB.smsNoGg()}
+ඬ⃟🌹 ${usedPrefix + command} antiInstagram
+ඬ⃟🌹 ${lenguajeGB.smsAntiIG2()}
+
+╰▭ׄ▭ׅ▭ׅ▭ׄ▭ׅ▭ׄ  ✿ໍ ▭ׅ▭ׄ▭ׅ▭ׅ▭ׄ▭ׅ╯
+
+ඬ⃟🌹 ${lenguajeGB.smsParaAdmins()} ${m.isGroup ? chat.antiTwitter ? '✅' : '❌' : lenguajeGB.smsNoGg()}   
+ඬ⃟🌹 ${usedPrefix + command} antiTwitter
+ඬ⃟🌹 ${lenguajeGB.smsAntiTW2()}
+
+╰▭ׄ▭ׅ▭ׅ▭ׄ▭ׅ▭ׄ  ✿ໍ ▭ׅ▭ׄ▭ׅ▭ׅ▭ׄ▭ׅ╯
+
+ඬ⃟🌹 ${lenguajeGB.smsParaOw()} ${global.opts['pconly'] ? '✅' : '❌'}
+ඬ⃟🌹 ${usedPrefix + command} pconly
+ඬ⃟🌹 ${lenguajeGB.smsSOLOP2()}
+
+╰▭ׄ▭ׅ▭ׅ▭ׄ▭ׅ▭ׄ  ✿ໍ ▭ׅ▭ׄ▭ׅ▭ׅ▭ׄ▭ׅ╯
+
+ඬ⃟🌹 ${lenguajeGB.smsParaOw()} ${global.opts['gconly'] ? '✅' : '❌'}
+ඬ⃟🌹 ${usedPrefix + command} gconly
+ඬ⃟🌹 ${lenguajeGB.smsSOLOG2()}
+
+╰▭ׄ▭ׅ▭ׅ▭ׄ▭ׅ▭ׄ  ✿ໍ ▭ׅ▭ׄ▭ׅ▭ׅ▭ׄ▭ׅ╯
+${wm}`, fkontak, { mentions: [aa,] })
+//conn.sendMessage(m.chat, { text: texto }, { quoted: fkontak })
+//conn.sendMessage(m.chat, texto, {quoted: fkontak})	
+throw false
+}
+await conn.reply(m.chat, `${lenguajeGB['smsAvisoRG']()}ღ *_${lenguajeGB['smsMens1']()}_* *|* ${type} 
+ღ *_${lenguajeGB['smsMens2']()}_* *|* ${isEnable ? lenguajeGB.smsEncender() : lenguajeGB.smsApagar()} 
+ღ *_${lenguajeGB['smsMens3']()}_* *|* ${isAll ? lenguajeGB.smsMens4() : isUser ? '' : lenguajeGB.smsMens5()}`, fkontak, m)}	
+/*await conn.sendButton(m.chat, `${lenguajeGB['smsAvisoRG']()}ღ *_${lenguajeGB['smsMens1']()}_* *|* ${type} 
+ღ *_${lenguajeGB['smsMens2']()}_* *|* ${isEnable ? lenguajeGB.smsEncender() : lenguajeGB.smsApagar()} 
+ღ *_${lenguajeGB['smsMens3']()}_* *|* ${isAll ? lenguajeGB.smsMens4() : isUser ? '' : lenguajeGB.smsMens5()}`, wm, null, [[`${isEnable ? lenguajeGB.smsApagar() : lenguajeGB.smsEncender()}`, `${isEnable ? `.off ${type}` : `.on ${type}`}`], [lenguajeGB.smsConMenu(), '.menu']], fkontak, m)}*/
+
+handler.help = ['en', 'dis'].map(v => v + 'able <option>')
+handler.tags = ['group', 'owner']
+handler.command = /^((en|dis)able|(tru|fals)e|(turn)?o(n|ff)|[01])$/i
+export default handler
+
+const more = String.fromCharCode(8206)
+const readMore = more.repeat(4001)
+
+
+
+/*if (!/[01]/.test(command)) return await conn.reply(m.chat, `${lenguajeGB.smsConfi10()}\n\n🌟 ${lenguajeGB.smsConfi2()} *@${toUser}*
+
+${lenguajeGB.smsConfi3()}
+${lenguajeGB.smsConfi4()}
+
+${lenguajeGB.smsConfi5()}
+${lenguajeGB.smsConfi6()}
+${lenguajeGB.smsConfi7()}
+${lenguajeGB.smsConfi8()}
+${m.isGroup ? `` : `${lenguajeGB.smsConfi9()}`}
+
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
 ✦ ${lenguajeGB.smsParaAdmins()} ${m.isGroup ? chat.welcome ? '✅' : '❌' : lenguajeGB.smsNoGg()}
@@ -604,24 +806,4 @@ ${m.isGroup ? `` : `${lenguajeGB.smsConfi9()}`}
 ✦ ${usedPrefix + command} gconly
 ✦ ${lenguajeGB.smsSOLOG2()}
 
-┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-
-${wm}`, fkontak, { mentions: [aa,] })
-//conn.sendMessage(m.chat, { text: texto }, { quoted: fkontak })
-//conn.sendMessage(m.chat, texto, {quoted: fkontak})	
-throw false
-}
-await conn.reply(m.chat, `${lenguajeGB['smsAvisoRG']()}ღ *_${lenguajeGB['smsMens1']()}_* *|* ${type} 
-ღ *_${lenguajeGB['smsMens2']()}_* *|* ${isEnable ? lenguajeGB.smsEncender() : lenguajeGB.smsApagar()} 
-ღ *_${lenguajeGB['smsMens3']()}_* *|* ${isAll ? lenguajeGB.smsMens4() : isUser ? '' : lenguajeGB.smsMens5()}`, fkontak, m)}	
-/*await conn.sendButton(m.chat, `${lenguajeGB['smsAvisoRG']()}ღ *_${lenguajeGB['smsMens1']()}_* *|* ${type} 
-ღ *_${lenguajeGB['smsMens2']()}_* *|* ${isEnable ? lenguajeGB.smsEncender() : lenguajeGB.smsApagar()} 
-ღ *_${lenguajeGB['smsMens3']()}_* *|* ${isAll ? lenguajeGB.smsMens4() : isUser ? '' : lenguajeGB.smsMens5()}`, wm, null, [[`${isEnable ? lenguajeGB.smsApagar() : lenguajeGB.smsEncender()}`, `${isEnable ? `.off ${type}` : `.on ${type}`}`], [lenguajeGB.smsConMenu(), '.menu']], fkontak, m)}*/
-
-handler.help = ['en', 'dis'].map(v => v + 'able <option>')
-handler.tags = ['group', 'owner']
-handler.command = /^((en|dis)able|(tru|fals)e|(turn)?o(n|ff)|[01])$/i
-export default handler
-
-const more = String.fromCharCode(8206)
-const readMore = more.repeat(4001)
+┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈*/
