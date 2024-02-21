@@ -2,6 +2,6 @@
 
 
 - la instalación sigue siendo la misma
-- este bot no tendrá leadme.md 
+- este bot no tendrá readme.md 
 - este bot tendrá mantenimiento durante 6 meses.
  
