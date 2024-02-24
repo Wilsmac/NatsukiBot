@@ -14,7 +14,7 @@ conn.reply(m.chat, teks, m, { mentions: { mentionedJid: [m.sender] }})
 
 }
 
-if (/^Buenos días|buenos días|buenos dias|hola, buenos días$/i.test(m.text) ) { //sin prefijo
+/*if (/^Buenos días|buenos días|buenos dias|hola, buenos días$/i.test(m.text) ) { //sin prefijo
   let teks = `
   ${pickRandom([`*"Comenzar el día orando y dando gracias a dios es a lo que yo llamo un buen amanecer."*`,
                 `*"Mientras empieces el día sonriendo, estás asegurando que será un buen día."*`, 
@@ -29,7 +29,7 @@ if (/^Buenos días|buenos días|buenos dias|hola, buenos días$/i.test(m.text) )
                 `*"El momento para todo es el ahora. ¡Despiértate y ten un gran día!"*`,
                 `*"No te limites en tu andar guiándote solamente por el camino de los demás, sé emprendedor y ve por donde no hay un camino para comenzar a dejar tus huellas, Buenos Dias"*`])}
   `, fkontak, m)
-}
+}*/
 
 
 
