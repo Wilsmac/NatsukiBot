@@ -50,8 +50,6 @@ if (/^reglas|normas|Reglas$/i.test(m.text) ) { //sin prefijo
 *╰═┅ৡৢ͜͡✦═╡ 𝑾𝑰𝑳𝑴𝑬𝑹 𝑶𝑭𝑪 ╞═┅ৡৢ͜͡✦═╯*`, fkontak, m) //wm, null, [['Menu', '#menu']], m) botones :V
 
 }
-if (/^hola|Hola|Holi|Holi|holii|Holaa|holaa$/i.test(m.text) ) { //sin prefijos.
-   conn.reply(m.chat, `*Hola, como estás 🌺☺️*`, fkontak, m)
 
 
 /*if (/^hola|halo|hello|hi$/i.test(m.text) ) { //sin prefijo 
