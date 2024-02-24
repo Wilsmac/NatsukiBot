@@ -41,8 +41,8 @@ conn.reply(m.chat, teks, m, { mentions: { mentionedJid: [m.sender] }})
 
 }*/
 
-if (/^reglas|normas|Reglas$/i.test(m.text) ) { //sin prefijo 
-    conn.reply(m.chat, `╭┅〘 ⚠️ 𝗢𝗯𝗲𝗱𝗲𝗰𝗲 𝗹𝗮𝘀 𝗿𝗲𝗴𝗹𝗮𝘀 ⚠️ 〙*
+if (/^reglas|normas|Reglas$/i.test(m.text) ) { //sin prefijo
+  conn.reply(m.chat, `╭┅〘 ⚠️ 𝗢𝗯𝗲𝗱𝗲𝗰𝗲 𝗹𝗮𝘀 𝗿𝗲𝗴𝗹𝗮𝘀 ⚠️ 〙*
 ➽❌ 𝐏𝐫𝐨𝐡𝐢𝐛𝐢𝐝𝐨 𝐥𝐥𝐚𝐦𝐚𝐫 𝐚𝐥 𝐁𝐨𝐭
 ➽❌ 𝐏𝐫𝐨𝐡𝐢𝐛𝐢𝐝𝐨 𝐒𝐩𝐚𝐦 𝐚𝐥 𝐁𝐨𝐭
 ➽❌ 𝐍𝐨 𝐚𝐠𝐫𝐞𝐠𝐚𝐫 𝐚𝐥 𝐁𝐨𝐭
@@ -50,6 +50,9 @@ if (/^reglas|normas|Reglas$/i.test(m.text) ) { //sin prefijo
 *╰═┅ৡৢ͜͡✦═╡ 𝑾𝑰𝑳𝑴𝑬𝑹 𝑶𝑭𝑪 ╞═┅ৡৢ͜͡✦═╯*`, fkontak, m) //wm, null, [['Menu', '#menu']], m) botones :V
 
 }
+if (/^hola|Hola|Holi|Holi|holii|Holaa|holaa$/i.test(m.text) ) { //sin prefijos.
+   conn.reply(m.chat, `*Hola, como estás 🌺☺️*`, fkontak, m)
+
 
 /*if (/^hola|halo|hello|hi$/i.test(m.text) ) { //sin prefijo 
      conn.reply(m.chat, `tu nariz contra mis bolas :v`, fkontak, m)
