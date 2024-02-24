@@ -14,6 +14,19 @@ conn.reply(m.chat, teks, m, { mentions: { mentionedJid: [m.sender] }})
 
 }
 
+
+
+
+if (/^hola|Holi|Hola|holaa|Holii$/i.test(m.text) ) { //sin prefijo 
+    let teks = `
+${pickRandom([`*Hola, como estás?`, `que tal, como estás?`])}
+`.trim()
+conn.reply(m.chat, teks, m, { mentions: { mentionedJid: [m.sender] }})
+
+}
+
+
+
 /*if (/^Buenos días|buenos días|buenos dias|hola, buenos días$/i.test(m.text) ) { //sin prefijo
   let teks = `
   ${pickRandom([`*"Comenzar el día orando y dando gracias a dios es a lo que yo llamo un buen amanecer."*`,
