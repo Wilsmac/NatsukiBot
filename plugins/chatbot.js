@@ -16,14 +16,11 @@ conn.reply(m.chat, teks, m, { mentions: { mentionedJid: [m.sender] }})
 
 
 
-
-if (/^hola|Holi|Hola|holaa|Holii$/i.test(m.text) ) { //sin prefijo 
-    let teks = `
-${pickRandom([`*Hola, como estás?`, `que tal, como estás?`])}
-`.trim()
-conn.reply(m.chat, teks, m, { mentions: { mentionedJid: [m.sender] }})
+if (/^Hola|Holi|hola$/i.test(m.text) ) { //sin prefijo
+  conn.reply(m.chat, `*Holi, como estás?`, fkontak, m) //wm, null, [['Menu', '#menu']], m) botones :V
 
 }
+
 
 
 
