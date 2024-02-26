@@ -1,6 +1,7 @@
 // Wilmer ofc 
 let handler = m => m
 handler.all = async function (m) {
+let vcard = `BEGIN:VCARD\nVERSION:3.0\nN:;Wilmer🌹;;;\nFN:Wilmer\nORG:Wilmer 🌹\nTITLE:\nitem1.TEL;waid=18134039996:+598 9999\nitem1.X-ABLabel:Wilmer 🌺\nX-WA-BIZ-DESCRIPTION:Solo cosas del bot.\nX-WA-BIZ-NAME:Wilmer 🌹\nEND:VCARD`
 let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
 let chat = global.db.data.chats[m.chat]
 let name = conn.getName(m.sender)
@@ -17,7 +18,7 @@ conn.reply(m.chat, teks, m, { mentions: { mentionedJid: [m.sender] }})
 
 
 if (/^Hola|Holi|hola$/i.test(m.text) ) { //sin prefijo
-  conn.reply(m.chat, `*Holi, como estás?* 🥺♥️`, fkontak, m) //wm, null, [['Menu', '#menu']], m) botones :V
+  conn.reply(m.chat, `*Holi, como estás?* 🥺♥️`, vcard, m) //wm, null, [['Menu', '#menu']], m) botones :V
 
 }
 
