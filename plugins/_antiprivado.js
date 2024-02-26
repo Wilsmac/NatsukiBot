@@ -13,8 +13,8 @@ bot = global.db.data.settings[this.user.jid] || {}
 
 if (bot.antiPrivate && !isOwner && !isROwner) {
 if (user.counterPrivate === 0) {
-//mensaje = `*@${m.sender.split`@`[0]} 𝙀𝙎𝙏𝘼 𝙋𝙍𝙊𝙃𝙄𝘽𝙄𝘿𝙊 𝙀𝙎𝘾𝙍𝙄𝘽𝙄𝙍 𝘼𝙇 𝙋𝙍𝙄𝙑𝘼𝘿𝙊 𝘿𝙀𝙇 𝘽𝙊𝙏.*\n\n⚠️ \`\`\`𝐏𝐑𝐈𝐌𝐄𝐑𝐀 𝐀𝐃𝐕𝐄𝐑𝐓𝐄𝐍𝐂𝐈𝐀\`\`\` ⚠️`
-await conn.reply(m.chat, mid.smsprivado(sender), m, { mentions: [m.sender] })  
+mensaje = `*@${m.sender.split`@`[0]} 𝙀𝙎𝙏𝘼 𝙋𝙍𝙊𝙃𝙄𝘽𝙄𝘿𝙊 𝙀𝙎𝘾𝙍𝙄𝘽𝙄𝙍 𝘼𝙇 𝙋𝙍𝙄𝙑𝘼𝘿𝙊 𝘿𝙀𝙇 𝘽𝙊𝙏.*\n\n⚠️ \`\`\`𝐏𝐑𝐈𝐌𝐄𝐑𝐀 𝐀𝐃𝐕𝐄𝐑𝐓𝐄𝐍𝐂𝐈𝐀\`\`\` ⚠️`
+//await conn.reply(m.chat, mid.smsprivado(sender), m, { mentions: [m.sender] })  
   
 } else if (user.counterPrivate === 1) {
 let grupos = [ nn, nnn, nnnt, nnntt, nnnttt ].getRandom()
