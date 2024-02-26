@@ -11,12 +11,6 @@ const handler = async (m, {command, conn}) => {
     conn.sendMessage(m.chat, {image: {url: haha}, caption: `_${command}_`.trim()}, {quoted: m});
   }
 
-  if (command == 'nsfwfoot') {
-    const res = (await axios.get(`https://raw.githubusercontent.com/BrunoSobrino/TheMystic-Bot-MD/master/src/JSON/nsfwfoot.json`)).data;
-    const haha = await res[Math.floor(res.length * Math.random())];
-    conn.sendMessage(m.chat, {image: {url: haha}, caption: `_${command}_`.trim()}, {quoted: m});
-  }
-
   if (command == 'nsfwass') {
     const res = (await axios.get(`https://raw.githubusercontent.com/BrunoSobrino/TheMystic-Bot-MD/master/src/JSON/nsfwass.json`)).data;
     const haha = await res[Math.floor(res.length * Math.random())];
@@ -127,7 +121,7 @@ const handler = async (m, {command, conn}) => {
     conn.sendMessage(m.chat, {image: {url: url}, caption: `_${command}_`.trim()}, {quoted: m});
   }
 };
-handler.help = ['nsfwloli', 'nsfwfoot', 'nsfwass', 'nsfwbdsm', 'nsfwero', 'nsfwfemdom', 'nsfwfoot', 'nsfwglass', 'nsfworgy', 'yuri', 'yuri2', 'panties', 'tetas', 'booty', 'ecchi', 'hentai', 'imagenlesbians', 'pene', 'porno', 'randomxxx', 'pechos'];
-handler.command = ['nsfwloli', 'nsfwfoot', 'nsfwass', 'nsfwbdsm', 'nsfwcum', 'nsfwero', 'nsfwfemdom', 'nsfwfoot', 'nsfwglass', 'nsfworgy', 'yuri', 'yuri2', 'panties', 'tetas', 'booty', 'ecchi', 'hentai', 'trapito', 'imagenlesbians', 'porno', 'randomxxx', 'pechos'];
+handler.help = ['nsfwloli', 'nsfwass', 'nsfwbdsm', 'nsfwero', 'nsfwfemdom', 'nsfwfoot', 'nsfwglass', 'nsfworgy', 'yuri', 'yuri2', 'panties', 'tetas', 'booty', 'ecchi', 'hentai', 'imagenlesbians', 'pene', 'porno', 'randomxxx', 'pechos'];
+handler.command = ['nsfwloli', 'nsfwass', 'nsfwbdsm', 'nsfwcum', 'nsfwero', 'nsfwfemdom', 'nsfwfoot', 'nsfwglass', 'nsfworgy', 'yuri', 'yuri2', 'panties', 'tetas', 'booty', 'ecchi', 'hentai', 'trapito', 'imagenlesbians', 'porno', 'randomxxx', 'pechos'];
 handler.tags = ['nsfw'];
 export default handler;
