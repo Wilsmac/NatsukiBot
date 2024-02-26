@@ -1,4 +1,4 @@
-import axios from "axios"
+/*import axios from "axios"
 import fetch from 'node-fetch'
 import { sticker } from '../lib/sticker.js'
                
@@ -2834,4 +2834,4 @@ global.packmen = [
   "https://i.imgur.com/eCJNWBl.jpg",
   "https://i.imgur.com/6lcrBQB.jpg",
   "https://i.imgur.com/eSSbXJ1.jpg",
-  "https://i.imgur.com/tNyvzyO.jpg"]
+  "https://i.imgur.com/tNyvzyO.jpg"]*/
