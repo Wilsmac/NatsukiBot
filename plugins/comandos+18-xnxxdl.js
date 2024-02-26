@@ -1,4 +1,4 @@
-*/import fetch from 'node-fetch';
+/*import fetch from 'node-fetch';
 import cheerio from 'cheerio';
 const handler = async (m, {conn, args, command, usedPrefix}) => {
 if (!db.data.chats[m.chat].modohorny && m.isGroup) throw `${lenguajeGB['smsContAdult']()}`
