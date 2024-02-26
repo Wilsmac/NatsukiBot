@@ -1,4 +1,4 @@
-import fetch from 'node-fetch';
+*/import fetch from 'node-fetch';
 import cheerio from 'cheerio';
 const handler = async (m, {conn, args, command, usedPrefix}) => {
 if (!db.data.chats[m.chat].modohorny && m.isGroup) throw `${lenguajeGB['smsContAdult']()}`
@@ -63,4 +63,4 @@ async function xnxxdl(URL) {
       resolve({status: 200, result: {title, URL, duration, image, videoType, videoWidth, videoHeight, info, files}});
     }).catch((err) => reject({code: 503, status: false, result: err}));
   });
-}
+}*/
