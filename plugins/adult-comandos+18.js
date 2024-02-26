@@ -56,17 +56,8 @@ const handler = async (m, {command, conn}) => {
     const url = await res[Math.floor(res.length * Math.random())];
     conn.sendMessage(m.chat, {image: {url: url}, caption: `_${command}_`.trim()}, {quoted: m});
   }
-
-  if (command == 'yuri2') {
-    const resError = (await axios.get(`https://raw.githubusercontent.com/BrunoSobrino/TheMystic-Bot-MD/master/src/JSON/yuri.json`)).data;
-    const res = await fetch(`https://purrbot.site/api/img/nsfw/yuri/gif`);
-    const json = await res.json();
-    let url = json.link;
-    if (url == '' || !url || url == null) url = await resError[Math.floor(resError.length * Math.random())];
-    conn.sendMessage(m.chat, {image: {url: url}, caption: `_${command}_`.trim()}, {quoted: m});
-  }
 };
-handler.help = ['nsfwloli', 'yuri', 'yuri2', 'tetas', 'booty', 'ecchi', 'porno', 'randomxxx', 'pechos'];
-handler.command = ['nsfwloli', 'yuri', 'yuri2', 'tetas', 'booty', 'ecchi', 'porno', 'randomxxx', 'pechos'];
+handler.help = ['nsfwloli', 'yuri', 'tetas', 'booty', 'ecchi', 'porno', 'randomxxx', 'pechos'];
+handler.command = ['nsfwloli', 'yuri', 'tetas', 'booty', 'ecchi', 'porno', 'randomxxx', 'pechos'];
 handler.tags = ['nsfw'];
 export default handler;
