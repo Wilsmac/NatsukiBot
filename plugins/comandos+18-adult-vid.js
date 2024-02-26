@@ -1,4 +1,4 @@
-import fetch from 'node-fetch'
+/*import fetch from 'node-fetch'
 let handler = async (m, { conn, command, usedPrefix }) => {
 let frep = { contextInfo: { externalAdReply: {title: wm, body: lenguajeGB.smsCont18PornP2(), sourceUrl: redesMenu.getRandom(), thumbnail: await(await fetch(img16)).buffer() }}}
 let user = global.db.data.users[m.sender]
@@ -284,4 +284,4 @@ global.pornovidrandom = [
 "https://h.top4top.io/m_22774jf141.mp4",
 "https://b.top4top.io/m_22774wjs32.mp4",
 "https://f.top4top.io/m_2277k9gw00.mp4",
-]
+]*/
