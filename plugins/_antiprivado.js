@@ -22,8 +22,8 @@ let grupos = [ nn, nnn, nnnt, nnntt, nnnttt ].getRandom()
 await conn.reply(m.chat, mid.smsprivado(sender, grupos), m, { mentions: [m.sender] }) 
   
 } else if (user.counterPrivate === 2) {
-//mensaje = `*@${m.sender.split`@`[0]} 𝙎𝙀𝙍𝘼́́ 𝘽𝙇𝙊𝙌𝙐𝙀𝘼𝘿𝙊(𝘼) 𝘿𝙀𝙇 𝘽𝙊𝙏. 😾 𝙎𝙀 𝙈𝙀𝙉𝘾𝙄𝙊𝙉𝙊́ 𝘼𝙉𝙏𝙀𝙍𝙄𝙊𝙍𝙈𝙀𝙉𝙏𝙀 𝙌𝙐𝙀 𝙉𝙊 𝙎𝙀 𝙋𝙊𝘿𝙄𝘼 𝙀𝙎𝘾𝙍𝙄𝘽𝙄𝙍 𝘼𝙇 𝙋𝙍𝙄𝙑𝘼𝘿𝙊.*\n\n⚠️ \`\`\`𝐓𝐄𝐑𝐂𝐄𝐑𝐀 𝐀𝐃𝐕𝐄𝐑𝐓𝐄𝐍𝐂𝐈𝐀\`\`\` ⚠️`
-await conn.reply(m.chat, mid.smsprivado(sender), m, { mentions: [m.sender] }) 
+mensaje = `*@${m.sender.split`@`[0]} 𝙎𝙀𝙍𝘼́́ 𝘽𝙇𝙊𝙌𝙐𝙀𝘼𝘿𝙊(𝘼) 𝘿𝙀𝙇 𝘽𝙊𝙏. 😾 𝙎𝙀 𝙈𝙀𝙉𝘾𝙄𝙊𝙉𝙊́ 𝘼𝙉𝙏𝙀𝙍𝙄𝙊𝙍𝙈𝙀𝙉𝙏𝙀 𝙌𝙐𝙀 𝙉𝙊 𝙎𝙀 𝙋𝙊𝘿𝙄𝘼 𝙀𝙎𝘾𝙍𝙄𝘽𝙄𝙍 𝘼𝙇 𝙋𝙍𝙄𝙑𝘼𝘿𝙊.*\n\n⚠️ \`\`\`𝐓𝐄𝐑𝐂𝐄𝐑𝐀 𝐀𝐃𝐕𝐄𝐑𝐓𝐄𝐍𝐂𝐈𝐀\`\`\` ⚠️`
+//await conn.reply(m.chat, mid.smsprivado(sender), m, { mentions: [m.sender] }) 
   
 user.counterPrivate = -1
 await this.updateBlockStatus(m.sender, 'block')
