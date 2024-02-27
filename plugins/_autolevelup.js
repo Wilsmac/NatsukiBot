@@ -17,7 +17,7 @@ let before = user.level * 1
 while (canLevelUp(user.level, user.exp, global.multiplier)) user.level++
  if (before !== user.level) {
 
-conn.reply(m.chat, `*╭━⊰ ${username} ⊱━დ*
+conn.reply(m.chat, `*╭━⊰ ${taguser} ⊱━დ*
 *┃ ${lenguajeGB.smsAutoLv2()} ${before}*
 *┃ ${lenguajeGB.smsAutoLv3()} ${user.level}*
 *┃ ${lenguajeGB.smsAutoLv4()}* ${user.role}
