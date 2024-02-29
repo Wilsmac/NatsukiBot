@@ -1,4 +1,4 @@
-
+/*
 
 let linkRegex = /whatsapp.com/channel\/([0-9A-Za-z]{20,24})/i
 export async function before(m, { isAdmin, isBotAdmin, participants }) {
@@ -30,7 +30,7 @@ await conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
 } else if (!bot.restrict) return m.reply(`${lenguajeGB['smsSoloOwner']()}`)
 }
 return !0
-}
+}*/
 
 
 
