@@ -8,8 +8,8 @@ const grupo = `https://whatsapp.com/channel`
 if (isAdmin && chat.antiLink && m.text.includes(grupo)) return m.reply(`${lenguajeGB['smsAdwa']()}`)
 if (chat.antiLink && isGroupLink && !isAdmin) {
 if (isBotAdmin) {
-const linkThisGroup = `https://whatsapp.com/channel/${await this.channelInviteCode(m.chat)}`
-if (m.text.includes(linkThisGroup)) return !0
+const linkThisChannel = `https://whatsapp.com/channel/${await this.channelInviteCode(m.chat)}`
+if (m.text.includes(linkThisChannel)) return !0
 }    
 await conn.sendMessage(m.chat, {text: `${lenguajeGB['smsEnlaceWat']()} ${user}`, mentions: [m.sender]}, {quoted: m})
 //await conn.sendButton(m.chat, `${lenguajeGB['smsEnlaceWat']()} ${await this.getName(m.sender)} ${isBotAdmin ? '' : `\n\n${lenguajeGB['smsAllAdmin']()}`}`, wm, [`${lenguajeGB['smsApagar']()}`, '/disable antilink'], m)    
