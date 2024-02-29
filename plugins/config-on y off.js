@@ -132,7 +132,16 @@ throw false
 }}
 chat.antiLink = isEnable
 break
-    
+ 
+/*case 'anticanal': case 'antienlaceca':
+if (m.isGroup) {
+if (!(isAdmin || isOwner)) {
+global.dfail('admin', m, conn)
+throw false
+}}
+chat.antiCanal = isEnable
+break*/
+   
 case 'antilink2': case 'antienlace2':
 if (m.isGroup) {
 if (!(isAdmin || isOwner)) {
