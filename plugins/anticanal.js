@@ -1,4 +1,4 @@
-let bang = m.key.id
+/*let bang = m.key.id
 const user = `@${m.sender.split`@`[0]}`;
 const groupAdmins = participants.filter(p => p.admin)
 const listAdmin = groupAdmins.map((v, i) => `*» ${i + 1}. @${v.id.split('@')[0]}*`).join('\n')
@@ -21,4 +21,4 @@ await conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
 } else if (!bot.restrict) return m.reply(`${lenguajeGB['smsSoloOwner']()}`)
 }
 return !0
-}
+}*/
