@@ -16,12 +16,16 @@ let before = user.level * 1
 while (canLevelUp(user.level, user.exp, global.multiplier)) user.level++
  if (before !== user.level) {
 
-conn.reply(m.chat, `*╭━⊰ ${username} ⊱━დ*
-*┃ ${lenguajeGB.smsAutoLv2()} ${before}*
-*┃ ${lenguajeGB.smsAutoLv3()} ${user.level}*
-*┃ ${lenguajeGB.smsAutoLv4()}* ${user.role}
-*┃ ${lenguajeGB.smsAutoLv5()} ${new Date().toLocaleString('id-ID')}*
-*╰━⊰ ${lenguajeGB.smsAutoLv1()} ⊱━━დ*
+
+conn.reply(m.chat, `┏━━°❀•°:🌹:°•❀°━━┓ 
+  🌺⃢❈❥ ${username}
+┗━━°❀•°:🌹:°•❀°━━┛
+ ${lenguajeGB.smsAutoLv2()} ${before}*
+ ${lenguajeGB.smsAutoLv3()} ${user.level}* 
+ ${lenguajeGB.smsAutoLv4()}* ${user.role}* 
+ ${lenguajeGB.smsAutoLv5()} ${new Date().toLocaleString('id-ID')}* 
+            ᭼۪۪۪۪۪ٜ♡۪۪۪۪۪۪۪۪۪ٜ᭼ִ ֗ 𝆺𝅥 𝆭᭼۪۪۪۪۪ٜ♡۪۪۪۪۪۪۪۪۪ٜ᭼ִ
+✩｡:*•.── ❁ ${lenguajeGB.smsAutoLv1()} ❁ ──.•*:｡✩
 
 *_${lenguajeGB.smsAutoLv6()}_*`, fkontak, {contextInfo: {externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, title: gt, body: ' 𝑭𝒂𝒏𝒕𝒂𝒔𝒚𝑩𝒐𝒕-𝑴𝑫 𝐕1 𝑩𝒚 𝑾𝒊𝒍𝒎𝒆𝒓 𝒐𝒇𝒄 ', previewType: 0, thumbnail: gataImg.getRandom(), sourceUrl: accountsgb.getRandom()}}}) 
 /*conn.sendButton(m.chat, '🐈 ' + wm, `*╭━⊰ ${username} ⊱━დ*
