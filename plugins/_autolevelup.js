@@ -25,9 +25,9 @@ conn.reply(m.chat, `┏━━°❀•°:🌹:°•❀°━━┓
  ⬤͙͙͙͙͙͙͙͙͙͙͙͙͙͙͙͙͙͙͙͙͙͙͙͙͙͙͙͙ _*${lenguajeGB.smsAutoLv4()}* ${user.role}*_
  ⬤͙͙͙͙͙͙͙͙͙͙͙͙͙͙͙͙͙͙͙͙͙͙͙͙͙͙͙͙ _*${lenguajeGB.smsAutoLv5()} ${new Date().toLocaleString('id-ID')}*_
             ᭼۪۪۪۪۪ٜ♡۪۪۪۪۪۪۪۪۪ٜ᭼ִ ֗ 𝆺𝅥 𝆭᭼۪۪۪۪۪ٜ♡۪۪۪۪۪۪۪۪۪ٜ᭼ִ
-✩｡:*•.── ❁ _*${lenguajeGB.smsAutoLv1()}*_ ❁ ──.•*:｡✩
+✩｡*•.─ ❁ _*${lenguajeGB.smsAutoLv1()}*_ ❁ ─.•*｡✩
 
-*_${lenguajeGB.smsAutoLv6()}_*`, fkontak, {contextInfo: {externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, title: gt, body: ' 𝑭𝒂𝒏𝒕𝒂𝒔𝒚𝑩𝒐𝒕-𝑴𝑫 𝐕1 𝑩𝒚 𝑾𝒊𝒍𝒎𝒆𝒓 𝒐𝒇𝒄 ', previewType: 0, thumbnail: gataImg.getRandom(), sourceUrl: accountsgb.getRandom()}}}) 
+*᭼۪۪۪۪۪ٜ♡۪۪۪۪۪۪۪۪۪ٜ᭼ִ ֗ 𝆺𝅥 𝆭᭼۪۪۪۪۪ٜ♡۪۪۪۪۪۪۪۪۪ٜ᭼ִ ֗ 𝆺𝅥 𝆭᭼۪۪۪۪۪ٜ♡۪۪۪۪۪۪۪۪۪ٜ᭼ִ ֗ 𝆺𝅥 𝆭᭼۪۪۪۪۪ٜ♡۪۪۪۪۪۪۪۪۪ٜ᭼ִ ֗ 𝆺𝅥 𝆭᭼۪۪۪۪۪ٜ♡۪۪۪۪۪۪۪۪۪ٜ᭼ִ*`, fkontak, {contextInfo: {externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, title: gt, body: ' 𝑭𝒂𝒏𝒕𝒂𝒔𝒚𝑩𝒐𝒕-𝑴𝑫 𝐕1 𝑩𝒚 𝑾𝒊𝒍𝒎𝒆𝒓 𝒐𝒇𝒄 ', previewType: 0, thumbnail: gataImg.getRandom(), sourceUrl: accountsgb.getRandom()}}}) 
 /*conn.sendButton(m.chat, '🐈 ' + wm, `*╭━⊰ ${username} ⊱━დ*
 *┃ ${lenguajeGB.smsAutoLv2()} ${before}*
 *┃ ${lenguajeGB.smsAutoLv3()} ${user.level}*
