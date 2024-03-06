@@ -1,4 +1,4 @@
-//ESTOS DISEÑOS PARA MENSAJES SON COMPATIBLES CON GATABOT, SIN EMBARGO ALGUNOS NO SE VEN EN LA VERSIÓN DE WHATSAPP WEB
+/*//ESTOS DISEÑOS PARA MENSAJES SON COMPATIBLES CON GATABOT, SIN EMBARGO ALGUNOS NO SE VEN EN LA VERSIÓN DE WHATSAPP WEB
 //PERO EN EL CELULAR SI SE NOTA TODOS, PUEDES USAR EL QUE QUIERAS 😼
 //import { generateWAMessageFromContent } from "@adiwajshing/baileys"
 let generateWAMessageFromContent = (await import(global.baileys)).default
@@ -103,4 +103,4 @@ function ucapan() {
     res = "🌃 *Buenas noches | Good Evening* 💫"
   }
   return res
-} 
+} */
