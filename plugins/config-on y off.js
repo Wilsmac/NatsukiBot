@@ -604,7 +604,7 @@ throw false
 }
 await conn.reply(m.chat, `${lenguajeGB['smsAvisoRG']()}➥ *_${lenguajeGB['smsMens1']()}_* *|* ${type} 
 ➥ *_${lenguajeGB['smsMens2']()}_* *|* ${isEnable ? lenguajeGB.smsEncender() : lenguajeGB.smsApagar()} 
-➥ *_${lenguajeGB['smsMens3']()}_* *|* ${isAll ? lenguajeGB.smsMens4() : isUser ? '' : lenguajeGB.smsMens5()}\n*╚═══ ≪ •❈• ≫ ═══╝*᭼۪۪۪۪۪ٜ♡۪۪۪۪۪۪۪۪۪ٜ᭼ִ ֗ 𝆺𝅥 𝆭᭼۪۪۪۪۪ٜ♡۪۪۪۪۪۪۪۪۪ٜ᭼ִ ֗ 𝆺𝅥 𝆭᭼۪۪۪۪۪ٜ♡۪۪۪۪۪۪۪۪۪ٜ᭼ִ ֗ 𝆺𝅥 𝆭᭼۪۪۪۪۪ٜ♡۪۪۪۪۪۪۪۪۪ٜ᭼ִ ֗ 𝆺𝅥 𝆭᭼۪۪۪۪۪ٜ♡۪۪۪۪۪۪۪۪۪ٜ᭼ִ*`, fkontak, m)}
+➥ *_${lenguajeGB['smsMens3']()}_* *|* ${isAll ? lenguajeGB.smsMens4() : isUser ? '' : lenguajeGB.smsMens5()}\n*᭼۪۪۪۪۪ٜ♡۪۪۪۪۪۪۪۪۪ٜ᭼ִ ֗ 𝆺𝅥 𝆭᭼۪۪۪۪۪ٜ♡۪۪۪۪۪۪۪۪۪ٜ᭼ִ ֗ 𝆺𝅥 𝆭᭼۪۪۪۪۪ٜ♡۪۪۪۪۪۪۪۪۪ٜ᭼ִ ֗ 𝆺𝅥 𝆭᭼۪۪۪۪۪ٜ♡۪۪۪۪۪۪۪۪۪ٜ᭼ִ ֗ 𝆺𝅥 𝆭᭼۪۪۪۪۪ٜ♡۪۪۪۪۪۪۪۪۪ٜ᭼ִ*`, fkontak, m)}
 handler.help = ['en', 'dis'].map(v => v + 'able <option>')
 handler.tags = ['group', 'owner']
 handler.command = /^((en|dis)able|(tru|fals)e|(turn)?o(n|ff)|[01])$/i
