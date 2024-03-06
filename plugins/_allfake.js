@@ -1,4 +1,4 @@
-/*//ESTOS DISEÑOS PARA MENSAJES SON COMPATIBLES CON GATABOT, SIN EMBARGO ALGUNOS NO SE VEN EN LA VERSIÓN DE WHATSAPP WEB
+//ESTOS DISEÑOS PARA MENSAJES SON COMPATIBLES CON GATABOT, SIN EMBARGO ALGUNOS NO SE VEN EN LA VERSIÓN DE WHATSAPP WEB
 //PERO EN EL CELULAR SI SE NOTA TODOS, PUEDES USAR EL QUE QUIERAS 😼
 //import { generateWAMessageFromContent } from "@adiwajshing/baileys"
 let generateWAMessageFromContent = (await import(global.baileys)).default
@@ -62,14 +62,14 @@ let pp = await conn.profilePictureUrl(who).catch(_ => gata)
   expiryTimestamp: 8600,
   amount: 10000,
   background: './media/menus/Menu3.jpg'
-}}}}, {}) | //MENSAJE DE PAGO
+}}}}, {}) */ //MENSAJE DE PAGO
 
 //let vid = 'https://blogscvc.cervantes.es/martes-neologico/wp-content/uploads/sites/2/2021/08/gif_350.gif'
 //let vid = './media/menus/Menuvid1.mp4'
 	
 /*let adReply = { fileLength: fsizedoc, seconds: fsizedoc, contextInfo: { forwardingScore: fsizedoc, externalAdReply: { showAdAttribution: true, title: wm, body: '👋 ' + username, mediaUrl: ig, description: 'Hola', previewType: 'PHOTO', thumbnail: await(await fetch(gataMenu.getRandom())).buffer(), sourceUrl: redesMenu.getRandom() }}}	
 let sipp = await conn.resize(pp, 150, 150)
-let fakes = { key: { participant: '0@s.whatsapp.net', remoteJid: 'status@broadcast' }, message: { documentMessage: { title: wm, jpegThumbnail: sipp}}} |
+let fakes = { key: { participant: '0@s.whatsapp.net', remoteJid: 'status@broadcast' }, message: { documentMessage: { title: wm, jpegThumbnail: sipp}}} */
 
 
 //LA FUNCIÓN DE fakes Y adReply CREA UN DINÁMICO DE DOBLE DISEÑO PARA sendButton Y sendButtonVid
@@ -105,4 +105,4 @@ function ucapan() {
     res = "🌃 *Buenas noches | Good Evening* 💫"
   }
   return res
-} */
+} 
