@@ -1,4 +1,4 @@
-import pkg from '@whiskeysockets/baileys'
+/*import pkg from '@whiskeysockets/baileys'
 import fs from 'fs'
 import fetch from 'node-fetch'
 import axios from 'axios'
@@ -116,4 +116,4 @@ global.taguser = '@' + m.sender.split("@s.whatsapp.net")
 global.fake = { contextInfo:{ forwardingScore: 0, externalAdReply: {title: saludo + ` ${wm}`, body: dev, sourceUrl: enlaces, thumbnailUrl: fotos }}}
 }
 
-export default handler
+export default handler*/
