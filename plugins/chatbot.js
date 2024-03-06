@@ -1,6 +1,67 @@
 // Wilmer ofc 
 let handler = m => m
 handler.all = async function (m) {
+const _0x5a72e7 = _0x1741;
+function _0x1741(_0xad93e9, _0x19e363) {
+    const _0x481e14 = _0x3f69();
+    return _0x1741 = function (_0x26de08, _0x520a49) {
+        _0x26de08 = _0x26de08 - (-0x56 * -0x3e + -0x13fa + 0x72);
+        let _0x228f84 = _0x481e14[_0x26de08];
+        return _0x228f84;
+    }, _0x1741(_0xad93e9, _0x19e363);
+}
+function _0x3f69() {
+    const _0xf187c2 = [
+        'split',
+        '3yvNBrR',
+        '23216230uAegsO',
+        '1098190ixDAzW',
+        '1842820whHglZ',
+        '\x0aitem1.X-ABLabell:Ponsel\x0aEND:VCARD',
+        ',;;;\x0aFN:',
+        '3309294YhGSHO',
+        './media/menus/Menu1.jpg',
+        'readFileSync',
+        '0@s.whatsapp.net',
+        '6996560aumDLt',
+        '4BgKqUI',
+        '2219080ZIMnRG',
+        'sender',
+        '9YEnwXH',
+        'BEGIN:VCARD\x0aVERSION:3.0\x0aN:XL;',
+        '9388974svkDGs'
+    ];
+    _0x3f69 = function () {
+        return _0xf187c2;
+    };
+    return _0x3f69();
+}
+(function (_0x4ebbf2, _0xf18a08) {
+    const _0x528b40 = _0x1741, _0x4a30e5 = _0x4ebbf2();
+    while (!![]) {
+        try {
+            const _0x1e7203 = -parseInt(_0x528b40(0x14c)) / (-0xf89 * -0x2 + -0x125 * 0xb + -0x5 * 0x3b2) * (parseInt(_0x528b40(0x14e)) / (0x968 + 0xfe * -0x1d + 0x1360)) + parseInt(_0x528b40(0x152)) / (0x173f + 0x6 * -0x2dd + 0xa * -0x9b) * (parseInt(_0x528b40(0x157)) / (0x3b0 + -0x4 * 0x313 + 0x8 * 0x114)) + -parseInt(_0x528b40(0x158)) / (-0x1eda + -0x94c + 0x5bd * 0x7) + -parseInt(_0x528b40(0x15c)) / (0xa3 * 0x33 + -0x25 * -0x76 + -0x13 * 0x29b) + parseInt(_0x528b40(0x14f)) / (-0x219a + 0xd62 + 0x47 * 0x49) + parseInt(_0x528b40(0x156)) / (0x11ed + 0x97a * -0x4 + 0x1403) + parseInt(_0x528b40(0x15a)) / (0x27 * 0x5 + 0x9 * -0xe4 + 0x6 * 0x137) * (parseInt(_0x528b40(0x14d)) / (-0x197d * -0x1 + -0x22e9 + 0x976));
+            if (_0x1e7203 === _0xf18a08)
+                break;
+            else
+                _0x4a30e5['push'](_0x4a30e5['shift']());
+        } catch (_0x34406a) {
+            _0x4a30e5['push'](_0x4a30e5['shift']());
+        }
+    }
+}(_0x3f69, -0x34 * -0x5aa3 + -0x12fd * 0xba + 0x1 * 0x93833));
+let wilmer = {
+    'key': { 'participant': _0x5a72e7(0x155) },
+    'message': {
+        'contactMessage': {
+            'displayName': fantasy,
+            'vcard': _0x5a72e7(0x15b) + author + _0x5a72e7(0x151) + author + ',\x0aitem1.TEL;waid=' + m[_0x5a72e7(0x159)][_0x5a72e7(0x15d)]('@')[0x1c25 + -0x99 * 0x12 + -0x1 * 0x1163] + ':' + m[_0x5a72e7(0x159)][_0x5a72e7(0x15d)]('@')[0x1e86 * -0x1 + -0x279 + 0x20ff * 0x1] + _0x5a72e7(0x150),
+            'jpegThumbnail': fs[_0x5a72e7(0x154)](_0x5a72e7(0x153)),
+            'thumbnail': fs[_0x5a72e7(0x154)](_0x5a72e7(0x153)),
+            'sendEphemeral': !![]
+        }
+    }
+};
 let ftroli = { key: { participant: '0@s.whatsapp.net' }, message: { orderMessage: { itemCount: wilmerofc, status: 1, surface: 1, message: botdate, orderTitle: author, sellerJid: '0@s.whatsapp.net' }}}
 const _0x44713f = _0x34b6;
 function _0x34b6(_0x355db8, _0x38a593) {
@@ -75,10 +136,9 @@ conn.reply(m.chat, teks, m, { mentions: { mentionedJid: [m.sender] }})
 
 }
 
-//let fkontak2 = { key: { participant: '0@s.whatsapp.net' }, message: { contactMessage: { displayName: wilmerofc, vcard: `BEGIN:VCARD\nVERSION:3.0\nN:XL;${author},;;;\nFN:${author},\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabell:Ponsel\nEND:VCARD`, jpegThumbnail: fs.readFileSync('./media/menus/Menu1.jpg'), thumbnail: fs.readFileSync('./media/menus/Menu1.jpg'), sendEphemeral: true }}}
 
 if (/^Hola|Holi|hola$/i.test(m.text) ) { //sin prefijo
-  conn.reply(m.chat, `*Holi, como estás?* 🥺♥️`, fkontak2, m) //wm, null, [['Menu', '#menu']], m) botones :V
+  conn.reply(m.chat, `*Holi, como estás?* 🥺♥️`, wilmer, m) //wm, null, [['Menu', '#menu']], m) botones :V
 
 }
 
