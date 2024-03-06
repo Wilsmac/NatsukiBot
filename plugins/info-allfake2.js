@@ -1,4 +1,4 @@
-import fetch from 'node-fetch'
+/*import fetch from 'node-fetch'
 const { generateWAMessageFromContent, proto } = (await import('@whiskeysockets/baileys')).default
 
 var handler = async(m, { conn, text, usedPrefix, command }) => {
@@ -123,4 +123,4 @@ handler.command = /^fakelist|listafake|fake2img|fakeloc|sendurl|fgif|fgclink|fdo
 
 handler.rowner = true
 
-export default handler
+export default handler*/
