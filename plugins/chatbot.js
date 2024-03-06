@@ -1,7 +1,6 @@
 // Wilmer ofc 
 let handler = m => m
 handler.all = async function (m) {
-let fkon = { key: { fromMe: false, participant: `${m.sender.split`@`[0]}@s.whatsapp.net`, ...(m.chat ? { remoteJid: '16504228206@s.whatsapp.net' } : {}) }, message: { contactMessage: { displayName: `FantasyBot-MD`, vcard: `BEGIN:VCARD\nVERSION:3.0\nN:;a,;;;\nFN:${wm}\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`}}}
 let ftroli = { key: { participant: '0@s.whatsapp.net' }, message: { orderMessage: { itemCount: 'hola', status: 1, surface: 1, message: botdate, orderTitle: author, sellerJid: '0@s.whatsapp.net' }}}
 let fkontak2 = { key: { participant: '0@s.whatsapp.net' }, message: { contactMessage: { displayName: packname, vcard: `BEGIN:VCARD\nVERSION:3.0\nN:XL;${author},;;;\nFN:${author},\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabell:Ponsel\nEND:VCARD`, jpegThumbnail: fs.readFileSync('./media/menus/Menu1.jpg'), thumbnail: fs.readFileSync('./media/menus/Menu1.jpg'), sendEphemeral: true }}}
 let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
@@ -20,7 +19,7 @@ conn.reply(m.chat, teks, m, { mentions: { mentionedJid: [m.sender] }})
 
 
 if (/^Hola|Holi|hola$/i.test(m.text) ) { //sin prefijo
-  conn.reply(m.chat, `*Holi, como estás?* 🥺♥️`, fkon, m) //wm, null, [['Menu', '#menu']], m) botones :V
+  conn.reply(m.chat, `*Holi, como estás?* 🥺♥️`, fkontak2, m) //wm, null, [['Menu', '#menu']], m) botones :V
 
 }
 
