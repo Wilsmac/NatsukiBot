@@ -604,7 +604,7 @@ throw false
 }
 await conn.reply(m.chat, `${lenguajeGB['smsAvisoRG']()}➥ *_${lenguajeGB['smsMens1']()}_* *|* ${type} 
 ➥ *_${lenguajeGB['smsMens2']()}_* *|* ${isEnable ? lenguajeGB.smsEncender() : lenguajeGB.smsApagar()} 
-➥ *_${lenguajeGB['smsMens3']()}_* *|* ${isAll ? lenguajeGB.smsMens4() : isUser ? '' : lenguajeGB.smsMens5()}\n*╚═══ ≪ •❈• ≫ ═══╝*`, fkontak, m)}
+➥ *_${lenguajeGB['smsMens3']()}_* *|* ${isAll ? lenguajeGB.smsMens4() : isUser ? '' : lenguajeGB.smsMens5()}\n*╚═══ ≪ •❈• ≫ ═══╝*᭼۪۪۪۪۪ٜ♡۪۪۪۪۪۪۪۪۪ٜ᭼ִ ֗ 𝆺𝅥 𝆭᭼۪۪۪۪۪ٜ♡۪۪۪۪۪۪۪۪۪ٜ᭼ִ ֗ 𝆺𝅥 𝆭᭼۪۪۪۪۪ٜ♡۪۪۪۪۪۪۪۪۪ٜ᭼ִ ֗ 𝆺𝅥 𝆭᭼۪۪۪۪۪ٜ♡۪۪۪۪۪۪۪۪۪ٜ᭼ִ ֗ 𝆺𝅥 𝆭᭼۪۪۪۪۪ٜ♡۪۪۪۪۪۪۪۪۪ٜ᭼ִ*`, fkontak, {contextInfo: {externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, title: gt, body: ' 𝑭𝒂𝒏𝒕𝒂𝒔𝒚𝑩𝒐𝒕-𝑴𝑫 𝐕1 𝑩𝒚 𝑾𝒊𝒍𝒎𝒆𝒓 𝒐𝒇𝒄 ', previewType: 0, thumbnail: gataImg.getRandom(), sourceUrl: accountsgb.getRandom()}}})
 
 handler.help = ['en', 'dis'].map(v => v + 'able <option>')
 handler.tags = ['group', 'owner']
