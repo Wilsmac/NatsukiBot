@@ -124,8 +124,8 @@ global.desc = '' // Add short description (20 caractres max)
 global.desc2 = '' // Add long description (90 caractres max) (Este parámetro se aplicará sólo si su whasapp no tiene descripción)
 global.country = '' // Add country, example: 🇪🇨
 // • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
-global.fantasy = "𝑭𝒂𝒏𝒕𝒂𝒔𝒚𝑩𝒐𝒕-𝑴𝑫"
-global.wilmerofc = "(𝑭𝒂𝒏𝒕𝒂𝒔𝒚𝑩𝒐𝒕-𝑴𝑫)\n𝑩𝒚 𝑾𝒊𝒍𝒎𝒆𝒓 𝒐𝒇𝒄"
+global.fantasy = "𝑭𝒂𝒏𝒕𝒂𝒔𝒚𝑩𝒐𝒕-𝑴𝑫" // fantasy
+global.wilmerofc = "(𝑭𝒂𝒏𝒕𝒂𝒔𝒚𝑩𝒐𝒕-𝑴𝑫)\n𝑩𝒚 𝑾𝒊𝒍𝒎𝒆𝒓 𝒐𝒇𝒄" // fkontak2
 global.packname = "𝑭𝒂𝒏𝒕𝒂𝒔𝒚𝑩𝒐𝒕-𝑴𝑫"
 global.author = "𝑾𝒊𝒍𝒎𝒆𝒓 𝒐𝒇𝒄"
 
