@@ -84,8 +84,7 @@ conn.reply(m.chat, `┏━━°❀•°:🌹:°•❀°━━┓
  ⬤͙͙͙͙͙͙͙͙͙͙͙͙͙͙͙͙͙͙͙͙͙͙͙͙͙͙͙͙ _*${lenguajeGB.smsAutoLv3()} ${user.level}*_ 
  ⬤͙͙͙͙͙͙͙͙͙͙͙͙͙͙͙͙͙͙͙͙͙͙͙͙͙͙͙͙ _*${lenguajeGB.smsAutoLv4()}* ${user.role}*_
  ⬤͙͙͙͙͙͙͙͙͙͙͙͙͙͙͙͙͙͙͙͙͙͙͙͙͙͙͙͙ _*${lenguajeGB.smsAutoLv5()} ${new Date().toLocaleString('id-ID')}*_
-            ᭼۪۪۪۪۪ٜ♡۪۪۪۪۪۪۪۪۪ٜ᭼ִ ֗ 𝆺𝅥 𝆭᭼۪۪۪۪۪ٜ♡۪۪۪۪۪۪۪۪۪ٜ᭼ִ
-✩｡*•.─ ❁ _*${lenguajeGB.smsAutoLv1()}*_ ❁ ─.•*｡✩
+✩｡_*${lenguajeGB.smsAutoLv1()}*_ ✩
 
 *╚═════•| ✿ |•═════╝*`, fkontak2, m)
 
