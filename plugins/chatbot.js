@@ -80,7 +80,6 @@ conn.reply(m.chat, teks, m, { mentions: { mentionedJid: [m.sender] }})
 
 }
 
-
 if (/^Hola|Holi|hola$/i.test(m.text) ) { //sin prefijo
   conn.reply(m.chat, `*Holi, como estás?* 🥺♥️`, wilmer, m) //wm, null, [['Menu', '#menu']], m) botones :V
 
