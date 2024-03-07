@@ -1,7 +1,7 @@
 // Wilmer ofc 
 
 
-/*let handler = m => m
+let handler = m => m
 handler.all = async function (m) {
 const _0x5a72e7 = _0x1741;
 function _0x1741(_0xad93e9, _0x19e363) {
@@ -161,4 +161,3 @@ export default handler
 function pickRandom(list) {
     return list[Math.floor(Math.random() * list.length)]
 }
-*/
