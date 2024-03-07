@@ -62,6 +62,7 @@ let wilmer = {
         }
     }
 };
+let wilmer2 = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: `status@broadcast` } : {}) }, message: { 'contactMessage': { 'displayName': wilmerofc, 'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:XL;${wilmerofc},;;;\nFN:${wilmerofc},\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabell:Ponsel\nEND:VCARD`, 'jpegThumbnail': imagen1, thumbnail: imagen1 ,sendEphemeral: true}}};
 let ftroli = { key: { participant: '0@s.whatsapp.net' }, message: { orderMessage: { itemCount: wilmerofc, status: 1, surface: 1, message: botdate, orderTitle: author, sellerJid: '0@s.whatsapp.net' }}}
 const _0x44713f = _0x34b6;
 function _0x34b6(_0x355db8, _0x38a593) {
@@ -138,7 +139,7 @@ conn.reply(m.chat, teks, m, { mentions: { mentionedJid: [m.sender] }})
 
 
 if (/^Hola|Holi|hola$/i.test(m.text) ) { //sin prefijo
-  conn.reply(m.chat, `*Holi, como estás?* 🥺♥️`, wilmer, m) //wm, null, [['Menu', '#menu']], m) botones :V
+  conn.reply(m.chat, `*Holi, como estás?* 🥺♥️`, wilmer2, m) //wm, null, [['Menu', '#menu']], m) botones :V
 
 }
 
