@@ -13,7 +13,7 @@ let bot = global.db.data.settings[this.user.jid] || {}
 let delet = m.key.participant
 let bang = m.key.id
 let name = await conn.getName(m.sender)
-let fakemek = {key: {participant: "0@s.whatsapp.net","remoteJid": "0@s.whatsapp.net"},"message": {"groupInviteMessage": {"groupJid": "51995386439-1616969743@g.us","inviteCode": "m","groupName": "P", "caption": 'ɢᴀᴛᴀʙᴏᴛ-ᴍᴅ', 'jpegThumbnail': null}}}
+let fakemek = {key: {participant: "0@s.whatsapp.net","remoteJid": "0@s.whatsapp.net"},"message": {"groupInviteMessage": {"groupJid": "51995386439-1616969743@g.us","inviteCode": "m","groupName": "P", "caption": 'ғᴀɴᴛᴀsʏʙᴏᴛ-MD', 'jpegThumbnail': null}}}
 if (chat.antiTraba && m.text.length > 4000) { //Cantidad máxima de caracteres aceptados en un mensaje//
 if (isAdmin) return conn.sendMessage(m.chat, { text: `${lenguajeGB['smsAvisoAG']()} ${mid.smsAntiTraba(sender)}`, mentions: [m.sender] }, { quoted: fakemek })
 if (!isBotAdmin) return conn.sendMessage(m.chat, {text: mid.smsAntiTraba2 + `\n${listAdmin}\n\n${lenguajeGB['smsAllAdmin']()}`, mentions: [...groupAdmins.map(v => v.id)] }, {quoted: m})
