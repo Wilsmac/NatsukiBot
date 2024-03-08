@@ -1,3 +1,5 @@
+// by Wilmer ofc https://github.com/Wilsmac
+
 function _0x3937(_0x51f5ef, _0x2ba2dd) {
     const _0x285de8 = _0x22c7();
     return _0x3937 = function (_0x208d35, _0x114951) {
