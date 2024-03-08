@@ -1,3 +1,5 @@
+// by Wilmer ofc https://github.com/Wilsmac
+
 const _0x43634c = _0x2c97;
 function _0x2c97(_0x54ee79, _0x5df17a) {
     const _0x1c3bcb = _0x2a3d();
