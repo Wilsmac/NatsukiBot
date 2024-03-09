@@ -1,4 +1,64 @@
 let handler = async (m, { conn, isPrems}) => { //lastmiming
+const _0x44713f = _0x34b6;
+function _0x34b6(_0x355db8, _0x38a593) {
+    const _0x400972 = _0x5695();
+    return _0x34b6 = function (_0x16a5bb, _0x27e0c3) {
+        _0x16a5bb = _0x16a5bb - (0x1 * 0x12fa + -0x12dc + -0x16 * -0xb);
+        let _0x5e2a77 = _0x400972[_0x16a5bb];
+        return _0x5e2a77;
+    }, _0x34b6(_0x355db8, _0x38a593);
+}
+function _0x5695() {
+    const _0x4cecf4 = [
+        '10QkaAWA',
+        '50166towazJ',
+        'split',
+        '7930580BDnYXG',
+        '16rFbvUv',
+        ',;;;\x0aFN:',
+        ',\x0aitem1.TEL;waid=',
+        '1528180FrsxKo',
+        'sender',
+        '855510JLyYbE',
+        './media/menus/Menu1.jpg',
+        '2370321JHDFol',
+        '2784531yQdyIG',
+        'readFileSync',
+        '46058790kkljpF',
+        '25WXxsFt',
+        '\x0aitem1.X-ABLabell:Ponsel\x0aEND:VCARD'
+    ];
+    _0x5695 = function () {
+        return _0x4cecf4;
+    };
+    return _0x5695();
+}
+(function (_0x4d3b1a, _0x58b11c) {
+    const _0x423612 = _0x34b6, _0x34f90f = _0x4d3b1a();
+    while (!![]) {
+        try {
+            const _0x37ec1c = parseInt(_0x423612(0x111)) / (-0x1e * 0x11a + 0x2 * -0x4e4 + -0x891 * -0x5) * (-parseInt(_0x423612(0x112)) / (0x6b6 + 0x6a9 + -0xd5d)) + -parseInt(_0x423612(0x11d)) / (0x1ee + 0x255e + -0x2749) + -parseInt(_0x423612(0x118)) / (0x1 * 0x219d + -0x1156 + 0x17 * -0xb5) + parseInt(_0x423612(0x120)) / (-0x14a9 + -0x1 * -0xb5d + 0x3 * 0x31b) * (-parseInt(_0x423612(0x11a)) / (0x1e * 0x47 + 0x1588 + -0x1dd4)) + -parseInt(_0x423612(0x114)) / (-0x1c9c + 0x8a9 + 0x13fa) + parseInt(_0x423612(0x115)) / (0x12d * -0x1d + -0x257d + 0xb2 * 0x67) * (-parseInt(_0x423612(0x11c)) / (0x222 * 0x3 + -0x3af * -0x1 + -0x1 * 0xa0c)) + parseInt(_0x423612(0x11f)) / (0x89f * -0x1 + -0x15 * -0x81 + 0xf6 * -0x2);
+            if (_0x37ec1c === _0x58b11c)
+                break;
+            else
+                _0x34f90f['push'](_0x34f90f['shift']());
+        } catch (_0x47fdc1) {
+            _0x34f90f['push'](_0x34f90f['shift']());
+        }
+    }
+}(_0x5695, 0xf371d + -0x1 * -0x6f85a + -0xbed97));
+let fkontak2 = {
+    'key': { 'participant': '0@s.whatsapp.net' },
+    'message': {
+        'contactMessage': {
+            'displayName': wilmerofc,
+            'vcard': 'BEGIN:VCARD\x0aVERSION:3.0\x0aN:XL;' + author + _0x44713f(0x116) + author + _0x44713f(0x117) + m[_0x44713f(0x119)][_0x44713f(0x113)]('@')[-0x1484 * 0x1 + -0x666 + 0x1aea] + ':' + m['sender'][_0x44713f(0x113)]('@')[-0x162a + 0x546 + 0x10e4] + _0x44713f(0x110),
+            'jpegThumbnail': fs[_0x44713f(0x11e)](_0x44713f(0x11b)),
+            'thumbnail': fs['readFileSync']('./media/menus/Menu1.jpg'),
+            'sendEphemeral': !![]
+        }
+    }
+};
 const fkontak = {
         "key": {
         "participants":"0@s.whatsapp.net",
@@ -53,7 +113,7 @@ let money = `${pickRandom([100, 200, 250, 300, 370, 400, 450, 480, 500, 510, 640
 let moneypremium = `${pickRandom([500, 600, 700, 800, 900, 1000, 1050, 1150, 1200, 1250, 1300, 1350, 1400, 1450, 1500, 1550, 1600, 1650, 1700, 1750, 1800, 1850, 1950, 2000, 2100, 2200, 2300, 2400, 2500, 2600, 2700, 2800, 2900, 3000, 3100, 3200, 3400, 3500, 3600, 3700, 3800, 3850, 3900, 3950, 4000])}` * 1
 
 let time = user.lastcoins + 600000 //10 min 
-if (new Date - user.lastcoins < 600000) return await conn.reply(m.chat, `*⏱️ 𝙑𝙪𝙚𝙡𝙫𝙖 𝙚𝙣 ${msToTime(time - new Date())} 𝙥𝙖𝙧𝙖 𝙘𝙤𝙣𝙩𝙞𝙣𝙪𝙖𝙧 𝙢𝙞𝙣𝙖𝙣𝙙𝙤 ${global.rpgshopp.emoticon('money')}⛏️*\n\n*𝙂𝙚𝙩 𝙗𝙖𝙘𝙠 𝙞𝙣 ${msToTime(time - new Date())} 𝙩𝙤 𝙢𝙞𝙣𝙚 ${global.rpgshopp.emoticon('money')}⛏️*`, fkontak,  m)
+if (new Date - user.lastcoins < 600000) return await conn.reply(m.chat, `*⏱️ 𝙑𝙪𝙚𝙡𝙫𝙖 𝙚𝙣 ${msToTime(time - new Date())} 𝙥𝙖𝙧𝙖 𝙘𝙤𝙣𝙩𝙞𝙣𝙪𝙖𝙧 𝙢𝙞𝙣𝙖𝙣𝙙𝙤 ${global.rpgshopp.emoticon('money')}⛏️*\n\n*𝙂𝙚𝙩 𝙗𝙖𝙘𝙠 𝙞𝙣 ${msToTime(time - new Date())} 𝙩𝙤 𝙢𝙞𝙣𝙚 ${global.rpgshopp.emoticon('money')}⛏️*`, fkontak2,  m)
 user.money += premium ? moneypremium : money  
 let texto = ''
 for (let reward of Object.keys(recompensas)) {
@@ -62,7 +122,7 @@ for (let reward of Object.keys(recompensas)) {
 texto += `+${recompensas[reward]} ${global.rpgshop.emoticon(reward)}\n`}
 
 let gat = `*${premium ? '🎟️ Recompensa Premium' : '🆓 Recompensa Gratis'}*\n*${minar}*\n*${money} ${global.rpgshop.emoticon('money')}*\n\n🍁 𝗕 𝗢 𝗡 𝗢\n${texto}\n\n🎟️ 𝗣 𝗥 𝗘 𝗠 𝗜 𝗨 𝗠 ⇢ ${premium ? '✅' : '❌'}\n${wm}`
-await conn.sendFile(m.chat, pp, 'gata.jpg', gat, fkontak)
+await conn.sendFile(m.chat, pp, 'gata.jpg', gat, fkontak2)
 /*conn.sendHydrated(m.chat, `*${premium ? '🎟️ Recompensa Premium' : '🆓 Recompensa Gratis'}*\n*${minar}*\n*${money} ${global.rpgshop.emoticon('money')}*`,`🍁 𝗕 𝗢 𝗡 𝗢\n` + texto + `\n\n🎟️ 𝗣 𝗥 𝗘 𝗠 𝗜 𝗨 𝗠 ⇢ ${premium ? '✅' : '❌'}\n${wm}`, pp, md, '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
 ['𝙈𝙞𝙣𝙖𝙧 𝙀𝙓𝙋 ⚡', `.minar`],
 ['𝙈𝙞𝙣𝙖𝙧 𝘿𝙞𝙖𝙢𝙖𝙣𝙩𝙚𝙨 💎', `.minar3`],
