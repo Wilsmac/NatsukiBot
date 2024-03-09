@@ -1,7 +1,7 @@
 // Wilmer ofc 
 
 
-let handler = m => m
+/*let handler = m => m
 handler.all = async function (m) {
 let fakemek = {key: {participant: "0@s.whatsapp.net","remoteJid": "0@s.whatsapp.net"},"message": {"groupInviteMessage": {"groupJid": "51995386439-1616969743@g.us","inviteCode": "m","groupName": "P", "caption": 'ғᴀɴᴛᴀsʏʙᴏᴛ-MD', 'jpegThumbnail': null}}}
 let ftroli = { key: { participant: '0@s.whatsapp.net' }, message: { orderMessage: { itemCount: wilmerofc, status: 1, surface: 1, message: botdate, orderTitle: author, sellerJid: '0@s.whatsapp.net' }}}
@@ -26,7 +26,7 @@ if (/^Hola|Holi|hola$/i.test(m.text) ) { //sin prefijo
 
 
 
-/*if (/^Buenos días|buenos días|buenos dias|hola, buenos días$/i.test(m.text) ) { //sin prefijo
+if (/^Buenos días|buenos días|buenos dias|hola, buenos días$/i.test(m.text) ) { //sin prefijo
   let teks = `
   ${pickRandom([`*"Comenzar el día orando y dando gracias a dios es a lo que yo llamo un buen amanecer."*`,
                 `*"Mientras empieces el día sonriendo, estás asegurando que será un buen día."*`, 
@@ -41,17 +41,17 @@ if (/^Hola|Holi|hola$/i.test(m.text) ) { //sin prefijo
                 `*"El momento para todo es el ahora. ¡Despiértate y ten un gran día!"*`,
                 `*"No te limites en tu andar guiándote solamente por el camino de los demás, sé emprendedor y ve por donde no hay un camino para comenzar a dejar tus huellas, Buenos Dias"*`])}
   `, fkontak, m)
-}*/
+}
 
 
 
-/*if (/^Mande porno|porno|paja$/i.test(m.text) ) { //sin prefijo 
+if (/^Mande porno|porno|paja$/i.test(m.text) ) { //sin prefijo 
     let teks = `
 ${pickRandom([`no puedo esta contra las política del grupo.😸`, `_uff miren un pajero_`, `_pagame y paso mi pack😏🥵_`, `_que_`, `_que quiere pija dice 🤣_`, `_pasa el pack de tu hermana😏_`, `_mire un gilipolla_`, `_siuuu sexo sexo sexo😈_`, '_callate putito_'])}
 `.trim()
 conn.reply(m.chat, teks, m, { mentions: { mentionedJid: [m.sender] }})
 
-}*/
+}
 
 if (/^reglas|normas|Reglas$/i.test(m.text) ) { //sin prefijo
   conn.reply(m.chat, `╭┅〘 ⚠️ 𝗢𝗯𝗲𝗱𝗲𝗰𝗲 𝗹𝗮𝘀 𝗿𝗲𝗴𝗹𝗮𝘀 ⚠️ 〙*
@@ -64,8 +64,8 @@ if (/^reglas|normas|Reglas$/i.test(m.text) ) { //sin prefijo
 }
 
 
-/*if (/^hola|halo|hello|hi$/i.test(m.text) ) { //sin prefijo 
-     conn.reply(m.chat, `tu nariz contra mis bolas :v`, fkontak, m)*/
+if (/^hola|halo|hello|hi$/i.test(m.text) ) { //sin prefijo 
+     conn.reply(m.chat, `tu nariz contra mis bolas :v`, fkontak, m)
 
  }
 
@@ -96,4 +96,4 @@ export default handler
 
 function pickRandom(list) {
     return list[Math.floor(Math.random() * list.length)]
-}
+}*/
