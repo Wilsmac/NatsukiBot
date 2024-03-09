@@ -227,6 +227,16 @@ throw false
 }}
 chat.antiTelegram = isEnable 
 break
+ bot.antiPrivate = isEnable;
+      break;
+    case 'modejadibot':
+      isAll = true;
+      if (!isROwner) {
+        global.dfail('rowner', m, conn);
+        throw false;
+      }
+      bot.modejadibot = isEnable;
+      break;
 
 case 'antifacebook': case 'antifb': case 'antifbook':
 if (m.isGroup) {
