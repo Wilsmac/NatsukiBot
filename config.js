@@ -149,7 +149,7 @@ global.asistencia = 'https://wa.me/message/C45GXBEFTPONE1' //Contacto
 global.bot = 'wa.me/50250101139'
 
 global.nna = 'https://www.atom.bio/Wilsmac/' // Cuentas
-global.nn2 = 'https://t.me/' // Grupo tg GataBot
+global.nn2 = 'https://t.me/' // 
 global.nna2 = 'https://chat.whatsapp.com/EAxOACyzjB6JhkRvQvw4zl' //Anime y social 
 global.nn = 'https://chat.whatsapp.com/CPASQk25rExCIEdlkrOfBz' // FantasyBot-MD 
 global.nnn = 'https://chat.whatsapp.com/CPASQk25rExCIEdlkrOfBz' // FantasyBot-MD 
