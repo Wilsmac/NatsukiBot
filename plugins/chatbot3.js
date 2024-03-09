@@ -46,8 +46,8 @@ _(Para ver el menu audios)_`
 await conn.reply(m.chat, menu, a, { contextInfo: { externalAdReply: {title: 'Hola', body: saludo, sourceUrl: ig, thumbnail: await (await fetch(pp)).buffer() }}})
 
 } catch {
-conn.reply(m.chat, `* Ocurrió un fallo*`, fkontak, m)
-console.log(e)
+console.log(`❗❗ ${lenguajeGB['smsMensError2']()} ${usedPrefix + command} ❗❗`)
+console.log(e)}}
 }}
 handler.help = ['prueba90']
 handler.tags = ['bot']
