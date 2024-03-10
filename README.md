@@ -11,7 +11,7 @@
 </p>
 
 <p align="center">
-<a href="https://github.com/Wilsmac/MakeBot-MD1"><img title="FantasyBot-MD" src="https://img.shields.io/badge/  🌺 ESTÁ ES UNA VERSIÓN SIMPLIFICADA DE GataBotLite-MD 🌺 -red?colorA=000000&colorB=000000&style=for-the-badge"></a>
+<a href="https://github.com/Wilsmac/MakeBot-MD1"><img title="FantasyBot-MD" src="https://img.shields.io/badge/  𝐂𝐎𝐌𝐏𝐀𝐓𝐈𝐁𝐋𝐄 𝐂𝐎𝐊 𝐋𝐀𝐒 𝐕𝐄𝐑𝐒𝐈𝐎𝐍𝐄𝐒 𝐌𝐔𝐋𝐓𝐈 𝐃𝐈𝐒𝐏𝐎𝐒𝐈𝐓𝐈𝐕𝐎𝐒 𝐃𝐄 𝐖𝐇𝐀𝐓𝐒𝐀𝐏𝐏 -red?colorA=000000&colorB=000000&style=for-the-badge"></a>
 </p>
 
 <a href="https://github.com/Wilsmac/FantasyBot-MD-v1/watchers"><img title="espectadores" src="https://img.shields.io/github/watchers/Wilsmac/FantasyBot-MD-v1?label=Espectadores&style=social"></a>
