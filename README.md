@@ -105,9 +105,10 @@ npm update
 npm start
 ```
 
-• ### usar FantasyBot-MD 24/7
+## usar FantasyBot-MD 24/7
 ```bash
-termux-wake-lock && npm i -g pm2 && pm2 start index.js && pm2 save && pm2 logs```
+termux-wake-lock && npm i -g pm2 && pm2 start index.js && pm2 save && pm2 logs
+```
 
 <p align="center"> 
 <a href="https://github.com/Wilsmac"><img src="http://readme-typing-svg.herokuapp.com?font=mono&size=15&duration=4000&color=[00FFFF]&center=falso&vCenter=falso&lines=♥️✨++;en+caso+de+detenerse+en+termux" height="150px"></a> 
