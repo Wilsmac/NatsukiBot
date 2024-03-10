@@ -18,5 +18,4 @@ conn.fakeReply(m.chat, sn, '0@s.whatsapp.net', 'Te amo', 'status@broadcast')
 handler.help = ['', 'ister'].map(v => 'wilmer' + v + ' Que haces?')
 handler.tags = ['rg']
 handler.command = /^unreg(ister)|wilmer|ns?$/i
-handler.register = true
 export default handler
