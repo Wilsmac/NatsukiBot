@@ -25,7 +25,70 @@ const items = {
         money: { kaleng: 2 },
         tiketcoin: { joincount: 3 },
         stamina: { potion: 2 },
-   
+       potion: { money: 550 },
+        aqua: { botol: 2 },
+        trash: { eleksirb: 5 },
+        wood: { string: 5 },
+        rock: { kardus: 6 },
+        batu: { coal: 25 },
+        string: { kaleng: 4 },
+        iron: { kyubi: 20 },
+        coal: { trash: 20 },
+        botol: { wood: 4 },
+        kaleng: { potion: 2 },
+        kardus: { trash: 20 },
+        
+        eleksirb: { healtmonster: 2},
+        emasbatang: { kayu: 30},
+        emasbiasa: { diamond: 18 },
+        rubah: { berlian: 40 },
+        sampah: { trash: 70 },
+        serigala: { kaleng: 125 },
+        kayu: { wood: 40 },
+        sword: { gold: 2 },
+        umpan: { aqua: 2 },
+        healtmonster: { kyubi: 19 },
+        pancingan: { trash: user.pancingan == 0 ? 5 : '' || user.pancingan == 1 ? 10 : '' || user.pancingan == 2 ? 15 : '' || user.pancingan == 3 ? 20 : '' || user.pancingan >= 4 ? 25 : '' },
+        emas: { berlian: 20 },
+        pancing: { tiketcoin: user.pancing == 0 ? 1 : '' || user.pancing == 1 ? 2 : '' || user.pancing == 2 ? 3 : '' || user.pancing == 3 ? 4 : '' || user.pancing >= 4 ? 7 : '' },
+        
+        common: { aqua: 40 },
+        uncoommon: { kyubi: 55 },
+        mythic: { tiketcoin: 17 },
+        pet: { kayu: 45 },
+        gardenboxs: { healtmonster: 25 },
+        legendary: { emerald: 75 },
+        
+        anggur: { emerald: 3 },
+        apel: { emerald: 3 },
+        jeruk: { emerald: 3 },
+        mangga: { emerald: 3 },
+        pisang: { emerald: 3 },
+        
+        bibitanggur: { aqua: 15 },
+        bibitapel: { aqua: 15 },
+        bibitjeruk: { aqua: 15 },
+        bibitmangga: { aqua: 15 },
+        bibitpisang: { aqua: 15 },
+        
+        centaur: { limit:45 },
+        griffin: { limit: 55 },
+        kucing: { limit: 70 },
+        naga: { limit: 85 },
+        fox: { limit: 100 },
+        kuda: { limit: 125 },
+        phonix: { limit: 140 },
+        wolf: { limit: 155 },
+        
+        petFood: { tiketcoin: 4 },
+        makanancentaur: { tiketcoin: 6 },
+        makanangriffin: { tiketcoin: 8 },
+        makanankyubi: { tiketcoin: 10 },
+        makanannaga: { tiketcoin: 12 },
+        makananpet: { tiketcoin: 14 },
+        makananphonix: { tiketcoin: 16 }
+    },
+
     sell: {
         exp: { trash: pickRandom([1, 1, 2]) },
         limit: { eleksirb: pickRandom([1, 4, 1]) },
@@ -37,6 +100,67 @@ const items = {
         gold: { exp: pickRandom([1, 20, 800]) },
         money: { aqua: pickRandom([1, 1, 2]) },
         tiketcoin: { kyubi: pickRandom([1, 1, 2]) },
+        potion: { botol: pickRandom([1, 1, 3]) },
+        aqua: { kaleng: pickRandom([1, 1, 2]) },
+        trash: { umpan: pickRandom([1, 1, 2]) },
+        wood: { coal: pickRandom([1, 1, 2]) },
+        rock: { string: pickRandom([1, 1, 2]) },
+        batu: { joincount: pickRandom([1, 1, 2]) },
+        string: { kardus: pickRandom([1, 1, 2]) },
+        iron: { healtmonster: pickRandom([1, 1, 3]) },
+        coal: { money: pickRandom([1, 3, 30]) },
+        botol: { aqua: pickRandom([1, 1, 2]) },
+        kaleng: { batu: pickRandom([1, 1, 2]) },
+        kardus: { pancingan: pickRandom([1, 1, 2]) },
+        
+        eleksirb: { rubah: pickRandom([1, 1, 2]) },
+        emasbatang: { emasbiasa: pickRandom([1, 1, 3]) },
+        emasbiasa: { potion: pickRandom([1, 1, 2]) },
+        rubah: { petFood: pickRandom([1, 1, 4]) },
+        sampah: { trash: pickRandom([1, 2, 20]) },
+        serigala: { petFood: pickRandom([1, 2, 22]) },
+        kayu: { wood: pickRandom([1, 3, 5]) },
+        sword: { berlian: pickRandom([1, 1, 2]) },
+        umpan: { exp: pickRandom([1, 5, 40, 0]) },
+        healtmonster: { diamond: pickRandom([1, 1, 2]) },
+        pancingan: { money: pickRandom([1, 10, 30]) },
+        emas: { berlian: pickRandom([1, 1, 3]) },
+        
+        common: { limit: pickRandom([1, 3, 10]) },
+        uncoommon: { diamond: pickRandom([1, 4, 15]) },
+        mythic: { berlian: pickRandom([1, 3, 13]) },
+        pet: { money: pickRandom([1, 500, 1500]) },
+        gardenboxs: { gold: pickRandom([1, 1, 3]) },
+        legendary: { emerald: pickRandom([1, 4, 20]) },
+        
+        anggur: { joincount: pickRandom([1, 1, 2]) },
+        apel: { tiketcoin: pickRandom([1, 1, 2]) },
+        jeruk: { berlian: pickRandom([1, 1, 2]) },
+        mangga: { gold: pickRandom([1, 1, 2]) },
+        pisang: { diamond: pickRandom([1, 1, 2]) },
+        
+        bibitanggur: { potion: pickRandom([1, 1, 2]) },
+        bibitapel: { umpan: pickRandom([1, 1, 3]) },
+        bibitjeruk: { healtmonster: pickRandom([1, 1, 2]) },
+        bibitmangga: { pancingan: pickRandom([1, 1, 3]) },
+        bibitpisang: { wood: pickRandom([1, 2, 4]) },
+        
+        centaur: { anggur: pickRandom([1, 3, 5]) },
+        griffin: { apel: pickRandom([1, 2, 4]) },
+        kucing: { jeruk: pickRandom([1, 3, 6]) },
+        naga: { mangga: pickRandom([1, 4, 8]) },
+        fox: { pisang: pickRandom([1, 5, 9]) },
+        kuda: { anggur: pickRandom([1, 6, 10]) },
+        phonix: { apel: pickRandom([1, 7, 12]) },
+        wolf: { jeruk: pickRandom([1, 8, 15]) },
+        
+        petFood: { money: pickRandom([1, 400, 1400]) },
+        makanancentaur: { diamond: pickRandom([1, 1, 2]) },
+        makanangriffin: { diamond: pickRandom([1, 1, 3]) },
+        makanankyubi: { diamond: pickRandom([1, 2, 4]) },
+        makanannaga: { diamond: pickRandom([1, 2, 4]) },
+        makananpet: { diamond: pickRandom([1, 3, 5]) },
+        makananphonix: { diamond: pickRandom([1, 3, 5]) },
     }
 }   
    
@@ -56,7 +180,7 @@ ${htki} *VENDER : SELL* ${htka}
 )
     footer = (command.toLowerCase() == 'buy' ?
 (`
-🔖 𝙇𝙄𝙎𝙏𝘼 𝘿𝙀 𝘼𝙍𝙏𝙄𝘾𝙐𝙇𝙊𝙎 : 𝙇𝙄𝙎𝙏 𝙊𝙁 𝘼𝙍𝙏𝙄𝘾𝙇𝙀𝙎
+🔖 𝙇𝙄𝙎𝙏𝘼 𝘿𝙀 𝘼𝙍𝙏𝙄𝘾𝙐𝙇𝙊𝙎 
 ${Object.keys(listItems).map((v) => {
         let paymentMethod = Object.keys(listItems[v]).find(v => v in user) 
         return `*» 1 ⇢ ${global.rpgshop.emoticon(v)}*\n*Cuesta:* ${listItems[v][paymentMethod]} ${global.rpgshop.emoticon(paymentMethod)}\n*Compra* ${global.rpgshopp.emoticon(v)} Usando ${usedPrefix + command} ${v} *Cantidad*\n*---------------------------------------------------*\n`.trim()
