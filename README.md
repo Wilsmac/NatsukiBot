@@ -11,7 +11,7 @@
 
 <p align="center">
 <a href="#"><img title="FantasyBot-MD" src="https://img.shields.io/badge/Gracias por sus preferencia-red?colorA=%F77F48FF&colorB=%F77F48FF&style=for-the-badge"></a> 
-<a href="#"><img title="FantasyBot-MD" src="https://img.shields.io/badge/COMPATIBLE CON LAS VERSIONES MULTI DISPOSITIVOS DE WHATSAPP-red?colorA=%F77F48FF&colorB=%F77F48FF&style=for-the-badge"></a>
+<a href="#"><img title="FantasyBot-MD" src="https://img.shields.io/badge/COMPATIBLE CON LAS VERSIONES MULTI DISPOSITIVOS DE WHATSAPP-red?colorA=%000000&colorB=%000000&style=for-the-badge"></a>
 </p>
 
 <a href="https://github.com/Wilsmac/FantasyBot-MD-v1/watchers"><img title="espectadores" src="https://img.shields.io/github/watchers/Wilsmac/FantasyBot-MD-v1?label=Espectadores&style=social"></a>
