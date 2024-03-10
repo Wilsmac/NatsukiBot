@@ -10,9 +10,9 @@ try {
 const yt_play = await search(args.join(" "))
 let additionalText = ''
 if (command === 'play') { 
-additionalText = '𝘼𝙐𝘿𝙄𝙊 🔊'
+additionalText = '𝐀𝐮𝐝𝐢𝐨 '
 } else if (command === 'play2') {
-additionalText = '𝙑𝙄𝘿𝙀𝙊 🎥'}
+additionalText = '𝐕𝐢𝐝𝐞𝐨 '}
 let captionvid = `*┈┈┈┈『${vs}』┈┈┈┈*
     
 🌺 𝑻𝑰𝑻𝑼𝑳𝑶
@@ -36,7 +36,7 @@ await conn.sendMessage(m.chat, {
 text: captionvid,
 contextInfo: {
 externalAdReply: {
-title: `en un momento envío su ${additionalText}`,
+title: `𝐄𝐧 𝐮𝐧 𝐦𝐨𝐦𝐞𝐧𝐭𝐨 𝐞𝐧𝐯𝐢𝐨 𝐬𝐮: ${additionalText}`,
 body: packname,
 thumbnailUrl: yt_play[0].thumbnail, 
 mediaType: 1,
