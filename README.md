@@ -7,11 +7,11 @@
 </p>
 
 <p align="center">
-<a href="https://github.com/Wilsmac/FantasyBot-MD"><img title="MakeBot-MD" src="https://img.shields.io/badge/  𝑺𝑰 𝑻𝑬 𝑨𝑮𝑹𝑨𝑫𝑨 𝑬𝑳.𝑹𝑬𝑷𝑶𝑺𝑰𝑻𝑶𝑹𝑰𝑶 𝑨𝑷𝑶𝒀𝑨𝑴𝑬 𝑪𝑶𝑵 𝑼𝑵𝑨🌟- ¡𝑮𝑹𝑨𝑪𝑰𝑨𝑺! -red?colorA=%233CCED8&colorA=%233CCED8&style=for-the-badge"></a>
-</p>
-
+<a href="#"><img title="GataBot-MD" src="https://img.shields.io/badge/𝐒𝐈 𝐓𝐄 𝐀𝐆𝐑𝐀𝐃𝐀 𝐄𝐋 𝐑𝐄𝐏𝐎𝐒𝐈𝐓𝐎𝐑𝐈𝐎 𝐌𝐄 𝐀𝐏𝐎𝐘𝐀𝐑𝐈𝐀𝐒 𝐂𝐎𝐍 𝐔𝐍𝐀 🌟-¡GRACIAS! -red?colorA=%255ff0000&colorB=%23017e40&style=for-the-badge"></a> 
+>
 <p align="center">
-<a href="https://github.com/Wilsmac/MakeBot-MD1"><img title="FantasyBot-MD" src="https://img.shields.io/badge/  𝐂𝐎𝐌𝐏𝐀𝐓𝐈𝐁𝐋𝐄 𝐂𝐎𝐊 𝐋𝐀𝐒 𝐕𝐄𝐑𝐒𝐈𝐎𝐍𝐄𝐒 𝐌𝐔𝐋𝐓𝐈 𝐃𝐈𝐒𝐏𝐎𝐒𝐈𝐓𝐈𝐕𝐎𝐒 𝐃𝐄 𝐖𝐇𝐀𝐓𝐒𝐀𝐏𝐏 -red?colorA=000000&colorB=000000&style=for-the-badge"></a>
+<a href="https://github.com/Wilsmac"><img title="FantasyBot-MD"src="https://img.shields.io/badge/𝗚𝗥𝗔𝗖𝗜𝗔𝗦 𝗣𝗢𝗥 𝗦𝗨 𝗣𝗥𝗘𝗙𝗘𝗥𝗘𝗡𝗖𝗜𝗔.-red?colorA=000000&colorB=000000&style=for-the-badge"></a> 
+<a href="#"><img title="FantasyBot-MD" src="https://img.shields.io/badge/𝐂𝐎𝐌𝐏𝐀𝐓𝐈𝐁𝐋𝐄 𝐂𝐎𝐍 𝐋𝐀𝐒 𝐕𝐄𝐑𝐒𝐈𝐎𝐍𝐄𝐒 𝐌𝐔𝐋𝐓𝐈 𝐃𝐈𝐒𝐏𝐎𝐒𝐈𝐓𝐈𝐕𝐎𝐒 𝐃𝐄 𝐖𝐇𝐀𝐓𝐒𝐀𝐏𝐏-red?colorA=000000&colorB=000000&style=for-the-badge"></a>
 </p>
 
 <a href="https://github.com/Wilsmac/FantasyBot-MD-v1/watchers"><img title="espectadores" src="https://img.shields.io/github/watchers/Wilsmac/FantasyBot-MD-v1?label=Espectadores&style=social"></a>
