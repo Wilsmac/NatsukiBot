@@ -1,7 +1,8 @@
 ------------------
 > **aviso**: 𝑬𝒔𝒕𝒆 𝒃𝒐𝒕 𝒆𝒔 𝒖𝒏𝒂 𝒏𝒖𝒆𝒗𝒂 𝒗𝒆𝒓𝒔𝒊𝒐𝒏 𝒅𝒆 𝒇𝒂𝒏𝒕𝒂𝒔𝒚𝑩𝒐𝒕-𝑴𝑫, 𝑺𝒆𝒓𝒂 𝒎𝒆𝒋𝒐𝒓𝒂𝒅𝒐 𝒄𝒐𝒏 𝒆𝒍 𝒕𝒊𝒆𝒎𝒑𝒐, 𝒕𝒆𝒏𝒅𝒓𝒂 𝒎𝒂𝒏𝒕𝒆𝒏𝒊𝒎𝒊𝒆𝒏𝒕𝒐, 𝒔𝒆𝒓𝒂 𝒂𝒄𝒕𝒊𝒗𝒐, 𝒕𝒐𝒅𝒐 𝒆𝒓𝒓𝒐𝒓 𝒅𝒊𝒈𝒂𝒎𝒆𝒍𝒐 𝒆𝒏 𝒘𝒉𝒂𝒕𝒔𝒂𝒑𝒑, 𝒈𝒓𝒂𝒄𝒊𝒂𝒔 𝒑𝒐𝒓 𝒔𝒖 𝒑𝒓𝒆𝒇𝒆𝒓𝒆𝒏𝒄𝒊𝒂 𝒒𝒖𝒆𝒓𝒊𝒅𝒐𝒔 𝒖𝒔𝒖𝒂𝒓𝒊𝒐𝒔.
 ------------------
-
+<a href="https://github.com/Wilsmac/FantasyBot-MD-v1/watchers"><img title="espectadores" src="https://img.shields.io/github/watchers/Wilsmac/FantasyBot-MD-v1?label=Watching&style=social"></a>
+</p>
 
 </p>
 <p align="center"><img src="https://profile-counter.glitch.me/{FantasyBot-MD}/count.svg" alt="Wilsmac :: Visitor's Count" /></p>
