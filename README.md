@@ -30,7 +30,7 @@
 
 <a href="https://whatsapp.com/channel/0029VaCUlPX0LKZAlP10pC43" target="white"><img src="https://img.shields.io/badge/Canal- oficial del bot-000000?style=for-the-badge&logo=whatsapp&logoColor=black" /></a>
 <a href="https://chat.whatsapp.com/EAxOACyzjB6JhkRvQvw4zl" target="white"><img src="https://img.shields.io/badge/Grupo-OfiCIAL DEL BOT-000000?style=for-the-badge&logo=whatsapp&logoColor=black" /></a>
-<a href="https://chat.whatsapp.com/GK9jQ7sY7XRGxhu6UoTOle" target="blank"><img src="https://img.shields.io/badge/grupo de soporté-✨-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" /></a>
+<a href="https://chat.whatsapp.com/HHRk7p4QDzdCP9oYHS1Bzq" target="blank"><img src="https://img.shields.io/badge/grupo- de soporté-000000?style=for-the-badge&logo=whatsapp&logoColor=white" /></a>
 
 > LOS NUMEROS NO SON BOTS Y EN EL GRUPO NO SE PERMITEN NUMEROS QUE SEAN BOTS
 
