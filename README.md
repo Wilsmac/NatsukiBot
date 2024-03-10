@@ -6,6 +6,14 @@
 <img src="https://tinyurl.com/27bt4rga" alt="FantasyBot-MD-v1" width="900"/>
 </p>
 
+<p align="center">
+<a href="https://github.com/Wilsmac/FantasyBot-MD"><img title="MakeBot-MD" src="https://img.shields.io/badge/  𝑺𝑰 𝑻𝑬 𝑨𝑮𝑹𝑨𝑫𝑨 𝑬𝑳.𝑹𝑬𝑷𝑶𝑺𝑰𝑻𝑶𝑹𝑰𝑶 𝑨𝑷𝑶𝒀𝑨𝑴𝑬 𝑪𝑶𝑵 𝑼𝑵𝑨🌟- ¡𝑮𝑹𝑨𝑪𝑰𝑨𝑺! -red?colorA=%233CCED8&colorA=%233CCED8&style=for-the-badge"></a>
+</p>
+
+<p align="center">
+<a href="https://github.com/Wilsmac/MakeBot-MD1"><img title="FantasyBot-MD" src="https://img.shields.io/badge/  🌺 ESTÁ ES UNA VERSIÓN SIMPLIFICADA DE GataBotLite-MD 🌺 -red?colorA=%233CCED8&colorB=%233CCED8&style=for-the-badge"></a>
+</p>
+
 <a href="https://github.com/Wilsmac/FantasyBot-MD-v1/watchers"><img title="espectadores" src="https://img.shields.io/github/watchers/Wilsmac/FantasyBot-MD-v1?label=Espectadores&style=social"></a>
 </p>
 
