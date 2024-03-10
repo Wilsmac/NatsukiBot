@@ -36,7 +36,7 @@ await conn.sendMessage(m.chat, {
 text: captionvid,
 contextInfo: {
 externalAdReply: {
-title: "en un momento envío su ${additionalText}",
+title: `en un momento envío su ${additionalText}`,
 body: packname,
 thumbnailUrl: yt_play[0].thumbnail, 
 mediaType: 1,
