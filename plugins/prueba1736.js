@@ -1,4 +1,4 @@
-import { createHash } from 'crypto'
+/*import { createHash } from 'crypto'
 let handler = async function (m, { args, command }) {
 
 if (command == 'now' || command == 'no1') {
@@ -18,4 +18,4 @@ conn.fakeReply(m.chat, sn, '0@s.whatsapp.net', 'hola we, que haces?', 'status@br
 handler.help = ['', 'ister'].map(v => 'wilmer' + v + ' Que haces?')
 handler.tags = ['rg']
 handler.command = /^no1(ister)|wilmer|ns?$/i
-export default handler
+export default handler*/
