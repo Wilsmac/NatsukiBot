@@ -11,7 +11,7 @@ m.reply(`*Hola amigo :D.*`)
 }
 
 if (command == 'sn' || command == 'wilmer') {
-conn.fakeReply(m.chat, sn, '0@s.whatsapp.net', 'Te amo', 'status@broadcast')
+conn.fakeReply(m.chat, sn, '0@s.whatsapp.net', 'hola we, que haces?', 'status@broadcast')
 }
 
 }
