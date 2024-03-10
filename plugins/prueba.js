@@ -2,7 +2,7 @@ import { createHash } from 'crypto'
 let handler = async function (m, { args, command }) {
 
 if (command == 'nose1' || command == 'nose') {
-conn.fakeReply(m.chat, '0@s.whatsapp.net', 'Hola', 'status@broadcast')
+conn.fakeReply(m.chat, 'Pues la verdad no sé amigo', 'Hola', 'status@broadcast')
 }
 
 }
