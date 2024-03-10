@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-<a href="#"><img title="GataBot-MD" src="https://img.shields.io/badge/SI TE AGRADA EL REPOSITORIO APOYAME CON UNA 🌟 ¡GRACIAS! -red?colorA=%000000&colorB=%000000&style=for-the-badge"></a>  
+<a href="#"><img title="GataBot-MD" src="https://img.shields.io/badge/SI TE AGRADA EL REPOSITORIO APOYAME CON UNA 🌟 ¡GRACIAS! -red?colorA=%000000&colorB=%23017e40&style=for-the-badge"></a>  
 
 <p align="center">
 <a href="#"><img title="FantasyBot-MD" src="https://img.shields.io/badge/Gracias por sus preferencia-red?colorA=%F77F48FF&colorB=%F77F48FF&style=for-the-badge"></a> 
