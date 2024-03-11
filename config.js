@@ -15,7 +15,8 @@ import { en, es, id, ar, pt } from "./lib/idiomas/total-idiomas.js"
 global.owner = [
 ["50250101139", 'Wilmer', true], //FantasyBot-MD
 ["50258115623"], 
-["51996416792"]
+["51996416792"],
+["59178232529"]
 ]
 
 global.mods = []
