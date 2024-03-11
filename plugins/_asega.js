@@ -1,4 +1,4 @@
-var handler = async (m, { conn, usedPrefix, text }) => {
+/*var handler = async (m, { conn, usedPrefix, text }) => {
 
 let { key } = await conn.sendMessage(m.chat, { text: 'Ahora te voy a hacer una paja' }, { quoted: m })
 const array = [
@@ -18,4 +18,4 @@ handler.command = /^(sega|sierra|fap)$/i;
 
 //handler.register = true
 
-export default handler
+export default handler*/
