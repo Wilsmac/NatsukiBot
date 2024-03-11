@@ -73,36 +73,18 @@ apt update -y && yes | apt upgrade && pkg install -y bash wget mpv && wget -O - 
 
 - ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 ```
-cd && termux-setup-storage
+termux-setup-storage
 ```
 
 ```
-apt-get update -y && apt-get upgrade -y
+git clone https://github.com/Wilsmac/FantasyBot-MD-v1 && cd FantasyBot-MD-v1
 ```
 
 ```
-pkg install -y git nodejs ffmpeg imagemagick && pkg install yarn 
+yarn install && npm install
 ```
 
 ```
-git clone https://github.com/Wilsmac/FantasyBot-MD-v1
-```
-```bash
-cd FantasyBot-MD-v1
-```
-```
-yarn install
-```
-
-```bash
-npm install
-```
-
-```bash
-npm update
-```
-
-```bash
 npm start
 ```
 
