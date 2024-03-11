@@ -3,7 +3,7 @@
 ------------------
 
 <p align="center">
-<img src="https://telegra.ph/file/e0fac4b2ba848c6d8f5a4.mp4" alt="FantasyBot-MD-v1" width="900"/>
+<img src="https://tinyurl.com/27bt4rga" alt="FantasyBot-MD-v1" width="900"/>
 </p>
 
 <p align="center">
