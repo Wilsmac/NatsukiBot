@@ -138,6 +138,7 @@ global.vs = "1.7.0"
 global.vsJB = "2.5 (Beta)"
 global.gt = "𝑭𝒂𝒏𝒕𝒂𝒔𝒚𝑩𝒐𝒕-𝑴𝑫"
 
+global.canalofc = "https://whatsapp.com/channel/0029VaCUlPX0LKZAlP10pC43"
 global.yt = "https://youtube.com/@wilmer.oficial"
 global.yt2 = "https://www.youtube.com/watch?v=Ko019wvu2Tc&t=71s"
 global.ig = "https://www.instagram.com/cmwilmer4"
