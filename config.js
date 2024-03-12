@@ -233,7 +233,7 @@ global.img11 = 'https://telegra.ph/file/418da430e42952c392751.jpg'
 global.img12 = 'https://telegra.ph/file/418da430e42952c392751.jpg'
 global.img13 = 'https://i.imgur.com/pCfFOgw.jpeg'
 global.img14 = 'https://telegra.ph/file/418da430e42952c392751.jpg'
-global.img15 = 'hhttps://telegra.ph/file/418da430e42952c392751.jpg'
+global.img15 = 'https://telegra.ph/file/418da430e42952c392751.jpg'
 
 global.img16 = 'https://telegra.ph/file/6114942024c7658478830.jpg' //+18
 
