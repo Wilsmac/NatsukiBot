@@ -31,9 +31,9 @@
 <a href="https://whatsapp.com/channel/0029VaCUlPX0LKZAlP10pC43" target="white"><img src="https://img.shields.io/badge/Canal- oficial del bot-000000?style=for-the-badge&logo=whatsapp&logoColor=black" /></a>
 <a href="https://chat.whatsapp.com/EAxOACyzjB6JhkRvQvw4zl" target="white"><img src="https://img.shields.io/badge/Grupo-OfiCIAL DEL BOT-000000?style=for-the-badge&logo=whatsapp&logoColor=black" /></a>
 <a href="https://chat.whatsapp.com/HHRk7p4QDzdCP9oYHS1Bzq" target="blank"><img src="https://img.shields.io/badge/grupo- de soporté-000000?style=for-the-badge&logo=whatsapp&logoColor=white" /></a>
-
-> LOS NUMEROS NO SON BOTS Y EN EL GRUPO NO SE PERMITEN NUMEROS QUE SEAN BOTS
-
+--------------------------
+> LOS NUMEROS QUE NO SEAN BOTS SE FANTASY NO SE ADNITEN POR LO TANTO SERÁN ELIMINADOS.
+--------------------------
 <p align="center"> 
 <a href="https://github.com/Wilsmac"><img src="http://readme-typing-svg.herokuapp.com?font=mono&size=15&duration=4000&color=[00FFFF]&center=falso&vCenter=falso&lines=𝑭𝒂𝒏𝒕𝒂𝒔𝒚𝑩𝒐𝒕-𝑴𝑫++;𝐵𝑜𝑡𝑠+𝑂𝑓𝑖𝑐𝑎𝑙𝑒𝑠+𝑑𝑒" height="50px"></a> 
 </p>
