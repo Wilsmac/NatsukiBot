@@ -44,7 +44,7 @@ curreyCode: 'IDR',
 totalCurrencyCode: '>〰<',
 totalAmount1000: '1000000',
 sellerJid: 'https://github.com/GataNina-Li/GataBot-MD',
-thumbnail: fs.readFileSync('./src/avatar_contact.png')
+thumbnail: 'https://tinyurl.com/2boal3cn'
 }}, {contextInfo: null, quoted: m})
 conn.relayWAMessage(prep)
 //conn.sendMessage(m.chat, `${teks}`, MessageType.text, rtimebro)
