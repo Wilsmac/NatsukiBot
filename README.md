@@ -50,8 +50,6 @@
 
  <a href="https://github.com/Wilsmac/FantasyBot-MD-v1/fork" target="black"><img src="https://img.shields.io/badge/♥️-clona_el_repositorio-000000?style=for-the-badge&logo=GitHub&logoColor=black" /></a>
 
-<a href="https://github.com/Wilsmac/FantasyBot-MD-v1" target="black"><img src="https://img.shields.io/badge/♥️-clona_el_repositorio-000000?style=for-the-badge&logo=Termux&logoColor=black" /></a>
-
 <a href="https://github.com/Wilsmac/FantasyBot-MD-v1/blob/main/config.js" target="black"><img src="https://img.shields.io/badge/♥️-Cambiar el owner del bot-000000?style=for-the-badge&logo=GitHub&logoColor=black" /></a>
 
 <p align="center"> 
