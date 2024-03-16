@@ -1,7 +1,7 @@
 import {search, download} from 'aptoide-scraper';
-const handler = async (m, {conn, usedPrefix: prefix, command, text}) => {
- if (!text) throw `${lenguajeGB['smsAvisoMG']()} *${mid.smsApk}*`;
-  try {    
+const handler = async (m, {conn, usedPrefix, command, text}) => {
+if (!text) throw `${lenguajeGB['smsAvisoMG']()} ${mid.smsApk}`;
+try {    
 const searchA = await search(text);
 const data5 = await download(searchA[0].id);
 let response = `${eg}┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈\n┃💫 ${mid.name}: ${data5.name}\n┃📦 𝙋𝘼𝘾𝙆𝘼𝙂𝙀: ${data5.package}\n┃🕒 ${mid.smsApk2}: ${data5.lastup}\n┃💪 ${mid.smsYT11} ${data5.size}\n┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈\n┃ ${mid.smsApk3} 🚀🚀🚀`
@@ -13,6 +13,7 @@ await conn.sendMessage(m.chat, {document: {url: data5.dllink}, mimetype: 'applic
 await conn.reply(m.chat, `${lenguajeGB['smsMalError3']()}#report ${lenguajeGB['smsMensError2']()} ${usedPrefix + command}\n\n${wm}`, m)
 console.log(`❗❗ ${lenguajeGB['smsMensError2']()} ${usedPrefix + command} ❗❗`)
 console.log(e)
+handler.limit = false
 }};
 handler.command = /^(apkmod|apk|modapk|dapk2|aptoide|aptoidedl)$/i;
 handler.register = true
