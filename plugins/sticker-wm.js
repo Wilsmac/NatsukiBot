@@ -20,5 +20,5 @@ else throw '╰⊱❗️⊱ *𝙇𝙊 𝙐𝙎𝙊́ 𝙈𝘼𝙇 | 𝙐𝙎𝙀
 handler.help = ['wm <packname>|<author>']
 handler.tags = ['sticker']
 handler.command = /^robar|wm$/i
-handler.rowner = true
+//handler.rowner = true
 export default handler
