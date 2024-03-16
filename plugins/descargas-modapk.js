@@ -16,6 +16,6 @@ console.log(e)
 handler.limit = false
 }};
 handler.command = /^(apkmod|apk|modapk|dapk2|aptoide|aptoidedl)$/i;
-handler.register = true
+//handler.register = true
 handler.limit = 2
 export default handler;
