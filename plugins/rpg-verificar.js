@@ -1,4 +1,4 @@
-//CÓDIGO CREADO POR GataNina-Li : https://github.com/GataNina-Li 
+
 import { createHash } from 'crypto'
 let nombre = 0, edad = 0, genero = 0, bio = 0, identidad = 0, pasatiempo = 0, registro, _registro, fecha, hora, tiempo, registrando
 let pas1 = 0, pas2 = 0, pas3 = 0, pas4 = 0, pas5 = 0  
@@ -55,7 +55,7 @@ conn.reply(m.chat, `*SU TIEMPO DE REGISTRO HA TERMINADO!!*\n\n_Si no continúa e
 if (user.registered === true) return conn.reply(m.chat, `${lenguajeGB['smsAvisoIIG']()}*YA ESTÁ REGISTRADO!!*\n*SI QUIERE ANULAR SU REGISTRO, USE ESTE COMANDO*\n*${usedPrefix}unreg numero de serie*\n\n*SI NO RECUERDA SU NÚMERO DE SERIE, USE ESTE COMANDO*\n*${usedPrefix}myns*`, fkontak, m)	
 
 if (command == 'verificar' || command == 'verify' || command == 'register' || command == 'reg' || command == 'registrar') {
-await conn.reply(m.chat, `*ESCRIBA ${usedPrefix}verificar nombre.edad*\n*luego ${usedPrefix}finalizar para hacer un registro rápido.*`, fkontak, m)
+await conn.reply(m.chat, `*ESCRIBA ${usedPrefix}verificar nombre.edad*\n*luego\n\n${usedPrefix}finalizar para hacer un registro rápido.*`, fkontak, m)
 }
 
 if (command == 'reg1') {
