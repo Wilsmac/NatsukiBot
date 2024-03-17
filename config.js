@@ -28,36 +28,24 @@ global.tagusario = ['50250101139'];
 
 
 
-// ❰❰ RENDER ❱❱
-//Kurt18: Obtener el código QR por la URL del Hosting
 global.obtenerQrWeb = 0; //Solo valores: 1 o 0
-//Kurt18: Aplica para Host Render.com
 global.keepAliveRender = 0; //Solo valores: 1 o 0
-// • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
 
-// • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
-// ❰❰ methodCode ❱❱
-// [ES] > Agregue el número del Bot en "botNumberCode" si desea recibir código de 8 dígitos sin registrar el número en la consola.
-// [EN] > Add the Bot number in "botNumberCode" if you want to receive 8-digit code without registering the number in the console.
+//------------------------------------------------
+
 global.botNumberCode = "" //example: "+59309090909"
 global.confirmCode = "" // No tocar esto : Do not touch this line
-// • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
+//------------------------------------------------
 
-// • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
-// ❰❰ Multi Idioma Dinámico : Dynamic Multi Language (MID-GB) ❱❱
-// [ES] > Agregué uno de los idiomas disponibles para el Bot en "mid".
-// [EN] > I added one of the languages available for the Bot in "mid".
 
-// ❰❰ IDIOMAS DISPONIBLES : AVAILABLE LANGUAGES ❱❱
-// Español 👉 es           
-// English 👉 en
+//------------------------------------------------
 global.lenguajeCD = es
 global.lenguajeGB = es
 global.mid = esDefault
 global.version_language = '1.0 (MID-GB)'
 
-// • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
-// ❰❰ API KEYS ❱❱
+//APIS Keys
+
 global.Key360 = ["964f-0c75-7afc"] // key violetics
 global.openai_key = 'sk-0' // Api New: https://platform.openai.com/account/api-keys 
 global.openai_org_id = 'org-3' // Api New: https://platform.openai.com/account/org-settings */
@@ -100,20 +88,16 @@ global.APIKeys = {
 'https://api.itsrose.site': 'Rs-Zeltoria',
 'https://api-xcoders.site': 'Frieren'
 }
-// • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
 
-// • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
-// ❰❰ bibliotecas : libraries ❱❱
+//------------------------------------------------
 global.cheerio = cheerio
 global.fs = fs
 global.fetch = fetch
 global.axios = axios
 global.moment = moment
-// • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
 
-// • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
-// [ES] > Agregate a ti, colaboradores o ayudates, aparecerá en el comando de lista de contactos.
-// [EN] > Adding yourself, collaborators or helpers will appear in the contact list command.
+//------------------------------------------------
+
 global.official = [ // Agregate si eres Owner
 ["50250101139", 'Wilmer ofc', 1], 
 ["50258115623", '𝗗𝗲𝘀𝗮𝗿𝗿𝗼𝗹𝗹𝗮𝗱𝗼𝗿 𝗢𝗳𝗶𝗰𝗶𝗮𝗹 💻', 1],  
@@ -125,16 +109,14 @@ global.mail = '' // Add email
 global.desc = '' // Add short description (20 caractres max)
 global.desc2 = '' // Add long description (90 caractres max) (Este parámetro se aplicará sólo si su whasapp no tiene descripción)
 global.country = '' // Add country, example: 🇪🇨
-// • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
+//------------------------------------------------
 global.fantasy = "𝑭𝒂𝒏𝒕𝒂𝒔𝒚𝑩𝒐𝒕-𝑴𝑫" // fantasy
 global.wilmerofc = "(𝑭𝒂𝒏𝒕𝒂𝒔𝒚𝑩𝒐𝒕-𝑴𝑫)\n𝑩𝒚 𝑾𝒊𝒍𝒎𝒆𝒓 𝒐𝒇𝒄" // fkontak2
 global.packname = "𝑭𝒂𝒏𝒕𝒂𝒔𝒚𝑩𝒐𝒕-𝑴𝑫"
 global.author = "𝑾𝒊𝒍𝒎𝒆𝒓 𝒐𝒇𝒄"
 
-// • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
-// [ES] > CUENTAS E INFORMACIÓN DE VERSIONES DEL BOT, POR FAVOR 
-// MANTENGA ESTO SIN MODIFICAR, NOS ESFORZAMOS A DIARIO POR OFRECERLES UN BOT PARA LA COMUNIDAD, SEA AGRADECIDO 😉
-// [EN] > ACCOUNTS AND BOT VERSION INFORMATION, PLEASE KEEP THIS UNCHANGED, WE STRIVE DAILY TO PROVIDE YOU WITH A BOT FOR THE COMMUNITY, BE GRATEFUL
+//------------------------------------------------
+
 global.vs = "1.7.0"
 global.vsJB = "2.5 (Beta)"
 global.gt = "𝑭𝒂𝒏𝒕𝒂𝒔𝒚𝑩𝒐𝒕-𝑴𝑫"
@@ -168,7 +150,8 @@ global.nnnttt6 = 'https://chat.whatsapp.com/CPASQk25rExCIEdlkrOfBz' // FantasyBo
 global.channel1 = 'https://whatsapp.com/channel/0029VaCUlPX0LKZAlP10pC43'
 global.channel2 = 'https://whatsapp.com/channel/0029VaCUlPX0LKZAlP10pC43'
 global.channel3 = 'https://t.me/'
-// • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
+
+//------------------------------------------------
 
 global.rg = '♥︎ 𝑹𝑬𝑺𝑼𝑳𝑻𝑨𝑫𝑶 ♥︎\n\n'
 global.resultado = rg
@@ -191,7 +174,8 @@ global.envio = eeg
 global.eg = '♥︎ 𝑬𝑿𝑰𝑻𝑶 ♥︎\n\n'
 global.exito = eg
 
-// • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
+//------------------------------------------------
+
 global.wm = "𝑾𝒊𝒍𝒎𝒆𝒓 𝒐𝒇𝒄"
 global.igfg = "𝑭𝒂𝒏𝒕𝒂𝒔𝒚𝑩𝒐𝒕-𝑴𝑫"
 global.wait = "*⌛ _Cargando | Charging..._ ▬▭▭▭▭▭▭*"
@@ -200,9 +184,9 @@ global.waittt = "*⌛ _Cargando | Charging..._ ▬▬▬▬▭▭*"
 global.waitttt = "*⌛ _Cargando | Charging..._ ▬▬▬▬▬▬▭*"
 global.nomorown = "50250101139"
 global.pdoc = ["application/vnd.openxmlformats-officedocument.presentationml.presentation", "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", "application/vnd.openxmlformats-officedocument.wordprocessingml.document", "application/vnd.ms-excel", "application/msword", "application/pdf", "text/rtf"]
-// • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
 
-// • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
+//------------------------------------------------
+
 // ❰ IMAGEN DEL BOT : BOT IMAGE ❱
 global.imagen1 = fs.readFileSync("./media/menus/Menu3.jpg")
 global.imagen2 = fs.readFileSync("./media/menus/img1.jpg")
