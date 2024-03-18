@@ -19,7 +19,7 @@ json = await (await fetch(`https://aemt.me/removebg?url=${text.trim()}`)).json()
 await mensajesEditados(conn, m, key)
 await conn.sendMessage(m.chat, { text: waitttttt, edit: key })
 await conn.sendMessage(m.chat, { image: { url: json.url.result }, caption: null }, { quoted: m })
-await conn.sendFile(m.chat, stiker ? stiker : await sticker(false, json.url.result, global.packname, global.author), 'sticker.webp', '', null, true, { contextInfo: { 'forwardingScore': 200, 'isForwarded': false, externalAdReply:{ showAdAttribution: false, title: packname, body: '• STICKER •', mediaType: 2, sourceUrl: canalofc, thumbnail: gataImg.getRandom()}}})
+await conn.sendFile(m.chat, stiker ? stiker : await sticker(false, json.url.result, global.packname, global.author), 'sticker.webp', '', null, true, { contextInfo: { 'forwardingScore': 200, 'isForwarded': false, externalAdReply:{ showAdAttribution: false, title: wilmerofc, body: '• STICKER •', mediaType: 2, sourceUrl: canalofc, thumbnail: gataImg.getRandom()}}})
 }
 handler.command = /^(s?removebg|quitarfondo)$/i
 export default handler
