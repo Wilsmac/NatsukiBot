@@ -178,7 +178,7 @@ handler.help = ['doxear']
 handler.tags = ['juegos']
 handler.command = /^Doxxeo|doxxeo|doxxear|Doxxear|doxeo|doxear|doxxeame|doxeame/i
 handler.group = true
-handler.register = true
+//handler.register = true
 export default handler
 
 function pickRandom(list) {
