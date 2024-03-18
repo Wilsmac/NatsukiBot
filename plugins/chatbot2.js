@@ -1,6 +1,18 @@
 
 let handler = m => m
 handler.all = async function (m) {
+let ftoko = {
+key: {
+participant : '0@s.whatsapp.net'},
+message: { 
+"videoMessage": { 
+"title": wm,
+"h": `Hmm`,
+'seconds': '999999999', 
+'gifPlayback': 'true', 
+'caption': bottime,
+'jpegThumbnail': fs.readFileSync('./media/menus/Menu3.jpg')
+}}}
 let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
 let chat = global.db.data.chats[m.chat]
 let name = conn.getName(m.sender)
@@ -15,7 +27,7 @@ let teks = `${pickRandom([`no puedo esta contra las política del grupo.😸`, `
 conn.reply(m.chat, teks, m, { mentions: { mentionedJid: [m.sender] }})}*/
 
 if (/^Hola|Holi|hola$/i.test(m.text) ) { //sin prefijo 
-conn.reply(m.chat, `*Holi, como estás? 🥹♥️*`, fkontak, m)}
+conn.reply(m.chat, `*Holi, como estás? 🥹♥️*`, ftoko, m)}
 
 
 if (/^reglas|normas|Reglas$/i.test(m.text) ) { //sin prefijo 
