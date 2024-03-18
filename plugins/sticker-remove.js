@@ -17,7 +17,7 @@ json = await (await fetch(`https://aemt.me/removebg?url=${text.trim()}`)).json()
 } else return m.reply(`*𝚁𝙴𝚂𝙿𝙾𝙽𝙳𝙴 𝙰 𝚄𝙽𝙰 𝙸𝙼𝙰𝙶𝙴𝙽 𝙾 𝙰 𝚄𝙽𝙰 𝚄𝚁𝙻 𝙾 𝙰𝙶𝚁𝙴𝙶𝚄𝙴 𝚄𝙽𝙰 𝚄𝚁𝙻 𝙲𝙾𝙽 \`(jpg, jpeg o png)\` 𝙿𝙰𝚁𝙰 𝙿𝙾𝙳𝙴𝚁 𝚀𝚄𝙸𝚃𝙰𝚁 𝙴𝙻 𝙵𝙾𝙽𝙳𝙾.*`)
 
 await mensajesEditados(conn, m, key)
-await conn.sendMessage(m.chat, { text: wait, edit: key })
+await conn.sendMessage(m.chat, { text: waitttttt, edit: key })
 await conn.sendMessage(m.chat, { image: { url: json.url.result }, caption: null }, { quoted: m })
 await conn.sendFile(m.chat, stiker ? stiker : await sticker(false, json.url.result, global.packname, global.author), 'sticker.webp', '', null, true, { contextInfo: { 'forwardingScore': 200, 'isForwarded': false, externalAdReply:{ showAdAttribution: false, title: packname, body: '• STICKER •', mediaType: 2, sourceUrl: canalofc, thumbnail: gataImg.getRandom()}}})
 }
