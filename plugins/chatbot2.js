@@ -29,6 +29,17 @@ conn.reply(m.chat, teks, m, { mentions: { mentionedJid: [m.sender] }})}*/
 if (/^Hola|Holi|hola$/i.test(m.text) ) { //sin prefijo 
 conn.reply(m.chat, `*Holi, como estás? 🥹♥️*`, ftoko, m)}
 
+if (/^Mal|mal|MAL$/i.test(m.text) ) { //sin prefijo 
+let teks = `${pickRandom([`que pasa, porque que estás mal?`, `*Y eso?*`])}`.trim()
+conn.reply(m.chat, teks, m, { mentions: { mentionedJid: [m.sender] }})}
+
+
+if (/^Bien|bien|Pues bien$/i.test(m.text) ) { //sin prefijo 
+let teks = `${pickRandom([`*Que me alegra*`, `Que bien por ti.`])}`.trim()
+conn.reply(m.chat, teks, m, { mentions: { mentionedJid: [m.sender] }})}
+
+
+
 
 if (/^reglas|normas|Reglas$/i.test(m.text) ) { //sin prefijo 
 conn.reply(m.chat, `*╭┅〘 ⚠️ 𝗢𝗯𝗲𝗱𝗲𝗰𝗲 𝗹𝗮𝘀 𝗿𝗲𝗴𝗹𝗮𝘀 ⚠️ 〙*
