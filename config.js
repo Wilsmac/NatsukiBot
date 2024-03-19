@@ -44,6 +44,8 @@ global.lenguajeGB = es
 global.mid = esDefault
 global.version_language = '1.0 (MID-GB)'
 
+
+global.version_language = '1.0 (MID)'
 //APIS Keys
 
 global.Key360 = ["964f-0c75-7afc"] // key violetics
