@@ -3,7 +3,7 @@ let handler = async(m, { conn, text, usedPrefix, command }) => {
 if (!text) throw `${lenguajeCD['smsAvisoMG']()} ${mid.smsMalused7}\n*${usedPrefix + command} gata | cat*` 
 try {
 const json = await pinterest(text)
-await conn.sendFile(m.chat, json.getRandom(), 'error.jpg', `${lenguajeCD['smsAvisoEG']()} 💞 ${mid.buscador}: ${text}`.trim(), m)
+await conn.sendFile(m.chat, json.getRandom(), 'error.jpg', `${lenguajeCD['smsAvisoEG']()}  ${mid.buscador}: ${text}`.trim(), m)
 } catch (e) {
 console.log(`❗❗ ${lenguajeCD['smsMensError2']()} ${usedPrefix + command} ❗❗`)
 console.log(e)}}
