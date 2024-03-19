@@ -180,8 +180,6 @@ global.exito = eg
 
 global.wm = "𝑾𝒊𝒍𝒎𝒆𝒓 𝒐𝒇𝒄"
 global.igfg = "𝑭𝒂𝒏𝒕𝒂𝒔𝒚𝑩𝒐𝒕-𝑴𝑫"
-global.await = " *`creando su sticker un momento por favor...
-`*\n*✦✦✦✦✦✦✦✦✦✦✪* `[100%]`"
 global.wait = "⌛ *`Cargando...`*\n*✦✦⊹⊹⊹⊹⊹⊹⊹⊹✪* `[20%]`"
 global.waitt = "⏳ *`Cargando....`*\n*✦✦✦✦⊹⊹⊹⊹⊹⊹✪* `[40%]`"
 global.waittt = "⌛ *`Cargando...`*\n*✦✦✦✦✦✦⊹⊹⊹⊹✪* `[60%]`"
@@ -190,7 +188,7 @@ global.waittttt = "⌛ *`Procesando...`*\n*✦✦✦✦✦✦✦✦✦✦✪* `[
 global.nomorown = "50250101139"
 global.pdoc = ["application/vnd.openxmlformats-officedocument.presentationml.presentation", "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", "application/vnd.openxmlformats-officedocument.wordprocessingml.document", "application/vnd.ms-excel", "application/msword", "application/pdf", "text/rtf"]
 
-//------------------------------------------------
+//-----------------------------------------------
 
 // ❰ IMAGEN DEL BOT : BOT IMAGE ❱
 global.imagen1 = fs.readFileSync("./media/menus/Menu3.jpg")
