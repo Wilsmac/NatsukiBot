@@ -21,7 +21,7 @@ await conn.sendMessage(m.chat, { text: waittttt, edit: key })
 await conn.sendMessage(m.chat, { image: { url: json.url.result }, caption: null }, { quoted: m })
 await conn.sendFile(m.chat, stiker ? stiker : await sticker(false, json.url.result, global.packname, global.author), 'sticker.webp', '', null, true, { contextInfo: { 'forwardingScore': 200, 'isForwarded': false, externalAdReply:{ showAdAttribution: false, title: packname, body: '• AVECES QUEDA MAL :v •', mediaType: 2, sourceUrl: canalofc, thumbnail: gataImg.getRandom()}}})
 }
-handler.command = /^(s?removebg|)$/i
+handler.command = /^(s?removebg)$/i
 export default handler
 
 const isUrl = (text) => {
@@ -38,5 +38,5 @@ await conn.sendMessage(m.chat, { text: mensajes[i], edit: key })
 }}
 /*
 
-              𝐖𝐢𝐥𝐦𝐞𝐫 𝐨𝐟𝐜 | 𝐈 𝐥𝐨𝐯𝐞 𝐲𝐨𝐮 𝐦𝐲 𝐥𝐨𝐯𝐞 𝐀𝐛𝐢🌹
+           𝐖𝐢𝐥𝐦𝐞𝐫 𝐨𝐟𝐜 | 𝐈 𝐥𝐨𝐯𝐞 𝐲𝐨𝐮 𝐦𝐲 𝐥𝐨𝐯𝐞 𝐀𝐛𝐢🌹
 */
