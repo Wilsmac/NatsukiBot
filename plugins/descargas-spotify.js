@@ -15,16 +15,16 @@ return `${Math.floor(Math.random() * 10000)}${ext}`}
 let randomName = getRandom(".mp3")
 const filePath = `./tmp/${randomName}`
 fs.writeFileSync(filePath, spty.audio)
-let spotifyi = `✨ *${mid.smsYT1}:*
+let spotifyi = ` *${mid.smsYT1}:*
 _${spty.data.name}_
 
-🗣️ *${mid.smsYT13}:*
+ *${mid.smsYT13}:*
 » _${spty.data.artists}_
 
-🌐 *${mid.smsYT4}*:
+ *${mid.smsYT4}*:
 » _${linkDL}_
 
-🎶 *${mid.smsSpoti}*
+ *${mid.smsSpoti}*
 ${wm}`
 await conn.sendFile(m.chat, spty.data.cover_url, 'error.jpg', spotifyi, fkontak, m)
 await conn.sendMessage(m.chat, { audio: fs.readFileSync(`./tmp/${randomName}`), fileName: `${spty.data.name}.mp3`, mimetype: "audio/mp4", }, { quoted: m })    
@@ -36,7 +36,7 @@ handler.limit = false
 }}
 handler.command = /^(spotify|music)$/i
 handler.limit = 1
-handler.level = 3
+handler.level = 2
 export default handler
 
 const credentials = { clientId: 'acc6302297e040aeb6e4ac1fbdfd62c3', clientSecret: '0e8439a1280a43aba9a5bc0a16f3f009' }
