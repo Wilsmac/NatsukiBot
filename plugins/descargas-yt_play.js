@@ -14,22 +14,22 @@ additionalText = '𝐀𝐮𝐝𝐢𝐨 '
 } else if (command === 'play2') {
 additionalText = '𝐕𝐢𝐝𝐞𝐨 '}
 let captionvid = `*┈┈┈┈『${vs}』┈┈┈┈*
-    
-🌺 𝑻𝑰𝑻𝑼𝑳𝑶
+
+✨⃞⃝⃟➥ 𝑻𝑰𝑻𝑼𝑳𝑶
    ${yt_play[0].title}
-╰━─━─━──━─≪✠≫─━─━──━─━╯
-🌹 𝑷𝑼𝑩𝑳𝑰𝑪𝑨𝑫𝑶
+─━━━━┉❈⏤͟͟͞͞★꙲⃝͟🌻❈┉━━━━─
+✨⃞⃝⃟➥ 𝑷𝑼𝑩𝑳𝑰𝑪𝑨𝑫𝑶
   ${yt_play[0].ago}
-╰━─━─━──━─≪✠≫─━─━──━─━╯
-🌺 𝑫𝑼𝑹𝑨𝑪𝑰𝑶𝑵
+─━━━━┉❈⏤͟͟͞͞★꙲⃝͟🌻❈┉━━━━─
+✨⃞⃝⃟➥ 𝑫𝑼𝑹𝑨𝑪𝑰𝑶𝑵
   ${secondString(yt_play[0].duration.seconds)}
-╰━─━─━──━─≪✠≫─━─━──━─━╯
-🌹 𝑽𝑰𝑺𝑻𝑨𝑺
+─━━━━┉❈⏤͟͟͞͞★꙲⃝͟🌻❈┉━━━━─
+✨⃞⃝⃟➥ 𝑽𝑰𝑺𝑻𝑨𝑺
   ${MilesNumber(yt_play[0].views)}
-╰━─━─━──━─≪✠≫─━─━──━─━╯
-🌺 𝑼𝑹𝑳
+─━━━━┉❈⏤͟͟͞͞★꙲⃝͟🌻❈┉━━━━─
+✨⃞⃝⃟➥ 𝑼𝑹𝑳
 𖤍 ${yt_play[0].url}
-╰━─━─━──━─≪✠≫─━─━──━─━╯
+─━━━━┉❈⏤͟͟͞͞★꙲⃝͟🌻❈┉━━━━─
 🌹 𝑬𝑵𝑽𝑰𝑨𝑫𝑶 ${additionalText}, 𝑨𝑮𝑼𝑨𝑹𝑫𝑬 𝑼𝑵 𝑴𝑶𝑴𝑬𝑵𝑻𝑶 𝑷𝑶𝑹 𝑭𝑨𝑽𝑶𝑹..
 *✧══════•❁❀❁•══════✧*`  
 await conn.sendMessage(m.chat, {
@@ -128,7 +128,7 @@ const yt = await youtubedl(v).catch(async _ => await youtubedlv2(v))
 const dl_url = await yt.video[q].download()
 const ttl = await yt.title
 const size = await yt.video[q].fileSizeH
-await await conn.sendMessage(m.chat, { video: { url: dl_url }, fileName: `${ttl}.mp4`, mimetype: 'video/mp4', caption: `╭━❰  ${wm}  ❱━⬣\n┃ 💜 ${mid.smsYT1}\n┃ ${ttl}\n╰━━━━━❰ *𓃠 ${vs}* ❱━━━━⬣`, thumbnail: await fetch(yt.thumbnail) }, { quoted: m })
+await await conn.sendMessage(m.chat, { video: { url: dl_url }, fileName: `${ttl}.mp4`, mimetype: 'video/mp4', caption: `╔╦══• •✠•${wm}•✠ • •══╦╗\n┃ 💜 ${mid.smsYT1}\n┃ ${ttl}\n╚╩══• •✠•${author}•✠ • •══╩╝`, thumbnail: await fetch(yt.thumbnail) }, { quoted: m })
 } catch {   
 try {  
 let mediaa = await ytMp4(yt_play[0].url)
@@ -141,7 +141,7 @@ let n = lolh.result.title || 'error'
 let n2 = lolh.result.link
 let n3 = lolh.result.size
 let n4 = lolh.result.thumbnail
-await conn.sendMessage(m.chat, { video: { url: n2 }, fileName: `${n}.mp4`, mimetype: 'video/mp4', caption: `╭━❰  ${wm}  ❱━⬣\n┃ 💜 ${mid.smsYT1}\n┃ ${n}\n╰━━━━━❰ *𓃠 ${vs}* ❱━━━━⬣`, thumbnail: await fetch(n4) }, { quoted: m })
+await conn.sendMessage(m.chat, { video: { url: n2 }, fileName: `${n}.mp4`, mimetype: 'video/mp4', caption: `╔╦══• •✠•${wm}•✠ • •══╦╗\n┃⏤͟͟͞͞★꙲⃝͟🌻 ${mid.smsYT1}\n┃ ${n}\n╚╩══• •✠•${author}•✠ • •══╩╝`, thumbnail: await fetch(n4) }, { quoted: m })
 } catch {
 }}}    
 }} catch {
