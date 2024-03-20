@@ -4,7 +4,7 @@
 "description": "Super Bot WhatsApp",
 "main": "index.js",
 "type": "module",
-    
+       
 "directories": {
 "lib": "lib",
 "src": "src",
