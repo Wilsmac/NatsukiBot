@@ -4,6 +4,8 @@ let handler = async (m, { conn, isROwner, text }) => {
     if (conn.user.jid == conn.user.jid) {
     const { key } = await conn.sendMessage(m.chat, {text: `\`[10%]\``}, {quoted: m});
 await delay(1000 * 1);
+await conn.sendMessage(m.chat, {text: `\`[30%]\``, edit: key});
+await delay(1000 * 1);
 await conn.sendMessage(m.chat, {text: `\`[60%]\``, edit: key});
 await delay(1000 * 1);
 await conn.sendMessage(m.chat, {text: `\`[100%]\``, edit: key});
