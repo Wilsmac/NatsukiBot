@@ -2,8 +2,6 @@ import fg from 'api-dylux';
 let handler = async (m, { conn, text, args, usedPrefix, command }) => {
 
 if (!args[0]) throw `✳️ ingrese un enlace válida de Facebook.\nejemplo :\n*${usedPrefix + command}* https://fb.watch/haudaugR/`
-  m.react(rwait);
-
   try {
     let result = await fg.fbdl(args[0]);
     let tex = `
