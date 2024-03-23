@@ -68,7 +68,7 @@ let caption = `*${htki} 𝙑𝙀𝙇𝙊𝘾𝙄𝘿𝘼𝘿 : 𝙎𝙋𝙀𝙀�
 🚄 *${Math.round(neww - old)}* ms
 🚄 *${speed}* ms
 
-*${htjava}* 𝙏𝙄𝙀𝙈𝙋𝙊 𝘿𝙀 𝙀𝙅𝙀𝘾𝙐𝘾𝙄𝙊𝙉 : 𝙍𝙐𝙉𝙏𝙄𝙈𝙀 
+*${htjava}* 𝙏𝙄𝙀𝙈𝙋𝙊 𝘿𝙀 𝙀𝙅𝙀𝘾𝙐𝘾𝙄𝙊𝙉  
 ${muptime}
 ${readMore}
 *${htjava} C H A T S*
@@ -78,12 +78,12 @@ ${readMore}
 • *${chats.length - groupsIn.length}* \`\`\`Chats Privados : Chats Private\`\`\`
 • *${chats.length}* \`\`\`Total Chats\`\`\`
 
-*${htjava} S E R V I D O R : S E R V E R*
-*🟢 RAM:* ${format(totalmem() - freemem())} / ${format(totalmem())}
-*🔵 RAM Libre:* ${format(freemem())}
+*${htjava} S E R V I D O R*
+*🗂️ RAM:* ${format(totalmem() - freemem())} / ${format(totalmem())}
+*🗃️ RAM Libre:* ${format(freemem())}
 
 *💻 Plataforma :* \`\`\`${os.platform()}\`\`\`
-*📡 Servidor :* _${os.hostname()}_
+*⚙️ Servidor :* _${os.hostname()}_
 ${readMore}
 *NodeJS Uso de memoria : Memory Usage*
 ${'```' + Object.keys(used).map((key, _, arr) => `${key.padEnd(Math.max(...arr.map(v => v.length)), ' ')}: ${format(used[key])}`).join('\n') + '```'}
