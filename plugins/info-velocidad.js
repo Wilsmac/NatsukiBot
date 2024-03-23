@@ -63,7 +63,7 @@ await conn.reply(m.chat, `${eg}🚀 𝙋𝙍𝙐𝙀𝘽𝘼 𝘿𝙀 𝙑𝙀�
 
 let neww = performance.now()
 let speed = neww - old
-let caption = `*${htki} [ 𝙑𝙀𝙇𝙊𝘾𝙄𝘿𝘼𝘿 ] ${htka}*
+let caption = `*[ 𝙑𝙀𝙇𝙊𝘾𝙄𝘿𝘼𝘿 ]*
 
  *${Math.round(neww - old)}* ms
  *${speed}* ms
