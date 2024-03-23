@@ -1,6 +1,7 @@
 
 let handler = m => m
 handler.all = async function (m) {
+let nose = { key: {  fromMe: false, participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: "5219992095479-1625305606@g.us" } : {}) }, message: { orderMessage: { itemCount : -999999, status: 1, surface : 1, message: 'Super Bot WhatsApp', orderTitle: 'Bang', thumbnail: Menu1, sellerJid: '0@s.whatsapp.net' }}}
 let ftoko = {
 key: {
 participant : '0@s.whatsapp.net'},
@@ -27,7 +28,7 @@ let teks = `${pickRandom([`no puedo esta contra las política del grupo.😸`, `
 conn.reply(m.chat, teks, m, { mentions: { mentionedJid: [m.sender] }})}*/
 
 if (/^Hola|Holi|hola$/i.test(m.text) ) { //sin prefijo 
-conn.reply(m.chat, `*Holi, como estás? 🥹♥️*`, ftoko, m)}
+conn.reply(m.chat, `*Holi, como estás? 🥹♥️*`, nose, m)}
 
 if (/^Mal|mal|MAL$/i.test(m.text) ) { //sin prefijo 
 let teks = `${pickRandom([`que pasa, porque que estás mal?`, `*Y eso?*`])}`.trim()
