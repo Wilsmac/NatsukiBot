@@ -1,32 +1,3 @@
-import fg from 'api-dylux';
-let handler = async (m, { conn, text, args, usedPrefix, command }) => {
-
-if (!args[0]) throw `✳️ ingrese un enlace válida de Facebook.\nejemplo :\n*${usedPrefix + command}* https://fb.watch/haudaugR/`
-  try {
-    let result = await fg.fbdl(args[0]);
-    let tex = `
-┌─⊷ *uwu*
-▢ *Titulo* ${result.title}
-└───────────`;
-    conn.sendFile(m.chat, result.videoUrl, 'fb.mp4', tex, m);
-    m.react(done);
-  } catch (error) {
-    m.reply(`algo salió mal`)
-  }
-};
-handler.help = ['facebook'].map(v => v + ' <url>');
-handler.tags = ['dl'];
-handler.command = /^((facebook|fb)(downloder|dl)?)$/i;
-
-export default handler;
-
-
-
-
-
-
-
-
 
 /*import fg from 'api-dylux';
 import fetch from 'node-fetch';
@@ -228,7 +199,7 @@ reject(e.message);
 
 
 
-/*import fg from 'api-dylux' 
+import fg from 'api-dylux' 
 import fetch from 'node-fetch'
 import { savefrom, facebookdl, facebookdlv2 } from '@bochilteam/scraper'
 import fbDownloader from 'fb-downloader-scrapper'
@@ -282,4 +253,4 @@ await m.reply(`${lenguajeGB['smsAvisoFG']()}𝘼𝙇𝙂𝙊 𝙎𝘼𝙇𝙄�
 }}}}}}}
 handler.command = /^(facebook|fb|facebookdl|fbdl|facebook2|fb2|facebookdl2|fbdl2|facebook3|fb3|facebookdl3|fbdl3|facebook4|fb4|facebookdl4|fbdl4|facebook5|fb5|facebookdl5|fbdl5)$/i
 handler.limit = 3
-export default handler*/
+export default handler
