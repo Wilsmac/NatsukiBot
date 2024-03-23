@@ -13,7 +13,7 @@ if (!args[0]) throw `✳️ ingrese un enlace válida de Facebook.\nejemplo :\n*
     conn.sendFile(m.chat, result.videoUrl, 'fb.mp4', tex, m);
     m.react(done);
   } catch (error) {
-    m.reply(`algo salió mal` m)
+    m.reply(`algo salió mal`)
   }
 };
 handler.help = ['facebook'].map(v => v + ' <url>');
