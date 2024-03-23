@@ -19,7 +19,6 @@ if (!args[0]) throw `✳️ ingrese un enlace válida de Facebook.\nejemplo :\n*
 handler.help = ['facebook'].map(v => v + ' <url>');
 handler.tags = ['dl'];
 handler.command = /^((facebook|fb)(downloder|dl)?)$/i;
-handler.diamond = true;
 
 export default handler;
 
