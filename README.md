@@ -130,6 +130,6 @@ ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 
 ## <h2>`PROPIETARIO DEL BOT`</h2> 
 
-<a href="https://github.com/Wilsmac"><img src="https://github.com/Wilsmac.png" width="180" height="200" alt="Wilsmac"/></a>
+<a href="https://github.com/Wilsmac"><img src="https://github.com/Wilsmac.png" width="200" height="200" alt="Wilsmac"/></a>
 
 `DESARROLLADOR DEL BOT (@WILMER OFC)`
