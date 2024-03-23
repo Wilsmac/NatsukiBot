@@ -108,7 +108,7 @@ return [h, m, s].map(v => v.toString().padStart(2, 0) ).join(':')}
 
 
 
-*/let info = `╭━━━━[ ${gt} ]━━━━━⬣
+/*let info = `╭━━━━[ ${gt} ]━━━━━⬣
 ┃➥ *CREADOR(A)*
 ┃ღ *Wilmer ofc*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
