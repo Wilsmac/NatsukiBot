@@ -65,17 +65,11 @@ let info = `╭━━━━[ ${gt} ]━━━━━⬣
 ┃➥ *PREFIJO*
 ┃ღ *${usedPrefix}*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃➥ *CHATS PRIVADOS* 
-┃ღ *${chats.length - groups.length}*
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃➥ *CHATS DE GRUPOS* 
 ┃ღ *${groups.length}* 
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃➥ *CHATS EN TOTAL*
 ┃ღ *${chats.length}* 
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃➥ *ACTIVIDAD*
-┃ღ *${uptime}*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃➥ *USUARIOS*
 ┃ღ *${totalreg}* 
