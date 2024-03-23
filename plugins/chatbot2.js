@@ -1,7 +1,7 @@
 
 let handler = m => m
 handler.all = async function (m) {
-let nose = { key: {  fromMe: false, participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: "5219992095479-1625305606@g.us" } : {}) }, message: { orderMessage: { itemCount : -999999, status: 1, surface : 1, message: 'Super Bot WhatsApp', orderTitle: 'Bang', thumbnail: Menu1, sellerJid: '0@s.whatsapp.net' }}}
+let nose = { key: {  fromMe: false, participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: "5219992095479-1625305606@g.us" } : {}) }, message: { orderMessage: { itemCount : -999999, status: 1, surface : 1, message: 'Super Bot WhatsApp', orderTitle: 'Bang', thumbnail: fs.readFileSync('./media/menus/img1.jpg'), sellerJid: '0@s.whatsapp.net' }}}
 let ftoko = {
 key: {
 participant : '0@s.whatsapp.net'},
