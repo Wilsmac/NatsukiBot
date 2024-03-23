@@ -56,14 +56,11 @@ let old = performance.now()
   let speed = neww - old
 
 let info = `╭━━━━[ ${gt} ]━━━━━⬣
-┃➥ *CREADORAb
+┃➥ *CREADOR(A)*
 ┃ღ *Wilmer ofc*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃➥ *CONTACTO 
+┃➥ *CONTACTO*
 ┃ღ *${ig}*
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃𓃠 *VERSIÓN ACTUAL*
-┃ღ ${vs}
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃➥ *PREFIJO*
 ┃ღ *${usedPrefix}*
@@ -107,3 +104,43 @@ let m = Math.floor(ms / 60000) % 60
 let s = Math.floor(ms / 1000) % 60
 console.log({ms,h,m,s})
 return [h, m, s].map(v => v.toString().padStart(2, 0) ).join(':')}
+
+
+
+
+*/let info = `╭━━━━[ ${gt} ]━━━━━⬣
+┃➥ *CREADOR(A)*
+┃ღ *Wilmer ofc*
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃➥ *CONTACTO*
+┃ღ *${ig}*
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃➥ *PREFIJO*
+┃ღ *${usedPrefix}*
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃➥ *CHATS PRIVADOS* 
+┃ღ *${chats.length - groups.length}*
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃➥ *CHATS DE GRUPOS* 
+┃ღ *${groups.length}* 
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃➥ *CHATS EN TOTAL*
+┃ღ *${chats.length}* 
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃➥ *ACTIVIDAD*
+┃ღ *${uptime}*
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃➥ *USUARIOS*
+┃ღ *${totalreg}* 
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃➥ *VELOCIDAD* 
+┃ღ  *${speed}*
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃➥ *BOT SECUNDARIOS ACTIVOS* 
+┃ *${totaljadibot.length}*
+
+┃➥ *RESTRICT* 
+┃ღ ${restrict ? '*Activado ✔*' : '*Desactivado ✘*'} 
+┃
+╰━━━[ 𝙄𝙣𝙛𝙤𝙧𝙢𝙖𝙘𝙞ó𝙣 ]━━⬣`
+await conn.sendFile(m.chat, gataImg.getRandom(), 'lp.jpg', info, fkontak, false, { contextInfo: {externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, title: gt, body: ' 𝐅𝐚𝐧𝐭𝐚𝐬𝐲𝐁𝐨𝐭-𝐌𝐃 ', previewType: 0, thumbnail: imagen4, sourceUrl: canalofc }}})*/
