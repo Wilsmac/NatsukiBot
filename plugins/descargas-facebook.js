@@ -1,4 +1,37 @@
 import fg from 'api-dylux';
+let handler = async (m, { conn, text, args, usedPrefix, command }) => {
+
+if (!args[0]) throw `✳️ ingrese un enlace válida de Facebook.\nejemplo :\n*${usedPrefix + command}* https://fb.watch/haudaugR/`
+  m.react(rwait);
+
+  try {
+    let result = await fg.fbdl(args[0]);
+    let tex = `
+┌─⊷ *uwu*
+▢ *Titulo* ${result.title}
+└───────────`;
+    conn.sendFile(m.chat, result.videoUrl, 'fb.mp4', tex, m);
+    m.react(done);
+  } catch (error) {
+    m.reply(`algo salió mal` m)
+  }
+};
+handler.help = ['facebook'].map(v => v + ' <url>');
+handler.tags = ['dl'];
+handler.command = /^((facebook|fb)(downloder|dl)?)$/i;
+handler.diamond = true;
+
+export default handler;
+
+
+
+
+
+
+
+
+
+/*import fg from 'api-dylux';
 import fetch from 'node-fetch';
 import {savefrom, facebookdl, facebookdlv2} from '@bochilteam/scraper';
 import fbDownloader from 'fb-downloader-scrapper';
@@ -86,7 +119,7 @@ async function igeh(url_media) {
       reject(e.message);
     }
   });
-}
+}*/
 
 
 
