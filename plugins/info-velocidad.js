@@ -63,10 +63,10 @@ await conn.reply(m.chat, `${eg}🚀 𝙋𝙍𝙐𝙀𝘽𝘼 𝘿𝙀 𝙑𝙀�
 
 let neww = performance.now()
 let speed = neww - old
-let caption = `*${htki} 𝙑𝙀𝙇𝙊𝘾𝙄𝘿𝘼𝘿 : 𝙎𝙋𝙀𝙀𝘿 ${htka}*
+let caption = `*${htki} [ 𝙑𝙀𝙇𝙊𝘾𝙄𝘿𝘼𝘿 ] ${htka}*
 
-🚄 *${Math.round(neww - old)}* ms
-🚄 *${speed}* ms
+ *${Math.round(neww - old)}* ms
+ *${speed}* ms
 
 *${htjava}* 𝙏𝙄𝙀𝙈𝙋𝙊 𝘿𝙀 𝙀𝙅𝙀𝘾𝙐𝘾𝙄𝙊𝙉  
 ${muptime}
