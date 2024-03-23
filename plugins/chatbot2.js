@@ -1,6 +1,8 @@
 
 let handler = m => m
 handler.all = async function (m) {
+let = fake8 = { contextInfo: { mentionedJid: conn.parseMention(wm), forwardingScore: 1, isForwarded: true, forwardedNewsletterMessageInfo: { newsletterJid: 'channel/0029VaCUlPX0LKZAlP10pC43/208@newsletter', serverMessageId: '', newsletterName: 'Canal ofc' }, externalAdReply: { title: wm, body: vs, mediaType: 1, renderLargerThumbnail: false, previewType: `PHOTO`, thumbnailUrl: fs.readFileSync('./media/menus/img1.jpg'), thumbnail: imagen1, sourceUrl: canalofc }}}, { quoted: m }
+
 let nose = { key: {  fromMe: false, participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: "5219992095479-1625305606@g.us" } : {}) }, message: { orderMessage: { itemCount : -999999, status: 1, surface : 1, message: 'Super Bot WhatsApp', orderTitle: 'Bang', thumbnail: fs.readFileSync('./media/menus/img1.jpg'), sellerJid: '0@s.whatsapp.net' }}}
 let ftoko = {
 key: {
@@ -28,7 +30,7 @@ let teks = `${pickRandom([`no puedo esta contra las política del grupo.😸`, `
 conn.reply(m.chat, teks, m, { mentions: { mentionedJid: [m.sender] }})}*/
 
 if (/^Hola|Holi|hola$/i.test(m.text) ) { //sin prefijo 
-conn.reply(m.chat, `*Holi, como estás? 🥹♥️*`, nose, m)}
+conn.reply(m.chat, `*Holi, como estás? 🥹♥️*`, fake8, m)}
 
 if (/^Mal|mal|MAL$/i.test(m.text) ) { //sin prefijo 
 let teks = `${pickRandom([`que pasa, porque que estás mal?`, `*Y eso?*`])}`.trim()
