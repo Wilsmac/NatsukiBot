@@ -119,7 +119,7 @@ ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 > rm -rf FantasySession 
 > npm start
 ```
-<a href="#" target="black"><img src="https://img.shields.io/badge/-000000?style=for-the-badge&logo=tiktok&logoColor=coffees" />
+<a href="" target="black"><img src="https://img.shields.io/badge/-000000?style=for-the-badge&logo=tiktok&logoColor=coffees" />
 
 ### `IMFORMACION`
 - EL ADD Y EL KICK PUEDEN OCASIONAR QUE EL NUMERO SE VAYA A SOPORTE POR ELLO SE ACTIVA CON #enable restrict 
