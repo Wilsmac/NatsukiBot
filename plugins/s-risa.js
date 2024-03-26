@@ -7,7 +7,7 @@ let nombre = 'paquete de stickers de'
 let nombre2 = 'undefined'
  
 const s = [
-''
+'https://telegra.ph/file/f306e80961abf1e4e7893.jpg'
 ];  
  
 let stiker = await sticker(null, s[Math.floor(Math.random() * s.length)], nombre, nombre2)
