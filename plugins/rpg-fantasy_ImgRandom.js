@@ -51,7 +51,7 @@ showAdAttribution: false,
 title: `${conn.getName(m.sender)}`,
 body: `${dato.desp}`,
 mediaType: 1,
-sourceUrl: accountsgb.getRandom(),
+sourceUrl: '',
 thumbnailUrl: pp
 }}
 }, { caption: 'imagen_info' })).key.id
