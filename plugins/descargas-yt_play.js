@@ -64,7 +64,7 @@ const dataRE = await fetch(`https://api.akuari.my.id/downloader/youtube?link=${y
 const dataRET = await dataRE.json()
 await conn.sendMessage(m.chat, { audio: { url: dataRET.mp3[1].url }, mimetype: 'audio/mpeg', contextInfo: {
 externalAdReply: {
-title: "en un momento envío su audio",
+title: `𝐄𝐧 𝐮𝐧 𝐦𝐨𝐦𝐞𝐧𝐭𝐨 𝐞𝐧𝐯𝐢𝐨 𝐬𝐮: ${additionalText}`,
 body: "",
 thumbnailUrl: yt_play[0].thumbnail, 
 mediaType: 1,
