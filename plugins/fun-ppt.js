@@ -31,7 +31,7 @@ handler.tags = ['games']
 handler.command = /^(ppt|suitpvp)$/i
 handler.group = true
 handler.game = true
-handler.register = true
+//handler.register = true
 export default handler
 
 /*
