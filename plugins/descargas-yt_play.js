@@ -13,8 +13,7 @@ if (command === 'play') {
 additionalText = '𝐀𝐮𝐝𝐢𝐨 '
 } else if (command === 'play2') {
 additionalText = '𝐕𝐢𝐝𝐞𝐨 '}
-let captionvid = `*┈┈┈┈『${vs}』┈┈┈┈*
-
+let captionvid = `
 ✨⃞⃝⃟➥ 𝑻𝑰𝑻𝑼𝑳𝑶
    ${yt_play[0].title}
 ─━━━━┉❈⏤͟͟͞͞★꙲⃝͟🌻❈┉━━━━─
@@ -126,7 +125,7 @@ const yt = await youtubedl(v).catch(async _ => await youtubedlv2(v))
 const dl_url = await yt.video[q].download()
 const ttl = await yt.title
 const size = await yt.video[q].fileSizeH
-await await conn.sendMessage(m.chat, { video: { url: dl_url }, fileName: `${ttl}.mp4`, mimetype: 'video/mp4', caption: `╔╦══• •✠•${wm}•✠ • •══╦╗\n┃ 💜 ${mid.smsYT1}\n┃ ${ttl}\n╚╩══• •✠•${author}•✠ • •══╩╝`, thumbnail: await fetch(yt.thumbnail) }, { quoted: m })
+await await conn.sendMessage(m.chat, { video: { url: dl_url }, fileName: `${ttl}.mp4`, mimetype: 'video/mp4', caption: `╔╦══• •✠•${wm}•✠ • •══╦╗\n • ${mid.smsYT1}\n┃ ${ttl}\n╚╩══• •✠•${author}•✠ • •══╩╝`, thumbnail: await fetch(yt.thumbnail) }, { quoted: m })
 } catch {   
 try {  
 let mediaa = await ytMp4(yt_play[0].url)
