@@ -32,8 +32,8 @@ global.keepAliveRender = 0; //Solo valores: 1 o 0
 
 //------------------------------------------------
 
-global.botNumberCode = "" //example: "+59309090909"
-global.confirmCode = "" // No tocar esto : Do not touch this line
+global.botNumberCode = "" 
+global.confirmCode = "" 
 //------------------------------------------------
 
 
@@ -99,7 +99,7 @@ global.moment = moment
 
 //------------------------------------------------
 
-global.official = [ // Agregate si eres Owner
+global.official = [
 ["50250101139", 'Wilmer ofc', 1], 
 ["50258115623", '𝗗𝗲𝘀𝗮𝗿𝗿𝗼𝗹𝗹𝗮𝗱𝗼𝗿 𝗢𝗳𝗶𝗰𝗶𝗮𝗹 💻', 1],  
 ["51996416792", '𝗗𝗲𝘀𝗮𝗿𝗿𝗼𝗹𝗹𝗮𝗱𝗼𝗿 𝗢𝗳𝗶𝗰𝗶𝗮𝗹 💻', 1],
@@ -189,7 +189,7 @@ global.pdoc = ["application/vnd.openxmlformats-officedocument.presentationml.pre
 
 //-----------------------------------------------
 
-// ❰ IMAGEN DEL BOT : BOT IMAGE ❱
+// IMÁGENS 
 global.imagen1 = fs.readFileSync("./media/menus/Menu3.jpg")
 global.imagen2 = fs.readFileSync("./media/menus/img1.jpg")
 global.imagen3 = fs.readFileSync("./media/menus/img2.jpg")
