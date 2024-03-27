@@ -184,43 +184,29 @@ defaultQueryTimeoutMs: undefined,
 version
 }
 
+
 global.conn = makeWASocket(connectionOptions)
 if (!fs.existsSync(`./${authFile}/creds.json`)) {
 if (opcion === '2' || methodCode) {
-//if (fs.existsSync(`./${authFile}/creds.json`)) {
-//console.log(chalk.bold.redBright(`PRIMERO BORRE EL ARCHIVO ${chalk.bold.greenBright("creds.json")} QUE SE ENCUENTRA EN LA CARPETA ${chalk.bold.greenBright(authFile)} Y REINICIE.`))
-//process.exit()
-//}
 opcion = '2'
-if (!conn.authState.creds.registered) {  
-//if (MethodMobile) throw new Error('No se puede usar un código de emparejamiento con la API móvil')
-
+if (!conn.authState.creds.registered) {
 let addNumber
 if (!!phoneNumber) {
 addNumber = phoneNumber.replace(/[^0-9]/g, '')
-if (!Object.keys(PHONENUMBER_MCC).some(v => addNumber.startsWith(v))) {
-console.log(chalk.bgBlack(chalk.bold.redBright(mid.phNumber)))
-process.exit(0)
-}} else {
-while (true) {
-addNumber = await question(chalk.bgBlack(chalk.bold.greenBright(mid.phNumber2(chalk))))
-addNumber = addNumber.replace(/[^0-9]/g, '')
-
-if (addNumber.match(/^\d+$/) && Object.keys(PHONENUMBER_MCC).some(v => addNumber.startsWith(v))) {
-break 
 } else {
-console.log(chalk.bold.redBright(mid.phNumber3))
-}}
-rl.close()  
-} 
-
+do {
+phoneNumber = await question(chalk.bgBlack(chalk.bold.greenBright(mid.phNumber2(chalk))))
+phoneNumber = phoneNumber.replace(/\D/g,'')
+} while (!Object.keys(PHONENUMBER_MCC).some(v => phoneNumber.startsWith(v)))
+rl.close()
+addNumber = phoneNumber.replace(/\D/g, '')
 
 setTimeout(async () => {
 let codeBot = await conn.requestPairingCode(addNumber)
 codeBot = codeBot?.match(/.{1,4}/g)?.join("-") || codeBot
 console.log(chalk.bold.white(chalk.bgMagenta(mid.pairingCode)), chalk.bold.white(chalk.white(codeBot)))
 }, 2000)
-}}
+}}}
 }
 
 conn.isInit = false
