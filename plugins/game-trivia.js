@@ -1,5 +1,4 @@
-// Créditos a Katashi Fukushima
-// Créditos a Wilson Waoz
+
 
 import fs from 'fs'
 
