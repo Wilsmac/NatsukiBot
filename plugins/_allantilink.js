@@ -16,7 +16,7 @@ let delet = m.key.participant
 let bang = m.key.id
 let toUser = `${m.sender.split("@")[0]}`
 let aa = toUser + '@s.whatsapp.net'
-    
+     
 const isAntiLinkTik = isLinkTik.exec(m.text)
 const isAntiLinkYt = isLinkYt.exec(m.text)
 const isAntiLinkTel = isLinkTel.exec(m.text)
