@@ -2,7 +2,7 @@ const { DisconnectReason, useMultiFileAuthState, MessageRetryMap, fetchLatestBai
 import Pino from 'pino'
 import fs from 'fs'
 import syntaxerror from 'syntax-error'
-import { makeWASocket, protoType, serialize } from './lib/simple.js'
+import { makeWASocket } from './lib/simple.js'
 
 
 
