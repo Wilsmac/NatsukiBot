@@ -1,4 +1,4 @@
-import { execSync } from 'child_process'
+/*import { execSync } from 'child_process'
 let handler = async (m, { conn, text }) => {
 try {  
 if (global.conn.user.jid == conn.user.jid) {
@@ -14,4 +14,4 @@ handler.help = ['update9']
 handler.tags = ['owner']
 handler.command = /^update9|actualizar9$/i
 handler.rowner = true
-export default handler
+export default handler*/
