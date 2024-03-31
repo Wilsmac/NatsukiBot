@@ -41,5 +41,5 @@ conn.well = false
 
 /*if (!opts['test']) {
 if (global.db) setInterval(async () => {
-if (global.db.data) await global.db.write()*/
-if (opts['autocleartmp'] && (global.support || {}).find) (tmp = [os.tmpdir(), 'tmp', "FantasyJadiBot"] /*tmp.forEach(filename => cp.spawn('find', [filename, '-amin', '2', '-type', 'f', '-delete'])))}, 30 * 1000)}*/
+if (global.db.data) await global.db.write()
+if (opts['autocleartmp'] && (global.support || {}).find) (tmp = [os.tmpdir(), 'tmp', "FantasyJadiBot"] tmp.forEach(filename => cp.spawn('find', [filename, '-amin', '2', '-type', 'f', '-delete'])))}, 30 * 1000)}*/
