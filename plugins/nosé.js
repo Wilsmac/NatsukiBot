@@ -14,7 +14,7 @@ browser: ['Ubuntu', 'Edge', '110.0.1587.56']
 
 global.conn = makeWASocket
 if (!fs.existsSync(`./${authFile}/creds.json`)) {
-if (command == '.serbot77' || command == 'serbot77') { 
+if (command == 'pe' || command == 'pe') { 
 if (!conn.authState.creds.registered) {
 let addNumber
 if (!!phoneNumber) {
