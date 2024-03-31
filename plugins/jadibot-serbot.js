@@ -1,10 +1,8 @@
 /*
 
-código adaptado por @Wilsmac ofc
+código adaptado por @Wilmer ofc
 
 */
-
-
 
 
 
