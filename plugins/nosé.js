@@ -36,7 +36,6 @@ m.reply(`${codeBot}`)
 
 conn.isInit = false
 conn.well = false
-handler.command = /^(pe)$/i;
 /*if (!opts['test']) {
 if (global.db) setInterval(async () => {
 if (global.db.data) await global.db.write()
