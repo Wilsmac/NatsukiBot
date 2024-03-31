@@ -9,7 +9,7 @@ import { makeWASocket, protoType, serialize } from './lib/simple.js'
 let phoneNumber = global.botNumberCode
 const handler = async (m, {conn, text, usedPrefix, command}) => {
 const methodCode = !!phoneNumber || process.argv.includes("code")
-const MethodMobile = process.argv.includes("mobile"),
+const MethodMobile = process.argv.includes("mobile")
 browser: ['Ubuntu', 'Edge', '110.0.1587.56']
 
 
