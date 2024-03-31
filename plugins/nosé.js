@@ -2,7 +2,6 @@ const { DisconnectReason, useMultiFileAuthState, MessageRetryMap, fetchLatestBai
 import Pino from 'pino'
 import fs from 'fs'
 import syntaxerror from 'syntax-error'
-import { makeWASocket } from './lib/simple.js'
 
 
 
@@ -12,7 +11,6 @@ const MethodMobile = process.argv.includes("mobile")
 browser: ['Ubuntu', 'Edge', '110.0.1587.56']
 
 
-global.conn = makeWASocket
 if (!fs.existsSync(`./${authFile}/creds.json`)) {
 if (command == 'pe' || command == 'pe') { 
 if (!conn.authState.creds.registered) {
