@@ -68,7 +68,7 @@ clearInterval(intervalId)}, 126000) //2.1 min
 
 registro = text.replace(/\s+/g, usedPrefix) 
 _registro = text.split(" ",2)
-if (!text) return conn.reply(m.chat, `${lenguajeCD['smsAvisoIIG']()}*LO AH USASO DE MANERA INCORRECTA, EJEMPLO:*\n${usedPrefix}reg1 nombre edad\*ESPERO AVRRTE AYUDADO*`, fkontak, m)
+if (!text) return conn.reply(m.chat, `${lenguajeCD['smsAvisoIIG']()}*LO AH USASO DE MANERA INCORRECTA, EJEMPLO:*\n${usedPrefix}reg1 nombre edad\n*ESPERO AVRRTE AYUDADO 🐦*`, fkontak, m)
 //if (_registro['length'] >= 3 || isNaN(_registro[1])) return 
 //conn.sendButton(m.chat, fg + '🙃 *ESTÁ INTENTANDO SEPRAR SU NOMBRE O UNIR TODO?* ', '🧐 *COINCIDE COMO EN ESTOS EJEMPLOS:*\n' + `\`\`\`${usedPrefix + command} Super${gt}20\`\`\`` + '\n' + `\`\`\`${usedPrefix + command} Super 15 ${gt} \`\`\`` + '\n' + `\`\`\`${usedPrefix + command} Super ${gt} 24 De ${author}\`\`\`\n\n` + '*Si cumple que tenga (Nombre/Frase y Edad) Autocompletaremos su Registro, de lo contraio vuelva a registrarse*\n➘ _Use el Botón de abajo_', null, [[`🌟 AUTOCOMPLETAR MI REGISTRO`, usedPrefix + 'reg1' + ' ' + text.replace(/[♧◇♡♤■□●○•°☆▪︎¤¿?¡¬¦±×÷°µ§©®™¶€¢£¥₽₹₩₱₸₪₫₮₦₴₡₭₲₼₿.,\/#!$%\^&\*;:{}@=\-_`~()\s\0-9]/gi, "") + ' ' + text.replace(/[♧◇♡♤■□●○•°☆▪︎¤¿?¡¬¦±×÷°µ§©®™¶€¢£¥₽₹₩₱₸₪₫₮₦₴₡₭₲₼₿.,\/#!$%\^&\*;:{}@=\-_`~()\s\a-z]/gi, "")], ['📑 VOLVER A REGISTRAR', command + usedPrefix]], m)
 if (!_registro[0]) return conn.reply(m.chat, `${lenguajeGB['smsAvisoFG']()}*FALTA SU NOMBRE, PARÁMETROS DEL REGISTRO:*\n\`\`\`${usedPrefix + command} nombre edad\`\`\``, fkontak, m)
@@ -99,7 +99,7 @@ text: registroRapido,
 contextInfo: {
 externalAdReply: {
 title: wm,
-body: '🌟 Puede modificar su registro antes de finalizar',
+body: 'registro completo ✨',
 thumbnailUrl: pp, 
 sourceUrl: 'https://www.atom.bio/Wilsmac/',
 mediaType: 1,
