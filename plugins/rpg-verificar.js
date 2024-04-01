@@ -77,7 +77,7 @@ if (_registro[0].length <= 2) return conn.reply(m.chat, `${lenguajeGB['smsAvisoF
 _registro[0] = text.replace(/\s+/g, '').replace(/[0-9]+/gi, "")
 user.name = _registro[0]
 
-if (!_registro[1]) return conn.reply(m.chat, `${lenguajeGB['smsAvisoIIG']()}Hace falta su edad, ejemplo del registro:*\n\`${usedPrefix + command} nombre edad\`, fkontak, m)
+if (!_registro[1]) return conn.reply(m.chat, `${lenguajeGB['smsAvisoIIG']()}Hace falta su edad, ejemplo del registro:*\n\`${usedPrefix + command} nombre edad\``, fkontak, m)
 if (_registro[1] > 90) return conn.reply(m.chat, `${lenguajeGB['smsAvisoFG']()}*SU EDAD ES MUY MAYOR, USE OTRA EDAD POR FAVOR*\n\n*PARÁMETROS DEL REGISTRO:*\n\`\`\`${usedPrefix + command} nombre edad\`\`\``, fkontak, m)
 if (_registro[1] < 10) return conn.reply(m.chat, `${lenguajeGB['smsAvisoFG']()}*SU EDAD ES MUY MENOR, USE OTRA EDAD POR FAVOR*\n\n*PARÁMETROS DEL REGISTRO:*\n\`\`\`${usedPrefix + command} nombre edad\`\`\``, fkontak, m)
 user.age = parseInt(_registro[1]) //_registro[1]	
