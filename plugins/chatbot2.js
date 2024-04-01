@@ -75,7 +75,7 @@ conn.reply(m.chat,  `\`⚡¿Quieres un bot para tu grupo?\`
 > A través de nuestro PayPal o Mercado Pago.
 
 *❇️PayPal:*
-• https://www.paypal.com/wilmerofc
+• https://www.paypal.me/wilmermacu1
 
 \`⏩ Siguiente paso ⏩\`
 
