@@ -207,7 +207,7 @@ let jid = jidNormalizedUser(clave.remoteJid)
 let msg = await store.loadMessage(jid, clave.id)
 return msg?.message || ""
 },
-msgRetryCounterCache, // Resolver mensajes en espera
+msgRetryCounterCache, // Resolver mensajes en espera :3
 msgRetryCounterMap,
 defaultQueryTimeoutMs: undefined,
 version,  
