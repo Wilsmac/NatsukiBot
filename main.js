@@ -106,23 +106,27 @@ loadChatgptDB();
 
 global.authFile = `FantasySession`
 const {state, saveState, saveCreds} = await useMultiFileAuthState(global.authFile)
-const msgRetryCounterMap = (MessageRetryMap) => { };
+const msgRetryCounterMap = (MessageRetryMap) => { }
 const msgRetryCounterCache = new NodeCache()
-const {version} = await fetchLatestBaileysVersion();
-let phoneNumber = global.botNumberCode
+const {version} = await fetchLatestBaileysVersion()
 
+let phoneNumber = global.botNumberCode
 const methodCodeQR = process.argv.includes("qr")
 const methodCode = !!phoneNumber || process.argv.includes("code")
 const MethodMobile = process.argv.includes("mobile")
 
-//const rl = readline.createInterface({ input: process.stdin, output: process.stdout })
-//const question = (texto) => new Promise((resolver) => rl.question(texto, resolver))
-const rl = readline.createInterface({ input: process.stdin, output: process.stdout, prompt: '' })
+const rl = readline.createInterface({
+input: process.stdin,
+output: process.stdout,
+terminal: true,
+})
 const question = (texto) => {
+rl.clearLine(rl.input, 0)
 return new Promise((resolver) => {
 rl.question(texto, (respuesta) => {
+rl.clearLine(rl.input, 0)
 resolver(respuesta.trim())
-}) })
+})})
 }
 
 let opcion
@@ -154,36 +158,60 @@ opcion = await question(`╭${lineM}
 ┊ ${chalk.blueBright('┊')} ${chalk.bold.yellow(`npm start ${chalk.italic.magenta(`(${mid.methodCode14})`)}`)}
 ┊ ${chalk.blueBright('╰┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅')} 
 ╰${lineM}\n${chalk.bold.magentaBright('---> ')}`)
-//if (fs.existsSync(`./${authFile}/creds.json`)) {
-//console.log(chalk.bold.redBright(`PRIMERO BORRE EL ARCHIVO ${chalk.bold.greenBright("creds.json")} QUE SE ENCUENTRA EN LA CARPETA ${chalk.bold.greenBright(authFile)} Y REINICIE.`))
-//process.exit()
 if (!/^[1-2]$/.test(opcion)) {
 console.log(chalk.bold.redBright(mid.methodCode11(chalk)))
 }} while (opcion !== '1' && opcion !== '2' || fs.existsSync(`./${authFile}/creds.json`))
 }
-  
+
+console.info = () => {} 
+console.debug = () => {} 
+const originalConsoleWarn = console.warn
+console.warn = function() {
+const message = arguments[0]
+if (typeof message === 'string' && (message.includes(atob("Q2xvc2luZyBzdGFsZSBvcGVu")) || message.includes(atob("Q2xvc2luZyBvcGVuIHNlc3Npb24=")) || message.includes(atob("RXJyb3I6IEJhZCBNQUM=")))) {
+arguments[0] = ""
+}
+originalConsoleWarn.apply(console, arguments)
+}
+const originalConsoleError = console.error
+console.error = function() {
+const message = arguments[0]
+if (typeof message === 'string' && (message.includes(atob("RmFpbGVkIHRvIGRlY3J5cHQ=")) || message.includes(atob("U2Vzc2lvbiBlcnJvcg==")) || message.includes(atob("RXJyb3I6IEJhZCBNQUM=")))) {
+arguments[0] = ""
+}
+originalConsoleError.apply(console, arguments)
+}
+const originalConsoleLog = console.log
+console.log = function() {
+const message = arguments[0]
+if (typeof message === 'string' && (message.includes(atob("RXJyb3I6IEJhZCBNQUM=")))) {
+arguments[0] = ""
+}
+originalConsoleLog.apply(console, arguments)
+}
+
 const connectionOptions = {
 logger: pino({ level: 'silent' }),
 printQRInTerminal: opcion == '1' ? true : methodCodeQR ? true : false,
 mobile: MethodMobile, 
-browser: opcion == '1' ? ['FantasyBot-MD', 'Edge', '2.0.0'] : methodCodeQR ? ['FantasyBot-MD', 'Edge', '2.0.0'] : ['Ubuntu', 'Edge', '110.0.1587.56'],
+browser: opcion == '1' ? ['FantasyBot-MD', 'Edge', '2.0.0'] : methodCodeQR ? ['FantasyBot-MD', 'Edge', '2.0.0'] : ['FantasyBot-MD', 'Edge', '110.0.1587.56'],
 auth: {
 creds: state.creds,
 keys: makeCacheableSignalKeyStore(state.keys, Pino({ level: "fatal" }).child({ level: "fatal" })),
 },
 markOnlineOnConnect: true, 
 generateHighQualityLinkPreview: true, 
+syncFullHistory: true,
 getMessage: async (clave) => {
 let jid = jidNormalizedUser(clave.remoteJid)
 let msg = await store.loadMessage(jid, clave.id)
 return msg?.message || ""
 },
-msgRetryCounterCache,
+msgRetryCounterCache, // Resolver mensajes en espera
 msgRetryCounterMap,
-defaultQueryTimeoutMs: undefined,   
-version
+defaultQueryTimeoutMs: undefined,
+version,  
 }
-
 
 global.conn = makeWASocket(connectionOptions)
 if (!fs.existsSync(`./${authFile}/creds.json`)) {
@@ -218,6 +246,13 @@ if (global.db.data) await global.db.write()
 if (opts['autocleartmp'] && (global.support || {}).find) (tmp = [os.tmpdir(), 'tmp', "FantasyJadiBot"], tmp.forEach(filename => cp.spawn('find', [filename, '-amin', '2', '-type', 'f', '-delete'])))}, 30 * 1000)}
 if (global.obtenerQrWeb === 1) (await import('./server.js')).default(global.conn, PORT)
 
+async function getMessage(key) {
+if (store) {
+//const msg = store.loadMessage(key.remoteJid, key.id)
+//return msg.message
+} return {
+conversation: 'SimpleBot',
+}}
 
 async function connectionUpdate(update) {  
 const {connection, lastDisconnect, isNewLogin} = update
@@ -238,7 +273,7 @@ if (connection == 'open') {
 console.log(chalk.bold.greenBright(mid.mConexion))}
 let reason = new Boom(lastDisconnect?.error)?.output?.statusCode
 if (reason == 405) {
-await fs.unlinkSync("./FantasySession/" + "creds.json")
+await fs.unlinkSync("./GataBotSession/" + "creds.json")
 console.log(chalk.bold.redBright(mid.mConexionOFF)) 
 process.send('reset')}
 if (connection === 'close') {
@@ -269,7 +304,6 @@ process.on('uncaughtException', console.error);
 //process.on('uncaughtException', (err) => {
 //console.error('Se ha cerrado la conexión:\n', err)
 //process.send('reset') })
-
 
 let isInit = true;
 let handler = await import('./handler.js');
