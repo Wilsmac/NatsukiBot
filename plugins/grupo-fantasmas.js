@@ -27,7 +27,7 @@ if(total == 0) return conn.reply(m.chat, `${lenguajeGB['smsAvisoAG']()}𝙀𝙎�
 m.reply(`⚠️ 𝙍𝙀𝙑𝙄𝙎𝙄𝙊𝙉 𝘿𝙀 𝙄𝙉𝘼𝘾𝙏𝙄𝙑𝙊 ⚠️\n\n𝙂𝙍𝙐𝙋𝙊: ${await conn.getName(m.chat)}\n*𝙈𝙄𝙀𝙈𝘽𝙍𝙊𝙎 𝘿𝙀𝙇 𝙂𝙍𝙐𝙋𝙊:* ${sum}\n\n*[ 👻 𝙇𝙄𝙎𝙏𝘼𝙎 𝘿𝙀 𝙁𝘼𝙉𝙏𝘼𝙎𝙈𝘼𝙎 👻 ]*\n${sider.map(v => '  👉🏻 @' + v.replace(/@.+/, '')).join('\n')}\n\n*𝙉𝙊𝙏𝘼: 𝙀𝙎𝙏𝙊 𝙋𝙐𝙀𝘿𝙀 𝙉𝙊 𝙎𝙀𝙍 ℅100 𝘼𝘾𝙀𝙍𝙏𝘼𝘿𝙊 𝙀𝙇 𝘽𝙊𝙏 𝙄𝙉𝙄𝘾𝙄𝘼 𝙀𝙇 𝘾𝙊𝙉𝙏𝙀𝙊 𝘿𝙀 𝙈𝙀𝙉𝙎𝘼𝙅𝙀 𝘼𝙋𝘼𝙍𝙏𝙄𝙍 𝘿𝙀 𝙌𝙐𝙀 𝙎𝙀 𝘼𝘾𝙏𝙄𝙑𝙊 𝙀𝙉 𝙀𝙎𝙏𝙀 𝙉𝙐́𝙈𝙀𝙍𝙊*`, null, { mentions: sider }) 
   break   
 case "kickfantasmas":
-    if (!global.db.data.settings[conn.user.jid].restrict) throw 'Active el restrict';
+    if (!global.db.data.settings[conn.user.jid].restrict) throw `${lenguajeCD['smsRestrict']()}`;
         if(total == 0) return conn.reply(m.chat, `${lenguajeGB['smsAvisoAG']()}𝙀𝙎𝙏𝙀 𝙂𝙍𝙐𝙋𝙊 𝙀𝙎 𝘼𝘾𝙏𝙄𝙑𝙊 𝙉𝙊 𝙏𝙄𝙀𝙉𝙀 𝙁𝘼𝙉𝙏𝘼𝙎𝙈𝘼𝙎 :D`, m) 
        await m.reply(`⚠️ 𝙀𝙇𝙄𝙈𝙄𝙉𝘼𝘾𝙄𝙊𝙉 𝘿𝙀 𝙄𝙉𝘼𝘾𝙏𝙄𝙑𝙊𝙎 ⚠️\n\n𝙂𝙍𝙐𝙋𝙊: ${await conn.getName(m.chat)}\n𝙋𝘼𝙍𝙏𝙄𝘾𝙄𝙋𝘼𝙍𝙏𝙀: ${sum}\n\n[ 👻 𝙁𝘼𝙉𝙏𝘼𝙎𝙈𝘼𝙎 𝙀𝙇𝙄𝙈𝙄𝙉𝘼𝘿𝙊 👻 ]\n${sider.map(v => '@' + v.replace(/@.+/, '')).join('\n')}\n\n*𝙀𝙇 𝘽𝙊𝙏 𝙀𝙇𝙄𝙈𝙄𝙉𝘼𝙍𝘼 𝙇𝘼 𝙇𝙄𝙎𝙏𝘼 𝙈𝙀𝙉𝘾𝙄𝙊𝙉𝘼𝘿𝘼, 𝙀𝙈𝙋𝙀𝙕𝘼𝘿𝙊 𝙀𝙇 20 𝙎𝙀𝙂𝙐𝙉𝘿𝙊, 𝙔 𝘾𝘼𝘿𝘼 10 𝙎𝙀𝙂𝙐𝙉𝘿𝙊𝙎 𝙀𝙇𝙄𝙈𝙄𝙉𝘼𝙍𝘼 𝙐𝙉 𝙉𝙐́𝙈𝙀𝙍𝙊*`, null, { mentions: sider }) 
        await delay(1 * 10000)
@@ -55,7 +55,6 @@ export default handler
 const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms))
 
 
-    //desarrollado por https://github.com/ReyEndymion
-    //participa en desactivacion de despedida https://github.com/BrunoSobrino/
+    //desarrollado por Wilmer ofc
 
 
