@@ -190,8 +190,14 @@ global.dfail('admin', m, conn)
 throw false
 }}
 chat.antiLink = isEnable
-break
-
+  break;
+    case 'modoia':
+      isAll = true;
+      if (!(isROwner || isOwner)) {
+        global.dfail('owner', m, conn);
+        throw false;
+      }
+      bot.modoia = isEnable;      
 case 'antilink2': case 'antienlace2':
 if (m.isGroup) {
 if (!(isAdmin || isOwner)) {
