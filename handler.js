@@ -5,7 +5,7 @@ import { fileURLToPath } from 'url'
 import path, { join } from 'path'
 import { unwatchFile, watchFile } from 'fs'
 import chalk from 'chalk'   
-import fetch from 'node-fetch'
+import fetch from 'node-fetch' 
 
 /**
  * @type {import('@adiwajshing/baileys')}  
@@ -56,7 +56,6 @@ global.db.data.users[m.sender] = {}
 if (user) {
 if (!isNumber(user.exp)) user.exp = 0
 if (!('premium' in user)) user.premium = false
-if (!('muto' in user)) user.muto = false
 if (!isNumber(user.joincount)) user.joincount = 1
 if (!isNumber(user.money)) user.money = 150
 if (!isNumber(user.limit)) user.limit = 15                
@@ -99,7 +98,7 @@ if (!isNumber(user.counterPrivate)) user.counterPrivate = 0
 if (!isNumber(user.afk)) user.afk = -1
 //if (!('autolevelup' in user))  user.autolevelup = true
 if (!isNumber(user.reporte)) user.reporte = 0
-if (!('role' in user)) user.role = '*NOVATO(A)*'
+if (!('role' in user)) user.role = '*NOVATO(A)* 🪤'
 if (!isNumber(user.agility)) user.agility = 0
 if (!isNumber(user.anakanjing)) user.anakanjing = 0
 if (!isNumber(user.mesagge)) user.anakanjing = 0
@@ -840,7 +839,6 @@ pillhero: 0,
 pisang: 0,
 pointxp: 0,
 potion: 10,
-muto: false,
 premium: false,
 premiumTime: 0,
 ramuan: 0,
@@ -966,7 +964,7 @@ global.db.data.chats[m.chat] = {}
 if (chat) {
 if (!('isBanned' in chat)) chat.isBanned = false         
 if (!('welcome' in chat)) chat.welcome = true           
-if (!('detect' in chat)) chat.detect = false               
+if (!('detect' in chat)) chat.detect = true               
 if (!('sWelcome' in chat)) chat.sWelcome = ''          
 if (!('sBye' in chat)) chat.sBye = ''                    
 if (!('sPromote' in chat)) chat.sPromote = ''             
@@ -975,7 +973,7 @@ if (!('delete' in chat)) chat.delete = false
 if (!('modohorny' in chat)) chat.modohorny = true       
 if (!('stickers' in chat)) chat.stickers = false            
 if (!('autosticker' in chat)) chat.autosticker = false      
-if (!('audios' in chat)) chat.audios = false               
+if (!('audios' in chat)) chat.audios = true               
 if (!('antiver' in chat)) chat.antiver = false             
 if (!('antiLink' in chat)) chat.antiLink = false      
 if (!('antiLink2' in chat)) chat.antiLink2 = false
@@ -994,18 +992,18 @@ if (!('game' in chat)) chat.game = true
 if (!('game2' in chat)) chat.game2 = true
 if (!('simi' in chat)) chat.simi = false
 if (!('antiTraba' in chat)) chat.antiTraba = true
-if (!('autolevelup' in chat))  chat.autolevelup = false
+if (!('autolevelup' in chat))  chat.autolevelup = true
 if (!isNumber(chat.expired)) chat.expired = 0
 } else
 global.db.data.chats[m.chat] = {
 isBanned: false,
 welcome: true,
-detect: false,
+detect: true,
 sWelcome: '',
 sBye: '',
 sPromote: '',
 sDemote: '', 
-delete: false,
+delete: true,
 modohorny: true,
 stickers: false,
 autosticker: false,
@@ -1028,7 +1026,7 @@ game: true,
 game2: true, 
 simi: false,
 antiTraba: true,
-autolevelup: false,
+autolevelup: true,
 expired: 0,
 }
 let settings = global.db.data.settings[this.user.jid]
@@ -1194,10 +1192,10 @@ user.antispam++
 return
 }
 
-//Antispam 2                
+//Antispam                
 if (user.antispam2 && isROwner) return
-let time = global.db.data.users[m.sender].spam + 3000
-if (new Date - global.db.data.users[m.sender].spam < 3000) return console.log(`[ SPAM ]`) 
+let time = global.db.data.users[m.sender].spam + 5000
+if (new Date - global.db.data.users[m.sender].spam < 5000) throw console.log(`[ SPAM ]`) 
 global.db.data.users[m.sender].spam = new Date * 1
 }
 
@@ -1250,22 +1248,22 @@ if (xp > 2000)
 m.reply('Exp limit') // Hehehe
 else               
 if (!isPrems && plugin.money && global.db.data.users[m.sender].money < plugin.money * 1) {
-//this.reply(m.chat, `𝑵𝑶 𝑻𝑰𝑬𝑵𝑬𝑺 𝑭𝑺𝑵𝑻𝑨𝑺𝒀𝑪𝑶𝑰𝑵𝑺`, m)
-this.sendMessage(m.chat, {text: `𝑵𝑶 𝑻𝑰𝑬𝑵𝑬 𝑭𝑨𝑵𝑻𝑨𝑺𝒀𝑪𝑶𝑰𝑵𝑺`,  contextInfo: {externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, title: gt, body: ' 𝐅𝐚𝐧𝐭𝐚𝐬𝐲𝐁𝐨𝐭-𝐌𝐃 ', previewType: 0, thumbnail: fantasyImg.getRandom(), sourceUrl: canalofc }}}, { quoted: m })         
+//this.reply(m.chat, `𝑵𝒐 𝒕𝒊𝒆𝒏𝒆 𝑭𝒂𝒏𝒕𝒂𝒔𝒚𝑪𝒐𝒊𝒏𝒔`, m)
+this.sendMessage(m.chat, {text: `𝑵𝒐 𝑻𝒊𝒆𝒏𝒆𝒔 𝑭𝒂𝒏𝒕𝒂𝒔𝒚𝑪𝒐𝒊𝒏𝒔`,  contextInfo: {externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, title: gt, body: ' 𝑭𝒂𝒏𝒕𝒂𝒔𝒚𝑩𝒐𝒕-𝑴𝑫 ', previewType: 0, thumbnail: gataImg.getRandom(), sourceUrl: accountsgb.getRandom()}}}, { quoted: m })         
 continue     
 }
 
 m.exp += xp
 if (!isPrems && plugin.limit && global.db.data.users[m.sender].limit < plugin.limit * 1) {
-this.sendMessage(m.chat, {text: `${lenguajeGB['smsCont7']()} *${usedPrefix}buy*`,  contextInfo: {externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, title: gt, body: ' 𝐅𝐚𝐧𝐭𝐚𝐬𝐲𝐁𝐨𝐭-𝐌𝐃 ', previewType: 0, thumbnail: fantasyImg.getRandom(), sourceUrl: canalofc }}}, { quoted: m })         
+this.sendMessage(m.chat, {text: `${lenguajeGB['smsCont7']()} *${usedPrefix}buy*`,  contextInfo: {externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, title: gt, body: ' 𝑭𝒂𝒏𝒕𝒂𝒔𝒚𝑩𝒐𝒕-𝑴𝑫 ', previewType: 0, thumbnail: gataImg.getRandom(), sourceUrl: accountsgb.getRandom()}}}, { quoted: m })         
 //this.reply(m.chat, `${lenguajeGB['smsCont7']()} *${usedPrefix}buy*`, m)
 continue //Sin límite
 }
 if (plugin.level > _user.level) {
-this.sendMessage(m.chat, {text: `${lenguajeGB['smsCont9']()} *${plugin.level}* ${lenguajeGB['smsCont10']()} *${_user.level}* ${lenguajeGB['smsCont11']()} *${usedPrefix}nivel*`,  contextInfo: {externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, title: gt, body: ' 𝐅𝐚𝐧𝐭𝐚𝐬𝐲𝐁𝐨𝐭-𝐌𝐃', previewType: 0, thumbnail: fantasyImg.getRandom(), sourceUrl: canalofc }}}, { quoted: m })         
+this.sendMessage(m.chat, {text: `${lenguajeGB['smsCont9']()} *${plugin.level}* ${lenguajeGB['smsCont10']()} *${_user.level}* ${lenguajeGB['smsCont11']()} *${usedPrefix}nivel*`,  contextInfo: {externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, title: gt, body: ' 𝑭𝒂𝒏𝒕𝒂𝒔𝒚𝑩𝒐𝒕-𝑴𝑫 ', previewType: 0, thumbnail: gataImg.getRandom(), sourceUrl: accountsgb.getRandom()}}}, { quoted: m })         
 //this.reply(m.chat, `${lenguajeGB['smsCont9']()} *${plugin.level}* ${lenguajeGB['smsCont10']()} *${_user.level}* ${lenguajeGB['smsCont11']()} *${usedPrefix}nivel*`, m)
 continue // Si no se ha alcanzado el nivel
-} 
+}
 let extra = {
 match,
 usedPrefix,
@@ -1321,7 +1319,7 @@ if (m.limit)
 m.reply(+m.limit + lenguajeGB.smsCont8())
 }
 if (m.money)
-m.reply(+m.money + ' 𝐅𝐚𝐧𝐭𝐚𝐬𝐲𝐂𝐨𝐢𝐧𝐬 𝐔𝐬𝐚𝐝𝐨(𝐬)')  
+m.reply(+m.money + ' 𝑭𝒂𝒏𝒕𝒂𝒔𝒚𝑪𝒐𝒊𝒏𝒔 𝑼𝒔𝒂𝒅𝒐(𝑺)')  
 break
 }}} catch (e) {
 console.error(e)
@@ -1333,12 +1331,7 @@ this.msgqueque.splice(quequeIndex, 1)
 }
 //console.log(global.db.data.users[m.sender])
 let user, stats = global.db.data.stats
-if (m) { let utente = global.db.data.users[m.sender]
-if (utente.muto == true) {
-let bang = m.key.id
-let cancellazzione = m.key.participant
-await conn.sendMessage(m.chat, { delete: { remoteJid: m.chat, fromMe: false, id: bang, participant: cancellazzione }})
-}
+if (m) {
 if (m.sender && (user = global.db.data.users[m.sender])) {
 user.exp += m.exp
 user.limit -= m.limit * 1
@@ -1381,7 +1374,7 @@ if (opts['autoread']) await this.readMessages([m.key])
 if (settingsREAD.autoread2) await this.readMessages([m.key])  
 //if (settingsREAD.autoread2 == 'true') await this.readMessages([m.key])    
 
-if (db.data.chats[m.chat].reaction && m.text.match(/(ción|mente|pero|and|but|ify)/gi)) {
+if (db.data.chats[m.chat].reaction && m.text.match(/(ción|dad|aje|oso|izar|mente|pero|tion|age|ous|ate|and|but|ify)/gi)) {
 let emot = pickRandom(["✨", "🥹", "🤧", "🫠", "🌺", "🤨", "🫠", "🥲", "🫥", "😶‍🌫️", "😹", "🙀", "❤️‍🩹", "❤️‍🔥", "😶"])
 if (!m.fromMe) return this.sendMessage(m.chat, { react: { text: emot, key: m.key }})
 }
@@ -1408,7 +1401,7 @@ case 'remove':
 if (chat.welcome) {
 let groupMetadata = await this.groupMetadata(id) || (conn.chats[id] || {}).metadata
 for (let user of participants) {
-let pp = fs.readFileSync ('./media/menus/Menu1.jpg')
+let pp = gataMenu.getRandom()
 try {
 pp = await this.profilePictureUrl(user, 'image')
 } catch (e) {
@@ -1416,7 +1409,7 @@ pp = await this.profilePictureUrl(user, 'image')
 let apii = await this.getFile(pp)                                      
 const botTt2 = groupMetadata.participants.find(u => this.decodeJid(u.id) == this.user.jid) || {} 
 const isBotAdminNn = botTt2?.admin === "admin" || false
-text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Welcome, @user!').replace('@subject', await this.getName(id)).replace('@desc', groupMetadata.desc?.toString() || '𝐅𝐚𝐧𝐭𝐚𝐬𝐲𝐁𝐨𝐭-𝐌𝐃') :
+text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Welcome, @user!').replace('@subject', await this.getName(id)).replace('@desc', groupMetadata.desc?.toString() || '𝑭𝒂𝒏𝒕𝒂𝒔𝒚𝑩𝒐𝒕-𝑴𝑫') :
 (chat.sBye || this.bye || conn.bye || 'Bye, @user!')).replace('@user', '@' + user.split('@')[0])
 
 if (chat.antifake && isBotAdminNn && action === 'add') {
@@ -1457,7 +1450,7 @@ return
 for (const groupUpdate of groupsUpdate) {
 const id = groupUpdate.id
 if (!id) continue
-let chats = global.db.data?.chats?.[id], text = ''
+let chats = global.db.data.chats[id], text = ''
 if (!chats?.detect) continue
 // if (groupUpdate.desc) text = (chats.sDesc || this.sDesc || conn.sDesc || '```Description has been changed to```\n@desc').replace('@desc', groupUpdate.desc)
 //if (groupUpdate.subject) text = (chats.sSubject || this.sSubject || conn.sSubject || '```Subject has been changed to```\n@subject').replace('@subject', groupUpdate.subject)
@@ -1487,13 +1480,12 @@ let msg = this.serializeM(this.loadMessage(id))
 let chat = global.db.data.chats[msg?.chat] || {}
 if (!chat?.delete) return 
 if (!msg) return 
-if (!msg?.isGroup) return 
-const antideleteMessage = `*╭━━⬣ ${lenguajeGB['smsCont19']()} ⬣━━*
+const antideleteMessage = `*╭━━⬣ ${lenguajeGB['smsCont19']()} ⬣━━ 𓃠*
 ${lenguajeGB['smsCont20']()} @${participant.split`@`[0]}
 ${lenguajeGB['smsCont21']()}
 *╰━━━⬣ ${lenguajeGB['smsCont19']()} ⬣━━╯*`.trim();
 await this.sendMessage(msg.chat, {text: antideleteMessage, mentions: [participant]}, {quoted: msg})
-//this.copyNForward(msg.chat, msg).catch(e => console.log(e, msg))
+this.copyNForward(msg.chat, msg).catch(e => console.log(e, msg))
 } catch (e) {
 console.error(e)
 }}
@@ -1513,7 +1505,7 @@ restrict: lenguajeGB['smsRestrict'](),
 }[type]
 //if (msg) return m.reply(msg)
 let tg = { quoted: m, userJid: conn.user.jid }
-let prep = generateWAMessageFromContent(m.chat, { extendedTextMessage: { text: msg, contextInfo: { externalAdReply: { title: lenguajeGB.smsAvisoAG().slice(0,-2), body: [wm, '𝐅𝐚𝐧𝐭𝐚𝐬𝐲𝐁𝐨𝐭-𝐌𝐃 ' + gt + ' 🌹', ' indefinido202@gmail.com'].getRandom(), thumbnail: fantasyImg.getRandom(), sourceUrl: canalofc }}}}, tg)
+let prep = generateWAMessageFromContent(m.chat, { extendedTextMessage: { text: msg, contextInfo: { externalAdReply: { title: lenguajeGB.smsAvisoAG().slice(0,-2), body: [wm, '𝑾𝒊𝒍𝒎𝒆𝒓 𝒐𝒇𝒄 ' + gt + ' 😻', ' indefinido202@gmail.com'].getRandom(), thumbnail: gataImg.getRandom(), sourceUrl: [md, channel1, channel2, channel3, yt, ig, paypal, fb].getRandom() }}}}, tg)
 if (msg) return conn.relayMessage(m.chat, prep.message, { messageId: prep.key.id })
 }
 
