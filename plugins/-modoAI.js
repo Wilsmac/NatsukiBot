@@ -1,4 +1,4 @@
-import fetch from 'node-fetch';
+/*import fetch from 'node-fetch';
 import translate from '@vitalets/google-translate-api';
 
   // Para configurar el idioma, en la raíz del proyecto, modifique el archivo config.json.
@@ -106,4 +106,4 @@ handler.before = async (m) => {
    }
   return true;
 };
-export default handler;
+export default handler;*/
