@@ -1,3 +1,5 @@
+//desactivado temporalmente.
+
 /*import fetch from 'node-fetch';
 import translate from '@vitalets/google-translate-api';
 
