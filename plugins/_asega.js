@@ -16,6 +16,4 @@ handler.help = ['fap']
 handler.tags = ['juegos']
 handler.command = /^(sega|sierra|fap)$/i;
 
-//handler.register = true
-
 export default handler*/
