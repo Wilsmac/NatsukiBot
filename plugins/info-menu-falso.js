@@ -92,7 +92,7 @@ let menu = `${lenguajeCD['smsConfi2']()} ${taguser}\n${packname}${conn.user.jid 
 *╘━ꥇ۬════•| ✿ |•════╝* 
  ${readMore}
 
-*╭━ <FUNCIÓN DE SER UN SUB BOT/>
+*╭━ \`<FUNCIÓN DE SER UN SUB BOT/>\`
 ╠ 💫 _${usedPrefix}serbot_
 ╠ 💫 _${usedPrefix}serbot --code_
 ╠ 💫 _${usedPrefix}detener | stop_
