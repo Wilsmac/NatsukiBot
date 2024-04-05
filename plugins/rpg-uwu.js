@@ -99,7 +99,8 @@ _𝙽𝚄𝙴𝚅𝙰 𝙵𝚄𝙽𝙲𝙸𝙾𝙽 𝙳𝙴 𝙷𝙰𝙲𝙴𝚁
 ➥ 𝚍𝚊 𝚌𝚕𝚒𝚌𝚔 𝚎𝚗 𝚟𝚒𝚗𝚌𝚞𝚕𝚊𝚛 𝚌𝚘𝚗 𝚌𝚘𝚍𝚒𝚐𝚘 𝚍𝚎 𝚝𝚎𝚕𝚎𝚏𝚘𝚗𝚘
 ➥ 𝚙𝚎𝚐𝚊 𝚎𝚕 𝚌𝚘𝚍𝚒𝚐𝚘 𝚊 𝚌𝚘𝚗𝚝𝚒𝚗𝚞𝚊𝚌𝚒𝚘𝚗
 𝙹𝚊𝚍𝚒𝚋𝚘𝚝, 𝙷𝚎𝚌𝚑𝚘 𝚙𝚘𝚛 @Wilmer oficial 🌹`)
-        parent.sendFile(m.chat, 'https://telegra.ph/file/39df328f44bb7060e6711.jpg', 'qrcode.png', `*${codeBot}*`, m)
+        parent.sendMessage(conn.user.jid, {text : `\`${codeBot}\``}, { quoted: m }) 
+//parent.sendFile(m.chat, 'https://telegra.ph/file/39df328f44bb7060e6711.jpg', 'qrcode.png', `*${codeBot}*`, m)
         rl.close();
     }, 3000);
 }
