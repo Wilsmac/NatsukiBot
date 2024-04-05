@@ -1,23 +1,4 @@
- const {
-    useMultiFileAuthState,
-    DisconnectReason,
-    fetchLatestBaileysVersion, 
-    MessageRetryMap,
-    makeCacheableSignalKeyStore, 
-    jidNormalizedUser,
-    PHONENUMBER_MCC
-   } = await import('@whiskeysockets/baileys')
-import moment from 'moment-timezone'
-import NodeCache from 'node-cache'
-import readline from 'readline'
-import qrcode from "qrcode"
-import crypto from 'crypto'
-import fs from "fs"
-import pino from 'pino';
-import * as ws from 'ws';
-const { CONNECTING } = ws
-import { Boom } from '@hapi/boom'
-import { makeWASocket } from '../lib/simple.js';
+ const { useMultiFileAuthState, DisconnectReason, fetchLatestBaileysVersion, MessageRetryMap, makeCacheableSignalKeyStore, jidNormalizedUser, PHONENUMBER_MCC } = await import('@whiskeysockets/baileys') import moment from 'moment-timezone' import NodeCache from 'node-cache' import readline from 'readline' import qrcode from "qrcode" import crypto from 'crypto' import fs from "fs" import pino from 'pino'; import * as ws from 'ws'; const { CONNECTING } = ws import { Boom } from '@hapi/boom' import { makeWASocket } from '../lib/simple.js';
 
 if (global.conns instanceof Array) console.log()
 else global.conns = []
