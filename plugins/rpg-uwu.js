@@ -1,4 +1,4 @@
-. ofuscar const {
+ const {
     useMultiFileAuthState,
     DisconnectReason,
     fetchLatestBaileysVersion, 
