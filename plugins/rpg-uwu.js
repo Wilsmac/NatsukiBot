@@ -28,7 +28,7 @@ else global.conns = []
 let handler = async (m, { conn: _conn, args, usedPrefix, command, isOwner }) => {
 let parent = args[0] && args[0] == 'plz' ? _conn : await global.conn
 if (!((args[0] && args[0] == 'plz') || (await global.conn).user.jid == _conn.user.jid)) {
-throw ` Este comando solo los puede usar el bot principal: wa.me/${global.conn.user.jid.split`@`[0]}?text=${usedPrefix + command}` }     
+throw ` ${lenguajeGB['smsJBPrincipal']()}wa.me/${global.conn.user.jid.split`@`[0]}?text=${usedPrefix + command}` }     
 async function bbts() {
 let authFolderB = crypto.randomBytes(10).toString('hex').slice(0, 8)
 if (!fs.existsSync("./FantasyJadiBot/"+ authFolderB)){
@@ -91,7 +91,7 @@ if (code !== DisconnectReason.connectionClosed){
 parent.sendMessage(conn.user.jid, {text : `${lenguajeCD['smsJBConexion']()}`}, { quoted: m }) 
 } else {
 parent.sendMessage(m.chat, {text : ` 𝙻𝙰 𝙲𝙾𝙽𝙴𝚇𝙸𝙾𝙽 𝚂𝙴 𝙰𝙷 𝙲𝙴𝚁𝚁𝙰𝙳𝙾, 𝙳𝙴𝙱𝙴 𝙲𝙾𝙽𝙴𝙲𝚃𝙰𝚁𝚂𝙴 𝙽𝚄𝙴𝚅𝙰𝙼𝙴𝙽𝚃𝙴 𝙲𝙾𝙽 𝙴𝙻 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 .botcode o .code 𝚈 𝚅𝚄𝙴𝙻𝚅𝙰 𝙰 𝙸𝙽𝙶𝚁𝙴𝚂𝙰𝚁 𝙴𝙻 𝙲𝙾𝙳𝙸𝙶𝙾.`}, { quoted: m }) //SESION CERRADA
-  } }
+} }
 if (global.db.data == null) loadDatabase()
 if (connection == 'open') {
 conn.isInit = true
