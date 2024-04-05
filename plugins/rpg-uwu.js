@@ -1,4 +1,36 @@
- const { useMultiFileAuthState, DisconnectReason, fetchLatestBaileysVersion, MessageRetryMap, makeCacheableSignalKeyStore, jidNormalizedUser, PHONENUMBER_MCC } = await import('@whiskeysockets/baileys') import moment from 'moment-timezone' import NodeCache from 'node-cache' import readline from 'readline' import qrcode from "qrcode" import crypto from 'crypto' import fs from "fs" import pino from 'pino'; import * as ws from 'ws'; const { CONNECTING } = ws import { Boom } from '@hapi/boom' import { makeWASocket } from '../lib/simple.js'; if (global.conns instanceof Array) console.log()else global.conns = []let handler = async (m, { conn: _conn, args, usedPrefix, command, isOwner }) => { let parent = args[0] && args[0] == 'plz' ? _conn : await global.conn if (!((args[0] && args[0] == 'plz') || (await global.conn).user.jid == _conn.user.jid)) { throw ` Este comando solo los puede usar el bot principal: wa.me/${global.conn.user.jid.split`@`[0]}?text=${usedPrefix + command}`} async function bbts() { let authFolderB = crypto.randomBytes(10).toString('hex').slice(0, 8)if (!fs.existsSync("./FantasyJadiBot/"+ authFolderB)){ fs.mkdirSync("./FantasyJadiBot/"+ authFolderB, { recursive: true });} args[0] ? fs.writeFileSync("./FantasyJadiBot/" + authFolderB + "/creds.json", JSON.stringify(JSON.parse(Buffer.from(args[0], "base64").toString("utf-8")), null, '\t')) : ""
+ const {
+    useMultiFileAuthState,
+    DisconnectReason,
+    fetchLatestBaileysVersion, 
+    MessageRetryMap,
+    makeCacheableSignalKeyStore, 
+    jidNormalizedUser,
+    PHONENUMBER_MCC
+   } = await import('@whiskeysockets/baileys')
+import moment from 'moment-timezone'
+import NodeCache from 'node-cache'
+import readline from 'readline'
+import qrcode from "qrcode"
+import crypto from 'crypto'
+import fs from "fs"
+import pino from 'pino';
+import * as ws from 'ws';
+const { CONNECTING } = ws
+import { Boom } from '@hapi/boom'
+import { makeWASocket } from '../lib/simple.js';
+if (global.conns instanceof Array) console.log()
+else global.conns = []
+let handler = async (m, { conn: _conn, args, usedPrefix, command, isOwner }) => {
+let parent = args[0] && args[0] == 'plz' ? _conn : await global.conn
+if (!((args[0] && args[0] == 'plz') || (await global.conn).user.jid == _conn.user.jid)) {
+throw ` Este comando solo los puede usar el bot principal: wa.me/${global.conn.user.jid.split`@`[0]}?text=${usedPrefix + command}`
+}     
+  async function bbts() {
+  let authFolderB = crypto.randomBytes(10).toString('hex').slice(0, 8)
+if (!fs.existsSync("./FantasyJadiBot/"+ authFolderB)){
+ fs.mkdirSync("./FantasyJadiBot/"+ authFolderB, { recursive: true });
+ }
+args[0] ? fs.writeFileSync("./FantasyJadiBot/" + authFolderB + "/creds.json", JSON.stringify(JSON.parse(Buffer.from(args[0], "base64").toString("utf-8")), null, '\t')) : ""
 const {state, saveState, saveCreds} = await useMultiFileAuthState(`./FantasyJadiBot/${authFolderB}`)
 const msgRetryCounterMap = (MessageRetryMap) => { };
 const msgRetryCounterCache = new NodeCache()
@@ -40,8 +72,7 @@ if (methodCode && !conn.authState.creds.registered) {
     setTimeout(async () => {
         let codeBot = await conn.requestPairingCode(cleanedNumber);
         codeBot = codeBot?.match(/.{1,4}/g)?.join("-") || codeBot;
-       await m.reply(`${global.packname}✥━═ ࿇*
-_𝙽𝚄𝙴𝚅𝙰 𝙵𝚄𝙽𝙲𝙸𝙾𝙽 𝙳𝙴 𝙷𝙰𝙲𝙴𝚁𝚃𝙴 𝚄𝙽 𝚂𝚄𝙱 𝙱𝙾𝚃_* 🌹\n➥ 𝙳𝚒𝚛𝚒𝚓𝚊𝚜𝚎 𝚎𝚗 𝚕𝚘𝚜 𝚝𝚛𝚎𝚜 𝚙𝚞𝚗𝚝𝚘𝚜 𝚎𝚗 𝚕𝚊 𝚎𝚜𝚚𝚞𝚒𝚗𝚊 𝚜𝚞𝚙𝚎𝚛𝚒𝚘𝚛 𝚍𝚎𝚛𝚎𝚌𝚑𝚊\n➥𝙸𝚛 𝚊 𝚕𝚊 𝚘𝚙𝚌𝚒𝚘𝚗 𝙳𝚒𝚜𝚙𝚘𝚜𝚒𝚝𝚒𝚟𝚘𝚜 𝚟𝚒𝚗𝚌𝚞𝚕𝚊𝚍𝚘𝚜\n➥ 𝚍𝚊 𝚌𝚕𝚒𝚌𝚔 𝚎𝚗 𝚟𝚒𝚗𝚌𝚞𝚕𝚊𝚛 𝚌𝚘𝚗 𝚌𝚘𝚍𝚒𝚐𝚘 𝚍𝚎 𝚝𝚎𝚕𝚎𝚏𝚘𝚗𝚘\n➥ 𝚙𝚎𝚐𝚊 𝚎𝚕 𝚌𝚘𝚍𝚒𝚐𝚘 𝚊 𝚌𝚘𝚗𝚝𝚒𝚗𝚞𝚊𝚌𝚒𝚘𝚗\n𝙹𝚊𝚍𝚒𝚋𝚘𝚝, 𝙷𝚎𝚌𝚑𝚘 𝚙𝚘𝚛 @Wilmer oficial 🌹`)
+       await m.reply(`*࿇ ═━✥${global.packname}✥━═ ࿇*\n_𝙽𝚄𝙴𝚅𝙰 𝙵𝚄𝙽𝙲𝙸𝙾𝙽 𝙳𝙴 𝙷𝙰𝙲𝙴𝚁𝚃𝙴 𝚄𝙽 𝚂𝚄𝙱 𝙱𝙾𝚃_* 🌹\n➥ 𝙳𝚒𝚛𝚒𝚓𝚊𝚜𝚎 𝚎𝚗 𝚕𝚘𝚜 𝚝𝚛𝚎𝚜 𝚙𝚞𝚗𝚝𝚘𝚜 𝚎𝚗 𝚕𝚊 𝚎𝚜𝚚𝚞𝚒𝚗𝚊 𝚜𝚞𝚙𝚎𝚛𝚒𝚘𝚛 𝚍𝚎𝚛𝚎𝚌𝚑𝚊\n➥𝙸𝚛 𝚊 𝚕𝚊 𝚘𝚙𝚌𝚒𝚘𝚗 𝙳𝚒𝚜𝚙𝚘𝚜𝚒𝚝𝚒𝚟𝚘𝚜 𝚟𝚒𝚗𝚌𝚞𝚕𝚊𝚍𝚘𝚜\n➥ 𝚍𝚊 𝚌𝚕𝚒𝚌𝚔 𝚎𝚗 𝚟𝚒𝚗𝚌𝚞𝚕𝚊𝚛 𝚌𝚘𝚗 𝚌𝚘𝚍𝚒𝚐𝚘 𝚍𝚎 𝚝𝚎𝚕𝚎𝚏𝚘𝚗𝚘\n➥ 𝚙𝚎𝚐𝚊 𝚎𝚕 𝚌𝚘𝚍𝚒𝚐𝚘 𝚊 𝚌𝚘𝚗𝚝𝚒𝚗𝚞𝚊𝚌𝚒𝚘𝚗\n𝙹𝚊𝚍𝚒𝚋𝚘𝚝, 𝙷𝚎𝚌𝚑𝚘 𝚙𝚘𝚛 @Wilmer oficial 🌹`)
 parent.sendMessage(m.chat, {text : `${codeBot}`}, { quoted: m })
         rl.close(); }, 3000); }
 conn.isInit = false
