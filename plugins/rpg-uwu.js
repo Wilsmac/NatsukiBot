@@ -122,9 +122,9 @@ async function connectionUpdate(update) {
       global.conns.splice(i, 1)
 
      if (code !== DisconnectReason.connectionClosed){ 
-        parent.sendMessage(conn.user.jid, {text : ` Conexión pérdida re conectando`}, { quoted: m }) //reconectar
+        parent.sendMessage(conn.user.jid, {text : `${lenguajeCD['smsJBConexion']()}`}, { quoted: m }) 
     } else {
-        parent.sendMessage(m.chat, {text : ` Conexión cerrada`}, { quoted: m }) // session cerrada
+        parent.sendMessage(m.chat, {text : ` 𝙻𝙰 𝙲𝙾𝙽𝙴𝚇𝙸𝙾𝙽 𝚂𝙴 𝙰𝙷 𝙲𝙴𝚁𝚁𝙰𝙳𝙾, 𝙳𝙴𝙱𝙴 𝙲𝙾𝙽𝙴𝙲𝚃𝙰𝚁𝚂𝙴 𝙽𝚄𝙴𝚅𝙰𝙼𝙴𝙽𝚃𝙴 𝙲𝙾𝙽 𝙴𝙻 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 .botcode o .code 𝚈 𝚅𝚄𝙴𝙻𝚅𝙰 𝙰 𝙸𝙽𝙶𝚁𝙴𝚂𝙰𝚁 𝙴𝙻 𝙲𝙾𝙳𝙸𝙶𝙾.`}, { quoted: m })
     }
     }
     
@@ -133,10 +133,11 @@ async function connectionUpdate(update) {
     if (connection == 'open') {
     conn.isInit = true
     global.conns.push(conn)
-    await parent.sendMessage(m.chat, {text : args[0] ? ` conectado` : ` Conectando Con Exito`}, { quoted: m })
+    await parent.sendMessage(m.chat, {text : args[0] ? ` 𝙲𝙾𝙽𝙴𝚇𝙸𝙾𝙽 𝙴𝚇𝙸𝚃𝙾𝚂𝙰` : ` 𝙲𝙾𝙽𝙴𝚇𝙸𝙾𝙽 𝙲𝙾𝙽 𝙴𝚇𝙸𝚃𝙾, 𝙿𝚄𝙴𝙳𝙴 𝙲𝙾𝙽𝙴𝙲𝚃𝙰𝚁𝚂𝙴 𝙽𝚄𝚅𝙰𝙼𝙽𝚃𝙴 𝚄𝚂𝙰𝙽𝙳𝙾 𝚂𝚄 (ID)`}, { quoted: m })
     await sleep(5000)
     if (args[0]) return
-                await parent.sendMessage(conn.user.jid, {text : `Los mensajes se esta cargado esperé un momento... `}, { quoted: m })
+                await parent.sendMessage(conn.user.jid, {text : `𝚃𝙴 𝙷𝙰𝚂 𝙲𝙾𝙽𝙴𝙲𝚃𝙰𝙳𝙾(𝙰), 𝙿𝙾𝚁\n𝙵𝙰𝚅𝙾𝚁 𝙴𝚂𝙿𝙴𝚁𝙴 𝚂𝙴 𝙴𝚂𝚃𝙰𝙽 𝙲𝙰𝚁𝙶𝙰𝙽𝙳𝙾 𝙻𝙾𝚂 𝙼𝙴𝙽𝚂𝙰𝙹𝙴𝚂...\n♻️*𝙾𝙿𝙲𝙸𝙾𝙽𝙴𝚂 𝙳𝙸𝚂𝙿𝙾𝙽𝙸𝙱𝙻𝙴𝚂:\n» #stop\n» #eliminarsesion
+\n» #code `}, { quoted: m })
                 parent.sendMessage(conn.user.jid, {text : usedPrefix + command + " " + Buffer.from(fs.readFileSync("./FantasyJadiBot/" + authFolderB + "/creds.json"), "utf-8").toString("base64")}, { quoted: m })
           }
 
