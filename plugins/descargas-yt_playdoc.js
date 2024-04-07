@@ -67,7 +67,8 @@ try {
 const lolhuman = await fetch(`https://api.lolhuman.xyz/api/ytaudio2?apikey=${lolkeysapi}&url=${yt_play[0].url}`);
 const lolh = await lolhuman.json();
 const n = lolh.result.title || 'error';
-await conn.sendMessage(m.chat, { document: { url: lolh.result.link }, caption: `╔╦══• •✠•${wm}•✠ • •══╦╗\n┃📥 𝙔𝙊𝙐𝙏𝙐𝘽𝙀 𝘿𝙇 📥\n┃ও *${mid.smsYT1}:* \n┃» ${n}\n╚╩══• •✠•${author}•✠ • •══╩╝`, fileName: `${n}.mp3`, mimetype: 'audio/mpeg', contextInfo: {
+await conn.sendMessage(m.chat, {document: {url: lolh.result.link}, caption: `╔╦══• •✠•${wm}•✠ • •══╦╗\n┃📥 YOUTUBE DL 📥\n┃ও *TÍTULO | TITLE:* \n┃» ${n}\n┃﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘\n┃ও *PESO | SIZE:*\n┃» ${n2}\n╚╩══• •✠•${author}•✠ • •══╩╝`, fileName: `${n}.mp3`, mimetype: 'audio/mpeg'}, {quoted: m});
+/*await conn.sendMessage(m.chat, { document: { url: lolh.result.link }, caption: `╔╦══• •✠•${wm}•✠ • •══╦╗\n┃📥 𝙔𝙊𝙐𝙏𝙐𝘽𝙀 𝘿𝙇 📥\n┃ও *${mid.smsYT1}:* \n┃» ${n}\n╚╩══• •✠•${author}•✠ • •══╩╝`, fileName: `${n}.mp3`, mimetype: 'audio/mpeg', contextInfo: {
 externalAdReply: {
 title: n, 
 body: "",
@@ -75,8 +76,7 @@ thumbnailUrl: yt_play[0].thumbnail,
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: true
-}}} , { quoted: m })   
-//await conn.sendMessage(m.chat, {document: {url: lolh.result.link}, caption: `╔╦══• •✠•${wm}•✠ • •══╦╗\n┃📥 YOUTUBE DL 📥\n┃ও *TÍTULO | TITLE:* \n┃» ${n}\n┃﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘\n┃ও *PESO | SIZE:*\n┃» ${n2}\n╚╩══• •✠•${author}•✠ • •══╩╝`, fileName: `${n}.mp3`, mimetype: 'audio/mpeg'}, {quoted: m});
+}}} , { quoted: m })*/
 } catch {
 try {
 const searchh = await yts(yt_play[0].url);
