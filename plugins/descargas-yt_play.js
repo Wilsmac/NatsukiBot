@@ -52,7 +52,7 @@ await conn.sendMessage(m.chat, { audio: { url: dl_url }, mimetype: 'audio/mpeg',
 externalAdReply: {
 title: ttl,
 body: "",
-thumbnailUrl: yt_play[0].thumbnail, 
+thumbnailUrl: `${yt_play[0].url}`, 
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: true
