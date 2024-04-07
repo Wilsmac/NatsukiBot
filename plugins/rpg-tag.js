@@ -1,6 +1,6 @@
 var handler = async (m, { conn, text }) => {
 
-let user = `@${m.sender.replace(/@.+/, '')}`
+let user = `> ¡Hola! @${m.sender.replace(/@.+/, '')}`
 let mentionedJid = [m.sender]
 conn.reply(m.chat, user, m, { contextInfo: { mentionedJid }})
 
