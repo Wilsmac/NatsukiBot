@@ -114,4 +114,3 @@ userData.lastMessageTime = currentTime
 }}
 
 export default handler
-
