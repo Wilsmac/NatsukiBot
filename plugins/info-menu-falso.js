@@ -84,12 +84,12 @@ const horarioFecha = lugarFecha.format('dddd, DD MMMM YYYY HH:mm A').replace(/^\
 
 let menu = `${lenguajeCD['smsConfi2']()} ${tag}\n${packname}${conn.user.jid == global.conn.user.jid ? '' : `\n║˚₊·˚₊· ͟͟͞͞➳* 𝑭𝒂𝒏𝒕𝒂𝒔𝒚𝑩𝒐𝒕-𝑴𝑫 𝑺𝒖𝒃 𝑩𝒐𝒕 ⇢ wa.me/+${global.conn.user.jid.split`@`[0]}`}
 
-├┈‧͙⁺˚*･༓☾　®　☽༓･*˚⁺‧͙ 
-├┈ 𝒃𝒚 𝑾𝒊𝒍𝒎𝒆𝒓 𝒐𝒇𝒄 
-├┈ *Canal oficial:* https://whatsapp.com/channel/0029VaCUlPX0LKZAlP10pC43 
+> ├┈‧͙⁺˚*･༓☾　®　☽༓･*˚⁺‧͙ 
+> ├┈ 𝒃𝒚 𝑾𝒊𝒍𝒎𝒆𝒓 𝒐𝒇𝒄 
+> ├┈ *Canal oficial:* https://whatsapp.com/channel/0029VaCUlPX0LKZAlP10pC43 
     *Fecha y hora*
-┣ ඬ⃟ 🌺 \`${horarioFecha}\`
-*╘━ꥇ۬════•| ✿ |•════╝* 
+> ┣ ඬ⃟ 🌺 \`${horarioFecha}\`
+> *╘━ꥇ۬════•| ✿ |•════╝* 
  ${readMore}
 
 > *╭━ \`<FUNCIÓN DE SER UN SUB BOT/>\`
