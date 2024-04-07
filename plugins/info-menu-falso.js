@@ -110,49 +110,46 @@ let menu = `${lenguajeCD['smsConfi2']()} ${taguser}\n${packname}${conn.user.jid 
 > ╠ ☬⃝ᩎ⋟᷊᷂᷊᷊᷊᷊᷊᷊᷊᷊᷊᷊᷂᷂᷂᷂᷂᷂᷂᷂᷂᷂᷂᷂᷊᷊᷂᷂᷂᷂ 🌹 *${lenguajeCD['smsBanUsers']()}* ➺ _${Object.entries(global.db.data.users).filter(user => user[1].banned).length}_
 > *╘━ꥇ۬════•| ✿ |•════╝* 
 
-╭· · ─────── ·𖥸· ───── · 
-┃ *< *información de ti* />*
-├┈・─・﹕₊˚ ✦・୨୧・
-┣ *Tipo de registro »* ${user.registered === true ? `_${user.registroC === true ? 'Registro Completo' : 'Registro Rápido'}_` : '❌ _Sin registro_'}
-┣ *Mi estado »* ${typeof user.miestado !== 'string' ? '❌ _' + usedPrefix + 'miestado_' : '_Me siento ' + user.miestado + '_'}
-┣ *Registrado »* ${user.registered === true ? '✅' : '❌ _' + usedPrefix + 'verificar_'}
-┣ *${lenguajeCD['smsBotonM7']().charAt(0).toUpperCase() + lenguajeCD['smsBotonM7']().slice(1).toLowerCase()} »* ${user.premiumTime > 0 ? '✅' : '❌ _' + usedPrefix + 'pase premium_'}
-╰⊱⊶⊷⊶⊷⊶⊷⊶⊷⇲⊰⌏
+> ╭· · ─────── ·𖥸· ───── · 
+> *< *información de ti* />*
+> ├┈・─・﹕₊˚ ✦・୨୧・
+> ┣ *Tipo de registro »* ${user.registered === true ? `_${user.registroC === true ? 'Registro Completo' : 'Registro Rápido'}_` : '❌ _Sin registro_'}
+> ┣ *Mi estado »* ${typeof user.miestado !== 'string' ? '❌ _' + usedPrefix + 'miestado_' : '_Me siento ' + user.miestado + '_'}
+> ┣ *Registrado »* ${user.registered === true ? '✅' : '❌ _' + usedPrefix + 'verificar_'}
+> ┣ *${lenguajeCD['smsBotonM7']().charAt(0).toUpperCase() + lenguajeCD['smsBotonM7']().slice(1).toLowerCase()} »* ${user.premiumTime > 0 ? '✅' : '❌ _' + usedPrefix + 'pase premium_'}
+> ╰⊱⊶⊷⊶⊷⊶⊷⊶⊷⇲⊰⌏
 
-*╭ - ̗̀↳ꕤ—— 𖤍 —— ꕤ╮
-┃*< *información* />*
-├┈・─・﹕₊˚ ✦・୨୧・
-╠ *${lenguajeCD['smsPareja']()}* ${pareja ? `\n*»* ${name} 💕 ${conn.getName(pareja)}` : `🛐 ${lenguajeCD['smsResultPareja']()}`}
-╠ *Pasatiempo(s)* ➺ ${user.pasatiempo === 0 ? '*Sin Registro*' : user.pasatiempo + '\n'}
-╰⊱⊶⊷⊶⊷⊶⊷⊶⊷⇲⊰⌏
- 
+> *╭ - ̗̀↳ꕤ—— 𖤍 —— ꕤ╮
+> ┃*< *información* />*
+> ├┈・─・﹕₊˚ ✦・୨୧・
+> ╠ *${lenguajeCD['smsPareja']()}* ${pareja ? `\n*»* ${name} 💕 ${conn.getName(pareja)}` : `🛐 ${lenguajeCD['smsResultPareja']()}`}
+> ╠ *Pasatiempo(s)* ➺ ${user.pasatiempo === 0 ? '*Sin Registro*' : user.pasatiempo + '\n'}
+> ╰⊱⊶⊷⊶⊷⊶⊷⊶⊷⇲⊰⌏
 
-╭─╮︹︹︹⊹︹︹︹⊹︹︹︹
-│   *「 Info Usuario.*
-*︶︶♡꒷꒦︶꒦꒷♡꒷꒦︶꒦꒷♡︶︶*
-✞͙͙͙͙͙͙͙͙͙͙⏜❟︵ֹ̩̥̩̥̩̥̩̩̥⏜੭🏮୧ֹ⏜︵ֹ̩̥̩̥̩̥̩̥̩̥̩̥̩̥❟⏜፞✞͙͙͙͙͙͙͙͙͙͙.
-╭──╮ - ̗̀ °︹︹︹⊹︹︹︹° 
-┊🕸️┊ꦿ⿻ ❜ೃ ¡ Tu nivel:
-╰──╯ ░ - ̗̀↳🗝:❯ *${lenguajeCD['smsBotonM6']().charAt(0).toUpperCase() + lenguajeGB['smsBotonM6']().slice(1).toLowerCase()} »* ${emoji} || ${user.exp - min}/${xp}
+>  *「 Info Usuario.*
+> *︶︶♡꒷꒦︶꒦꒷♡꒷꒦︶꒦꒷♡︶︶*.
+> ╭──╮ - ̗̀ °︹︹︹⊹︹︹︹° 
+> ┊🕸️┊ꦿ⿻ ❜ೃ ¡ Tu nivel:
+> ╰──╯ ░ - ̗̀↳🗝:❯ *${lenguajeCD['smsBotonM6']().charAt(0).toUpperCase() + lenguajeGB['smsBotonM6']().slice(1).toLowerCase()} »* ${emoji} || ${user.exp - min}/${xp}
 
-╰───────────────────
-╰──── +˚🧰 Experiencia:.
-˙·.˙··.˙·.┊ *°*+↷❯  ${exp}
-˙·.˙˙·.˙·.╰──────〰─◠─〰─◠─
-╰──── +˚⚓ Rango:.
-˙·.˙··.˙·.┊ *°*+↷❯ *${lenguajeCD['smsBotonM5']().charAt(0).toUpperCase() + lenguajeCD['smsBotonM5']().slice(1).toLowerCase()} »* ${role}
-˙·.˙˙·.˙·.╰──────〰─◠─〰─◠─
-╰──── +˚💎 Diamantes:.
-˙·.˙··.˙·.┊ *°*+↷❯ ${limit}
-˙·.˙˙·.˙·.╰──────〰─◠─〰─◠─
-╰──── +˚👾 *FantasyCoins* :.
-˙·.˙··.˙·.┊ *°*+↷❯ ${money}
-˙·.˙˙·.˙·.╰──────〰─◠─〰─◠─
-╰──── +˚🪙 Tokens:.
-˙·.˙··.˙·.┊ *°*+↷❯ ${joincount}
-˙·.˙˙·.˙·.╰──────〰─◠─〰─◠─ 
-*༺═───────────────────────═༻*
-${readMore}
+> ╰───────────────────
+> ╰──── +˚🧰 Experiencia:.
+> ˙·.˙··.˙·.┊ *°*+↷❯  ${exp}
+> ˙·.˙˙·.˙·.╰──────〰─◠─〰─◠─
+> ╰──── +˚⚓ Rango:.
+> ˙·.˙··.˙·.┊ *°*+↷❯ *${lenguajeCD['smsBotonM5']().charAt(0).toUpperCase() + lenguajeCD['smsBotonM5']().slice(1).toLowerCase()} »* ${role}
+> ˙·.˙˙·.˙·.╰──────〰─◠─〰─◠─
+> ╰──── +˚💎 Diamantes:.
+> ˙·.˙··.˙·.┊ *°*+↷❯ ${limit}
+> ˙·.˙˙·.˙·.╰──────〰─◠─〰─◠─
+> ╰──── +˚👾 *FantasyCoins* :.
+> ˙·.˙··.˙·.┊ *°*+↷❯ ${money}
+> ˙·.˙˙·.˙·.╰──────〰─◠─〰─◠─
+> ╰──── +˚🪙 Tokens:.
+> ˙·.˙··.˙·.┊ *°*+↷❯ ${joincount}
+> ˙·.˙˙·.˙·.╰──────〰─◠─〰─◠─ 
+
+
 ✞͙͙͙͙͙͙͙͙͙͙⏜❟︵ֹ̩̥̩̥̩̥̩̩̥⏜੭🏮୧ֹ⏜︵ֹ̩̥̩̥̩̥̩̥̩̥̩̥̩̥❟⏜፞✞͙͙͙͙͙͙͙͙͙͙.
 ├┈ ↷   ɪɴғᴏ
 ├• ✐; ₊˚✦୧︰ Bᴏᴛ .
