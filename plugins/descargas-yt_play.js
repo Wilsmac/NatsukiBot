@@ -35,7 +35,7 @@ contextInfo: {
 externalAdReply: {
 title: `𝐄𝐧 𝐮𝐧 𝐦𝐨𝐦𝐞𝐧𝐭𝐨 𝐞𝐧𝐯𝐢𝐨 𝐬𝐮: ${additionalText}`,
 body: packname,
-thumbnailUrl: yt_play[0].thumbnail, 
+thumbnailUrl: `${yt_play[0].url}`, 
 mediaType: 1,
 showAdAttribution: false,
 renderLargerThumbnail: true
@@ -65,7 +65,7 @@ await conn.sendMessage(m.chat, { audio: { url: dataRET.mp3[1].url }, mimetype: '
 externalAdReply: {
 title: `𝐄𝐧 𝐮𝐧 𝐦𝐨𝐦𝐞𝐧𝐭𝐨 𝐞𝐧𝐯𝐢𝐨 𝐬𝐮: ${additionalText}`,
 body: "",
-thumbnailUrl: yt_play[0].thumbnail, 
+thumbnailUrl: `${yt_play[0].url}`, 
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: true
