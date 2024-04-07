@@ -2,6 +2,7 @@
 //------------------------------------------------------
 //NO EDITE EL CREADOR DEL CÓDIGO POR FAVOR, ME ESFUERZO MEJORANDO SIEMPRE A FANTASY :D
 //Código desarrollado por: Wilmer oficial https://github.com/Wilsmac
+
 //hey tú 🫵🏻 si tu eres gay 🤨🏳️‍🌈
 //------------------------------------------------------
 
@@ -72,10 +73,10 @@ let cleanedNumber = phoneNumber.replace(/[^0-9]/g, '');
 if (!Object.keys(PHONENUMBER_MCC).some(v => cleanedNumber.startsWith(v))) {
 process.exit(0); }
 setTimeout(async () => {
-let codeBot = await conn.requestPairingCode(cleanedNumber);
-codeBot = codeBot?.match(/.{1,4}/g)?.join("-") || codeBot;
-await m.reply(`*࿇ ═━✥${global.packname}✥━═ ࿇*\n_𝙽𝚄𝙴𝚅𝙰 𝙵𝚄𝙽𝙲𝙸𝙾𝙽 𝙳𝙴 𝙷𝙰𝙲𝙴𝚁𝚃𝙴 𝚄𝙽 𝚂𝚄𝙱 𝙱𝙾𝚃_* 🌹\n➥ 𝙳𝚒𝚛𝚒𝚓𝚊𝚜𝚎 𝚎𝚗 𝚕𝚘𝚜 𝚝𝚛𝚎𝚜 𝚙𝚞𝚗𝚝𝚘𝚜 𝚎𝚗 𝚕𝚊 𝚎𝚜𝚚𝚞𝚒𝚗𝚊 𝚜𝚞𝚙𝚎𝚛𝚒𝚘𝚛 𝚍𝚎𝚛𝚎𝚌𝚑𝚊\n➥𝙸𝚛 𝚊 𝚕𝚊 𝚘𝚙𝚌𝚒𝚘𝚗 𝙳𝚒𝚜𝚙𝚘𝚜𝚒𝚝𝚒𝚟𝚘𝚜 𝚟𝚒𝚗𝚌𝚞𝚕𝚊𝚍𝚘𝚜\n➥ 𝚍𝚊 𝚌𝚕𝚒𝚌𝚔 𝚎𝚗 𝚟𝚒𝚗𝚌𝚞𝚕𝚊𝚛 𝚌𝚘𝚗 𝚌𝚘𝚍𝚒𝚐𝚘 𝚍𝚎 𝚝𝚎𝚕𝚎𝚏𝚘𝚗𝚘\n➥ 𝚙𝚎𝚐𝚊 𝚎𝚕 𝚌𝚘𝚍𝚒𝚐𝚘 𝚊 𝚌𝚘𝚗𝚝𝚒𝚗𝚞𝚊𝚌𝚒𝚘𝚗\n𝙹𝚊𝚍𝚒𝚋𝚘𝚝, 𝙷𝚎𝚌𝚑𝚘 𝚙𝚘𝚛 @Wilmer oficial 🌹`) //NO EDITAR ESO POR FAVOR ⚠️
-parent.sendMessage(m.chat, {text : `${codeBot}`}, { quoted: m })
+let codigo = await conn.requestPairingCode(cleanedNumber);
+codigo = codigo?.match(/.{1,4}/g)?.join("-") || codigo;
+await m.reply(`${lenguajeCD['smsCodebt']()}`)
+parent.sendMessage(m.chat, {text : `${codigo}`}, { quoted: m })
 rl.close(); }, 3000); }
 conn.isInit = false
 let isInit = true
@@ -157,10 +158,9 @@ creloadHandler(false)
 }
 bbts()
 }
-handler.help = ['botclone']
+handler.help = ['botcode']
 handler.tags = ['serbot']
-handler.command = ['code', 'botcode', 'botclone']
-handler.rowner = false
+handler.command = ['code', 'botcode']
 export default handler
 function sleep(ms) {
 return new Promise(resolve => setTimeout(resolve, ms)); }
