@@ -10,10 +10,31 @@ import { join } from 'path'
 let handler = async (m, { conn, command, usedPrefix, args, text }) => {
 let q, mime, media, out, caption
 
-const isCommand1 = /^(toillusion|toilusi(ó|o)?n)\b$/i.test(command)
+const isCommand1 = /^(toanime)\b$/i.test(command)
+const isCommand2 = /^(toillusion|toilusi(ó|o)?n)\b$/i.test(command)
 
 switch (true) {
-case isCommand1:
+case isCommand1: 
+let bufferImg
+try{
+let q = m.quoted ? m.quoted : m
+let mime = (q.msg || q).mimetype || q.mediaType || ''
+if (/image/g.test(mime) && !/webp/g.test(mime)) {
+let buffer = await q.download()
+let media = await (uploadImage)(buffer)
+bufferImg = await (await fetch(APIs.skizo.url + `toanime?apikey=${APIs.skizo.key}&url=${media}`)).buffer()
+} else if (text) {
+bufferImg = await (await fetch(APIs.skizo.url + `toanime?apikey=${APIs.skizo.key}&url=${text.trim()}`)).buffer()
+} else return m.reply(`*Responde a una imagen o ingresa una url que sea \`(jpg, jpeg o png)\` para convertir a estilo Anime*`)
+await m.reply(wait)
+await conn.sendMessage(m.chat, { image: bufferImg, caption: null }, { quoted: m })
+} catch (e) {
+await m.reply(lenguajeCD['smsMalError3']() + '\n*' + lenguajeCD.smsMensError1() + '*\n*' + usedPrefix + `${lenguajeCD.lenguaje() == 'es' ? 'reporte' : 'report'}` + '* ' + `${lenguajeCD.smsMensError2()} ` + usedPrefix + command)
+console.log(`❗❗ ${lenguajeCD['smsMensError2']()} ${usedPrefix + command} ❗❗`)
+console.log(e)}
+break
+
+case isCommand2:
 const filters = [
 { id: "pattern001", title: "Personalizado" },
 { id: "pattern113", title: "Arroz al amanecer" },
@@ -133,5 +154,5 @@ break
 
 }}
 
-handler.command = /^(toillusion|toilusi(ó|o)?n)\b$/i
+handler.command = /^(toanime|toillusion|toilusi(ó|o)?n)\b$/i
 export default handler
