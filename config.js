@@ -118,8 +118,8 @@ global.author = "𝑾𝒊𝒍𝒎𝒆𝒓 𝒐𝒇𝒄"
 
 //------------------------------------------------
 
-global.vs = "1.7.0"
-global.vsJB = "2.5 (Beta)"
+global.vs = "1.8.5"
+global.vsJB = "3.0"
 global.gt = "𝑭𝒂𝒏𝒕𝒂𝒔𝒚𝑩𝒐𝒕-𝑴𝑫 ®"
 
 global.canalofc = "https://whatsapp.com/channel/0029VaCUlPX0LKZAlP10pC43"
