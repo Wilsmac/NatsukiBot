@@ -11,6 +11,10 @@ await new Promise(resolve => setTimeout(resolve, 40)) // Delay 10 seconds
 }
 return conn.sendMessage(m.chat, { text: `Oh ${text} se corrió! 😋💦`.trim() , edit: key, mentions: [m.sender] }, { quoted: m })
 
+
+
+
+
 }
 handler.help = ['fap']
 handler.tags = ['juegos']
