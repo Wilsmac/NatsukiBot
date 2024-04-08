@@ -38,7 +38,7 @@ case isCommand2:
 if (!text) throw `\`Escriba un texto usando el comando para usar a chatgpt :D\``
 await conn.sendPresenceUpdate('composing', m.chat)       
 try {
-var apii = await fetch(`https://aemt.me/openai?text=${text}`)
+var apii = await fetch(`https://aemt.me/gpt4?text=${text}`)
 var res = await apii.json()
 await m.reply(res.result)
 } catch (e) {
