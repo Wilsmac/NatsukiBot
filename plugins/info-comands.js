@@ -1,6 +1,8 @@
 import translate from '@vitalets/google-translate-api'
 import googleIt from 'google-it'
 import fetch from 'node-fetch'
+import gpt from 'api-dylux'
+import gtts from 'node-gtts'
 import {readFileSync, unlinkSync} from 'fs'
 import fs from 'fs' 
 import {Configuration, OpenAIApi} from 'openai';
