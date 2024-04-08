@@ -11,7 +11,7 @@ const openaiii = new OpenAIApi(configuration)
 let handler = async (m, { conn, command, usedPrefix, args, text }) => {
 
 const isCommand1 = /^(gemini|bard)$/i.test(command)
-const isCommand2 = /^(toillusion|toilusi(ó|o)?n)\b$/i.test(command)
+const isCommand2 = /^(toillusion|toilusi(ó|o)?n)$/i.test(command)
 
 let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
 async function reportError(e) {
