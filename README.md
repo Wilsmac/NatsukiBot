@@ -5,7 +5,7 @@
 <p align="center">
 <img src="https://tinyurl.com/27bt4rga" alt="FantasyBot-MD-v1" width="900"/>
 </p>
-<a href="https://x.com/WilSMaC?t=h4zYtgDDGZcasV40YyR2MQ&s=09" target="black"><img src="https://img.shields.io/badge/-000000?style=for-the-badge&logo=x&logoColor=back" />
+<a href="https://x.com/wilmerofc1" target="black"><img src="https://img.shields.io/badge/-000000?style=for-the-badge&logo=x&logoColor=back" />
 <a href="https://www.facebook.com/profile.php?id=100088614427458&mibextid=ZbWKwL" target="black"><img src="https://img.shields.io/badge/-000000?style=for-the-badge&logo=facebook&logoColor=back" />
 <a href="https://www.instagram.com/cmwilmer4?igsh=eGN1cWk5MmFkbWM1" target="black"><img src="https://img.shields.io/badge/-000000?style=for-the-badge&logo=instagram&logoColor=back" />
 <p align="center">
