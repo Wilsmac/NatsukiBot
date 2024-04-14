@@ -1,3 +1,4 @@
+import sock from '@whiskeysockets/baileys'
 let handler = async (m, { text, conn, usedPrefix, command }) => {
 let why = `*responda el mensaje que quiera anclar*\n${usedPrefix + command} @${m.sender.split("@")[0]}`
 let who = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text ? text.replace(/[^0-9]/g, '') + '@s.whatsapp.net' : false
