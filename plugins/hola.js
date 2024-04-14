@@ -20,7 +20,7 @@ const handler = async (m, {conn, usedPrefix}) => {
         'previewType': 'pdf',
         'title': fantasy,
         'body': wm,
-        'thumbnail': Menu1,
+        'thumbnail': fs.readFileSync("./media/menus/Menu1.jpg"),
         'sourceUrl': 'https://whatsapp.com/channel/0029VaCUlPX0LKZAlP10pC43'}},
     'caption': text,
     'footer': wm,
