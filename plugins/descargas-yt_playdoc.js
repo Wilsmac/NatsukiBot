@@ -38,7 +38,7 @@ text: texto1,
 contextInfo: {
 externalAdReply: {
 title: yt_play[0].title,
-body: famtasy,
+body: fantasy,
 thumbnailUrl: yt_play[0].thumbnail, 
 mediaType: 1,
 showAdAttribution: true,
@@ -67,8 +67,8 @@ try {
 const lolhuman = await fetch(`https://api.lolhuman.xyz/api/ytaudio2?apikey=${lolkeysapi}&url=${yt_play[0].url}`);
 const lolh = await lolhuman.json();
 const n = lolh.result.title || 'error';
-await conn.sendMessage(m.chat, {document: {url: lolh.result.link}, caption: `╔╦══• •✠•${wm}•✠ • •══╦╗\n┃📥 YOUTUBE DL 📥\n┃ও *TÍTULO | TITLE:* \n┃» ${n}\n┃﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘\n┃ও *PESO | SIZE:*\n┃» ${n2}\n╚╩══• •✠•${author}•✠ • •══╩╝`, fileName: `${n}.mp3`, mimetype: 'audio/mpeg'}, {quoted: m});
-/*await conn.sendMessage(m.chat, { document: { url: lolh.result.link }, caption: `╔╦══• •✠•${wm}•✠ • •══╦╗\n┃📥 𝙔𝙊𝙐𝙏𝙐𝘽𝙀 𝘿𝙇 📥\n┃ও *${mid.smsYT1}:* \n┃» ${n}\n╚╩══• •✠•${author}•✠ • •══╩╝`, fileName: `${n}.mp3`, mimetype: 'audio/mpeg', contextInfo: {
+await conn.sendMessage(m.chat, {document: {url: lolh.result.link}, caption: `╔╦══• •✠•${wm}•✠ • •══╦╗\n┃📥 YOUTUBE DL 📥\n┃ও *TÍTULO | TITLE:* \n┃» ${n}\n┃﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘\n┃ও *PESO | SIZE:*\n┃» ${n2}\n╚╩══• •✠•${wm}•✠ • •══╩╝`, fileName: `${n}.mp3`, mimetype: 'audio/mpeg'}, {quoted: m});
+/*await conn.sendMessage(m.chat, { document: { url: lolh.result.link }, caption: `╔╦══• •✠•${wm}•✠ • •══╦╗\n┃📥 𝙔𝙊𝙐𝙏𝙐𝘽𝙀 𝘿𝙇 📥\n┃ও *${mid.smsYT1}:* \n┃» ${n}\n╚╩══• •✠•${wm}•✠ • •══╩╝`, fileName: `${n}.mp3`, mimetype: 'audio/mpeg', contextInfo: {
 externalAdReply: {
 title: n, 
 body: "",
@@ -103,7 +103,7 @@ const yt = await youtubedl(v).catch(async (_) => await youtubedlv2(v));
 const dl_url = await yt.video[q].download();
 const ttl = await yt.title;
 const size = await yt.video[q].fileSizeH;
-await conn.sendMessage(m.chat, { document: { url: dl_url }, caption: `╔╦══• •✠•${wm}•✠ • •══╦╗\n┃📥 𝙔𝙊𝙐𝙏𝙐𝘽𝙀 𝘿𝙇 📥\n┃ও *${mid.smsYT1}:* \n┃» ${ttl}\n┃﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘\n┃ও *${mid.smsYT11}:*\n┃» ${size}\n╚╩══• •✠•${author}•✠ • •══╩╝`, fileName: `${ttl}.mp3`, mimetype: 'audio/mpeg', contextInfo: {
+await conn.sendMessage(m.chat, { document: { url: dl_url }, caption: `╔╦══• •✠•${wm}•✠ • •══╦╗\n┃📥 𝙔𝙊𝙐𝙏𝙐𝘽𝙀 𝘿𝙇 📥\n┃ও *${mid.smsYT1}:* \n┃» ${ttl}\n┃﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘\n┃ও *${mid.smsYT11}:*\n┃» ${size}\n╚╩══• •✠•${wm}•✠ • •══╩╝`, fileName: `${ttl}.mp3`, mimetype: 'audio/mpeg', contextInfo: {
 externalAdReply: {
 title: ttl,
 body: "",
