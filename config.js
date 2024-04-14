@@ -9,8 +9,7 @@ import moment from "moment-timezone"
 import { es as esDefault, en as enDefault } from "./lib/multi-language/_default.js"
 import { en, es, id, ar, pt } from "./lib/idiomas/total-idiomas.js"
 
-
-// [ES] > Agrega el número que será Bot y los que serán propietarios.
+// Agrega el número que será Bot y los que serán propietarios.
 global.owner = [
 ["50250101139", 'Wilmer ofc', true], //FantasyBot-MD
 ["50258115623"], 
