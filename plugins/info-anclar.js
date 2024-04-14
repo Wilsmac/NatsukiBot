@@ -3,7 +3,7 @@
 
 let handler = async (m, { conn, text, command }) => {
 let id = text ? text : m.chat  
-const value = 'match_last_seen' // 'all'
+const value = 'all' // 'match_last_seen'
 //const value = 'contacts' //'all' | 'contact_blacklist' | 'none'
 await conn.reply(id, `AGREGANDO LA CONFIGURACIÓN.`) 
 await conn.updateOnlinePrivacy(value)
