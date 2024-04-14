@@ -1,34 +1,4 @@
 
-let handler = async (m, { conn, command, usedPrefix, args, text }) => {
-let id = text ? text : m.chat 
-
-const isCommand1 = /^(linetodos)\b$/i.test(command)
-const isCommand2 = /^(linenadie)\b$/i.test(command)
-switch (true) {
-
-case isCommand1: 
-const value = 'match_last_seen' // 'all'
-//const value = 'contacts' //'all' | 'contact_blacklist' | 'none'
-await conn.reply(id, `AGREGANDO LA CONFIGURACIÓN.`) 
-await conn.updateOnlinePrivacy(value)
-//await conn.updateGroupsAddPrivacy(value)
-break
-case isCommand2 
-const value = 'all'
-//const value = 'contacts' //'all' | 'contact_blacklist' | 'none'
-await conn.reply(id, `AGREGANDO LA CONFIGURACIÓN.`) 
-await conn.updateOnlinePrivacy(value)
-//await conn.updateGroupsAddPrivacy(value)
-break
-}}
-
-
-handler.command = /^(linetodos|linenadie)\b$/i
-export default handler
-
-
-
-
 
 
 
