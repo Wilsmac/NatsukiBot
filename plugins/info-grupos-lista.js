@@ -22,7 +22,7 @@ txt += `𝙽𝚄𝙼𝙴𝚁𝙾: *${i + 1}*
 𝙿𝙰𝚁𝚃𝙸𝙲𝙸𝙿𝙰𝙽𝚃𝙴𝚂:  ${totalParticipants}
 𝙴𝙽𝙻𝙰𝙲𝙴: ${isBotAdmin ? `https://chat.whatsapp.com/${await conn.groupInviteCode(jid) || 'Error'}` : 'NO SOY ADMIN'}\n\n`;
 }
-m.reply(`${packname} ${lenguajeGB.smsLisA()}
+m.reply(`${fantasy} ${lenguajeGB.smsLisA()}
 ${lenguajeGB.smsLisB()} ${totalGroups}\n\n${txt}`.trim());
 } catch {
 const groups = Object.entries(conn.chats).filter(([jid, chat]) => jid.endsWith('@g.us') && chat.isChats);
