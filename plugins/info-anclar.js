@@ -1,5 +1,5 @@
-//códigos desarrollado por Wilmer oficial
-// https://github.com/Wilsmac
+ //códigos desarrollado por Wilmer oficial 
+ // https://github.com/Wilsmac
 
                                   let handler = function (m) {
                  if (!m.quoted) throw false
