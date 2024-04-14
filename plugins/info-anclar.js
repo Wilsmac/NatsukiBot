@@ -3,9 +3,12 @@
 
 let handler = async (m, { conn, text, command }) => {
 let id = text ? text : m.chat  
-const value = 'contacts' //'all' | 'contact_blacklist' | 'none'
+const value = 'match_last_seen' // 'all'
+//const value = 'contacts' //'all' | 'contact_blacklist' | 'none'
 await conn.reply(id, `AGREGANDO LA CONFIGURACIÓN.`) 
-await conn.updateGroupsAddPrivacy(value)
+await conn.updateOnlinePrivacy(value)
+
+//await conn.updateGroupsAddPrivacy(value)
 try {  
 } catch (e) {
 await m.reply(`${fg}`) 
