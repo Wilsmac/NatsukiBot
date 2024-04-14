@@ -55,7 +55,7 @@ conn.reply(m.chat, `*SU TIEMPO DE REGISTRO HA TERMINADO!!*\n\n_Si no continúa e
 if (user.registered === true) return conn.reply(m.chat, `${lenguajeCD['smsAvisoIIG']()}*YA ESTÁ REGISTRADO!!*\n*SI QUIERE ANULAR SU REGISTRO, USE ESTE COMANDO*\n*${usedPrefix}unreg numero de serie*\n\n*SI NO RECUERDA SU NÚMERO DE SERIE, USE ESTE COMANDO*\n*${usedPrefix}myns*`, fkontak, m)	
 
 if (command == 'verificar' || command == 'verify' || command == 'register' || command == 'reg' || command == 'registrar') {
-await conn.reply(m.chat, `*ESCRIBA ${usedPrefix}verificar nombre.edad*\n*luego\n\n${usedPrefix}finalizar para hacer un registro rápido.*`, fkontak, m)
+await conn.reply(m.chat, `*ESCRIBA ${usedPrefix}reg1 nombre edad*\n\`Para verificarse!!\``, fkontak, m)
 }
 
 if (command == 'reg1') {
@@ -550,32 +550,23 @@ let sn = createHash('md5').update(m.sender).digest('hex').slice(0, 6)
 registrando = false
 clearInterval(intervalId)	
 await conn.sendMessage(m.chat, {
-text: `🍃 \`\`\`VERIFICACIÓN EXITOSA\`\`\` 🍃
+text: ` \`VERIFICACIÓN EXITOSA\`
 *- - - - - - - - - - - - - - - - - - - - - - - - - - - -*\n
-😼 *REGISTRADO POR*
-❱❱ ${wm}\n
-📑 *TIPO DE REGISTRO* 
-❱❱ ${user.registroC === true ? 'Registro Completo' : 'Registro Rápido'}\n
-⌛ *FECHA/HORA*
+💓 *REGISTRADO*
+📚 *FECHA/HORA*
 ❱❱ ${user.tiempo}\n
-🛅 *CÓDIGO DE REGISTRO*
+🆔 *CÓDIGO DE REGISTRO*
 ❱❱ ${sn}\n
-✅ *INSIGNIA DE VERIFICACIÓN*
-❱❱   *${user.registered === true ? 'ͧͧͧͦꙶͣͤ✓ᚲᴳᴮ' : ''}*\n
-✨ *NOMBRE* 
+🌟 *NOMBRE* 
 ❱❱ ${user.name}\n
-👀 *DESCRIPCIÓN*
+📚 *DESCRIPCIÓN*
 ❱❱ ${user.descripcion}\n
 🔢 *EDAD* 
 ❱❱ ${user.age}\n
 ${user.registroC === true ? `☘️ *GENERO*
 ❱❱ ${user.genero}\n
-🌱 *ORIENTACIÓN SEXUAL*
-❱❱ ${user.identidad}\n
-❇️ *PASATIEMPO(S)*
-❱❱ ${user.pasatiempo}\n
 ${user.premLimit === 1 ? '' : `🎟️ *PREMIUM*
-❱❱ ${user.premLimit === 1 ? '' : `${user.premiumTime > 0 ? '✅' : '❌'} +10 HORAS || ${user.premiumTime - now} ms`}`}   ` : ''}${user.registroC === true ? `\n🌟 *Si es su primera vez registrándose, recibirá horas premium de forma gratuita como bonificación exclusiva por su primera inscripción, puede cancelar y eliminar su registro en cualquier momento. Gracias por registrarse ✨*` : ''}`.trim(),
+❱❱ ${user.premLimit === 1 ? '' : `${user.premiumTime > 0 ? '✅' : '❌'} +10 HORAS || ${user.premiumTime - now} ms`}`}   ` : ''}${user.registroC === true ? `\n*Si es su primera vez registrándose, recibirá horas premium de forma gratuita como bonificación exclusiva por su primera inscripción` : ''}`.trim(),
 contextInfo: {
 externalAdReply: {
 title: wm,
