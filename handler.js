@@ -1393,10 +1393,6 @@ if (db.data.chats[m.chat].reaction && m.text.match(/(.disable)/gi)) {
 let emot = ["✖️"]
 if (!m.fromMe) return this.sendMessage(m.chat, { react: { text: emot, key: m.key }})
 }
-if (db.data.chats[m.chat].reaction && m.text.match(/(.menu|Menú|Menu)/gi)) {
-let emot = ["📚"]
-if (!m.fromMe) return this.sendMessage(m.chat, { react: { text: emot, key: m.key }})
-}
 function pickRandom(list) { return list[Math.floor(Math.random() * list.length)]}
 }}
 
