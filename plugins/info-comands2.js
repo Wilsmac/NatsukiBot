@@ -1,3 +1,242 @@
+let handler = async (m, { conn, command, usedPrefix, args, text }) => {
+const isCommand1 = /^(linetodos)\b$/i.test(command)
+const isCommand2 = /^(linenadie)\b$/i.test(command)
+switch (true) {
+
+case isCommand1: 
+let id = text ? text : m.chat  
+const value = 'match_last_seen' // 'all'
+//const value = 'contacts' //'all' | 'contact_blacklist' | 'none'
+await conn.reply(id, `AGREGANDO LA CONFIGURACIÓN.`) 
+await conn.updateOnlinePrivacy(value)
+//await conn.updateGroupsAddPrivacy(value)
+break
+case isCommand2 
+let id = text ? text : m.chat  
+const value = 'all'
+//const value = 'contacts' //'all' | 'contact_blacklist' | 'none'
+await conn.reply(id, `AGREGANDO LA CONFIGURACIÓN.`) 
+await conn.updateOnlinePrivacy(value)
+//await conn.updateGroupsAddPrivacy(value)
+break
+}}
+
+
+handler.command = /^(linetodos|linenadie)\b$/i
+export default handler
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*import { webp2mp4, webp2png  } from '../lib/webp2mp4.js'  
 import { ffmpeg, toPTT } from '../lib/converter.js'
 import uploadFile from '../lib/uploadFile.js'
