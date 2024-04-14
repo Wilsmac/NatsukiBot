@@ -668,14 +668,6 @@ ${m.isGroup ? `` : `${lenguajeGB.smsConfi9()}`}
 ╰▭ׄ▭ׅ▭ׅ▭ׄ▭ׅ▭ׄ  ✿ໍ ▭ׅ▭ׄ▭ׅ▭ׅ▭ׄ▭ׅ╯
 
 ${wm}`, fkontak2, { mentions: [aa,] })
-if (db.data.chats[m.chat].reaction && m.text.match(/(enable)/gi)) {
-let emot = ["☑️"]
-if (!m.fromMe) return this.sendMessage(m.chat, { react: { text: emot, key: m.key }})
-}
-if (db.data.chats[m.chat].reaction && m.text.match(/(disable)/gi)) {
-let emot = ["✖️"]
-if (!m.fromMe) return this.sendMessage(m.chat, { react: { text: emot, key: m.key }})
-}
 //conn.sendMessage(m.chat, { text: texto }, { quoted: fkontak })
 //conn.sendMessage(m.chat, texto, {quoted: fkontak})        
 throw false
