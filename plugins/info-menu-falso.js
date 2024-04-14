@@ -99,7 +99,7 @@ nombreLugar = 'America'
 ciudad = 'Lima'
 }      
             m.react('📚') 
-let menu = `¡HOLA! 👋🏻 • ${taguser}\n${packname2}${conn.user.jid == global.conn.user.jid ? '' : `\n║˚₊·˚₊· ͟͟͞͞➳* 𝑭𝒂𝒏𝒕𝒂𝒔𝒚𝑩𝒐𝒕-𝑴𝑫 𝑺𝒖𝒃 𝑩𝒐𝒕 ⇢ wa.me/+${global.conn.user.jid.split`@`[0]}`}
+let menu = `¡HOLA! 👋🏻 • ${taguser}\n${fantasy}${conn.user.jid == global.conn.user.jid ? '' : `\n║˚₊·˚₊· ͟͟͞͞➳* 𝑭𝒂𝒏𝒕𝒂𝒔𝒚𝑩𝒐𝒕-𝑴𝑫 𝑺𝒖𝒃 𝑩𝒐𝒕 ⇢ wa.me/+${global.conn.user.jid.split`@`[0]}`}
 
 > ├┈‧͙⁺˚*･༓☾　®　☽༓･*˚⁺‧͙ 
 > ├┈ 𝒃𝒚 𝑾𝒊𝒍𝒎𝒆𝒓 𝒐𝒇𝒄 
