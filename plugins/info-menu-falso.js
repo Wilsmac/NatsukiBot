@@ -74,14 +74,28 @@ const numberToEmoji = { "0": "0️⃣", "1": "1️⃣", "2": "2️⃣", "3": "3�
 let lvl = level
 let emoji = Array.from(lvl.toString()).map((digit) => numberToEmoji[digit] || "❓").join("")
 
-const lugarFecha = moment().tz('America/Lima')
-const formatoFecha = {
-weekdays: ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'],
-months: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre']
-}
-lugarFecha.locale('es', formatoFecha)
-const horarioFecha = lugarFecha.format('dddd, DD MMMM YYYY HH:mm A').replace(/^\w/, (c) => c.toUpperCase())
-     
+let fechaMoment, formatDate, nombreLugar, ciudad = null
+const phoneNumber = '+' + m.sender
+const parsedPhoneNumber = parsePhoneNumber(phoneNumber)
+const countryCode = parsedPhoneNumber.country
+const countryData = ct.getCountry(countryCode)
+const timezones = countryData.timezones
+const zonaHoraria = timezones.length > 0 ? timezones[0] : 'UTC'
+moment.locale(mid.idioma_code)
+let lugarMoment = moment().tz(zonaHoraria)
+if (lugarMoment) {
+fechaMoment = lugarMoment.format('llll [(]a[)]')
+formatDate = fechaMoment.charAt(0).toUpperCase() + fechaMoment.slice(1) 
+nombreLugar = countryData.name
+const partes = zonaHoraria.split('/')
+ciudad = partes[partes.length - 1].replace(/_/g, ' ')
+}else{
+lugarMoment = moment().tz('America/Lima')
+fechaMoment = lugarMoment.format('llll [(]a[)]')
+formatDate = fechaMoment.charAt(0).toUpperCase() + fechaMoment.slice(1) 
+nombreLugar = 'America'
+ciudad = 'Lima'
+}      
             m.react('📚') 
 let menu = `¡HOLA! 👋🏻 • ${taguser}\n${packname}${conn.user.jid == global.conn.user.jid ? '' : `\n║˚₊·˚₊· ͟͟͞͞➳* 𝑭𝒂𝒏𝒕𝒂𝒔𝒚𝑩𝒐𝒕-𝑴𝑫 𝑺𝒖𝒃 𝑩𝒐𝒕 ⇢ wa.me/+${global.conn.user.jid.split`@`[0]}`}
 
@@ -89,7 +103,9 @@ let menu = `¡HOLA! 👋🏻 • ${taguser}\n${packname}${conn.user.jid == globa
 > ├┈ 𝒃𝒚 𝑾𝒊𝒍𝒎𝒆𝒓 𝒐𝒇𝒄 
 > ├┈ *Canal oficial:* https://whatsapp.com/channel/0029VaCUlPX0LKZAlP10pC43 
     *Fecha y hora*
-> ┣ ඬ⃟ 🌺 \`${horarioFecha}\`
+> ┣ \`${formatDate}\`
+> ┣ \`${nombreLugar}\`
+> ┣ \`${ciudad}\`
 > *╘━ꥇ۬════•| ✿ |•════╝* 
  ${readMore}
 
