@@ -1,4 +1,3 @@
-
 const handler = async (m, {conn, usedPrefix}) => {
   const datas = global
 
