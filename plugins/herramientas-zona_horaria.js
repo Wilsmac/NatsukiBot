@@ -47,7 +47,6 @@ await conn.sendMessage(m.chat, { text: `\`\`\`
 ${String.fromCharCode(8206).repeat(850)}
 💻 *Zona horaria del servidor actual:*\n*[ ${Intl.DateTimeFormat().resolvedOptions().timeZone} ]*\n*${moment().tz(Intl.DateTimeFormat().resolvedOptions().timeZone).format('DD/MM/YY HH:mm:ss')}*` }, {quoted: m })
 }
-
 handler.help = ['horario']
 handler.tags = ['info']
 handler.command = /^(horario)$/i
