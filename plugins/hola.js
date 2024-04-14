@@ -4,7 +4,7 @@ const handler = async (m, {conn, usedPrefix}) => {
   const doc = ['pdf', 'zip'];
   const document = doc[Math.floor(Math.random() * doc.length)];
   const texto = `¡HOLA! 👋🏻`.trim();
-  const buttonMessage= {
+  const texto2 = {
     'document': {url: `https://github.com/Wilsmac/FantasyBot-MD-v1`},
     'mimetype': `application/${document}`,
     'fileName': `¡Hola!`,
@@ -24,7 +24,7 @@ const handler = async (m, {conn, usedPrefix}) => {
     'caption': texto,
     'footer': wm,
     'headerType': 6};
-  conn.sendMessage(m.chat, buttonMessage, {quoted: m});
+  conn.sendMessage(m.chat, texto2, {quoted: m});
 };
 handler.help = ['hoka'];
 handler.tags = ['info'];
