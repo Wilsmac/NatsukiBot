@@ -3,7 +3,7 @@
 
 let handler = async (m, { conn, text, command }) => {
 let id = text ? text : m.chat  
-const value = //'all' 'contacts' //| 'contact_blacklist' | 'none'
+const value = 'contacts' //'all' | 'contact_blacklist' | 'none'
 await conn.reply(id, `AGREGANDO LA CONFIGURACIÓN.`) 
 await conn.updateGroupsAddPrivacy(value)
 try {  
