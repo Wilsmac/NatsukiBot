@@ -15,6 +15,4 @@
 handler.help = ['del', 'delete']
 handler.tags = ['tools']
 handler.command = /^del(ete)?$/i
-handler.group = true
-handler.admin = true
 export default handler
