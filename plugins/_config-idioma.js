@@ -1,28 +1,70 @@
+//pronto lo adaptaré.
 
-let handler = async (m, { conn, text, args, usedPrefix, command }) => {
-  let te = `𝚂𝙴𝙻𝙴𝙲𝙲𝙸𝙾𝙽𝙴 𝙴𝙻 𝙸𝙳𝙸𝙾𝙼𝙰 𝚀𝚄𝙴 𝙳𝙴𝚂𝙴𝙴 𝚄𝚂𝙰𝚁\n𝙻𝙾𝚂 𝙸𝙳𝙸𝙾𝙼𝙰𝚂 𝙳𝙸𝚂𝙿𝙾𝙽𝙸𝙱𝙻𝙴𝚂\n- es (Español)\n- en (Inglés)\n- id (Indonesia)\n- pt (Portugues)\n- ar (Árabe)\n\n*EJEMPLO:* ${usedPrefix + command}`
-  if (!text) throw te
-  let user = global.db.data.users[m.sender]
-if (args[0] === "es") {
- user.language = args[0]
- m.reply("Bot configurado con el idioma español*\n\nAhora el bot responderá en el idioma Español.")
-  } else if (args[0] === "en") {
-       user.language = args[0]
- m.reply("*Selected English*\n\nTime the bot will respond in English.")
-  } else if (args[0] === "id") {
-      user.language = args[0]
-   m.reply("*Bahasa Indonesia terpilih*\n\nSekarang bot akan membalas pesanmu dengan bahasa Indonesia.")
-  } else if (args[0] === "pt") {
-      user.language = args[0]
-         m.reply("*Português selecionados*\n\nAgora o bot vai responder a sua mensagem em Português.")
-   } else if (args[0] === "ar") {
-        user.language = args[0]
-   m.reply("تم اختيار اللغة العربية*\n\nالآن سيقوم البوت بالرد على رسائلك باللغة العربية.")
- } else {
-       m.reply(te)
+
+/*import translate from '@vitalets/google-translate-api'
+import * as fs from 'fs'
+import { es, en, id, ar, pt, } from '../lib/idiomas/total-idiomas.js'
+
+let handler = async (m, { conn, args, usedPrefix, command }) => {
+let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
+
+let texto = `*Idioma de GataBot cambiado Correctamente:* `
+let texto2 = `*Seleccione el idioma para GataBot*`
+let texto3 = `*Los Comandos no cambiaran de Idioma, solo el contenido del Mensaje*`
+let idioma = await translate(`${texto}`, { to: args[0], autoCorrect: true })
+let idioma2 = await translate(`${texto2}`, { to: lenguajeGB.lenguaje(), autoCorrect: true })
+let idioma3 = await translate(`${texto3}`, { to: lenguajeGB.lenguaje(), autoCorrect: true })
+
+try {  
+if (args[0] == 'es'){
+global.lenguajeGB = es
+await conn.sendButton(m.chat, lenguajeGB['smsAvisoEG']() + idioma.text + '\n' + 'დ ```Español```', wm, null, [[`☘️ 𝗠 𝗘 𝗡 𝗨`, `${usedPrefix}menu`]], fkontak, m)
+  
+}else if (args[0] == 'en'){
+global.lenguajeGB = en
+await conn.sendButton(m.chat, lenguajeGB['smsAvisoEG']() + idioma.text + '\n' + 'დ ```English```', wm, null, [[`☘️ 𝗠 𝗘 𝗡 𝗨`, `${usedPrefix}menu`]], fkontak, m)
+  
+}else if (args[0] == 'id'){
+global.lenguajeGB = id
+await conn.sendButton(m.chat, lenguajeGB['smsAvisoEG']() + idioma.text + '\n' + 'დ ```Bahasa Indonesia```', wm, null, [[`☘️ 𝗠 𝗘 𝗡 𝗨`, `${usedPrefix}menu`]], fkontak, m)
+  
+}else if (args[0] == 'ar'){
+global.lenguajeGB = ar
+await conn.sendButton(m.chat, lenguajeGB['smsAvisoEG']() + idioma.text + '\n' + 'დ ```عرب```', wm, null, [[`☘️ 𝗠 𝗘 𝗡 𝗨`, `${usedPrefix}menu`]], fkontak, m)
+  
+}else if (args[0] == 'pt'){
+global.lenguajeGB = pt
+await conn.sendButton(m.chat, lenguajeGB['smsAvisoEG']() + idioma.text + '\n' + 'დ ```Português```', wm, null, [[`☘️ 𝗠 𝗘 𝗡 𝗨`, `${usedPrefix}menu`]], fkontak, m)
+}else{
+  
+const sections = [{
+title: ' IDIOMAS DISPONIBLES',
+rows: [
+{title: " Español", rowId: `${usedPrefix + command} es`},
+{title: " English", rowId: `${usedPrefix + command} en`},
+{title: " Bahasa Indonesia", rowId: `${usedPrefix + command} id`},
+{title: " عرب", rowId: `${usedPrefix + command} ar`},
+{title: " Português", rowId: `${usedPrefix + command} pt`}]}]
+
+const listMessage = {
+text: idioma2.text + '\n\n' + idioma3.text,
+footer: `✦ Español = ${usedPrefix + command} es
+✦ English = ${usedPrefix + command} en
+✦ Bahasa Indonesia = ${usedPrefix + command} id
+✦ عرب = ${usedPrefix + command} ar
+✦ Português = ${usedPrefix + command} pt\n\n` + wm,
+title: `${htki} Idioma : Language 🌎`,
+buttonText: `Seleccionar : Select`,
+sections }
+await conn.sendMessage(m.chat, listMessage, {quoted: fkontak})
+}
+}catch(e){
+await m.reply(`${fg}\`\`\`NO SE LOGRÓ CAMBIAR DE IDIOMA, REPORTE ESTE COMANDO ${usedPrefix + command} CON EL COMANDO ${usedPrefix}reporte\`\`\``) 
+console.log(e) 
 }}
- handler.help = ['language <es-en..>']
- handler.tags = ['main']
- handler.command = ['lang', 'idioma'] 
 
- export default handler
+handler.command = /^(idioma|languaje|idiomas|languajes|languages)$/i
+handler.owner = true
+
+export default handler
+*/
