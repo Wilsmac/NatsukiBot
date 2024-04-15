@@ -30,3 +30,9 @@ const response = await fetch(`https://api.alyachan.dev/api/porn-detector?image=$
 const result = await response.json()
 await m.reply(link)
 if (result.status && result.data && result.data.isPorn) {
+}
+}} catch (error) {
+await m.reply(error.toString())
+}
+
+}                
