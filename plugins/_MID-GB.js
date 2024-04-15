@@ -2,15 +2,15 @@ import { es, en } from '../lib/multi-language/_default.js'
 
 export async function before(m,{ conn }) {
 let idioma  = global.db.data.users[m.sender].midLanguage
-let MID_GB
+let MID_CD
   
 if (idioma == "es") {
-MID_GB = es
+MID_CD = es
 } else if (idioma == "en") {
-MID_GB = en
+MID_CD = en
 } else {
-MID_GB = mid || es
+MID_CD = mid || es
 }
-global.mid = MID_GB	
+global.mid = MID_CD	
 
 }
