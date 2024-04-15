@@ -1,5 +1,3 @@
-//                 by Wilmer oficial
-//             https://github.com/Wilsmac 
 
 let handler = async (m, { conn, text, args, usedPrefix, command }) => {
   let te = `𝚂𝙴𝙻𝙴𝙲𝙲𝙸𝙾𝙽𝙴 𝙴𝙻 𝙸𝙳𝙸𝙾𝙼𝙰 𝚀𝚄𝙴 𝙳𝙴𝚂𝙴𝙴 𝚄𝚂𝙰𝚁\n𝙻𝙾𝚂 𝙸𝙳𝙸𝙾𝙼𝙰𝚂 𝙳𝙸𝚂𝙿𝙾𝙽𝙸𝙱𝙻𝙴𝚂\n- es (Español)\n- en (Inglés)\n- id (Indonesia)\n- pt (Portugues)\n- ar (Árabe)\n\n*EJEMPLO:* ${usedPrefix + command}`
