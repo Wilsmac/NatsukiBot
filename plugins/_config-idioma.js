@@ -22,7 +22,7 @@ if (args[0] === "es") {
    m.reply("تم اختيار اللغة العربية*\n\nالآن سيقوم البوت بالرد على رسائلك باللغة العربية.")
  } else {
        m.reply(te)
-
+}}
  handler.help = ['language <es-en..>']
 
  handler.tags = ['main']
