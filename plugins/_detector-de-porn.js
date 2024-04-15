@@ -35,3 +35,4 @@ if (result.status && result.data && result.data.isPorn) {
 await m.reply(error.toString())
 }
 }                
+export default handler
