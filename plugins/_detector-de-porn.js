@@ -5,7 +5,7 @@ let { downloadContentFromMessage } = (await import(global.baileys))
 import path from 'path'  
 let handler = m => m
 handler.before = async function (m, { conn, __dirname }) {
-let media, links, buffer
+let media, link, buffer
 try{
 let q = m
 let mime = (q.msg || q).mimetype || q.mediaType || ''
@@ -13,7 +13,7 @@ if (!(/sticker|image/.test(mime)) || m.mtype == 'viewOnceMessageV2') return
 let IsTel = /^image\/(png|jpe?g)$/.test(mime)
 if (IsTel) {
 media = await q.download()
-links = await uploadImage(media)
+link = await uploadImage(media)
 }
 if (m.mtype == 'viewOnceMessageV2') {
 let msg = m.message.viewOnceMessageV2.message
@@ -23,9 +23,9 @@ media = await downloadContentFromMessage(msg[type], 'image')
 buffer = Buffer.from([])
 for await (const chunk of media) {
 buffer = Buffer.concat([buffer, chunk])}
-links = await uploadImage(buffer)
+link = await uploadImage(buffer)
 }}
-if (links) {
+if (link) {
 const response = await fetch(`https://api.alyachan.dev/api/porn-detector?image=${link}&apikey=wilmermacu`)
 const result = await response.json()
 await m.reply(link)
