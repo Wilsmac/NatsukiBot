@@ -12,7 +12,7 @@ if (args[0] === "es") {
       user.language = args[0]
    m.reply("*Bahasa Indonesia terpilih*\n\nSekarang bot akan membalas pesanmu dengan bahasa Indonesia.")
   } else if (args[0] === "pt") {
-  
+      user.language = args[0]
          m.reply("*Português selecionados*\n\nAgora o bot vai responder a sua mensagem em Português.")
    } else if (args[0] === "ar") {
         user.language = args[0]
