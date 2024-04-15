@@ -1,6 +1,5 @@
 //pronto lo adaptaré.
 
-
 /*import translate from '@vitalets/google-translate-api'
 import * as fs from 'fs'
 import { es, en, id, ar, pt, } from '../lib/idiomas/total-idiomas.js'
