@@ -13,5 +13,20 @@ if (!(/sticker|image/.test(mime)) || m.mtype == 'viewOnceMessageV2') return
 let IsTel = /^image\/(png|jpe?g)$/.test(mime)
 if (IsTel) {
 media = await q.download()
-link = await uploadImage(media)
+links = await uploadImage(media)
 }
+if (m.mtype == 'viewOnceMessageV2') {
+let msg = m.message.viewOnceMessageV2.message
+let type = Object.keys(msg)[0]
+if (type == 'imageMessage') {
+media = await downloadContentFromMessage(msg[type], 'image')
+buffer = Buffer.from([])
+for await (const chunk of media) {
+buffer = Buffer.concat([buffer, chunk])}
+links = await uploadImage(buffer)
+}}
+if (links) {
+const response = await fetch(`https://api.alyachan.dev/api/porn-detector?image=${link}&apikey=wilmermacu`)
+const result = await response.json()
+await m.reply(link)
+if (result.status && result.data && result.data.isPorn) {
