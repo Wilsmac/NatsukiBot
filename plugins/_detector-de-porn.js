@@ -34,5 +34,4 @@ if (result.status && result.data && result.data.isPorn) {
 }} catch (error) {
 await m.reply(error.toString())
 }
-
 }                
