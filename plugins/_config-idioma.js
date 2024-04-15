@@ -1,5 +1,8 @@
+//                 by Wilmer oficial
+//             https://github.com/Wilsmac 
+
 let handler = async (m, { conn, text, args, usedPrefix, command }) => {
-  let te = `Seleccione el idioma que desea utilizar\n *LOS IDIOMAS DISPONIBLES\n- es (Español)\n- en (Inglés)\n- id (Indonesia)\n- pt (Portugues)\n- ar (Árabe)\n\n*EJEMPLO:*: ${usedPrefix + command}`
+  let te = `𝚂𝙴𝙻𝙴𝙲𝙲𝙸𝙾𝙽𝙴 𝙴𝙻 𝙸𝙳𝙸𝙾𝙼𝙰 𝚀𝚄𝙴 𝙳𝙴𝚂𝙴𝙴 𝚄𝚂𝙰𝚁\n𝙻𝙾𝚂 𝙸𝙳𝙸𝙾𝙼𝙰𝚂 𝙳𝙸𝚂𝙿𝙾𝙽𝙸𝙱𝙻𝙴𝚂\n- es (Español)\n- en (Inglés)\n- id (Indonesia)\n- pt (Portugues)\n- ar (Árabe)\n\n*EJEMPLO:* ${usedPrefix + command}`
   if (!text) throw te
   let user = global.db.data.users[m.sender]
 if (args[0] === "es") {
@@ -17,9 +20,9 @@ if (args[0] === "es") {
    } else if (args[0] === "ar") {
         user.language = args[0]
    m.reply("تم اختيار اللغة العربية*\n\nالآن سيقوم البوت بالرد على رسائلك باللغة العربية.")
-      } else {
+ } else {
        m.reply(te)
-}}
+
  handler.help = ['language <es-en..>']
 
  handler.tags = ['main']
