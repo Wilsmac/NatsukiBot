@@ -5,7 +5,7 @@ let { downloadContentFromMessage } = (await import(global.baileys))
 import path from 'path'  
 let handler = m => m
 handler.before = async function (m, { conn, __dirname }) {
-let media, link, buffer
+let media, links, buffer
 try{
 let q = m
 let mime = (q.msg || q).mimetype || q.mediaType || ''
