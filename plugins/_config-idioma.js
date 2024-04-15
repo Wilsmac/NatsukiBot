@@ -22,9 +22,7 @@ if (args[0] === "es") {
        m.reply(te)
 }}
  handler.help = ['language <es-en..>']
-
  handler.tags = ['main']
-
  handler.command = ['lang', 'idioma'] 
 
  export default handler
