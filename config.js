@@ -20,7 +20,6 @@ global.mods = []
 global.prems = []
 
 
-
 global.tagusario = ['50250101139'];
 
 
