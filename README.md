@@ -127,7 +127,7 @@ ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 - UNIFINED NO SE HACE RESPONSABLE DEL USO, NUMEROS, PRIVACIDAD Y CONTENIDO MANDADO, USADO O GESTIONADO POR USTEDES O EL BOT
 
  ### ` DUDAS SOBRE EL BOT?, CONTACTAME`
-<a href="http://wa.me/50258115623" target="blank"><img src="https://img.shields.io/badge/UNIFINED-OFC-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
+<a href="http://wa.me/50258115623" target="blank"><img src="https://img.shields.io/badge/Wilmer oficial-000000?style=for-the-badge&logo=whatsapp&logoColor=white" />
 
 
 ## <h2>`PROPIETARIO DEL BOT`</h2> 
