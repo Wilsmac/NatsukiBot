@@ -112,6 +112,20 @@ global.wilmerofc = "(𝑭𝒂𝒏𝒕𝒂𝒔𝒚𝑩𝒐𝒕-𝑴𝑫 ®)\n𝑩
 global.packname = `├┈‧͙⁺˚･༓☾ 𝚆𝙸𝙻𝙼𝙴𝚁 𝙾𝙵𝙲 ☽༓･˚⁺‧͙\n├┈ ⟴ 𝚈𝚘𝚞𝚃𝚞𝚋𝚎:\n├┈ @wilmer.oficial\n├┈ ⟴ 𝙸𝚗𝚜𝚝𝚊𝚐𝚛𝚊𝚖:\n├┈ @cmwilmer4\n╰⊱⊶⊷⊶⊷⊶⊷⊶⊷⇲⊰⌏`
 global.author =  ` ├┈‧͙･༓☾ 𝚆𝙸𝙻𝙼𝙴𝚁 𝙾𝙵𝙲 ☽༓･˚\n├┈⟴ 𝙶𝚒𝚝𝙷𝚞𝚋:\n├┈ Wilsmac\n├┈ ⟴ 𝙿𝚊𝚢𝙿𝚊𝚕:\n├┈ @wilmermacu1\n╰⊱⊶⊷⊶⊷⊶⊷⊶⊷⇲⊰⌏`
 
+
+// Hola 👋🏻
+var ase = new Date(); var hour = ase.getHours(); switch(hour){ case 0: hour = 'Linda noche 🌃'; break; case 1: hour = 'Linda noche 🌃'; break; case 2: hour = 'Linda noche 🌃'; break; case 3: hour = 'Linda mañana 🥀'; break; case 4: hour = 'Linda mañana 🥀'; break; case 5: hour = 'Linda mañana 🥀'; break; case 6: hour = 'Linda mañana 🥀'; break; case 7: hour = 'Linda mañana 🥀'; break; case 8: hour = 'Linda mañana 🥀'; break; case 9: hour = 'Linda mañana 🥀'; break; case 10: hour = 'Buen dia 💫'; break; case 11: hour = 'Buen dia 💫'; break; case 12: hour = 'Buen dia 💫'; break; case 13: hour = 'Buen dia 💫'; break; case 14: hour = 'Bonita tarde 🌄'; break; case 15: hour = 'Bonita tarde 🌄'; break; case 16: hour = 'Bonita tarde 🌄'; break; case 17: hour = 'Bonito anochecer 🌇'; break; case 18: hour = 'Linda noche 🌃'; break; case 19: hour = 'Linda noche 🌃'; break; case 20: hour = 'Linda noche'; break; case 21: hour = 'Linda noche 🌃'; break; case 22: hour = 'Linda noche 🌃'; break; case 23: hour = 'Linda noche 🌃'; break;}
+global.saludo = '💫' + hour;
+
+global.d = new Date(new Date + 3600000)
+global.locale = 'es'
+global.dia = d.toLocaleDateString(locale, {weekday: 'long'})
+global.fecha = d.toLocaleDateString('es', {day: 'numeric', month: 'numeric', year: 'numeric'})
+global.mes = d.toLocaleDateString('es', {month: 'long'})
+global.año = d.toLocaleDateString('es', {year: 'numeric'})
+global.tiempo = d.toLocaleString('en-US', {hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true})
+
+
 //------------------------------------------------
 
 global.vs = "1.8.5"
