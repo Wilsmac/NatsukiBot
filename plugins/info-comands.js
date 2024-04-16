@@ -1,11 +1,6 @@
 import translate from '@vitalets/google-translate-api'
 import googleIt from 'google-it'
-import fetch from 'node-fetch'
-import { spawn } from 'child_process'
 import gpt from 'api-dylux'
-import gtts from 'node-gtts'
-import { execSync } from 'child_process'
-import {readFileSync, unlinkSync} from 'fs'
 import fs from 'fs' 
 import {Configuration, OpenAIApi} from 'openai';
 const configuration = new Configuration({organization: global.openai_org_id, apiKey: global.openai_key})
