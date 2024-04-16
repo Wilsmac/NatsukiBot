@@ -22,8 +22,8 @@ let aa = tag + '@s.whatsapp.net'
 let user = global.db.data.users[m.sender]
 
 if (/^(verify|verificar|reg(ister)?)$/i.test(command)) {
-if (user.registered === true) return m.reply(`}*YA ESTAS REGISTRADO(A)!!*\n*SI QUIERE ANULAR SU REGISTRO USE ESTE COMANDO*\n*${usedPrefix}unreg numero de serie*`(usedPrefix) + '*')
-if (!Reg.test(text)) return m.reply(`INGRESE SU NOMBRE Y EDAD PARA ESTAR REGISTRADO*\n*EJEMPLO*\n\n${usedPrefix + command} Wilmer.18`(usedPrefix, command))
+if (user.registered === true) return m.reply(`*YA ESTAS REGISTRADO(A)!!*\n*SI QUIERE ANULAR SU REGISTRO USE ESTE COMANDO*\n*${usedPrefix}unreg numero de serie*`)
+if (!Reg.test(text)) return m.reply(`INGRESE SU NOMBRE Y EDAD PARA ESTAR REGISTRADO*\n*EJEMPLO*\n\n${usedPrefix + command} Wilmer.18`)
 let [_, name, splitter, age] = text.match(Reg)  
 if (!name) return m.reply(`*INGRESE SU NOMBRE*`)
 if (!age) return m.reply(`*INGRESE SU EDAD*`)
@@ -113,7 +113,7 @@ let caption = `✅ *V E R I F I C A C I O N* ✅
 *⎔ ID DE REGISTRO*
 • \`\`\`${sn}\`\`\``.trim()
 await conn.sendFile(m.chat, pp, 'fantasy.jpg', caption, m, false, { mentions: [aa] }) 
-await m.reply(`*SU ID DE REGISTRO SERVIRÁ EN CASO QUE DESEE MODIFICAR O ELIMINAR SU REGISTRO USANDO ${usedPrefix}unreg*`(usedPrefix)) 
+await m.reply(`*SU ID DE REGISTRO SERVIRÁ EN CASO QUE DESEE MODIFICAR O ELIMINAR SU REGISTRO USANDO ${usedPrefix}unreg*`) 
 await m.reply(`${sn}`) 
 }
 }
