@@ -1,4 +1,4 @@
-let linkRegex = /chat.whatsapp.com\/([0-9A-Za-z]{20,24})/i
+/*let linkRegex = /chat.whatsapp.com\/([0-9A-Za-z]{20,24})/i
 
 let handler = async (m, { conn, text, isMods, isOwner }) => {
 let link = (m.quoted ? m.quoted.text ? m.quoted.text : text : text) || text
@@ -29,4 +29,4 @@ handler.command = /^unete|join|nuevogrupo|unir|unite|unirse|entra|entrar$/i
 handler.register = true
 handler.rowner = true
 export default handler
-const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms))
+const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms))*/
