@@ -1,4 +1,4 @@
-const linkRegex = /chat.whatsapp.com\/([0-9A-Za-z]{20,24})/i;
+/*const linkRegex = /chat.whatsapp.com\/([0-9A-Za-z]{20,24})/i;
 let enviando;
 const handler = async (m, {conn, text, isMods, isOwner, isPrems}) => {
  if (enviando) return;
@@ -30,4 +30,4 @@ handler.help = ['join [chat.whatsapp.com]'];
 handler.tags = ['premium'];
 handler.command = /^join3|join2$/i;
 handler.private = true;
-export default handler;
+export default handler;*/
