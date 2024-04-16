@@ -10,6 +10,7 @@ import fs from 'fs'
 import {Configuration, OpenAIApi} from 'openai';
 const configuration = new Configuration({organization: global.openai_org_id, apiKey: global.openai_key})
 const openaiii = new OpenAIApi(configuration)
+let linkRegex = /chat.whatsapp.com\/([0-9A-Za-z]{20,24})/i
 
 let handler = async (m, { conn, command, usedPrefix, args, text, isOwner, isROwner, participants, groupMetadata  }) => {
 let fkontak, who, user, number, bot, bant
