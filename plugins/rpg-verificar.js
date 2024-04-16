@@ -117,7 +117,7 @@ await m.reply(`*SU ID DE REGISTRO SERVIRÁ EN CASO QUE DESEE MODIFICAR O ELIMINA
 await m.reply(`${sn}`) 
 }
 }
-handler.command = /^(verify|verificar|reg(ister)?|idiomagb)$/i
+handler.command = /^(verify|verificar|reg(ister)?|idiomagd)$/i
 export default handler
 
 
