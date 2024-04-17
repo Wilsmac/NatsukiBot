@@ -1118,7 +1118,7 @@ console.error(e)
 for (let [jid] of global.owner.filter(([number, _, isDeveloper]) => isDeveloper && number)) {
 let data = (await conn.onWhatsApp(jid))[0] || {}
 if (data.exists)
-m.reply(`${lenguajeGB['smsCont1']()}\n\n${lenguajeCD['smsCont2']()}\n*_${name}_*\n\n${lenguajeCD['smsCont3']()}\n*_${m.sender}_*\n\n${lenguajeCD['smsCont4']()}\n*_${m.text}_*\n\n${lenguajeCD['smsCont5']()}\n\`\`\`${format(e)}\`\`\`\n\n${lenguajeCD['smsCont6']()}`.trim(), data.jid)
+m.reply(`${lenguajeCD['smsCont1']()}\n\n${lenguajeCD['smsCont2']()}\n*_${name}_*\n\n${lenguajeCD['smsCont3']()}\n*_${m.sender}_*\n\n${lenguajeCD['smsCont4']()}\n*_${m.text}_*\n\n${lenguajeCD['smsCont5']()}\n\`\`\`${format(e)}\`\`\`\n\n${lenguajeCD['smsCont6']()}`.trim(), data.jid)
 }}}
 if (!opts['restrict'])
 if (plugin.tags && plugin.tags.includes('admin')) {
