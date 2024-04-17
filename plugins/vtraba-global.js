@@ -2,9 +2,9 @@
 
 
 
-              let scan = await m.reply(`Hola` m)
+              
   setTimeout(() => {
-    parent.sendMessage(m.chat, { delete: scan })
+    parent.sendMessage(m.chat, { delete: `Hola` })
   }, 50000) //50 segundos
 
 handler.help = ['holi'];
