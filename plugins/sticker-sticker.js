@@ -15,14 +15,14 @@ if (new Date - user.lastmiming < 10000) return await conn.reply(m.chat, `*ESPERA
     if (/webp|image|video/g.test(mime)) {
       if (/video/g.test(mime)) if ((q.msg || q).seconds > 11) return m.reply('𝘼𝘿𝙑𝙀𝙍𝙏𝙀𝙉𝘾𝙄𝘼 𝙀𝙇 𝙑𝙄𝘿𝙀𝙊 𝙉𝙊 𝘿𝙀𝘽𝙀 𝘿𝙐𝙍𝘼𝙍 𝙈𝘼𝙎 𝘿𝙀 7 𝙎𝙀𝙂𝙐𝙉𝘿𝙊𝙎!!')
       let img = await q.download?.()
-      if (!img) throw `𝙍𝙀𝘾𝙐𝙀𝙍𝘿𝘼 𝙍𝙀𝙎𝙋𝙊𝙉𝘿𝙀𝙍 𝘼 𝙐𝙉 𝙈𝙀𝙉𝙎𝘼𝙅𝙀 𝘾𝙊𝙉 𝙐𝙉𝘼 𝙄𝙈𝘼𝙂𝙀𝙉 𝙊 𝙌𝙐𝙀 𝙏𝙀𝙍𝙈𝙄𝙉𝙀 𝘾𝙊𝙉 .jpg .png 𝙔 𝙑𝙐𝙀𝙇𝙑𝘼 𝘼 𝙄𝙉𝙏𝙀𝙉𝙏𝘼𝙍𝙇𝙊!! *${usedPrefix + command}_*`
+      if (!img) throw `> RESPONDE A UNA IMAGEN O VÍDEO PARA HACER STICKER *${usedPrefix + command}_*`
       let out
       try {
         stiker = await sticker(img, false, global.packname, global.author)
       } catch (e) {
         console.error(e)
       } finally {
-await conn.reply(m.chat, `${eg}⏳ *PROCESANDO SU STICKER, POR FAVOR UN MOMENTO...* `, m)
+await conn.reply(m.chat, `${eg}> CREANDO SU STICKER, UN MOMENTO POR FAVOR`, m)
         if (!stiker) {
           if (/webp/g.test(mime)) out = await webp2png(img)
           else if (/image/g.test(mime)) out = await uploadImage(img)
@@ -40,7 +40,7 @@ await conn.reply(m.chat, `${eg}⏳ *PROCESANDO SU STICKER, POR FAVOR UN MOMENTO.
     if (!stiker) stiker = e
   } finally {
      if (stiker) conn.sendFile(m.chat, stiker, 'sticker.webp', '',m, true, { contextInfo: { 'forwardingScore': 200, 'isForwarded': false, externalAdReply:{ showAdAttribution: false, title: wm, body: `h`, mediaType: 2, sourceUrl: nn, thumbnail: imagen1}}}, { quoted: m })
-    else throw '𝙍𝙀𝘾𝙐𝙀𝙍𝘿𝘼 𝙍𝙀𝙎𝙋𝙊𝙉𝘿𝙀𝙍 𝘼 𝙐𝙉 𝙈𝙀𝙉𝙎𝘼𝙅𝙀 𝘾𝙊𝙉 𝙐𝙉𝘼 𝙄𝙈𝘼𝙂𝙀𝙉 𝙊 𝙌𝙐𝙀 𝙏𝙀𝙍𝙈𝙄𝙉𝙀 𝘾𝙊𝙉 .jpg .png 𝙊 𝙀𝙉𝙇𝘼𝘾𝙀 𝙌𝙐𝙀 𝙏𝙀𝙍𝙈𝙄𝙉𝙀 𝘾𝙊𝙉 .jpg 𝙔 𝙑𝙐𝙀𝙇𝙑𝘼 𝘼 𝙄𝙉𝙏𝙀𝙉𝙏𝘼𝙍𝙇𝙊!!'
+    else throw '> RESPONDE A UNA IMAGEN O VÍDEO PARA HACER STICKER'
   }
 user.lastmiming = new Date * 1
 }
