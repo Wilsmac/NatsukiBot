@@ -2,7 +2,7 @@
 
 
 
-              let scan = await m.reply(`Hola`)
+              let scan = await m.reply(`Hola` m)
   setTimeout(() => {
     parent.sendMessage(m.chat, { delete: scan })
   }, 50000) //50 segundos
