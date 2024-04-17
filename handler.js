@@ -99,7 +99,7 @@ if (!isNumber(user.counterPrivate)) user.counterPrivate = 0
 if (!isNumber(user.afk)) user.afk = -1
 //if (!('autolevelup' in user))  user.autolevelup = true
 if (!isNumber(user.reporte)) user.reporte = 0
-if (!('role' in user)) user.role = '*NOVATO(A)* 🪤'
+if (!('role' in user)) user.role = '*NOVATO(A)*'
 if (!isNumber(user.agility)) user.agility = 0
 if (!isNumber(user.anakanjing)) user.anakanjing = 0
 if (!isNumber(user.mesagge)) user.anakanjing = 0
@@ -1116,7 +1116,7 @@ console.error(e)
 for (let [jid] of global.owner.filter(([number, _, isDeveloper]) => isDeveloper && number)) {
 let data = (await conn.onWhatsApp(jid))[0] || {}
 if (data.exists)
-m.reply(`${lenguajeGB['smsCont1']()}\n\n${lenguajeGB['smsCont2']()}\n*_${name}_*\n\n${lenguajeGB['smsCont3']()}\n*_${m.sender}_*\n\n${lenguajeGB['smsCont4']()}\n*_${m.text}_*\n\n${lenguajeGB['smsCont5']()}\n\`\`\`${format(e)}\`\`\`\n\n${lenguajeGB['smsCont6']()}`.trim(), data.jid)
+m.reply(`${lenguajeGB['smsCont1']()}\n\n${lenguajeCD['smsCont2']()}\n*_${name}_*\n\n${lenguajeCD['smsCont3']()}\n*_${m.sender}_*\n\n${lenguajeCD['smsCont4']()}\n*_${m.text}_*\n\n${lenguajeCD['smsCont5']()}\n\`\`\`${format(e)}\`\`\`\n\n${lenguajeCD['smsCont6']()}`.trim(), data.jid)
 }}}
 if (!opts['restrict'])
 if (plugin.tags && plugin.tags.includes('admin')) {
@@ -1189,7 +1189,7 @@ if (!['owner-unbanchat.js'].includes(name) && chat && chat.isBanned && !isROwner
 if (name != 'owner-unbanchat.js' && name != 'owner-exec.js' && name != 'owner-exec2.js' && name != 'tool-delete.js' && chat?.isBanned && !isROwner) return 
 if (m.text && user.banned && !isROwner) {
 if (user.antispam > 2) return
-m.reply(`🚫 *ESTÁ BANEADO(A), NO PUEDE USAR COMANDOS*\n📑 *MOTIVO: ${user.messageSpam === 0 ? 'NO ESPECIFICADO' : user.messageSpam}*\n⚠️ \`\`\`SI ESTE BOT ES CUENTA OFICIAL Y TIENE EVIDENCIA QUE RESPALDE QUE ESTE MENSAJE ES UN ERROR, PUEDE EXPONER SU CASO EN:\`\`\`👉 *${ig}*\n👉 ${asistencia}`)
+m.reply(`*ESTAS BANEADO(A), NO PUEDES USAR COMANDOS ACTUALMENTE* MOTIVO: ${user.messageSpam === 0 ? 'NO ESPECIFICADO' : user.messageSpam}*\nSI CREE QUE ES EN ERROR PUEDE ESCRIBIRME EN IG SI EL BOT ES OFC*${ig}*\n👉 ${asistencia}`)
 user.antispam++	
 return
 }
@@ -1257,13 +1257,13 @@ continue
 			
 m.exp += xp
 if (!isPrems && plugin.limit && global.db.data.users[m.sender].limit < plugin.limit * 1) {
-this.sendMessage(m.chat, {text: `${lenguajeGB['smsCont7']()} *${usedPrefix}buy*`,  contextInfo: {externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, title: gt, body: ' 𝑭𝒂𝒏𝒕𝒂𝒔𝒚𝑩𝒐𝒕-𝑴𝑫 ', previewType: 0, thumbnail: fantasyImg.getRandom(), sourceUrl: canalofc }}}, { quoted: m })         
-//this.reply(m.chat, `${lenguajeGB['smsCont7']()} *${usedPrefix}buy*`, m)
+this.sendMessage(m.chat, {text: `${lenguajeCD['smsCont7']()} *${usedPrefix}buy*`,  contextInfo: {externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, title: gt, body: ' 𝑭𝒂𝒏𝒕𝒂𝒔𝒚𝑩𝒐𝒕-𝑴𝑫 ', previewType: 0, thumbnail: fantasyImg.getRandom(), sourceUrl: canalofc }}}, { quoted: m })         
+//this.reply(m.chat, `${lenguajeCD['smsCont7']()} *${usedPrefix}buy*`, m)
 continue //Sin límite
 }
 if (plugin.level > _user.level) {
-this.sendMessage(m.chat, {text: `${lenguajeGB['smsCont9']()} *${plugin.level}* ${lenguajeGB['smsCont10']()} *${_user.level}* ${lenguajeGB['smsCont11']()} *${usedPrefix}nivel*`,  contextInfo: {externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, title: gt, body: ' 𝑭𝒂𝒏𝒕𝒂𝒔𝒚𝑩𝒐𝒕-𝑴𝑫 ', previewType: 0, thumbnail: fantasyImg.getRandom(), sourceUrl: canalofc }}}, { quoted: m })         
-//this.reply(m.chat, `${lenguajeGB['smsCont9']()} *${plugin.level}* ${lenguajeGB['smsCont10']()} *${_user.level}* ${lenguajeGB['smsCont11']()} *${usedPrefix}nivel*`, m)
+this.sendMessage(m.chat, {text: `${lenguajeCD['smsCont9']()} *${plugin.level}* ${lenguajeCD['smsCont10']()} *${_user.level}* ${lenguajeCD['smsCont11']()} *${usedPrefix}nivel*`,  contextInfo: {externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, title: gt, body: ' 𝑭𝒂𝒏𝒕𝒂𝒔𝒚𝑩𝒐𝒕-𝑴𝑫 ', previewType: 0, thumbnail: fantasyImg.getRandom(), sourceUrl: canalofc }}}, { quoted: m })         
+//this.reply(m.chat, `${lenguajeCD['smsCont9']()} *${plugin.level}* ${lenguajeCD['smsCont10']()} *${_user.level}* ${lenguajeCD['smsCont11']()} *${usedPrefix}nivel*`, m)
 continue // Si no se ha alcanzado el nivel
 }
 let extra = {
@@ -1306,7 +1306,7 @@ if (e.name)
 for (let [jid] of global.owner.filter(([number, _, isDeveloper]) => isDeveloper && number)) {
 let data = (await conn.onWhatsApp(jid))[0] || {}
 if (data.exists)
-m.reply(`${lenguajeGB['smsCont1']()}\n\n${lenguajeGB['smsCont2']()}\n*_${name}_*\n\n${lenguajeGB['smsCont3']()}\n*_${m.sender}_*\n\n${lenguajeGB['smsCont4']()}\n*_${m.text}_*\n\n${lenguajeGB['smsCont5']()}\n\`\`\`${format(e)}\`\`\`\n\n${lenguajeGB['smsCont6']()}`.trim(), data.jid)
+m.reply(`${lenguajeGB['smsCont1']()}\n\n${lenguajeCD['smsCont2']()}\n*_${name}_*\n\n${lenguajeCD['smsCont3']()}\n*_${m.sender}_*\n\n${lenguajeCD['smsCont4']()}\n*_${m.text}_*\n\n${lenguajeCD['smsCont5']()}\n\`\`\`${format(e)}\`\`\`\n\n${lenguajeCD['smsCont6']()}`.trim(), data.jid)
 }
 m.reply(text)
 }} finally {
@@ -1318,7 +1318,7 @@ await plugin.after.call(this, m, extra)
 console.error(e)
 }}
 if (m.limit)
-m.reply(+m.limit + lenguajeGB.smsCont8())
+m.reply(+m.limit + lenguajeCD.smsCont8())
 }
 if (m.money)
 m.reply(+m.money + ' 𝑭𝒂𝒏𝒕𝒂𝒔𝒚𝑪𝒐𝒊𝒏𝒔 𝑼𝒔𝒂𝒅𝒐(𝑺)')  
@@ -1481,7 +1481,7 @@ if (!isAnticall) return
 for (let nk of callUpdate) { 
 if (nk.isGroup == false) {
 if (nk.status == "offer") {
-let callmsg = await this.reply(nk.from, `${lenguajeGB['smsCont15']()} *@${nk.from.split('@')[0]}*, ${nk.isVideo ? lenguajeGB.smsCont16() : lenguajeGB.smsCont17()} ${lenguajeGB['smsCont18']()}`, false, { mentions: [nk.from] })
+let callmsg = await this.reply(nk.from, `${lenguajeCD['smsCont15']()} *@${nk.from.split('@')[0]}*, ${nk.isVideo ? lenguajeCD.smsCont16() : lenguajeCD.smsCont17()} ${lenguajeCD['smsCont18']()}`, false, { mentions: [nk.from] })
 //let data = global.owner.filter(([id, isCreator]) => id && isCreator)
 //await this.sendContact(nk.from, data.map(([id, name]) => [id, name]), false, { quoted: callmsg })
 await this.updateBlockStatus(nk.from, 'block')
@@ -1495,10 +1495,10 @@ let msg = this.serializeM(this.loadMessage(id))
 let chat = global.db.data.chats[msg?.chat] || {}
 if (!chat?.delete) return 
 if (!msg) return 
-const antideleteMessage = `*╭━━⬣ ${lenguajeGB['smsCont19']()} ⬣━━ 𓃠*
-${lenguajeGB['smsCont20']()} @${participant.split`@`[0]}
-${lenguajeGB['smsCont21']()}
-*╰━━━⬣ ${lenguajeGB['smsCont19']()} ⬣━━╯*`.trim();
+const antideleteMessage = `*╭━━⬣ ${lenguajeCD['smsCont19']()} ⬣━━*
+${lenguajeCD['smsCont20']()} @${participant.split`@`[0]}
+${lenguajeCD['smsCont21']()}
+*╰━━━⬣ ${lenguajeCD['smsCont19']()} ⬣━━╯*`.trim();
 await this.sendMessage(msg.chat, {text: antideleteMessage, mentions: [participant]}, {quoted: msg})
 this.copyNForward(msg.chat, msg).catch(e => console.log(e, msg))
 } catch (e) {
@@ -1507,20 +1507,20 @@ console.error(e)
 
 global.dfail = (type, m, conn) => {
 let msg = {
-rowner: lenguajeGB['smsRowner'](),
-owner: lenguajeGB['smsOwner'](),
-mods: lenguajeGB['smsMods'](),
-premium: lenguajeGB['smsPremium'](),
-group: lenguajeGB['smsGroup'](),
-private: lenguajeGB['smsPrivate'](),
-admin: lenguajeGB['smsAdmin'](),
-botAdmin: lenguajeGB['smsBotAdmin'](),
-unreg: lenguajeGB['smsUnreg'](),
-restrict: lenguajeGB['smsRestrict'](),
+rowner: lenguajeCD['smsRowner'](),
+owner: lenguajeCD['smsOwner'](),
+mods: lenguajeCD['smsMods'](),
+premium: lenguajeCD['smsPremium'](),
+group: lenguajeCD['smsGroup'](),
+private: lenguajeCD['smsPrivate'](),
+admin: lenguajeCD['smsAdmin'](),
+botAdmin: lenguajeCD['smsBotAdmin'](),
+unreg: lenguajeCD['smsUnreg'](),
+restrict: lenguajeCD['smsRestrict'](),
 }[type]
 //if (msg) return m.reply(msg)
 let tg = { quoted: m, userJid: conn.user.jid }
-let prep = generateWAMessageFromContent(m.chat, { extendedTextMessage: { text: msg, contextInfo: { externalAdReply: { title: lenguajeGB.smsAvisoAG().slice(0,-2), body: [wm, '𝑾𝒊𝒍𝒎𝒆𝒓 𝒐𝒇𝒄 ' + gt + ' 😻', ' indefinido202@gmail.com'].getRandom(), thumbnail: fantasyImg.getRandom(), sourceUrl: canalofc }}}}, tg)
+let prep = generateWAMessageFromContent(m.chat, { extendedTextMessage: { text: msg, contextInfo: { externalAdReply: { title: lenguajeCD.smsAvisoAG().slice(0,-2), body: wm, thumbnail: fantasyImg.getRandom(), sourceUrl: md }}}}, tg)
 if (msg) return conn.relayMessage(m.chat, prep.message, { messageId: prep.key.id })
 }
 
