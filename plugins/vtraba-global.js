@@ -3,9 +3,9 @@
  let handler  = async (m, { conn }) => {
 
               
-   let scan = await parent.sendFile(m.chat, await `https://telegra.ph/file/6114942024c7658478830.jpg`, m)
+   let scan = await conn.sendFile(m.chat, await `https://telegra.ph/file/6114942024c7658478830.jpg`, m)
   setTimeout(() => {
-    parent.sendMessage(m.chat, { delete: scan.key })
+    conn.sendMessage(m.chat, { delete: scan.key })
   }, 50000) //50
 }
 handler.help = ['holi'];
