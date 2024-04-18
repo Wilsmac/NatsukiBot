@@ -48,7 +48,7 @@ const handler = async (m, {command, conn}) => {
   if (command == 'pechos') {
     const res = (await axios.get(`https://raw.githubusercontent.com/BrunoSobrino/TheMystic-Bot-MD/master/src/JSON/pechos.json`)).data;
     const url = await res[Math.floor(res.length * Math.random())];
-   let pechos = conn.sendMessage(m.chat, {image: {url: url}, caption: `_${command}_`.trim()}, {quoted: m});
+   let pechos = await conn.sendMessage(m.chat, {image: {url: url}, caption: `_${command}_`.trim()}, {m});
   setTimeout(() => {
     conn.sendMessage(m.chat, { delete: pechos })
   }, 30000) //50
