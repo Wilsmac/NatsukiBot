@@ -11,7 +11,7 @@ const handler = async (m, {conn, command, args}) => {
     conn.reply(m.chat, `
 ┌─「 \`INFO DEL PAGO\` 」
 ‣ *Compra nominal* : + \`${count}💎\`
-‣ *Gastado* : -\`${xpperlimit * count} XP\`
+‣ *Gastado* : - \`${xpperlimit * count} XP\`
 └──────────────`, m);
   } else conn.reply(m.chat, `❎ Lo siento, no tienes suficientes *XP* para comprar *${count}* Diamantes💎`, m);
 };
