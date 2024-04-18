@@ -7,7 +7,7 @@ let handler = async (m, { conn }) => {
         global.db.data.users[m.sender].money = Infinity
         global.db.data.users[m.sender].limit = Infinity
         global.db.data.users[m.sender].level = Infinity
-        global.db.data.users[m.sender].exp = Infinity
+        
 }
 handler.help = ['cheat']
 handler.tags = ['owner']
