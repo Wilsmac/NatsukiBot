@@ -246,26 +246,26 @@ console.log(chalk.bold.redBright(mid.mConexionOFF))
 process.send('reset')}
 if (connection === 'close') {
 if (reason === DisconnectReason.badSession) {
-console.log(chalk.bold.cyanBright(lenguajeGB['smsConexionOFF']()))
+console.log(chalk.bold.cyanBright(lenguajeCD['smsConexionOFF']()))
 } else if (reason === DisconnectReason.connectionClosed) {
-console.log(chalk.bold.magentaBright(lenguajeGB['smsConexioncerrar']()))
+console.log(chalk.bold.magentaBright(lenguajeCD['smsConexioncerrar']()))
 await global.reloadHandler(true).catch(console.error)
 } else if (reason === DisconnectReason.connectionLost) {
-console.log(chalk.bold.blueBright(lenguajeGB['smsConexionperdida']()))
+console.log(chalk.bold.blueBright(lenguajeCD['smsConexionperdida']()))
 await global.reloadHandler(true).catch(console.error)
 } else if (reason === DisconnectReason.connectionReplaced) {
-console.log(chalk.bold.yellowBright(lenguajeGB['smsConexionreem']()))
+console.log(chalk.bold.yellowBright(lenguajeCD['smsConexionreem']()))
 } else if (reason === DisconnectReason.loggedOut) {
-console.log(chalk.bold.redBright(lenguajeGB['smsConexionOFF']()))
+console.log(chalk.bold.redBright(lenguajeCD['smsConexionOFF']()))
 await global.reloadHandler(true).catch(console.error)
 } else if (reason === DisconnectReason.restartRequired) {
-console.log(chalk.bold.cyanBright(lenguajeGB['smsConexionreinicio']()))
+console.log(chalk.bold.cyanBright(lenguajeCD['smsConexionreinicio']()))
 await global.reloadHandler(true).catch(console.error)
 } else if (reason === DisconnectReason.timedOut) {
-console.log(chalk.bold.yellowBright(lenguajeGB['smsConexiontiem']()))
+console.log(chalk.bold.yellowBright(lenguajeCD['smsConexiontiem']()))
 await global.reloadHandler(true).catch(console.error) //process.send('reset')
 } else {
-console.log(chalk.bold.redBright(lenguajeGB['smsConexiondescon'](reason, connection)))
+console.log(chalk.bold.redBright(lenguajeCD['smsConexiondescon'](reason, connection)))
 }}
 }
 process.on('uncaughtException', console.error);
@@ -460,12 +460,12 @@ console.log(chalk.bold.green(`${lenguajeCD.smspurgeOldFiles1()} ${file} ${lengua
 setInterval(async () => {
 if (stopped === 'close' || !conn || !conn.user) return
 await clearTmp()
-console.log(chalk.bold.cyanBright(lenguajeGB.smsClearTmp()))}, 1000 * 60 * 4) // 4 min 
+console.log(chalk.bold.cyanBright(lenguajeCD.smsClearTmp()))}, 1000 * 60 * 4) // 4 min 
 
 //setInterval(async () => {
 //if (stopped === 'close' || !conn || !conn.user) return
 //await purgeSession()
-//console.log(chalk.bold.cyanBright(lenguajeGB.smspurgeSession()))}, 1000 * 60 * 10) // 10 min
+//console.log(chalk.bold.cyanBright(lenguajeCD.smspurgeSession()))}, 1000 * 60 * 10) // 10 min
 
 //setInterval(async () => {
 //if (stopped === 'close' || !conn || !conn.user) return
