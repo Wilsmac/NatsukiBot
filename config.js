@@ -312,83 +312,83 @@ emoticon(string) {
 string = string.toLowerCase();
 let emot = {
       level: '🧬 Nivel : Level',
-      limit: lenguajeGB.eDiamante(),
-      exp: lenguajeGB.eExp(),
+      limit: lenguajeCD.eDiamante(),
+      exp: lenguajeCD.eExp(),
       bank: '🏦 Banco : Bank',
-      diamond: lenguajeGB.eDiamantePlus(),
+      diamond: lenguajeCD.eDiamantePlus(),
       health: '❤️ Salud : Health',
-      kyubi: lenguajeGB.eMagia(),
-      joincount: lenguajeGB.eToken(),
-      emerald: lenguajeGB.eEsmeralda(),
-      stamina: lenguajeGB.eEnergia(),
+      kyubi: lenguajeCD.eMagia(),
+      joincount: lenguajeCD.eToken(),
+      emerald: lenguajeCD.eEsmeralda(),
+      stamina: lenguajeCD.eEnergia(),
       role: '💪 Rango | Role',
       premium: '🎟️ Premium',
       pointxp: '📧 Puntos Exp : Point Xp',
-      gold: lenguajeGB.eOro(),
+      gold: lenguajeCD.eOro(),
       
-      trash: lenguajeGB.eBasura(),
+      trash: lenguajeCD.eBasura(),
       crystal: '🔮 Cristal : Crystal',
       intelligence: '🧠 Inteligencia : Intelligence',
-      string: lenguajeGB.eCuerda(),
+      string: lenguajeCD.eCuerda(),
       keygold: '🔑 Llave de Oro : Key Gold',
       keyiron: '🗝️ Llave de Hierro : Key Iron',
-      emas: lenguajeGB.ePinata(),
+      emas: lenguajeCD.ePinata(),
       fishingrod: '🎣 Caña de Pescar : Fishing Rod',
       gems: '🍀 Gemas : Gemas',
       magicwand: '⚕️ Varita Mágica : Magic Wand',
       mana: '🪄 Hechizo : Spell',
       agility: '🤸‍♂️ Agilidad : Agility',
       darkcrystal: '♠️ Cristal Oscuro : Dark Glass',
-      iron: lenguajeGB.eHierro(),
-      rock: lenguajeGB.eRoca(),
-      potion: lenguajeGB.ePocion(),
+      iron: lenguajeCD.eHierro(),
+      rock: lenguajeCD.eRoca(),
+      potion: lenguajeCD.ePocion(),
       superior: '💼 Superior : Superior',
       robo: '🚔 Robo : Robo',
       upgrader: '🧰 Aumentar Mejora : Upgrade',
-      wood: lenguajeGB.eMadera(),
+      wood: lenguajeCD.eMadera(),
       
       strength: '🦹‍ ♀️ Fuerza : Strength',
       arc: '🏹 Arco : Arc',
       armor: '🥼 Armadura : Armor',
       bow: '🏹 Super Arco : Super Bow',
       pickaxe: '⛏️ Pico : Peak',
-      sword: lenguajeGB.eEspada(),
+      sword: lenguajeCD.eEspada(),
       
-      common: lenguajeGB.eCComun(),
-      uncoommon: lenguajeGB.ePComun(),
-      mythic: lenguajeGB.eCMistica(),
-      legendary: lenguajeGB.eClegendaria(),
-      petFood: lenguajeGB.eAMascots(), //?
-      pet: lenguajeGB.eCMascota(),//?
+      common: lenguajeCD.eCComun(),
+      uncoommon: lenguajeCD.ePComun(),
+      mythic: lenguajeCD.eCMistica(),
+      legendary: lenguajeCD.eClegendaria(),
+      petFood: lenguajeCD.eAMascots(), //?
+      pet: lenguajeCD.eCMascota(),//?
       
-      bibitanggur: lenguajeGB.eSUva(), bibitapel: lenguajeGB.eSManzana(), bibitjeruk: lenguajeGB.eSNaranja(), bibitmangga: lenguajeGB.eSMango(), bibitpisang: lenguajeGB.eSPlatano(),
+      bibitanggur: lenguajeCD.eSUva(), bibitapel: lenguajeCD.eSManzana(), bibitjeruk: lenguajeCD.eSNaranja(), bibitmangga: lenguajeCD.eSMango(), bibitpisang: lenguajeCD.eSPlatano(),
       
       ayam: '🐓 Pollo : Chicken',
       babi: '🐖 Puerco : Pig',
       Jabali: '🐗 Jabalí : Wild Boar',
       bull: '🐃 Toro : Bull',    
       buaya: '🐊 Cocodrilo : Alligator',    
-      cat: lenguajeGB.eGato(),    
-      centaur: lenguajeGB.eCentauro(),
+      cat: lenguajeCD.eGato(),    
+      centaur: lenguajeCD.eCentauro(),
       chicken: '🐓 Pollo : Chicken',
       cow: '🐄 Vaca : Cow', 
-      dog: lenguajeGB.ePerro(),
-      dragon: lenguajeGB.eDragon(),
+      dog: lenguajeCD.ePerro(),
+      dragon: lenguajeCD.eDragon(),
       elephant: '🐘 Elefante : Elephant',
-      fox: lenguajeGB.eZorro(),
+      fox: lenguajeCD.eZorro(),
       giraffe: '🦒 Jirafa : Giraffe',
-      griffin: lenguajeGB.eAve(), //Mascota : Griffin',
-      horse: lenguajeGB.eCaballo(),
+      griffin: lenguajeCD.eAve(), //Mascota : Griffin',
+      horse: lenguajeCD.eCaballo(),
       kambing: '🐐 Cabra : Goat',
       kerbau: '🐃 Búfalo : Buffalo',
       lion: '🦁 León : Lion',
-      money: lenguajeGB.eGataCoins(),
+      money: lenguajeCD.eGataCoins(),
       monyet: '🐒 Mono : Monkey',
       panda: '🐼 Panda',
       snake: '🐍 Serpiente : Snake',
       phonix: '🕊️ Fénix : Phoenix',
       rhinoceros: '🦏 Rinoceronte : Rhinoceros',
-      wolf: lenguajeGB.eLobo(),
+      wolf: lenguajeCD.eLobo(),
       tiger: '🐅 Tigre : Tiger',
       cumi: '🦑 Calamar : Squid',
       udang: '🦐 Camarón : Shrimp',
@@ -441,35 +441,35 @@ global.rpgshop = { //Tienda
 emoticon(string) {
 string = string.toLowerCase();
 let emottt = {
-      exp: lenguajeGB.eExp(), limit: lenguajeGB.eDiamante(), diamond: lenguajeGB.eDiamantePlus(), joincount: lenguajeGB.eToken(),
-      emerald: lenguajeGB.eEsmeralda(), berlian: lenguajeGB.eJoya(), kyubi: lenguajeGB.eMagia(), gold: lenguajeGB.eOro(),
-      money: lenguajeGB.eGataCoins(), tiketcoin: lenguajeGB.eGataTickers(), stamina: lenguajeGB.eEnergia(),
+      exp: lenguajeCD.eExp(), limit: lenguajeCD.eDiamante(), diamond: lenguajeCD.eDiamantePlus(), joincount: lenguajeCD.eToken(),
+      emerald: lenguajeGB.eEsmeralda(), berlian: lenguajeCD.eJoya(), kyubi: lenguajeCD.eMagia(), gold: lenguajeCD.eOro(),
+      money: lenguajeCD.eGataCoins(), tiketcoin: lenguajeCD.eGataTickers(), stamina: lenguajeCD.eEnergia(),
             
-      potion: lenguajeGB.ePocion(), aqua: lenguajeGB.eAgua(), trash: lenguajeGB.eBasura(), wood: lenguajeGB.eMadera(),
-      rock: lenguajeGB.eRoca(), batu: lenguajeGB.ePiedra(), string: lenguajeGB.eCuerda(), iron: lenguajeGB.eHierro(),
-      coal: lenguajeGB.eCarbon(), botol: lenguajeGB.eBotella(), kaleng: lenguajeGB.eLata(), kardus: lenguajeGB.eCarton(),
+      potion: lenguajeCD.ePocion(), aqua: lenguajeCD.eAgua(), trash: lenguajeCD.eBasura(), wood: lenguajeCD.eMadera(),
+      rock: lenguajeCD.eRoca(), batu: lenguajeCD.ePiedra(), string: lenguajeCD.eCuerda(), iron: lenguajeCD.eHierro(),
+      coal: lenguajeCD.eCarbon(), botol: lenguajeCD.eBotella(), kaleng: lenguajeCD.eLata(), kardus: lenguajeCD.eCarton(),
       
-      eleksirb: lenguajeGB.eEletric(), emasbatang: lenguajeGB.eBarraOro(), emasbiasa: lenguajeGB.eOroComun(), rubah: lenguajeGB.eZorroG(),
-      sampah: lenguajeGB.eBasuraG(), serigala: lenguajeGB.eLoboG(), kayu: lenguajeGB.eMaderaG(), sword: lenguajeGB.eEspada(),
-      umpan: lenguajeGB.eCarnada(), healtmonster: lenguajeGB.eBillete(), emas: lenguajeGB.ePinata(), pancingan: lenguajeGB.eGancho(),
-      pancing: lenguajeGB.eCanaPescar(),
+      eleksirb: lenguajeCD.eEletric(), emasbatang: lenguajeCD.eBarraOro(), emasbiasa: lenguajeCD.eOroComun(), rubah: lenguajeCD.eZorroG(),
+      sampah: lenguajeCD.eBasuraG(), serigala: lenguajeCD.eLoboG(), kayu: lenguajeCD.eMaderaG(), sword: lenguajeCD.eEspada(),
+      umpan: lenguajeCD.eCarnada(), healtmonster: lenguajeCD.eBillete(), emas: lenguajeCD.ePinata(), pancingan: lenguajeCD.eGancho(),
+      pancing: lenguajeCD.eCanaPescar(),
        
-      common: lenguajeGB.eCComun(), uncoommon: lenguajeGB.ePComun(), mythic: lenguajeGB.eCMistica(),
-      pet: lenguajeGB.eCMascota(),//?
-      gardenboxs: lenguajeGB.eCJardineria(),//?
-      legendary: lenguajeGB.eClegendaria(),
+      common: lenguajeCD.eCComun(), uncoommon: lenguajeCD.ePComun(), mythic: lenguajeCD.eCMistica(),
+      pet: lenguajeCD.eCMascota(),//?
+      gardenboxs: lenguajeCD.eCJardineria(),//?
+      legendary: lenguajeCD.eClegendaria(),
       
-      anggur: lenguajeGB.eUva(), apel: lenguajeGB.eManzana(), jeruk: lenguajeGB.eNaranja(), mangga: lenguajeGB.eMango(), pisang: lenguajeGB.ePlatano(),
+      anggur: lenguajeCD.eUva(), apel: lenguajeCD.eManzana(), jeruk: lenguajeCD.eNaranja(), mangga: lenguajeCD.eMango(), pisang: lenguajeCD.ePlatano(),
       
-      bibitanggur: lenguajeGB.eSUva(), bibitapel: lenguajeGB.eSManzana(), bibitjeruk: lenguajeGB.eSNaranja(), bibitmangga: lenguajeGB.eSMango(), bibitpisang: lenguajeGB.eSPlatano(),
+      bibitanggur: lenguajeCD.eSUva(), bibitapel: lenguajeCD.eSManzana(), bibitjeruk: lenguajeCD.eSNaranja(), bibitmangga: lenguajeCD.eSMango(), bibitpisang: lenguajeCD.eSPlatano(),
       
-      centaur: lenguajeGB.eCentauro(), griffin: lenguajeGB.eAve(), kucing: lenguajeGB.eGato(), naga: lenguajeGB.eDragon(),
-      fox: lenguajeGB.eZorro(), kuda: lenguajeGB.eCaballo(), phonix: lenguajeGB.eFenix(), wolf: lenguajeGB.eLobo(),
-      anjing: lenguajeGB.ePerro(),
+      centaur: lenguajeCD.eCentauro(), griffin: lenguajeCD.eAve(), kucing: lenguajeCD.eGato(), naga: lenguajeCD.eDragon(),
+      fox: lenguajeCD.eZorro(), kuda: lenguajeCD.eCaballo(), phonix: lenguajeCD.eFenix(), wolf: lenguajeCD.eLobo(),
+      anjing: lenguajeCD.ePerro(),
  
-      petFood: lenguajeGB.eAMascots(), //?
-      makanancentaur: lenguajeGB.eCCentauro(), makanangriffin: lenguajeGB.eCAve(),
-      makanankyubi: lenguajeGB.eCMagica(), makanannaga: lenguajeGB.eCDragon(), makananpet: lenguajeGB.eACaballo(), makananphonix: lenguajeGB.eCFenix()
+      petFood: lenguajeCD.eAMascots(), //?
+      makanancentaur: lenguajeCD.eCCentauro(), makanangriffin: lenguajeCD.eCAve(),
+      makanankyubi: lenguajeCD.eCMagica(), makanannaga: lenguajeCD.eCDragon(), makananpet: lenguajeCD.eACaballo(), makananphonix: lenguajeCD.eCFenix()
 }
 let results = Object.keys(emottt).map(v => [v, new RegExp(v, 'gi')]).filter(v => v[1].test(string));
 if (!results.length) return '';
