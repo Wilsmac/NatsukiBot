@@ -442,7 +442,7 @@ emoticon(string) {
 string = string.toLowerCase();
 let emottt = {
       exp: lenguajeCD.eExp(), limit: lenguajeCD.eDiamante(), diamond: lenguajeCD.eDiamantePlus(), joincount: lenguajeCD.eToken(),
-      emerald: lenguajeGB.eEsmeralda(), berlian: lenguajeCD.eJoya(), kyubi: lenguajeCD.eMagia(), gold: lenguajeCD.eOro(),
+      emerald: lenguajeCD.eEsmeralda(), berlian: lenguajeCD.eJoya(), kyubi: lenguajeCD.eMagia(), gold: lenguajeCD.eOro(),
       money: lenguajeCD.eGataCoins(), tiketcoin: lenguajeCD.eGataTickers(), stamina: lenguajeCD.eEnergia(),
             
       potion: lenguajeCD.ePocion(), aqua: lenguajeCD.eAgua(), trash: lenguajeCD.eBasura(), wood: lenguajeCD.eMadera(),
