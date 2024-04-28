@@ -3,7 +3,7 @@
 ------------------
 
 <a
-href="https://wa.me/+50587047577" target="white"><img src="https://img.shields.io/badge/Prueba la IA por tiempo limitado-000000?style=for-the-badge&logo=whatsapp&logoColor=black" /></a>
+href="https://wa.me/+50587047577" target="white"><img src="https://img.shields.io/badge/☄️-Prueba la IA por tiempo limitado-000000?style=for-the-badge&logo=whatsapp&logoColor=black" /></a>
 
 <p align="center">
 <img src="https://tinyurl.com/27bt4rga" alt="FantasyBot-MD-v1" width="900"/>
