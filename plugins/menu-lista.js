@@ -129,7 +129,7 @@ rows: [
 ]},
 { title: "Menú",
 rows: [
-{ header: "Menú completo", title: "", description: "Visita todos los comandos", id: usedPrefix + "menu" }
+{ header: "Menú completo", title: "", description: "Visita todos los comandos", id: usedPrefix + "menu2" }
 ]}
 ]})
 const interactiveMessage = {
@@ -148,13 +148,13 @@ await conn.relayMessage(m.chat, { viewOnceMessage: { message } }, {})
 let menu = `${lenguajeGB['smsConfi2']()} *${user.genero === 0 ? '👤' : user.genero == 'Ocultado 🕶️' ? `🕶️` : user.genero == 'Mujer 🚺' ? `🚺` : user.genero == 'Hombre 🚹' ? `🚹` : '👤'} ${user.registered === true ? user.name : taguser} 💖*
 
 \`\`\`${horarioFecha}\`\`\`
-*${lenguajeGB['smsTotalUsers']()}* ➺ _${Object.keys(global.db.data.users).length}_ 
+*${lenguajeCD['smsTotalUsers']()}* ➺ _${Object.keys(global.db.data.users).length}_ 
 *Registrados »* ${rtotalreg}/${totalreg}    
-*${lenguajeGB['smsUptime']()}* ➺ _${uptime}_ 
-*${lenguajeGB['smsVersion']()}* ➺ _${vs}_
-*${lenguajeGB['smsMode']()} ➺* _${global.opts['self'] ? `${lenguajeGB['smsModePrivate']().charAt(0).toUpperCase() + lenguajeGB['smsModePrivate']().slice(1).toLowerCase()}` : `${lenguajeGB['smsModePublic']().charAt(0).toUpperCase() + lenguajeGB['smsModePublic']().slice(1).toLowerCase()}`}_
-⎔ *${lenguajeGB['smsBanChats']()}* ➺ _${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}_ 
-⎔ *${lenguajeGB['smsBanUsers']()}* ➺ _${Object.entries(global.db.data.users).filter(user => user[1].banned).length}_ ${(conn.user.jid == global.conn.user.jid ? '' : `\n⎔ *SOY SUB BOT DE: https://wa.me/${global.conn.user.jid.split`@`[0]}*`) || ''}
+*${lenguajeCD['smsUptime']()}* ➺ _${uptime}_ 
+*${lenguajeCD['smsVersion']()}* ➺ _${vs}_
+*${lenguajeCD['smsMode']()} ➺* _${global.opts['self'] ? `${lenguajeCD['smsModePrivate']().charAt(0).toUpperCase() + lenguajeCD['smsModePrivate']().slice(1).toLowerCase()}` : `${lenguajeCD['smsModePublic']().charAt(0).toUpperCase() + lenguajeCD['smsModePublic']().slice(1).toLowerCase()}`}_
+⎔ *${lenguajeCD['smsBanChats']()}* ➺ _${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}_ 
+⎔ *${lenguajeCD['smsBanUsers']()}* ➺ _${Object.entries(global.db.data.users).filter(user => user[1].banned).length}_ ${(conn.user.jid == global.conn.user.jid ? '' : `\n⎔ *SOY SUB BOT DE: https://wa.me/${global.conn.user.jid.split`@`[0]}*`) || ''}
 
 *◜INFORMACIÓN DEL USUARIO◞*
 *Tipo de registro »* ${user.registered === true ? `_${user.registroC === true ? 'Registro Completo 🗂️' : 'Registro Rápido 📑'}_` : '❌ _Sin registro_'}
@@ -239,7 +239,7 @@ console.log(`❗❗ ${lenguajeCD['smsMensError2']()} ${usedPrefix + command} ❗
 console.log(e)}}
 
 handler.command = /^(menu|Menú|Menu|menú||menulista\?)$/i
-handler.register = true
+//handler.register = true
 export default handler
 
 const more = String.fromCharCode(8206)
@@ -593,18 +593,18 @@ const readMore = more.repeat(4001)
 
 function ucapan() {
   const time = moment.tz('America/Los_Angeles').format('HH')  //America/Los_Angeles  Asia/Jakarta   America/Toronto
-  let res = `${lenguajeGB['smsSaludo']()}`
+  let res = `${lenguajeCD['smsSaludo']()}`
   if (time >= 4) {
-    res = `${lenguajeGB['smsDia']()}`
+    res = `${lenguajeCD['smsDia']()}`
   }
   if (time >= 11) {
-    res = `${lenguajeGB['smsTarde']()}`
+    res = `${lenguajeCD['smsTarde']()}`
   }
   if (time >= 15) {
-    res = `${lenguajeGB['smsTarde2']()}`
+    res = `${lenguajeCD['smsTarde2']()}`
   }
   if (time >= 17) {
-    res = `${lenguajeGB['smsNoche']()}`
+    res = `${lenguajeCD['smsNoche']()}`
   }
   return res
 } 
