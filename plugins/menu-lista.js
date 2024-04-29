@@ -85,11 +85,8 @@ const horarioFecha = lugarFecha.format('dddd, DD [de] MMMM [del] YYYY || HH:mm A
 
 if (!/web|desktop|unknown/gi.test(dispositivo)) {  
 let menu = `
-⎔ ${horarioFecha}
-
+\`Fecha y hora:\` ${horarioFecha}
    ↷ ɪɴғᴏ ᴅᴇ ʙᴏᴛ
-├• ✐; ₊˚✦୧︰  .
-├┈»»————- *️ ————-««
  *${lenguajeCD['smsTotalUsers']()}* ➺ _${Object.keys(global.db.data.users).length}_ 
  *Registrados »* ${rtotalreg}/${totalreg}    
  *${lenguajeCD['smsUptime']()}* ➺ _${uptime}_ 
@@ -98,16 +95,16 @@ let menu = `
  *${lenguajeCD['smsBanChats']()}* ➺ _${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}_ 
  *${lenguajeCD['smsBanUsers']()}* ➺ _${Object.entries(global.db.data.users).filter(user => user[1].banned).length}_
 
-  \`*</información de ti>*\`
+  \`</información de ti>\`
  *Tipo de registro »* ${user.registered === true ? `_${user.registroC === true ? 'Registro Completo' : 'Registro Rápido'}_` : '❌ _Sin registro_'}
  *Mi estado »* ${typeof user.miestado !== 'string' ? '❌ _' + usedPrefix + 'miestado_' : '_Me siento ' + user.miestado + '_'}
- _Registrado:_ ${user.registered === true ? '✅' : '❌ _' + usedPrefix + 'verificar_'}
+ *_Registrado:_* ${user.registered === true ? '✅' : '❌ _' + usedPrefix + 'verificar_'}
  *${lenguajeCD['smsBotonM7']().charAt(0).toUpperCase() + lenguajeCD['smsBotonM7']().slice(1).toLowerCase()} »* ${user.premiumTime > 0 ? '✅' : '❌ _' + usedPrefix + 'pase premium_'}
 
- \`*</información>*\`
+ \`</información>\`
  _${lenguajeCD['smsPareja']()}_ ${pareja ? `\n*»* ${name} 💕 ${conn.getName(pareja)}` : `🛐 ${lenguajeCD['smsResultPareja']()}`}
  _Pasatiempo(s)_ ➺ ${user.pasatiempo === 0 ? 'Sin Registro' : user.pasatiempo + '\n'}
- *Economía*
+  *_ECONOMÍA_*
 Experiencia: ${exp} ⚡
 \`Diamantes:\` ${limit} 💎
 \`Coins:\` ${money} 
