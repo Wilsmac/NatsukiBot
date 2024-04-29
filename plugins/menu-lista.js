@@ -130,6 +130,10 @@ rows: [
 { title: "Menú",
 rows: [
 { header: "Menú completo", title: "", description: "Visita todos los comandos", id: usedPrefix + "menu2" }
+]},
+{ title: "CONFIGURACIÓN",
+rows: [
+{ header: "configuraciónes", title: "", description: "mira todas las configuraciones", id: usedPrefix + "enable" }
 ]}
 ]})
 const interactiveMessage = {
