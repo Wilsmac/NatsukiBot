@@ -1,6 +1,3 @@
-
-
-
 // @type {import('@whiskeysockets/baileys')}
 
 const { proto, generateWAMessage, areJidsSameUser, decryptPollVote, } = (await import('@whiskeysockets/baileys')).default;
