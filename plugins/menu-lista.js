@@ -120,16 +120,16 @@ rows: [
 { header: "Grupos/Canales", title: "🔓 Para: Todos", description: "¡Te esperamos!", id: usedPrefix + "grupos" },
 { header: "Donar", title: "🔓 Para: Todos", description: " ¡tú también puedes sumarte apoyando el proyecto!", id: usedPrefix + "donar" }
 ]},
-{ title: "🔖 Atajos", highlight_label: "Popular",
+{ title: "Atajos", highlight_label: "Popular",
 rows: [
-{ header: "🆕 Ser Bot (código)", title: "🔓 Para: Todos", description: "¡Conviértete en Bot con el método de código de 8 dígitos!", id: usedPrefix + "serbot --code" },
-{ header: "🤖 Ser Bot (qr)", title: "🔓 Para: Todos", description: "Forma estándar de ser bot con código QR", id: usedPrefix + "serbot" },
-{ header: "🚄 Velocidad", title: "🔓 Para: Todos", description: "Seleccione esto si desea saber el ping del Bot", id: usedPrefix + "ping" },
-{ header: "😺 Estado", title: "🔓 Para: Todos", description: "Conoce en que estado se encuentra GataBot", id: usedPrefix + "estado" }
+{ header: "Ser Bot (código)", title: "🔓 Para: Todos", description: "¡Conviértete en Bot con el método de código de 8 dígitos!", id: usedPrefix + "serbot --code" },
+{ header: "Ser Bot (qr)", title: "🔓 Para: Todos", description: "Forma estándar de ser bot con código QR", id: usedPrefix + "serbot" },
+{ header: "Velocidad", title: "🔓 Para: Todos", description: "Seleccione esto si desea saber el ping del Bot", id: usedPrefix + "ping" },
+{ header: "Estado", title: "🔓 Para: Todos", description: "Conoce en que estado se encuentra GataBot", id: usedPrefix + "estado" }
 ]},
-{ title: "Ⓜ️ Menú", highlight_label: "Popular",
+{ title: "Menú", highlight_label: "Popular",
 rows: [
-{ header: "⭐ Menú completo", title: "", description: "Visita todos los comandos", id: usedPrefix + "allmenu" }
+{ header: "Menú completo", title: "", description: "Visita todos los comandos", id: usedPrefix + "menu" }
 ]}
 ]})
 const interactiveMessage = {
