@@ -135,7 +135,7 @@ rows: [
 const interactiveMessage = {
 body: { text: menu },
 footer: { text: wm + ` \nSi algo no funciona utilice el comando *${usedPrefix}menu2*` },
-header: { title: `⭐ *------- NUEVO MENÚ -------* ⭐\n\`Hola\` ${user.registered === true ? user.name : taguser}*`, subtitle: "test4", hasMediaAttachment: false },
+header: { title: `*_NUEVO MENÚ_*\n\`Hola\` ${taguser}*`, subtitle: "test4", hasMediaAttachment: false },
 nativeFlowMessage: { buttons: [{ 
 name: "single_select",
 buttonParamsJson
