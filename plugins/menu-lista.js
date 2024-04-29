@@ -114,13 +114,13 @@ const buttonParamsJson = JSON.stringify({
 title: "VER LISTA",
 description: "Infórmate por medios oficiales",
 sections: [
-{ title: "Información", highlight_label: "Popular",
+{ title: "Información",
 rows: [
 { header: "Redes", title: "🔓 Para: Todos", description: "Infórmate por medios oficiales", id: usedPrefix + "cuentasgb" },
 { header: "Grupos/Canales", title: "🔓 Para: Todos", description: "¡Te esperamos!", id: usedPrefix + "grupos" },
 { header: "Donar", title: "🔓 Para: Todos", description: " ¡tú también puedes sumarte apoyando el proyecto!", id: usedPrefix + "donar" }
 ]},
-{ title: "Atajos", highlight_label: "Popular",
+{ title: "Atajos",
 rows: [
 { header: "Ser Bot (código)", title: "Para: Todos", description: "¡Conviértete en Bot con el método de código de 8 dígitos!", id: usedPrefix + "serbot --code" },
 { header: "Ser Bot (qr)", title: "Para: Todos", description: "Forma estándar de ser bot con código QR", id: usedPrefix + "serbot" },
