@@ -96,10 +96,10 @@ let menu = `
  *${lenguajeCD['smsBanUsers']()}* ➺ _${Object.entries(global.db.data.users).filter(user => user[1].banned).length}_
 
   \`</información de ti>\`
- *Tipo de registro »* ${user.registered === true ? `_${user.registroC === true ? 'Registro Completo' : 'Registro Rápido'}_` : '❌ _Sin registro_'}
- *Mi estado »* ${typeof user.miestado !== 'string' ? '❌ _' + usedPrefix + 'miestado_' : '_Me siento ' + user.miestado + '_'}
- *_Registrado:_* ${user.registered === true ? '✅' : '❌ _' + usedPrefix + 'verificar_'}
- *${lenguajeCD['smsBotonM7']().charAt(0).toUpperCase() + lenguajeCD['smsBotonM7']().slice(1).toLowerCase()} »* ${user.premiumTime > 0 ? '✅' : '❌ _' + usedPrefix + 'pase premium_'}
+ *Tipo de registro »* ${user.registered === true ? `_${user.registroC === true ? 'Registro Completo' : 'Registro Rápido'}_` : '_Sin registro_'}
+ *Mi estado »* ${typeof user.miestado !== 'string' ? '✖️ _' + usedPrefix + 'miestado_' : '_Me siento ' + user.miestado + '_'}
+ *_Registrado:_* ${user.registered === true ? '✔️' : '✖️ _' + usedPrefix + 'verificar_'}
+ *${lenguajeCD['smsBotonM7']().charAt(0).toUpperCase() + lenguajeCD['smsBotonM7']().slice(1).toLowerCase()} »* ${user.premiumTime > 0 ? '✔️' : '✖️ _' + usedPrefix + 'pase premium_'}
 
  \`</información>\`
  _${lenguajeCD['smsPareja']()}_ ${pareja ? `\n*»* ${name} 💕 ${conn.getName(pareja)}` : `🛐 ${lenguajeCD['smsResultPareja']()}`}
@@ -172,73 +172,73 @@ let menu = `${lenguajeGB['smsConfi2']()} *${user.genero === 0 ? '👤' : user.ge
 
 ╭━〔 OPCIONES DE MENU 
 ┃
-┃Ⓜ️ _*MENÚ COMPLETO*_ Ⓜ️
+┃Ⓜ️ _*MENÚ COMPLETO*_ 
 ┃➺ _${usedPrefix}menucompleto | allmenu_
 ┃
-┃🔊 _*MENÚ DE AUDIOS*_ 🔊
+┃🔊 _*MENÚ DE AUDIOS*_ 
 ┃➺ _${usedPrefix}menuaudio | menuaudios_
 ┃
-┃💫 _${lenguajeGB['smsTex13']()}_ 💫
+┃💫 _${lenguajeCD['smsTex13']()}_ 
 ┃➺ _${usedPrefix}infomenu_
 ┃
-┃👾 _${lenguajeGB['smsTex10']()}_ 👾
+┃👾 _${lenguajeCD['smsTex10']()}_ 
 ┃➺ _${usedPrefix}juegosmenu_
 ┃
-┃🚀 _${lenguajeGB['smsTex9']()}_ 🚀
+┃🚀 _${lenguajeCD['smsTex9']()}_ 
 ┃➺ _${usedPrefix}descargasmenu_
 ┃
-┃🔐 _${lenguajeGB['smsTex11']()}_ 🔐
+┃🔐 _${lenguajeCD['smsTex11']()}_ 
 ┃➺ _${usedPrefix}grupomenu_
 ┃
-┃🧸 _${lenguajeGB['smsTex22']()}_ 🧸
+┃🧸 _${lenguajeCD['smsTex22']()}_ 
 ┃➺ _${usedPrefix}stickermenu_
 ┃
-┃🛠️ _${lenguajeGB['smsTex12']()}_ 🛠️
+┃🛠️ _${lenguajeCD['smsTex12']()}_ 
 ┃➺ _${usedPrefix}herramientasmenu_
 ┃
-┃⛩️ _${lenguajeGB['smsTex23']()}_ ⛩️
+┃⛩️ _${lenguajeCD['smsTex23']()}_ 
 ┃➺ _${usedPrefix}randommenu_
 ┃
-┃🛰️ _${lenguajeGB['smsTex8']()}_ 🛰️
+┃🛰️ _${lenguajeCD['smsTex8']()}_ 
 ┃➺ _${usedPrefix}convertidormenu_
 ┃
-┃🎈 _${lenguajeGB['smsTex1']()}_🎈
+┃🎈 _${lenguajeCD['smsTex1']()}_
 ┃➺ _${usedPrefix}buscarmenu_
 ┃
-┃🎧 _${lenguajeGB['smsTex2']()}_ 🎧
+┃🎧 _${lenguajeCD['smsTex2']()}_ 
 ┃➺ _${usedPrefix}audioefectomenu_
 ┃
-┃🔞 _${lenguajeGB['smsTex3']()}_ 🔞
+┃🔞 _${lenguajeCD['smsTex3']()}_ 
 ┃➺ _${usedPrefix}menu18 | hornymenu_
 ┃
-┃⚗️ _${lenguajeGB['smsTex21']()}_ ⚗️
+┃⚗️ _${lenguajeCD['smsTex21']()}_ 
 ┃➺ _${usedPrefix}rpgmenu_
 ┃
-┃⛺ _${lenguajeGB['smsTex14']()}_ ⛺
+┃⛺ _${lenguajeCD['smsTex14']()}_ 
 ┃➺ _${usedPrefix}makermenu_
 ┃
-┃💮 _${lenguajeGB['smsTex15']()}_ 💮
+┃💮 _${lenguajeCD['smsTex15']()}_ 
 ┃➺ _${usedPrefix}menulogos2_
 ┃
-┃🌅 _${lenguajeGB['smsTex15']()}_ 🌅
+┃🌅 _${lenguajeCD['smsTex15']()}_ 
 ┃➺ _${usedPrefix}menulogos2_
 ┃
-┃💎 _${lenguajeGB['smsTex20']()}_ 💎
+┃💎 _${lenguajeCD['smsTex20']()}_ 
 ┃➺ _${usedPrefix}ownermenu_
 ┃
-┃✅ *_CUENTAS OFICIALES _* ✅
+┃☄️ *_CUENTAS OFICIALES _* 
 ┃➺ _${usedPrefix}cuentas | cuentas_
 ┃
 *╰━━━━━━━━━━━━━⬣*`.trim()
 await conn.sendFile(m.chat, fantasyImg, 'lp.jpg', menu, fkontak, false, { contextInfo: {mentionedJid, externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, title: gt, body: ' 𝐅𝐚𝐧𝐭𝐚𝐬𝐲𝐁𝐨𝐭-𝐌𝐃 ', previewType: 0, thumbnail: imagen4, sourceUrl: canalofc}}}) 
 await conn.sendMessage(m.chat, { audio: { url: vn }, fileName: 'error.mp3', mimetype: 'audio/mp4', ptt: true }, { quoted: m }) 
-//conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', menu, fkontak)
+//conn.sendFile(m.chat, fantasyVidMenu.getRandom(), 'fantasy.mp4', menu, fkontak)
 }} catch (e) {
-await m.reply(lenguajeGB['smsMalError3']() + '\n*' + lenguajeGB.smsMensError1() + '*\n*' + usedPrefix + `${lenguajeGB.lenguaje() == 'es' ? 'reporte' : 'report'}` + '* ' + `${lenguajeGB.smsMensError2()} ` + usedPrefix + command)
-console.log(`❗❗ ${lenguajeGB['smsMensError2']()} ${usedPrefix + command} ❗❗`)
+await m.reply(lenguajeCD['smsMalError3']() + '\n*' + lenguajeCD.smsMensError1() + '*\n*' + usedPrefix + `${lenguajeCD.lenguaje() == 'es' ? 'reporte' : 'report'}` + '* ' + `${lenguajeCD.smsMensError2()} ` + usedPrefix + command)
+console.log(`❗❗ ${lenguajeCD['smsMensError2']()} ${usedPrefix + command} ❗❗`)
 console.log(e)}}
 
-handler.command = /^(pruebawl|menulista\?)$/i
+handler.command = /^(menu|Menú|Menu|menú||menulista\?)$/i
 handler.register = true
 export default handler
 
