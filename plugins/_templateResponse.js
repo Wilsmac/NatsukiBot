@@ -108,6 +108,9 @@ export async function all(m, chatUpdate) {
   this.ev.emit('messages.upsert', msg);
 }
 
+
+
+
 /*
 // @type {import('@whiskeysockets/baileys')}
 
@@ -198,4 +201,4 @@ messages: [proto.WebMessageInfo.fromObject(messages)].map((v) => (v.conn = this,
 type: 'append',
 }
 this.ev.emit('messages.upsert', msg)
-}/*
+}*/
