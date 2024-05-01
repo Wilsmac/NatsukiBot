@@ -29,8 +29,8 @@ let msg = generateWAMessageFromContent(m.chat, {
                 "buttonParamsJson": "{\"title\":\"title\",\"sections\":[{\"title\":\"title\",\"highlight_label\":\"label\",\"rows\":[{\"header\":\"header\",\"title\":\"title\",\"description\":\"description\",\"id\":\"id\"},{\"header\":\"header\",\"title\":\"title\",\"description\":\"description\",\"id\":\"id\"}]}]}"
               },
               {
-                "name": "quick_reply",
-                "buttonParamsJson": "{\"display_text\":\"quick_reply\",\"id\":\"message\"}"
+                "name": "información del bot",
+                "buttonParamsJson": "{\"display_text\":\".estado\",\"id\":\"message\"}"
               },
               {
                  "name": "cta_url",
