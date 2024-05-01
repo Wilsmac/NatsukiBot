@@ -29,7 +29,7 @@ let msg = generateWAMessageFromContent(m.chat, {
                 "buttonParamsJson": "{\"title\":\"title\",\"sections\":[{\"title\":\"title\",\"highlight_label\":\"label\",\"rows\":[{\"header\":\"header\",\"title\":\"title\",\"description\":\"description\",\"id\":\"id\"},{\"header\":\"header\",\"title\":\"title\",\"description\":\"description\",\"id\":\"id\"}]}]}"
               },
               {
-                "name": "quick_replu",
+                "name": "quick_reply",
                 "buttonParamsJson": "{\"display_text\":\".estado\",\"id\":\"message\"}"
               },
               {
