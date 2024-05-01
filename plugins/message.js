@@ -27,7 +27,7 @@ let msg = generateWAMessageFromContent(m.chat, {
             buttons: [
 {
                 "name": "button",
-                "buttonParamsJson": "{\"display_text\":\"button\",\"id\":\"message\"}"
+                "buttonParamsJson": "{\"display_text\":\"button\",\"id\":\"button\"}"
               },
               {
                 "name": "quick_reply",
