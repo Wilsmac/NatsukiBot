@@ -45,7 +45,7 @@ let msg = generateWAMessageFromContent(m.chat, {
 
 //await conn.relayMessage(url, msg.key.remoteJid, msg.message, { messageId: msg.key.id })
 //conn.sendFile(m.chat, url, 'error.jpg', msg, m)}
-await conn.relayMessage(m.chat, `_${command}_`.trim(), author, url, msg, m)}
+await conn.relayMessage(m.chat, `_${msg}_`.trim(), author, url, msg, m)}
 handler.help = ['meme']
 handler.tags = ['random']
 handler.command = /^(meme|memes)$/i
