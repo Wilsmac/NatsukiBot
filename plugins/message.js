@@ -31,7 +31,7 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"url\",\"url\":\"https://www.google.com\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"url\",\"url\":\"https://github.com/Wilsmac/FantasyBot-MD-v1",\"merchant_url\":\"https://github.com/Wilsmac/FantasyBot-MD-v1\"}"
               }
        ],
    })
