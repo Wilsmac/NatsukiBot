@@ -32,14 +32,6 @@ let msg = generateWAMessageFromContent(m.chat, {
               {
                  "name": "cta_url",
                  "buttonParamsJson": "{\"display_text\":\"url\",\"url\":\"https://www.google.com\",\"merchant_url\":\"https://www.google.com\"}"
-              },
-              {
-                 "name": "cta_call",
-                 "buttonParamsJson": "{\"display_text\":\"call\",\"id\":\"message\"}"
-              },
-              {
-                 "name": "cta_copy",
-                 "buttonParamsJson": "{\"display_text\":\"copy\",\"id\":\"123456789\",\"copy_code\":\"message\"}"
               }
        ],
    })
