@@ -14,3 +14,4 @@ MID_CD = mid || es
 global.mid = MID_CD	
 
 }
+
