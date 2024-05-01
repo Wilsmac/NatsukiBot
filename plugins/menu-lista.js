@@ -111,7 +111,7 @@ Experiencia: ${exp} ⚡
 \`Tokens:\` ${joincount} 🪙`.trim()
 
 const buttonParamsJson = JSON.stringify({
-title: "VER LISTA",
+title: "Menú",
 description: "Infórmate por medios oficiales",
 sections: [
 { title: "Información",
