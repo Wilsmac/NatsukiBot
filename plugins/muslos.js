@@ -75,6 +75,5 @@ global.muslos = [
 "https://telegra.ph/file/2c21a337c13b5902eafb6.jpg",
 "https://telegra.ph/file/dfbd963918beebd712685.jpg", 
 "https://telegra.ph/file/5e261fe45beaf6c6d34ee.jpg",
-"https://telegra.ph/file/55e8bf3da593489d8bd65.jpg",
-
+"https://telegra.ph/file/55e8bf3da593489d8bd65.jpg"
 ];
