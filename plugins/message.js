@@ -13,22 +13,18 @@ let msg = generateWAMessageFromContent(m.chat, {
         },
         interactiveMessage: proto.Message.InteractiveMessage.create({
           body: proto.Message.InteractiveMessage.Body.create({
-            text: "test"
+            text: ""
           }),
           footer: proto.Message.InteractiveMessage.Footer.create({
-            text: "test"
+            text: ""
           }),
           header: proto.Message.InteractiveMessage.Header.create({
-            title: "test",
-            subtitle: "test",
+            title: "Hola",
+            subtitle: "prueba",
             hasMediaAttachment: false
           }),
           nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({
             buttons: [
-              {
-                "name": "single_select",
-                "buttonParamsJson": "{\"title\":\"title\",\"sections\":[{\"title\":\"title\",\"highlight_label\":\"label\",\"rows\":[{\"header\":\"header\",\"title\":\"title\",\"description\":\"description\",\"id\":\"id\"},{\"header\":\"header\",\"title\":\"title\",\"description\":\"description\",\"id\":\"id\"}]}]}"
-              },
               {
                 "name": "quick_reply",
                 "buttonParamsJson": "{\"display_text\":\".estado\",\"id\":\"message\"}"
