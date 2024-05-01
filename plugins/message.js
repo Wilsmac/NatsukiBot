@@ -1,4 +1,5 @@
 
+
 import pkg from '@whiskeysockets/baileys';
 const { generateWAMessageFromContent, proto } = pkg
 
