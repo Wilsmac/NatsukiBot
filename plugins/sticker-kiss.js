@@ -10,7 +10,7 @@ let json = await res.json()
 let { url } = json
 let stiker = await sticker(null, url, `+${m.sender.split('@')[0]} está besando a ${m.mentionedJid.map((user)=>(user === m.sender)? 'alguien ': `+${user.split('@')[0]}`).join(', ')}`)
 
-conn.sendFile(m.chat, stiker, null, { asSticker: true }, { contextInfo: { 'forwardingScore': 200, 'isForwarded': false, externalAdReply:{ showAdAttribution: false, title: wm, body: `h`, mediaType: 2, sourceUrl: nn, thumbnail: imagen1}}}, { quoted: m })
+conn.sendFile(m.chat, stiker, 'sticker.webp', null, { asSticker: true }, { contextInfo: { 'forwardingScore': 200, 'isForwarded': false, externalAdReply:{ showAdAttribution: false, title: wm, body: `h`, mediaType: 2, sourceUrl: nn, thumbnail: imagen1}}}, { quoted: m })
 
 //conn.sendFile(m.chat, stiker, null, { asSticker: true })
 } catch (e) { }}
