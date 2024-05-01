@@ -23,3 +23,4 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
 handler.command = /^(actualizar|actualizacion)/i
 handler.rowner = true
 export default handler
+
