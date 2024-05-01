@@ -17,7 +17,6 @@ conn.sendMessage(m.chat, {image: {url: url}, caption: `_Muslos 🥵_`}, {quoted:
 handler.command = /^(muslos)$/i
 export default handler
 
-
 global.muslos = [
 "https://i.imgur.com/uGzFdVD.jpg",
 "https://i.imgur.com/XLNHZDB.jpg",
