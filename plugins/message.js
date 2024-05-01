@@ -19,7 +19,9 @@ let msg = generateWAMessageFromContent(m.chat, {
             text: "uwu"
           }),
           header: proto.Message.InteractiveMessage.Header.create({
-            title: "Hola",
+            title: `${lenguajeGB['smsAvisoRG']()}➥ *_${lenguajeGB['smsMens1']()}_* > ${type} 
+➥ *_${lenguajeGB['smsMens2']()}_* > ${isEnable ? lenguajeGB.smsEncender() : lenguajeGB.smsApagar()} 
+➥ *_${lenguajeGB['smsMens3']()}_* > ${isAll ? lenguajeGB.smsMens4() : isUser ? '' : lenguajeGB.smsMens5()}\n╚═════•| ✿ |•═════╝`,
             subtitle: "prueba",
             hasMediaAttachment: false
           }),
