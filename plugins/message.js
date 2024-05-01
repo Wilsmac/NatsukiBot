@@ -1,5 +1,44 @@
 
+import pkg from '@whiskeysockets/baileys';
+const { generateWAMessageFromContent, proto } = pkg
 
+var handler = async (m, { conn, usedPrefix }) => {
+
+let msg = generateWAMessageFromContent(m.chat, {
+  viewOnceMessage: {
+    message: {
+      "messageContextInfo": {
+      "deviceListMetadata": {},
+      "deviceListMetadataVersion": 2
+        },
+        interactiveMessage:  proto.Message.InteractiveMessage.Header.create({
+            title: "test",
+            subtitle: "test",
+            hasMediaAttachment: false
+          }),
+          nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({
+   buttons: [
+              {
+                "name": "quick_reply",
+                "buttonParamsJson": "{\"display_text\":\".estado\",\"id\":\"message\"}"
+              },
+              {
+                 "name": "cta_url",
+                 "buttonParamsJson": "{\"display_text\":\"url\",\"url\":\"https://www.google.com\",\"merchant_url\":\"https://www.google.com\"}"
+              }
+       ],
+   })
+    })
+    }
+  }
+}, {})
+
+await conn.relayMessage(msg.key.remoteJid, msg.message, { messageId: msg.key.id })
+
+}
+handler.command = /^(tu)$/i
+
+export default handler
 
 
 
