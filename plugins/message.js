@@ -16,7 +16,7 @@ let msg = generateWAMessageFromContent(m.chat, {
             text: ""
           }),
           footer: proto.Message.InteractiveMessage.Footer.create({
-            text: ""
+            text: "uwu"
           }),
           header: proto.Message.InteractiveMessage.Header.create({
             title: "Hola",
