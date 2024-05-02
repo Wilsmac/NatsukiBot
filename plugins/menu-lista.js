@@ -96,14 +96,12 @@ let menu = `
  *${lenguajeCD['smsBanUsers']()}* ➺ _${Object.entries(global.db.data.users).filter(user => user[1].banned).length}_
 
   \`</información de ti>\`
- *Tipo de registro »* ${user.registered === true ? `_${user.registroC === true ? 'Registro Completo' : 'Registro Rápido'}_` : '_Sin registro_'}
- *Mi estado »* ${typeof user.miestado !== 'string' ? '✖️ _' + usedPrefix + 'miestado_' : '_Me siento ' + user.miestado + '_'}
  *_Registrado:_* ${user.registered === true ? '✔️' : '✖️ _' + usedPrefix + 'verificar_'}
  *${lenguajeCD['smsBotonM7']().charAt(0).toUpperCase() + lenguajeCD['smsBotonM7']().slice(1).toLowerCase()} »* ${user.premiumTime > 0 ? '✔️' : '✖️ _' + usedPrefix + 'pase premium_'}
 
  \`</información>\`
  _${lenguajeCD['smsPareja']()}_ ${pareja ? `\n*»* ${name} 💕 ${conn.getName(pareja)}` : `🛐 ${lenguajeCD['smsResultPareja']()}`}
- _Pasatiempo(s)_ ➺ ${user.pasatiempo === 0 ? 'Sin Registro' : user.pasatiempo + '\n'}
+
   *_ECONOMÍA_*
 Experiencia: ${exp} ⚡
 \`Diamantes:\` ${limit} 💎
@@ -139,7 +137,7 @@ rows: [
 const interactiveMessage = {
 body: { text: menu },
 footer: { text: wm + ` \nSi algo no funciona utilice el comando *${usedPrefix}menu*` },
-header: { title: `*_NUEVO MENÚ_*\n\`Hola\` ${taguser}*`, subtitle: "test4", hasMediaAttachment: false },
+header: { title: `\n\`Hola\` ${taguser}\n_${global.saludo}_`, subtitle: "test4", hasMediaAttachment: false },
 nativeFlowMessage: { buttons: [{ 
 name: "single_select",
 buttonParamsJson
