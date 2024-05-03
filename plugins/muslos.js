@@ -9,8 +9,9 @@ import fetch from 'node-fetch';
     case 'muslos':
                const url = await muslos[Math.floor(Math.random() * muslos.length)];  
      conn.sendMessage(m.chat, {image: {url: url}, caption: `_Muslos 🥵_`}, {quoted: m});
-       
-     };
+       break;
+     }
+};
 handler.command = /^muslos$/i;
 export default handler;
 
