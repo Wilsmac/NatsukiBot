@@ -15,7 +15,7 @@ conn.sendButton(m.chat, texto, `Muslos 🥵\n` + wm, url, [
 ['𝚂𝙸𝙶𝚄𝙸𝙴𝙽𝚃𝙴 🥵', '.muslos']], fkontak)}
 
      //conn.sendMessage(m.chat, {image: {url: url}, caption: `_Muslos 🥵_`}, {quoted: m});
-       break;
+       
      }
  };
 handler.command = /^(muslos)$/i;
