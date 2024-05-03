@@ -31,13 +31,7 @@ global.botNumberCode = ""
 global.confirmCode = "" 
 //------------------------------------------------
 
-var canalin = [
-{ link: channel1, id: "120363130596013057@newsletter", name: "manager" } 
-]
-var indiceAleatorio = Math.floor(Math.random() * canalin.length)
-var channelWL = canalin[indiceAleatorio]
 
-global.fakeChannel = { mentionedJid: [m.sender], isForwarded: true, forwardedNewsletterMessageInfo: { newsletterJid: channelWL.id, newsletterName: channelWL.name, serverMessageId: -1 }, forwardingScore: 200, externalAdReply: { title: packname, body: author, thumbnailUrl: fantasyMenu.getRandom(), sourceUrl: canalofc, mediaType: 1, renderLargerThumbnail: false }}
 
 
 //------------------------------------------------
