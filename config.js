@@ -33,13 +33,19 @@ global.botNumberCode = ""
 global.confirmCode = "" 
 //------------------------------------------------
 
+var canalin = [
+{ link: canal1, id: "120363130596013057@newsletter", name: "manager" } 
+]
+var channelRD = canalin[indiceAleatorio]
+
+global.fakeChannel = { mentionedJid: [m.sender], isForwarded: true, forwardedNewsletterMessageInfo: { newsletterJid: channelRD.id, newsletterName: channelRD.name, serverMessageId: -1 }, forwardingScore: 200, externalAdReply: { title: packname, body: author, thumbnailUrl: fantasyMenu.getRandom(), sourceUrl: canalofc, mediaType: 1, renderLargerThumbnail: false }}
+
 
 //------------------------------------------------
 global.lenguajeCD = es
 global.lenguajeGB = es
 global.mid = esDefault
 global.version_language = '1.0 (MID-CD)'
-
 
 //APIS Keys
 
@@ -120,7 +126,7 @@ global.author =  ` ├┈‧͙･༓☾ 𝚆𝙸𝙻𝙼𝙴𝚁 𝙾𝙵𝙲 �
 
 // Hola 👋🏻
 var ase = new Date(); var hour = ase.getHours(); switch(hour){ case 0: hour = 'Linda noche 🌃'; break; case 1: hour = 'Linda noche 🌃'; break; case 2: hour = 'Linda noche 🌃'; break; case 3: hour = 'Linda mañana 🥀'; break; case 4: hour = 'Linda mañana 🥀'; break; case 5: hour = 'Linda mañana 🥀'; break; case 6: hour = 'Linda mañana 🥀'; break; case 7: hour = 'Linda mañana 🥀'; break; case 8: hour = 'Linda mañana 🥀'; break; case 9: hour = 'Linda mañana 🥀'; break; case 10: hour = 'Buen dia 💫'; break; case 11: hour = 'Buen dia 💫'; break; case 12: hour = 'Buen dia 💫'; break; case 13: hour = 'Buen dia 💫'; break; case 14: hour = 'Bonita tarde 🌄'; break; case 15: hour = 'Bonita tarde 🌄'; break; case 16: hour = 'Bonita tarde 🌄'; break; case 17: hour = 'Bonito anochecer 🌇'; break; case 18: hour = 'Linda noche 🌃'; break; case 19: hour = 'Linda noche 🌃'; break; case 20: hour = 'Linda noche 🌃'; break; case 21: hour = 'Linda noche 🌃'; break; case 22: hour = 'Linda noche 🌃'; break; case 23: hour = 'Linda noche 🌃'; break;}
-global.saludo = '' + hour;
+global.saludo = '' + hour
 
 global.d = new Date(new Date + 3600000)
 global.locale = 'es'
@@ -260,6 +266,8 @@ global.gataImg = [imagen1, imagen2, imagen3, imagen4, imagen5, imagen6, imagen7,
 global.fantasyVid = ['./media/menus/Menuvid1.mp4', './media/menus/Menuvid2.mp4', './media/menus/Menuvid3.mp4']
 
 global.fantasyImg = [imagen1, imagen2, imagen3, imagen4, imagen5, imagen6, imagen7, imagen8, imagen9, imagen10, imagen11, imagen12, imagen13]
+
+global.fantasyMenu = [img, img2, img6, img7, img8, img9, img13, img14, img15, img17, img18]
 
 // • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
 
