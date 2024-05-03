@@ -12,7 +12,7 @@ let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status
                const url = await muslos[Math.floor(Math.random() * muslos.length)];
 
 conn.sendButton(m.chat, str, `Muslos 🥵\n` + yt, uwu, [
-['𝚂𝙸𝙶𝚄𝙸𝙴𝙽𝚃𝙴 🥵', '.muslos'],fkontak)}
+['𝚂𝙸𝙶𝚄𝙸𝙴𝙽𝚃𝙴 🥵', '.muslos'], fkontak)}
 
      //conn.sendMessage(m.chat, {image: {url: url}, caption: `_Muslos 🥵_`}, {quoted: m});
        break;
