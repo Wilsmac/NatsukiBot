@@ -32,7 +32,7 @@ global.confirmCode = ""
 //------------------------------------------------
 
 var canalin = [
-{ link: canal1, id: "120363130596013057@newsletter", name: "manager" } 
+{ link: canal, id: "120363130596013057@newsletter", name: "manager" } 
 ]
 var indiceAleatorio = Math.floor(Math.random() * canalin.length)
 var channelWL = canalin[indiceAleatorio]
