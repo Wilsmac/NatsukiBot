@@ -563,10 +563,7 @@ ${readMore}
 ┃⛱️ _${usedPrefix}besar | kiss *@tag*_
 ┃⛱️ _${usedPrefix}alimentar | food *@tag*_
 *╰━━━━━━━━━━━━⬣*`.trim()
-await conn.sendButtonVid(m.chat, pp, menuA, menuB, lenguajeCD.smsBotonM1(), '.menu', '🎧 ' + lenguajeCD.smsTex16() + ' 🎧', '/audios', lenguajeCD.smsBotonM3(), '#inventario', fkontak, adReply)
-await conn.sendFile(m.chat, vn, 'menu.mp3', null, m, true, {
-type: 'audioMessage', 
-ptt: true})
+await conn.sendButton(m.chat, menuA, menuB, lenguajeCD.smsBotonM1(), '.menu', '🎧 ' + lenguajeCD.smsTex16() + ' 🎧', '/audios', lenguajeCD.smsBotonM3(), '#inventario', fkontak, adReply)
 	
 } catch (e) {
 await conn.sendButton(m.chat, `\n${wm}`, lenguajeCD['smsMalError3']() + '#report ' + usedPrefix + command, null, [[lenguajeCD.smsMensError1(), `#reporte ${lenguajeCD['smsMensError2']()} *${usedPrefix + command}*`]], m)
