@@ -115,6 +115,7 @@ rows: [{ title: `${nombre[v]} : ${command} ${comando[v]}`, description: `${1 + i
 
 let name = await conn.getName(m.sender)
 const listMessage = {
+listSections.push({
 text: `${lenguajeGB.smsConfi10()}`,
 footer: `╭━━━✦ *${lenguajeGB.smsConfi1()}* ✦━━━━⬣
 ┃
@@ -132,7 +133,7 @@ ${m.isGroup ? `┃` : `┃\n${lenguajeGB.smsConfi9()}`}
 ${wm}`,
 title: null,
 buttonText: `⚙️ ${lenguajeGB.smsConfi1()} ⚙️`,
-sections }
+sections }})
 
 let isEnable = /true|enable|(turn)?on|1/i.test(command)
 let type = (args[0] || '').toLowerCase()
