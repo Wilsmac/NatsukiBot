@@ -8,7 +8,10 @@ import fetch from 'node-fetch';
          switch (command) {
     case 'muslos':
                const url = await muslos[Math.floor(Math.random() * muslos.length)];
-      conn.sendMessage(m.chat, {image: {url: url}, caption: `_Muslos 🥵_`}, {quoted: m});
+
+await conn.sendButton(m.chat, `*_${command}_*`.trim(), wm, url, [['𝚂𝙸𝙶𝚄𝙸𝙴𝙽𝚃𝙴 🥵', `/${command}`]], m)
+
+     //conn.sendMessage(m.chat, {image: {url: url}, caption: `_Muslos 🥵_`}, {quoted: m});
        break;
      }
  };
