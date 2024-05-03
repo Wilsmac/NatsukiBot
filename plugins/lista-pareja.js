@@ -9,9 +9,9 @@ let caption = `💝 𝙇𝙄𝙎𝙏𝘼 𝘿𝙀 𝙍𝙀𝙇𝘼𝘾𝙄𝙊�
 │ *${i + 1}.* ${conn.getName(jid) == undefined ? 'Sin Pareja' : conn.getName(jid)}
 │ ${isOwner ? '@' + jid.split`@`[0] : jid}\n│ - - - - - - - - -`.trim()).join('\n') : ''}
 *╰•·–––––––––––––––––––·•*\n\n💟 𝗠𝗜 𝗣𝗔𝗥𝗘𝗝𝗔 ⇢ ${pareja ? `*${user} 💞 ${conn.getName(pareja)}*` : `❌ *No tiene Pareja*`}\n${wm}`
-/*await conn.reply(m.chat, caption, m, { mentions: await conn.parseMention(caption) })*/
-await conn.sendButton(m.chat, caption, ` ☄️ 𝗠𝗜 𝗣𝗔𝗥𝗘𝗝𝗔 ⇢ ${pareja ? `*${user} 💞 ${conn.getName(pareja)}*` : `❌ *No tiene Pareja*`}\n${wm}`, null, [ 
-['𝙼 𝙴 𝙽 𝚄 🌟', '/menu']], m, { mentions: await conn.parseMention(caption) })
+await conn.reply(m.chat, caption, m, { mentions: await conn.parseMention(caption) })
+/*await conn.sendButton(m.chat, caption, ` ☄️ 𝗠𝗜 𝗣𝗔𝗥𝗘𝗝𝗔 ⇢ ${pareja ? `*${user} 💞 ${conn.getName(pareja)}*` : `❌ *No tiene Pareja*`}\n${wm}`, null, [ 
+['𝙼 𝙴 𝙽 𝚄 🌟', '/menu']], m, { mentions: await conn.parseMention(caption) })*/
 }
 handler.command = /^(listaparejas|listarelacion|listship|listpareja)$/i
 
