@@ -11,7 +11,7 @@ await conn.sendButton(m.chat, str, `𝙰𝚂𝙸𝚂𝚃𝙴𝙽𝙲𝙸𝙰\n${
 ['𝙶𝚁𝚄𝙿𝙾𝚂 𝙾𝙵𝙸𝙲𝙸𝙰𝙻𝙴𝚂 🔰', '.grupos'],
 ['𝙲𝚁𝙴𝙰𝙳𝙾𝚁 💗', '#owner'],
 ['𝚅𝙾𝙻𝚅𝙴𝚁 𝙰𝙻 𝙼𝙴𝙽𝚄 ☘️', '/menu']], null, [
-['𝙳𝙾𝙽𝙰𝚁 🌺', `https://paypal.me/OficialGD`]], fkontak)}
+['𝙳𝙾𝙽𝙰𝚁 🌺', `https://paypal.me/wilmermacu1`]], fkontak)}
 /*conn.sendMessage(m.chat, { 
 text: str, 
 contextInfo:{
