@@ -11,7 +11,7 @@ const = texto `☄️`
     case 'muslos':
                const url = await muslos[Math.floor(Math.random() * muslos.length)];
 
-conn.sendButton(m.chat, texto, `Muslos 🥵\n` + yt, url, [
+conn.sendButton(m.chat, texto, `Muslos 🥵\n` + wm, url, [
 ['𝚂𝙸𝙶𝚄𝙸𝙴𝙽𝚃𝙴 🥵', '.muslos'], fkontak)}
 
      //conn.sendMessage(m.chat, {image: {url: url}, caption: `_Muslos 🥵_`}, {quoted: m});
