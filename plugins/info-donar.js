@@ -78,4 +78,4 @@ mentionedJid:[m.sender],
 handler.command = /^dona(te|si)|donar|apoyar|paypal|donating$/i
 handler.exp = 80
 export default handler
-*/
+/*
