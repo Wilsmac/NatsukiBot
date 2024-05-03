@@ -36,9 +36,9 @@ global.confirmCode = ""
 var canalin = [
 { link: canal1, id: "120363130596013057@newsletter", name: "manager" } 
 ]
-var channelRD = canalin[indiceAleatorio]
+var channelWL = canalin[indiceAleatorio]
 
-global.fakeChannel = { mentionedJid: [m.sender], isForwarded: true, forwardedNewsletterMessageInfo: { newsletterJid: channelRD.id, newsletterName: channelRD.name, serverMessageId: -1 }, forwardingScore: 200, externalAdReply: { title: packname, body: author, thumbnailUrl: fantasyMenu.getRandom(), sourceUrl: canalofc, mediaType: 1, renderLargerThumbnail: false }}
+global.fakeChannel = { mentionedJid: [m.sender], isForwarded: true, forwardedNewsletterMessageInfo: { newsletterJid: channelWL.id, newsletterName: channelWL.name, serverMessageId: -1 }, forwardingScore: 200, externalAdReply: { title: packname, body: author, thumbnailUrl: fantasyMenu.getRandom(), sourceUrl: canalofc, mediaType: 1, renderLargerThumbnail: false }}
 
 
 //------------------------------------------------
