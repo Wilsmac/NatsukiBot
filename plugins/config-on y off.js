@@ -477,7 +477,7 @@ throw false
 global.opts['swonly'] = isEnable
 break
 default:
-if (!/[01]/.test(command)) return await conn.sendList(m.chat, `${listMessage.text}\n`, listMessage.footer, `${listMessage.buttonText}`, sections, null, null, fkontak);
+if (!/[01]/.test(command)) return await conn.sendList(m.chat, `${listMessage.text}\n`, listMessage.footer, `${listMessage.buttonText}`, sections, null, null, fkontak2);
 
 /*if (!/[01]/.test(command)) return await conn.reply(m.chat, `${lenguajeGB.smsConfi10()}\n\n🌟 ${lenguajeGB.smsConfi2()} *@${toUser}*
 
