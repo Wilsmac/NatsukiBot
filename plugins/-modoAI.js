@@ -573,9 +573,9 @@ await conn.sendButton(m.chat, `\n${wm}`, lenguajeCD['smsMalError3']() + '#report
 console.log(`❗❗ ${lenguajeCD['smsMensError2']()} ${usedPrefix + command} ❗❗`)
 console.log(e)	
 }}
-handler.help = ['menu', 'help', '?']
+handler.help = ['wilmer', 'help', '?']
 handler.tags = ['main']
-handler.command = /^(prueba1234\?)$/i
+handler.command = /^(Wilmer|pruebalil\?)$/i
 //handler.register = true
 handler.exp = 50
 handler.money = 20
