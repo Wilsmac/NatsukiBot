@@ -9,7 +9,7 @@ import fetch from 'node-fetch';
     case 'muslos':
                const url = await muslos[Math.floor(Math.random() * muslos.length)]; 
  
-conn.sendButton(m.chat, `🥵`, `𝙈𝙪𝙨𝙡𝙤𝙨 | ${wm}`, url, [
+conn.sendButton(m.chat, `🥵`, `𝙈𝙪𝙨𝙡𝙤𝙨 | ${wm}`, {url: url}, [
 [' 𝙎𝙞𝙜𝙪𝙞𝙚𝙣𝙩𝙚', `/muslos`]], null, null, m)
 
      //conn.sendMessage(m.chat, {image: {url: url}, caption: `_Muslos 🥵_`}, {quoted: m});
