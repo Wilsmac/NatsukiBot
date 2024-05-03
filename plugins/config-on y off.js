@@ -486,8 +486,8 @@ throw false
 global.opts['swonly'] = isEnable
 break
 default:
-if (!/[01]/.test(command)) return conn.sendMessage(m.chat, listMessage, {quoted: fkontak})
-/*if (!/[01]/.test(command)) return await conn.reply(m.chat, `${lenguajeGB.smsConfi10()}\n\n🌟 ${lenguajeGB.smsConfi2()} *@${toUser}*
+/*if (!/[01]/.test(command)) return conn.sendMessage(m.chat, listMessage, {quoted: fkontak})*/
+if (!/[01]/.test(command)) return await conn.reply(m.chat, `${lenguajeGB.smsConfi10()}\n\n🌟 ${lenguajeGB.smsConfi2()} *@${toUser}*
 
 ${lenguajeGB.smsConfi3()}
 ${lenguajeGB.smsConfi4()}
@@ -669,7 +669,7 @@ ${m.isGroup ? `` : `${lenguajeGB.smsConfi9()}`}
 ╰▭ׄ▭ׅ▭ׅ▭ׄ▭ׅ▭ׄ  ✿ໍ ▭ׅ▭ׄ▭ׅ▭ׅ▭ׄ▭ׅ╯
 
 ${wm}`, fkontak2, { mentions: [aa,] })
-//conn.sendMessage(m.chat, { text: texto }, { quoted: fkontak })*/
+//conn.sendMessage(m.chat, { text: texto }, { quoted: fkontak })
 //conn.sendMessage(m.chat, texto, {quoted: fkontak})        
 throw false
 }
