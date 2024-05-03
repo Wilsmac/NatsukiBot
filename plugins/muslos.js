@@ -12,7 +12,7 @@ let texto = `☄️`
                const url = await muslos[Math.floor(Math.random() * muslos.length)];  
 
 await conn.sendButton(m.chat, texto, `hola\n` + wm, {url: url}, [
-['uwu', '.muslos']], fkontak)}
+['uwu', '.muslos']], fkontak)};
 
      //conn.sendMessage(m.chat, {image: {url: url}, caption: `_Muslos 🥵_`}, {quoted: m});
        break;
