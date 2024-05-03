@@ -16,8 +16,7 @@ await conn.sendButton(m.chat, texto, `hola\n` + wm, {url: url}, [
 
      //conn.sendMessage(m.chat, {image: {url: url}, caption: `_Muslos 🥵_`}, {quoted: m});
        
-     }
- };
+     };
 handler.command = /^(muslos)$/i;
 export default handler;
 
