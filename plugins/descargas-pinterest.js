@@ -7,7 +7,7 @@ conn.sendButton(m.chat, `💞 ${mid.buscador} ${text}`, `𝙋𝙞𝙣𝙩𝙚�
 ['🔄 𝙎𝙞𝙜𝙪𝙞𝙚𝙣𝙩𝙚 | 𝙉𝙚𝙭𝙩', `/pinterest ${text}`]], null, null, m)
 //await conn.sendFile(m.chat, json.getRandom(), 'error.jpg', `${lenguajeCD['smsAvisoEG']()} 💞 ${mid.buscador}: ${text}`.trim(), m)
 } catch (e) {
-console.log(`❗❗ ${lenguajeGB['smsMensError2']()} ${usedPrefix + command} ❗❗`)
+console.log(`❗❗ ${lenguajeCD['smsMensError2']()} ${usedPrefix + command} ❗❗`)
 console.log(e)
 handler.money = false
 }}
