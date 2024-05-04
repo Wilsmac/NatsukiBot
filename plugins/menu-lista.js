@@ -46,6 +46,7 @@ let { money, joincount } = global.db.data.users[m.sender]
 let user = global.db.data.users[m.sender]
 let muptime = clockString(_muptime)
 let uptime = clockString(_uptime)
+let name = await conn.getName(m.sender)
 let totalreg = Object.keys(global.db.data.users).length
 let rtotalreg = Object.values(global.db.data.users).filter(user => user.registered == true).length
 let replace = {
@@ -137,7 +138,7 @@ rows: [
 const interactiveMessage = {
 body: { text: menu },
 footer: { text: wm + ` \nSi algo no funciona utilice el comando *${usedPrefix}menu*` },
-header: { title: `\n\`Hola\` ${taguser}\n_Que tenga un ${global.saludo}_`, subtitle: "test4", hasMediaAttachment: false },
+header: { title: `\n\`Hola\` ${name}\n_Que tenga un ${global.saludo}_`, subtitle: "test4", hasMediaAttachment: false },
 nativeFlowMessage: { buttons: [{ 
 name: "single_select",
 buttonParamsJson
