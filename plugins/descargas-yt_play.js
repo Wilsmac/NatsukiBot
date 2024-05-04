@@ -26,7 +26,7 @@ const texto1 = `
 𖤍 ${yt_play[0].url}
 *✧══════•❁❀❁•══════✧*`.trim()
 
-await conn.sendButton(m.chat, wm, texto1, yt_play[0].thumbnail, [['𝙼 𝙴 𝙽 𝚄', '/menu']], m, md)
+await conn.sendButton(m.chat, wm, texto1, yt_play[0].thumbnail, [['𝙼 𝙴 𝙽 𝚄', '/menu']], null, null, m)
 
 let listSections = [];             
 listSections.push({
