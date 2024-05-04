@@ -2,22 +2,18 @@
 // https://github.com/Wilsmac
 // deje créditos si usará el código ☄️
 
-import fetch from 'node-fetch';
-      const handler = async (m, {conn, command, usedPrefix}) => {
-        if (!db.data.chats[m.chat].modohorny && m.isGroup) throw '*[ 𝐈𝐍𝐅𝐎 ] 𝙻𝙾𝚂 𝙲𝙾𝙼𝙰𝙽𝙳𝙾𝚂 +𝟷𝟾 𝙴𝚂𝚃𝙰𝙽 𝙰𝙲𝚃𝚄𝙰𝙻𝙼𝙴𝙽𝚃𝙴 𝙳𝙴𝚂𝙰𝙲𝚃𝙸𝚅𝙰𝙳𝙾𝚂 𝙴𝙽 𝙴𝚂𝚃𝙴 𝙶𝚁𝚄𝙿𝙾, 𝚂𝙸 𝙴𝚂 𝙰𝙳𝙼𝙸𝙽 𝚈 𝙳𝙴𝚂𝙴𝙰 𝙰𝙲𝚃𝙸𝚅𝙰𝚁𝙻𝙾𝚂 𝚄𝚂𝙴 𝙴𝙻 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 #enable modohorny*';
-         switch (command) {
-    case 'muslos':
-               const url = await muslos[Math.floor(Math.random() * muslos.length)]; 
- 
-conn.sendButton(m.chat, `🥵`, `𝙈𝙪𝙨𝙡𝙤𝙨 | ${wm}`, {url: url}, [
-[' 𝙎𝙞𝙜𝙪𝙞𝙚𝙣𝙩𝙚', `/muslos`]], null, null, m)
+import fetch from 'node-fetch'
+let handler = async (m, { conn, command }) => {
 
-     //conn.sendMessage(m.chat, {image: {url: url}, caption: `_Muslos 🥵_`}, {quoted: m});
-       break;
-     }
-};
-handler.command = /^muslos$/i;
-export default handler;
+if (!db.data.chats[m.chat].modohorny && m.isGroup) throw `${lenguajeGB['smsContAdult']()}`
+let url = muslos[Math.floor(Math.random() * muslos.length)]
+//conn.sendFile(m.chat, url, 'error.jpg', `muslos 🥵`, m)
+conn.sendButton(m.chat, `muslos 🥵`, author, url, [['𝙎𝙄𝙂𝙐𝙄𝙀𝙉𝙏𝙀', `/${command}`]], null, null, m)
+}
+handler.help = ['muslos']
+handler.tags = ['internet']
+handler.command = /^(muslos)$/
+export default handler
 
 global.muslos = [
 "https://i.imgur.com/uGzFdVD.jpg",
@@ -81,4 +77,23 @@ global.muslos = [
 "https://telegra.ph/file/5e261fe45beaf6c6d34ee.jpg",
 "https://telegra.ph/file/55e8bf3da593489d8bd65.jpg"
 ];
+
+
+
+/*import fetch from 'node-fetch';
+      const handler = async (m, {conn, command, usedPrefix}) => {
+        if (!db.data.chats[m.chat].modohorny && m.isGroup) throw '*[ 𝐈𝐍𝐅𝐎 ] 𝙻𝙾𝚂 𝙲𝙾𝙼𝙰𝙽𝙳𝙾𝚂 +𝟷𝟾 𝙴𝚂𝚃𝙰𝙽 𝙰𝙲𝚃𝚄𝙰𝙻𝙼𝙴𝙽𝚃𝙴 𝙳𝙴𝚂𝙰𝙲𝚃𝙸𝚅𝙰𝙳𝙾𝚂 𝙴𝙽 𝙴𝚂𝚃𝙴 𝙶𝚁𝚄𝙿𝙾, 𝚂𝙸 𝙴𝚂 𝙰𝙳𝙼𝙸𝙽 𝚈 𝙳𝙴𝚂𝙴𝙰 𝙰𝙲𝚃𝙸𝚅𝙰𝚁𝙻𝙾𝚂 𝚄𝚂𝙴 𝙴𝙻 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 #enable modohorny*';
+         switch (command) {
+    case 'muslos':
+               const url = await muslos[Math.floor(Math.random() * muslos.length)]; 
+ 
+conn.sendButton(m.chat, `🥵`, `𝙈𝙪𝙨𝙡𝙤𝙨 | ${wm}`, {url: url}, [
+[' 𝙎𝙞𝙜𝙪𝙞𝙚𝙣𝙩𝙚', `/muslos`]], null, null, m)
+
+     //conn.sendMessage(m.chat, {image: {url: url}, caption: `_Muslos 🥵_`}, {quoted: m});
+       break;
+     }
+};
+handler.command = /^muslos$/i;
+export default handler;*/
 
