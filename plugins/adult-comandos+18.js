@@ -72,6 +72,6 @@ if (command == 'pussy') {
   }
 };
 handler.help = ['nsfwloli', 'pussy', 'yuri', 'tetas', 'booty', 'ecchi', 'porno', 'randomxxx', 'pechos', 'panties'];
-handler.command = ['nsfwloli', 'yuri', 'tetas', 'booty', 'ecchi', 'porno', 'randomxxx', 'pechos', 'panties'];
+handler.command = ['nsfwloli', 'pussy',  'yuri', 'tetas', 'booty', 'ecchi', 'porno', 'randomxxx', 'pechos', 'panties'];
 handler.tags = ['nsfw'];
 export default handler;
