@@ -63,7 +63,6 @@ const handler = async (m, {command, conn}) => {
 if (command == 'pussy') {
     let xp = await conn.getFile(global.API('fgmods', '/api/nsfw/pussy', { }, 'apikey'))
     conn.sendFile(m.chat, xp.data, 'img.jpg', `resultado *${command}*`, m)
-    m.react(xmoji) 
 }
   if (command == 'yuri') {
     const res = (await axios.get(`https://raw.githubusercontent.com/BrunoSobrino/TheMystic-Bot-MD/master/src/JSON/yuri.json`)).data;
