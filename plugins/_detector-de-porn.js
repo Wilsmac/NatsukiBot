@@ -55,7 +55,7 @@ const response = await fetch(`https://api.alyachan.dev/api/porn-detector?image=$
 const result = await response.json()
 enlace = null
 if (result.status && result.data.isPorn) {
-await m.reply(\`La imagen contiene cosas 🔞.\`')
+await m.reply('\`La imagen contiene cosas 🔞.\`')
 await conn.sendMessage(m.chat, { delete: { remoteJid: m.chat, fromMe: false, id: bang, participant: delet }})
 }} catch (error) {
 console.log(error)
