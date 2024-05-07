@@ -981,6 +981,7 @@ if (!('audios' in chat)) chat.audios = false
 if (!('antiver' in chat)) chat.antiver = false             
 if (!('antiLink' in chat)) chat.antiLink = false      
 if (!('antiLink2' in chat)) chat.antiLink2 = false
+if (!('antiPorn' in chat)) chat.antiPorn = true     
 if (!('antiTiktok' in chat)) chat.antiTiktok = false
 if (!('antiYoutube' in chat)) chat.antiYoutube = false
 if (!('antiTelegram' in chat)) chat.antiTelegram = false
@@ -1013,6 +1014,7 @@ stickers: false,
 autosticker: false,
 audios: false,
 antiver: true,
+antiPorn: true,
 antiLink: false,
 antiLink2: false,
 antiTiktok: false,
