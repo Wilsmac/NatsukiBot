@@ -5,7 +5,6 @@ import fetch from 'node-fetch'
 import axios from 'axios'
 import path from 'path'
 global.enlace = null
-
 let handler = m => m
 handler.before = async function (m, { conn, __dirname, isBotAdmin }) {
 let chat = global.db.data.chats[m.chat]
@@ -19,8 +18,8 @@ let mime = (q.msg || q).mimetype || q.mediaType || ''
 let delet = q.key.participant
 let bang = q.key.id
 if (/sticker|image/.test(mime) || m.mtype == 'viewOnceMessageV2') {
-let IsTel = /^image\/(png|jpe?g)$/.test(mime)
-if (IsTel) {
+let isTele = /^image\/(png|jpe?g)$/.test(mime)
+if (isTele) {
 media = await q.download()
 link = await uploadImage(media)
 }
@@ -45,6 +44,7 @@ link = false
 if (q.text || web.test(q.text)) {
 await IsEnlace(q.text).then(result => {
 link = result ? enlace : false
+console.log(result)
 }).catch(error => {
 link = false
 })
@@ -55,7 +55,7 @@ const response = await fetch(`https://api.alyachan.dev/api/porn-detector?image=$
 const result = await response.json()
 enlace = null
 if (result.status && result.data.isPorn) {
-await m.reply('*La imagen contiene imágenes +18 para adultos!!*')
+await m.reply(\`La imagen contiene cosas 🔞.\`')
 await conn.sendMessage(m.chat, { delete: { remoteJid: m.chat, fromMe: false, id: bang, participant: delet }})
 }} catch (error) {
 console.log(error)
@@ -68,6 +68,7 @@ if (match) {
 enlace = match[0]
 const response = await fetch(enlace, { method: 'HEAD' })
 const contentType = response.headers.get('content-type')
+console.log(contentType)
 if (contentType && (contentType.startsWith('image/jpeg') || contentType.startsWith('image/jpg') || contentType.startsWith('image/png') || contentType.startsWith('image/webp'))) {
 return true
 }}
