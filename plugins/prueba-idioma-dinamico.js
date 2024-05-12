@@ -52,7 +52,7 @@ footer: `➥ Español = ${usedPrefix + command} es
 ➥ عرب = ${usedPrefix + command} ar
 ➥ Português = ${usedPrefix + command} pt\n\n` + wm,
 title: `${htki} Idioma ☃️`,
-buttonText: `Seleccionar : Select`,
+buttonText: `𝚂 𝙴 𝙻 𝙴 𝙲 𝙲 𝙸 𝙾 𝙽 𝙰 𝚁`,
 sections }
 await conn.sendMessage(m.chat, listMessage, {quoted: fkontak})
 }
