@@ -1,7 +1,7 @@
 let handler = async (m, { conn,groupMetadata, participants, usedPrefix, command, isBotAdmin,isAdmin,isSuperAdmin }) => {
   let bot = global.db.data.settings[conn.user.jid] || {}
    if (!bot.restrict) 
-               return m.reply(`⚠︎ 𝙰𝙳𝚅𝙴𝚁𝚃𝙴𝙽𝙲𝙸𝙰 ⚠︎\n\n¡\`EL RESTRICT ESTA ACTUALMENTE DESACTIVADO POR MI CREADOR(A)\`!`) 
+               return m.reply(`⚠︎ 𝙰𝙳𝚅𝙴𝚁𝚃𝙴𝙽𝙲𝙸𝙰 ⚠︎\n\n\`¡EL RESTRICT ESTA ACTUALMENTE DESACTIVADO POR MI CREADOR(A)!\``) 
 if (!isBotAdmin) 
        return m.reply(`⚠︎ 𝙰𝙳𝚅𝙴𝚁𝚃𝙴𝙽𝙲𝙸𝙰 ⚠︎\n\n¡𝙴𝚂𝚃𝙴 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 𝙴𝚂 𝙿𝙰𝚁𝙰 𝙰𝙳𝙼𝙸𝙽𝚂 𝙳𝙴𝙻 𝙶𝚁𝚄𝙿𝙾!`)
       if (!m.isGroup) return !1
