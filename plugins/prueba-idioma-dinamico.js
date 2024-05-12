@@ -33,19 +33,30 @@ await conn.sendButton(m.chat, lenguajeCD['smsAvisoEG']() + idioma.text + '\n' + 
 }else if (args[0] == 'pt'){
 global.lenguajeGB = pt
 await conn.sendButton(m.chat, lenguajeCD['smsAvisoEG']() + idioma.text + '\n' + 'Português', igfg, null, [[`𝙼 𝙴 𝙽 𝚄 ☃️`, `${usedPrefix}menu`]], fkontak, m)
+}else{
+
+const sections = [{
+title: '𝙻𝙾𝚂 𝙸𝙳𝙸𝙾𝙼𝙰𝚂 𝙳𝙸𝚂𝙿𝙾𝙽𝙸𝙱𝙻𝙴𝚂 𝙰𝙲𝚃𝚄𝙰𝙻𝙼𝙴𝙽𝚃𝙴',
+rows: [
+   {title: "⚠︎ Español", rowId: `${usedPrefix + command} es`},
+     {title: "⚠︎ English", rowId: `${usedPrefix + command} en`},
+       {title: "⚠︎ Bahasa Indonesia", rowId: `${usedPrefix + command} id`},
+         {title: "⚠︎ عرب", rowId: `${usedPrefix + command} ar`},
+            {title: "⚠︎ Português", rowId: `${usedPrefix + command} pt`}]}]
+
+const listMessage = {
+text: idioma2.text + '\n\n' + idioma3.text,
+footer: `➥ Español = ${usedPrefix + command} es
+➥ English = ${usedPrefix + command} en
+➥ Bahasa Indonesia = ${usedPrefix + command} id
+➥ عرب = ${usedPrefix + command} ar
+➥ Português = ${usedPrefix + command} pt\n\n` + wm,
+title: `${htki} Idioma ☃️`,
+buttonText: `𝚂 𝙴 𝙻 𝙴 𝙲 𝙲 𝙸 𝙾 𝙽 𝙰 𝚁`,
+sections }
+await conn.sendMessage(m.chat, listMessage, {quoted: fkontak})
 }
-
-let listSections = [];             
-listSections.push({
-title: comienzo + ' 𝚂𝙴𝙻𝙴𝙲𝙲𝙸𝙾𝙽𝙴 ' + fin,
-rows: [{ header: "ESPAÑOL", title: "", id: `${usedPrefix + command} es `, description: `` }, { header: "English", title: "", id: `${usedPrefix + command} en`, description: `` },
-{ header: "Bahasa Indonesia", title: "", id: `${usedPrefix + command} id`, description: `` },
-{ header: "عرب", title: "", id: `${usedPrefix + command} ar`, description: `` },
-{ header: "Português", title: "", id: `${usedPrefix + command} pt`, description: `` }
-]});
-
-await conn.sendList(m.chat, `𝙸𝙳𝙸𝙾𝙼𝙰𝚂 𝙳𝙸𝚂𝙿𝙾𝙽𝙸𝙱𝙻𝙴𝚂`, `${wm}`, `𝚂 𝙴 𝙻 𝙴 𝙲 𝙲 𝙸 𝙾 𝙽 𝙰 𝚁`, listSections, {quoted: fkontak});
- {
+}catch(e){
 await m.reply(`${fg}\`NO SE LOGRÓ CAMBIAR DE IDIOMA, REPORTE ESTE COMANDO USANDO: ${usedPrefix}reporte\``) 
 console.log(e) 
 }}
