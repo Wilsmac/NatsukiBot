@@ -33,7 +33,7 @@ await conn.sendButton(m.chat, lenguajeCD['smsAvisoEG']() + idioma.text + '\n' + 
 }else if (args[0] == 'pt'){
 global.lenguajeGB = pt
 await conn.sendButton(m.chat, lenguajeCD['smsAvisoEG']() + idioma.text + '\n' + 'Português', igfg, null, [[`𝙼 𝙴 𝙽 𝚄 ☃️`, `${usedPrefix}menu`]], fkontak, m)
-}else{
+}
 
 let listSections = [];             
 listSections.push({
@@ -45,7 +45,7 @@ rows: [{ header: "ESPAÑOL", title: "", id: `${usedPrefix + command} es `, descr
 ]});
 
 await conn.sendList(m.chat, `𝙸𝙳𝙸𝙾𝙼𝙰𝚂 𝙳𝙸𝚂𝙿𝙾𝙽𝙸𝙱𝙻𝙴𝚂`, `${wm}`, `𝚂 𝙴 𝙻 𝙴 𝙲 𝙲 𝙸 𝙾 𝙽 𝙰 𝚁`, listSections, {quoted: fkontak});
-}catch(e){
+ {
 await m.reply(`${fg}\`NO SE LOGRÓ CAMBIAR DE IDIOMA, REPORTE ESTE COMANDO USANDO: ${usedPrefix}reporte\``) 
 console.log(e) 
 }}
