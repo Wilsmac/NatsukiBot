@@ -54,7 +54,7 @@ footer: `➥ Español = ${usedPrefix + command} es
 title: `${htki} Idioma ☃️`,
 buttonText: `𝚂 𝙴 𝙻 𝙴 𝙲 𝙲 𝙸 𝙾 𝙽 𝙰 𝚁`,
 sections }
-await conn.sendMessage(m.chat, listMessage, {quoted: fkontak})
+await conn.sendList(m.chat, listMessage, {quoted: fkontak})
 }
 }catch(e){
 await m.reply(`${fg}\`NO SE LOGRÓ CAMBIAR DE IDIOMA, REPORTE ESTE COMANDO USANDO: ${usedPrefix}reporte\``) 
