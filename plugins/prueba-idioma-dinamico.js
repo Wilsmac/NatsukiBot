@@ -1,4 +1,4 @@
-import translate from '@vitalets/google-translate-api'
+/*import translate from '@vitalets/google-translate-api'
 import * as fs from 'fs'
 import { es, en, id, ar, pt } from '../lib/idiomas/total-idiomas.js'
 
@@ -38,11 +38,11 @@ await conn.sendButton(m.chat, lenguajeCD['smsAvisoEG']() + idioma.text + '\n' + 
 const sections = [{
 title: '𝙻𝙾𝚂 𝙸𝙳𝙸𝙾𝙼𝙰𝚂 𝙳𝙸𝚂𝙿𝙾𝙽𝙸𝙱𝙻𝙴𝚂 𝙰𝙲𝚃𝚄𝙰𝙻𝙼𝙴𝙽𝚃𝙴',
 rows: [
-   {title: "⚠︎ Español", rowId: `${usedPrefix + command} es`},
-     {title: "⚠︎ English", rowId: `${usedPrefix + command} en`},
-       {title: "⚠︎ Bahasa Indonesia", rowId: `${usedPrefix + command} id`},
-         {title: "⚠︎ عرب", rowId: `${usedPrefix + command} ar`},
-            {title: "⚠︎ Português", rowId: `${usedPrefix + command} pt`}]}]
+   {header: "⚠︎ Español", title: "", id: `${usedPrefix + command} es`, description: ``},
+     {header: "⚠︎ English", title: "", id: `${usedPrefix + command} en`, description: ``},
+       {header: "⚠︎ Bahasa Indonesia", title: "", id: `${usedPrefix + command} id`, description: ``},
+         {header: "⚠︎ عرب", title: "", id: `${usedPrefix + command} ar`, description: ``},
+            {header: "⚠︎ Português", title: "", id: `${usedPrefix + command} pt`, description: ``}]}]
 
 const listMessage = {
 text: idioma2.text + '\n\n' + idioma3.text,
@@ -64,4 +64,4 @@ console.log(e)
 handler.command = /^(idioma|languaje|languages)$/i
 //handler.owner = true
 
-export default handler
+export default handler*/
