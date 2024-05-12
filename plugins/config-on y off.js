@@ -110,7 +110,7 @@ const listMessage = {
 text: `${lenguajeGB.smsConfi10()}`,
 footer: `╭━━━✦ *${lenguajeGB.smsConfi1()}* ✦━━━━⬣
 ┃
-┃🌟 ${lenguajeGB.smsConfi2()} *${name}*
+┃ 💓 ${lenguajeGB.smsConfi2()} *${name}*
 ┃
 ${lenguajeGB.smsConfi3()}
 ${lenguajeGB.smsConfi4()}
@@ -680,7 +680,7 @@ throw false
 
 await conn.sendButton(m.chat, `${lenguajeCD['smsAvisoRG']()} ➥ *_${lenguajeCD['smsMens1']()}_* *|* ${type} 
 ➥ *_${lenguajeCD['smsMens2']()}_* *|* ${isEnable ? lenguajeCD.smsEncender() : lenguajeCD.smsApagar()} 
-➥ *_${lenguajeGB['smsMens3']()}_* *|* ${isAll ? lenguajeCD.smsMens4() : isUser ? '' : lenguajeCD.smsMens5()}`, wm, null, [[`${isEnable ? lenguajeGB.smsApagar() : lenguajeCD.smsEncender()}`, `${isEnable ? `.off ${type}` : `.on ${type}`}`]], null, null, fkontak)}
+➥ *_${lenguajeGB['smsMens3']()}_* *|* ${isAll ? lenguajeCD.smsMens4() : isUser ? '' : lenguajeCD.smsMens5()}`, wm, null, [[`${isEnable ? lenguajeGB.smsApagar() : lenguajeCD.smsEncender()}`, `${isEnable ? `.off ${type}` : `.on ${type}`}`]], null, null, fkontak2)}
 handler.help = ['en', 'dis'].map(v => v + 'able <option>')
 handler.tags = ['group', 'owner']
 handler.command = /^((en|dis)able|(tru|fals)e|(turn)?o(n|ff)|[01])$/i
