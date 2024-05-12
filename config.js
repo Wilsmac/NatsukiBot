@@ -107,8 +107,8 @@ global.desc = '' // Add short description (20 caractres max)
 global.desc2 = '' // Add long description (90 caractres max) (Este parámetro se aplicará sólo si su whasapp no tiene descripción)
 global.country = '' // Add country, example: 🇪🇨
 //------------------------------------------------
-global.fantasy = "𝑭𝒂𝒏𝒕𝒂𝒔𝒚𝑩𝒐𝒕-𝑴𝑫 ®" // fantasy
-global.wilmerofc = "(𝑭𝒂𝒏𝒕𝒂𝒔𝒚𝑩𝒐𝒕-𝑴𝑫 ®)\n𝑩𝒚 𝑾𝒊𝒍𝒎𝒆𝒓 𝒐𝒇𝒄" // fkontak2
+global.fantasy = "𝐍𝐚𝐭𝐬𝐮𝐤𝐢𝐁𝐨𝐭 💐" // new name
+global.wilmerofc = "𝐍𝐚𝐭𝐬𝐮𝐤𝐢𝐁𝐨𝐭 ☃️" // fkontak2
 global.packname = `├┈‧͙⁺˚･༓☾ 𝚆𝙸𝙻𝙼𝙴𝚁 𝙾𝙵𝙲 ☽༓･˚⁺‧͙\n├┈ ⟴ 𝚈𝚘𝚞𝚃𝚞𝚋𝚎:\n├┈ @wilmer.oficial\n├┈ ⟴ 𝙸𝚗𝚜𝚝𝚊𝚐𝚛𝚊𝚖:\n├┈ @cmwilmer4\n╰⊱⊶⊷⊶⊷⊶⊷⊶⊷⇲⊰⌏`
 global.author =  ` ├┈‧͙･༓☾ 𝚆𝙸𝙻𝙼𝙴𝚁 𝙾𝙵𝙲 ☽༓･˚\n├┈⟴ 𝙶𝚒𝚝𝙷𝚞𝚋:\n├┈ Wilsmac\n├┈ ⟴ 𝙿𝚊𝚢𝙿𝚊𝚕:\n├┈ @wilmermacu1\n╰⊱⊶⊷⊶⊷⊶⊷⊶⊷⇲⊰⌏`
 
@@ -134,7 +134,7 @@ global.tiempo = d.toLocaleString('en-US', {hour: 'numeric', minute: 'numeric', s
 
 global.vs = "1.8.5"
 global.vsJB = "3.0"
-global.gt = "𝑭𝒂𝒏𝒕𝒂𝒔𝒚𝑩𝒐𝒕-𝑴𝑫 ®"
+global.gt = "𝐍𝐚𝐭𝐬𝐮𝐤𝐢𝐁𝐨𝐭 ☃️"
 
 global.canalofc = "https://whatsapp.com/channel/0029VaCUlPX0LKZAlP10pC43"
 global.yt = "https://youtube.com/@wilmer.oficial"
@@ -192,7 +192,7 @@ global.exito = eg
 //------------------------------------------------
 
 global.wm = "𝑾𝒊𝒍𝒎𝒆𝒓 𝒐𝒇𝒄"
-global.igfg = "𝑭𝒂𝒏𝒕𝒂𝒔𝒚𝑩𝒐𝒕-𝑴𝑫 ®"
+global.igfg = "𝐍𝐚𝐭𝐬𝐮𝐤𝐢𝐁𝐨𝐭 🌺"
 global.wait = "⌛ *`Cargando...`*\n*✦✦⊹⊹⊹⊹⊹⊹⊹⊹✪* `[20%]`"
 global.waitt = "⏳ *`Cargando....`*\n*✦✦✦✦⊹⊹⊹⊹⊹⊹✪* `[40%]`"
 global.waittt = "⌛ *`Cargando...`*\n*✦✦✦✦✦✦⊹⊹⊹⊹✪* `[60%]`"
