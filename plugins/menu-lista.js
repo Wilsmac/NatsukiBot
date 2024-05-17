@@ -95,10 +95,7 @@ let menu = `
  *${lenguajeCD['smsBanUsers']()}* ➺ _${Object.entries(global.db.data.users).filter(user => user[1].banned).length}_
 
  *</INFORMACIÓN DE TI>*
- *${lenguajeCD['smsBotonM7']().charAt(0).toUpperCase() + lenguajeCD['smsBotonM7']().slice(1).toLowerCase()} »* ${user.premiumTime > 0 ? '✔️' : '✖️ _' + usedPrefix + 'pase premium_'}
-
- *</INFORMACIÓN>*
- _${lenguajeCD['smsPareja']()}_ ${pareja ? `\n*»* ${name} 💕 ${conn.getName(pareja)}` : `🛐 ${lenguajeCD['smsResultPareja']()}`}
+ *${lenguajeCD['smsBotonM7']().charAt(0).toUpperCase() + lenguajeCD['smsBotonM7']().slice(1).toLowerCase()} »* ${user.premiumTime > 0 ? '✔️' : '✖️ _'}
 
   *_ECONOMÍA_*
 Experiencia: ${exp} ⚡
@@ -107,7 +104,7 @@ Experiencia: ${exp} ⚡
 \`Tokens:\` ${joincount} 🪙`.trim()
 
 const buttonParamsJson = JSON.stringify({
-title: "Menú",
+title: "𝙼 𝙴 𝙽 𝚄",
 description: "Infórmate por medios",
 sections: [
 { title: "Información",
