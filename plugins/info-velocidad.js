@@ -59,16 +59,16 @@ irq: 0
 }})
 
 let old = performance.now()
-await conn.reply(m.chat, `${eg}🚀 𝙋𝙍𝙐𝙀𝘽𝘼 𝘿𝙀 𝙑𝙀𝙇𝙊𝘾𝙄𝘿𝘼𝘿...`, fkontak, {contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, title: gt, body: ' 𝐅𝐚𝐧𝐭𝐚𝐬𝐲𝐁𝐨𝐭-𝐌𝐃 ', previewType: 0, thumbnail: fantasyImg.getRandom(), sourceUrl: canalofc }}})
+await conn.reply(m.chat, `𝙿𝚁𝚄𝙴𝙱𝙰 𝙳𝙴 𝚅𝙴𝙻𝙾𝙲𝙸𝙳𝙰𝙳 𝙴𝚇𝙸𝚃𝙾𝚂𝙰, 𝚄𝙽 𝙼𝙾𝙼𝙴𝙽𝚃𝙾 𝙿𝙾𝚁 𝙵𝙰𝚅𝙾𝚁...🚀 `, fkontak, {contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, title: gt, body: ' 𝐅𝐚𝐧𝐭𝐚𝐬𝐲𝐁𝐨𝐭-𝐌𝐃 ', previewType: 0, thumbnail: fantasyImg.getRandom(), sourceUrl: canalofc }}})
 
 let neww = performance.now()
 let speed = neww - old
-let caption = `*[ 𝙑𝙀𝙇𝙊𝘾𝙄𝘿𝘼𝘿 ]*
+let caption = `*[ 𝚅𝙴𝙻𝙾𝙲𝙸𝙳𝙰𝙳 ]*
 
  *${Math.round(neww - old)}* ms
  *${speed}* ms
 
-*${htjava}* 𝙏𝙄𝙀𝙈𝙋𝙊 𝘿𝙀 𝙀𝙅𝙀𝘾𝙐𝘾𝙄𝙊𝙉  
+*${htjava}* 𝚃𝙸𝙴𝙼𝙿𝙾 𝙳𝙴 𝙴𝙹𝙴𝙲𝚄𝙲𝙸𝙾𝙽
 ${muptime}
 ${readMore}
 *${htjava} C H A T S*
@@ -97,7 +97,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
 /*await conn.sendFile(m.chat, gataImg.getRandom(), 'pp.jpg', caption, fkontak, false, { contextInfo: {externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, title: gt, body: ' 𝐅𝐚𝐧𝐭𝐚𝐬𝐲𝐁𝐨𝐭-𝐌𝐃 ', previewType: 0, thumbnail: gataImg.getRandom(), sourceUrl: accountsgb.getRandom()}}})*/
 await conn.sendButton(m.chat, wm, caption, fantasy.getRandom(), [['𝙼 𝙴 𝙽 𝚄', '/menu']], m, dos.getRandom())
 } catch (e) {
-await conn.reply(m.chat, `${fg}*ALGO SALIÓ MAL. ERRORS FOUND.*\n\n\`\`\`REPORTE ESTE COMANDO ${usedPrefix + command} CON EL COMANDO ${usedPrefix}reporte\`\`\``, m)
+await conn.reply(m.chat, `${fg}*ALGO SALIÓ MAL.*\n\n\`\`\`REPORTE ESTE COMANDO ${usedPrefix + command} CON EL COMANDO ${usedPrefix}reporte\`\`\``, m)
 }}
 handler.help = ['ping', 'speed']
 handler.tags = ['info', 'tools']
@@ -112,5 +112,5 @@ function clockString(ms) {
   let h = isNaN(ms) ? '--' : Math.floor(ms / 3600000) % 24
   let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60
   let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
-  return [' ' + d, ' *Días : Days ☀️*\n ', h, ' *Horas : Hours 🕐*\n ', m, ' *Minuto : Minute ⏰*\n ', s, ' *Segundo : Second ⏱️* '].map(v => v.toString().padStart(2, 0)).join('')
+  return [' ' + d, ' *Días*\n ', h, ' *Horas*\n ', m, ' *Minuto*\n ', s, ' *Segundo* '].map(v => v.toString().padStart(2, 0)).join('')
 }
