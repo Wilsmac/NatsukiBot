@@ -24,7 +24,7 @@ console.log(e)
 switch (true) {
 
 case isCommand1:
-if (!text) throw `\`Escriba un texto usando el comando para usar a Gemini :D\``
+if (!text) throw `ingrese un texto usando el comando para usar a Gemini`
 await conn.sendPresenceUpdate('composing', m.chat)       
 try {
 var apii = await fetch(`https://aemt.me/gemini?text=${text}`)
