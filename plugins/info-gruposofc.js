@@ -18,7 +18,7 @@ let str = `*ESTOS SON LOS GRUPOS OFICIALES*
 ⏤͟͟͞͞★꙲⃝͟🌹 *${nnnttt2}*\n
 ─━━━━┉❈⏤͟͟͞͞★꙲⃝͟🌻❈┉━━━━─
 *hola :D*`
-await conn.sendFile(m.chat, media, 'fantasy.mp4', str, fakemek)}
+await conn.sendFile(m.chat, media, 'fantasy.mp4', str, fkontak)}
 
 handler.command = /^linkgc|grupos|gruposfantasy|groupofc$/i
 handler.exp = 33
