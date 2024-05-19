@@ -20,9 +20,9 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
     ['🎥 MP4', `${usedPrefix}menu`]
   ], null, [['Canal', `${canalofc}`]], m)
 }
-handler.help = ['play']
+handler.help = ['pruebaplay']
 handler.tags = ['dl']
-handler.command = ['play', 'playvid']
+handler.command = ['pruebaplay']
 handler.disabled = false
 
 export default handler
