@@ -1,4 +1,4 @@
-import yts from 'yt-search'
+/*import yts from 'yt-search'
 let handler = async (m, { conn, command, text, usedPrefix }) => {
   if (!text) throw `ejemplo *${usedPrefix + command}* Lil Peep hate my life`
   let res = await yts(text)
@@ -25,4 +25,4 @@ handler.tags = ['dl']
 handler.command = ['pruebaplay']
 handler.disabled = false
 
-export default handler
+export default handler*/
