@@ -1,6 +1,6 @@
 const handler = async (m, { conn }) => {
   let txt = '';
-const fkontak = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: `status@broadcast` } : {}) }, message: { 'contactMessage': { 'displayName': saludo, 'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:XL;${saludo},;;;\nFN:${saludo},\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabell:Ponsel\nEND:VCARD`, 'jpegThumbnail': imagen1, thumbnail: imagen1 ,sendEphemeral: true}}}
+const fkontak = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: `status@broadcast` } : {}) }, message: { 'contactMessage': { 'displayName': `𝙴𝚂𝚃𝙾𝚂 𝚂𝙾𝙽 𝙻𝙾𝚂 𝙶𝚁𝚄𝙿𝙾𝚂 𝙴𝙽 𝙴𝙻 𝚀𝚄𝙴 𝙴𝚂𝚃𝙾𝚈 ☃️`, 'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:XL;`𝙴𝚂𝚃𝙾𝚂 𝚂𝙾𝙽 𝙻𝙾𝚂 𝙶𝚁𝚄𝙿𝙾𝚂 𝙴𝙽 𝙴𝙻 𝚀𝚄𝙴 𝙴𝚂𝚃𝙾𝚈 ☃️ ${igfg}`,;;;\nFN:${saludo},\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabell:Ponsel\nEND:VCARD`, 'jpegThumbnail': imagen1, thumbnail: imagen1 ,sendEphemeral: true}}}
 try {    
 const groups = Object.entries(conn.chats).filter(([jid, chat]) => jid.endsWith('@g.us') && chat.isChats);
 const totalGroups = groups.length;
