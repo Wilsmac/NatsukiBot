@@ -164,7 +164,7 @@ console.log(chalk.bold.redBright(mid.methodCode11(chalk)))
 
 //---------------------------------------------------
 
-const filterStrings = [
+const bugsfilt = [
 "Q2xvc2luZyBzdGFsZSBvcGVu",
 "Q2xvc2luZyBvcGVuIHNlc3Npb24=",
 "RmFpbGVkIHRvIGRlY3J5cHQ=",
