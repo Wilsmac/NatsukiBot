@@ -471,6 +471,16 @@ console.log(chalk.bold.green(`${lenguajeCD.smspurgeOldFiles1()} ${file} ${lengua
 } }) }
 }) }) }) }
 
+function redefineConsoleMethod(methodName, bugsfilt) {
+const originalConsoleMethod = console[methodName]
+console[methodName] = function() {
+const message = arguments[0]
+if (typeof message === 'string' && bugsfilt.some(bugsfilt => message.includes(atob(bugsfilt)))) {
+arguments[0] = ""
+}
+originalConsoleMethod.apply(console, arguments)
+}}
+
 setInterval(async () => {
 if (stopped === 'close' || !conn || !conn.user) return
 await clearTmp()
