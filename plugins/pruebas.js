@@ -1,6 +1,9 @@
 let handler = async (m, { conn: natsuki }) => {
 
-natsuki.reply(`Hola`)
+if (!Array.isArray(global.conns)) {
+  global.conns = []
+}
+await natsuki.reply(`Hola`)
 }
 
 handler.command = ['natsuki']
