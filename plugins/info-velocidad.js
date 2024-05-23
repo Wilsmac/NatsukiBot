@@ -114,3 +114,4 @@ function clockString(ms) {
   let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
   return [' ' + d, ' *Días*\n ', h, ' *Horas*\n ', m, ' *Minuto*\n ', s, ' *Segundo* '].map(v => v.toString().padStart(2, 0)).join('')
 }
+
