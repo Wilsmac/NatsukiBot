@@ -97,13 +97,14 @@ let menu = `
 ─━━━━┉❈⏤͟͟͞͞★꙲⃝͟🍁❈┉━━━━─
  *${lenguajeCD['smsBanUsers']()}* ➺ _${Object.entries(global.db.data.users).filter(user => user[1].banned).length}_
 ─━━━━┉❈⏤͟͟͞͞★꙲⃝͟🍁❈┉━━━━─
- 
-  *_TÚ ECONOMÍA_*
-
-Experiencia: ${exp} ⚡
+  ♡  ∩_∩
+  （„• ֊ •„)♡
+ ┏━━━∪∪━⏤͟͟͞͞★꙲⃝͟🌷❈┉━━━┓
+ ╰ᴇᴄᴏɴᴏᴍɪ́ᴀ ꙰
+\`Experiencia:\` ${exp} ⚡
 \`Diamantes:\` ${limit} 💎
-\`Coins:\` ${money} 
-\`Tokens:\` ${joincount} 🪙\n─━━━━┉❈⏤͟͟͞͞★꙲⃝͟,🍁❈┉━━━━─`.trim()
+\`Coins:\` ${money} 💵
+\`Tokens:\` ${joincount} 🪙\n ┗━━━━⏤͟͟͞͞★꙲⃝͟🌷❈┉━━━━━━┛`.trim()
 
 const buttonParamsJson = JSON.stringify({
 title: "𝙼 𝙴 𝙽 𝚄",
