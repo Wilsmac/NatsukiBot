@@ -222,7 +222,7 @@ ${readMore}
 *╰━━━━━━━━━━━━⬣*
 `.trim()
 
-await conn.sendButton(m.chat, menuA, menuB, lenguajeGB.smsBotonM1(), '.menu', '🎧 ' + lenguajeGB.smsTex16() + ' 🎧', '/audios', lenguajeGB.smsBotonM3(), '#inventario', fkontak, adReply)
+await conn.sendList(m.chat, menuA, fkontak)
 await conn.sendFile(m.chat, vn, 'menu.mp3', null, m, true, {
 type: 'audioMessage', 
 ptt: true})
