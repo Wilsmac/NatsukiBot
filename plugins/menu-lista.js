@@ -145,7 +145,7 @@ buttonParamsJson
 }]
 }}
 const message = { messageContextInfo: { deviceListMetadata: {}, deviceListMetadataVersion: 2 }, interactiveMessage }
-await conn.relayMessage(m.chat, imagen4, { viewOnceMessage: { message } }, {})
+await conn.relayMessage(m.chat, { viewOnceMessage: { message } }, {})
 
 } else { 
 let menu = `${lenguajeGB['smsConfi2']()} *${user.genero === 0 ? '👤' : user.genero == 'Ocultado 🕶️' ? `🕶️` : user.genero == 'Mujer 🚺' ? `🚺` : user.genero == 'Hombre 🚹' ? `🚹` : '👤'} ${user.registered === true ? user.name : taguser} 💖*
