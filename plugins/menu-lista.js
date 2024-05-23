@@ -135,8 +135,8 @@ const interactiveMessage = {
 body: { text: menu },
 footer: { text: fantasy + ` \n☃️` },
 header: { title: `⋆┈┈｡❃ུ۪ ❀ུ۪ ❁ུ۪ ❃ུ۪ ❀ུ۪ ｡┈┈⋆\n-ˋˏᴜsᴜᴀʀɪᴏ: ˎˊ-\n╭━━━━━━━━━━━━━━━━━╮\n┃🍁❥̷᜔ ${username}❁⃟ࣾ❥̷.⁞. ┃\n╰━━━┳━━━━━━━━━━━━━╯
-     ╰ᴍᴇɴᴜ́:\n┋❀̥˚powred by Wilmer ᴘᴏᴡʀᴇᴅ ʙʏ ᴡɪʟᴍᴇʀ┋
- ┈──❊:::::::¨¨*:::::::❊──┈\n_Que tenga un ${global.saludo}_`, subtitle: "test4", hasMediaAttachment: false },
+     ╰ᴍᴇɴᴜ́:\n┋❀̥˚ᴘᴏᴡʀᴇᴅ ʙʏ ᴡɪʟᴍᴇʀ┋
+ ┈──❊:::::::¨¨*:::::::❊──┈\n_${global.saludo}_`, subtitle: "test4", hasMediaAttachment: false },
 nativeFlowMessage: { buttons: [{ 
 name: "single_select",
 buttonParamsJson
