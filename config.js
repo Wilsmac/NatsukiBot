@@ -11,7 +11,7 @@ import { en, es, id, ar, pt } from "./lib/idiomas/total-idiomas.js"
 
 // [ Agrega el número que será Bot y los que serán propietarios. ]
 global.owner = [
-["50250101139", 'Wilmer ofc', true], //FantasyBot-MD
+["50250101139", 'Wilmer ofc', true],
 ["50258115623"], 
 ["51967997782"]
 ]
@@ -22,8 +22,8 @@ global.prems = []
 global.tagusario = ['50250101139'];
 
 
-global.obtenerQrWeb = 0; //Solo valores: 1 o 0
-global.keepAliveRender = 0; //Solo valores: 1 o 0
+global.obtenerQrWeb = 0; //1 o 0
+global.keepAliveRender = 0; // 1 o 0
 
 //------------------------------------------------
 
