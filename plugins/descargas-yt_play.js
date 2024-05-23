@@ -26,7 +26,7 @@ const texto1 = `
 𖤍 ${yt_play[0].url}
 *✧══════•❁❀❁•══════✧*`.trim()
 
-await conn.sendButton(m.chat, wm, texto1, yt_play[0].thumbnail, [['𝙼 𝙴 𝙽 𝚄', '/menu']], null, null, m)
+await natsuki.sendButton(m.chat, wm, texto1, yt_play[0].thumbnail, [['𝙼 𝙴 𝙽 𝚄', '/menu']], null, null, m)
 
 let listSections = [];             
 listSections.push({
@@ -46,9 +46,9 @@ rows: [{ header: "𝙰 𝚄 𝙳 𝙸 𝙾 (Opcion 1)", title: "", id: `${usedPr
   sections
 }) */
 
-await conn.sendList(m.chat, `*𝙴𝙻𝙸𝙹𝙰 𝚀𝚄𝙴 𝚅𝙰 𝙰 𝙷𝙰𝙲𝙴𝚁 𝙲𝙾𝙽  ${text}*`, `\n𝙳𝙴𝚂𝙲𝙰𝚁𝙶𝙰𝚂* `, `𝙴𝙻𝙴𝙹𝙸𝚁`, listSections, {quoted: fkontak});
+await natsuki.sendList(m.chat, `*𝙴𝙻𝙸𝙹𝙰 𝚀𝚄𝙴 𝚅𝙰 𝙰 𝙷𝙰𝙲𝙴𝚁 𝙲𝙾𝙽  ${text}*`, `\n𝙳𝙴𝚂𝙲𝙰𝚁𝙶𝙰𝚂* `, `𝙴𝙻𝙴𝙹𝙸𝚁`, listSections, {quoted: fkontak});
 } catch (e) {
-await conn.reply(m.chat, `${lenguajeCD['smsMalError3']()}#report ${lenguajeCD['smsMensError2']()} ${usedPrefix + command}\n\n${wm}`, fkontak, m)
+await natsuki.reply(m.chat, `${lenguajeCD['smsMalError3']()}#report ${lenguajeCD['smsMensError2']()} ${usedPrefix + command}\n\n${wm}`, fkontak, m)
 console.log(`❗❗ ${lenguajeCD['smsMensError2']()} ${usedPrefix + command} ❗❗`)
 console.log(e)
 handler.limit = 0
