@@ -1,6 +1,6 @@
 
 
-import pkg from '@whiskeysockets/baileys';
+/*import pkg from '@whiskeysockets/baileys';
 const { generateWAMessageFromContent, proto } = pkg
 
 var handler = async (m, { conn, usedPrefix }) => {
@@ -46,7 +46,7 @@ await conn.relayMessage(msg.key.remoteJid, msg.message, { messageId: msg.key.id 
 }
 handler.command = /^(tu)$/i
 
-export default handler
+export default handler*/
 
 
 
@@ -55,7 +55,7 @@ export default handler
 
 
 
-/*import pkg from '@whiskeysockets/baileys';
+import pkg from '@whiskeysockets/baileys';
 const { generateWAMessageFromContent, proto } = pkg
 
 var handler = async (m, { conn, usedPrefix }) => {
@@ -129,4 +129,4 @@ await conn.relayMessage(msg.key.remoteJid, msg.message, { messageId: msg.key.id 
 }
 handler.command = /^(tu)$/i
 
-export default handler */
+export default handler 
