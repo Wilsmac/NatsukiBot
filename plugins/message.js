@@ -115,7 +115,7 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "message",
-                 "buttonParamsJson": "{\"display_text\":\"address_message\",\"id\":\"message\"}"
+                 "buttonParamsJson": "{\"display_text\":\"message\",\"id\":\"message\"}"
               },
               {
                  "name": "send_location",
