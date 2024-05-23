@@ -1,6 +1,6 @@
 let handler = async (m, { conn: natsuki }) => {
 
-await natsuki.reply(`Hola`)
+natsuki.reply(`Hola`)
 }
 
 handler.command = ['natsuki']
