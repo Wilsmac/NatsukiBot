@@ -221,9 +221,9 @@ ${readMore}
 ┃💎➺ _${usedPrefix}añadirgatacoins *@tag cantidad*_
 *╰━━━━━━━━━━━━⬣*
 `.trim()
-
-await conn.sendList(m.chat, menuA, fkontak)
-await conn.sendFile(m.chat, vn, 'menu.mp3', null, m, true, {
+await conn.sendList(m.chat, menuA.footer, `${listMessage.buttonText}`, sections, null, null, fkontak2);
+//await conn.sendList(m.chat, menuA, fkontak)
+//await conn.sendFile(m.chat, vn, 'menu.mp3', null, m, true, {
 type: 'audioMessage', 
 ptt: true})
 	
