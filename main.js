@@ -177,6 +177,8 @@ const bugsfilt = [
 
 console.info = () => {} // Las "PreKeys"
 console.debug = () => {} 
+['log', 'warn', 'error'].forEach(methodName => redefineConsoleMethod(methodName, bugsfilt))
+
 
 const connectionOptions = {
 logger: pino({ level: 'silent' }),
