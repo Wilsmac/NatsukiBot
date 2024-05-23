@@ -87,21 +87,22 @@ if (!/web|desktop|unknown/gi.test(dispositivo)) {
 let menu = `
 \`Fecha y hora:\` undefined 
    ↷ ɪɴғᴏ ᴅᴇ ʙᴏᴛ
- *${lenguajeCD['smsTotalUsers']()}* ➺ _${Object.keys(global.db.data.users).length}_ 
- *Registrados »* ${rtotalreg}/${totalreg}     
+ *${lenguajeCD['smsTotalUsers']()}* ➺ _${Object.keys(global.db.data.users).length}_
+─━━━━┉❈⏤͟͟͞͞★꙲⃝͟🍁❈┉━━━━─
  *${lenguajeCD['smsVersion']()}* ➺ _${vs}_
+─━━━━┉❈⏤͟͟͞͞★꙲⃝͟🍁❈┉━━━━─
  *${lenguajeCD['smsMode']()} ➺* _${global.opts['self'] ? `${lenguajeCD['smsModePrivate']().charAt(0).toUpperCase() + lenguajeCD['smsModePrivate']().slice(1).toLowerCase()}` : `${lenguajeCD['smsModePublic']().charAt(0).toUpperCase() + lenguajeCD['smsModePublic']().slice(1).toLowerCase()}`}_
- *${lenguajeCD['smsBanChats']()}* ➺ _${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}_ 
+─━━━━┉❈⏤͟͟͞͞★꙲⃝͟🍁❈┉━━━━─
+ *${lenguajeCD['smsBanChats']()}* ➺ _${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}_
+─━━━━┉❈⏤͟͟͞͞★꙲⃝͟🍁❈┉━━━━─
  *${lenguajeCD['smsBanUsers']()}* ➺ _${Object.entries(global.db.data.users).filter(user => user[1].banned).length}_
+─━━━━┉❈⏤͟͟͞͞★꙲⃝͟🍁❈┉━━━━─
+  *_TÚ ECONOMÍA_*
 
- *</INFORMACIÓN DE TI>*
- *${lenguajeCD['smsBotonM7']().charAt(0).toUpperCase() + lenguajeCD['smsBotonM7']().slice(1).toLowerCase()} »* ${user.premiumTime > 0 ? '✔️' : '✖️ _'}
-
-  *_ECONOMÍA_*
 Experiencia: ${exp} ⚡
 \`Diamantes:\` ${limit} 💎
 \`Coins:\` ${money} 
-\`Tokens:\` ${joincount} 🪙`.trim()
+\`Tokens:\` ${joincount} 🪙\n─━━━━┉❈⏤͟͟͞͞★꙲⃝͟,🍁❈┉━━━━─`.trim()
 
 const buttonParamsJson = JSON.stringify({
 title: "𝙼 𝙴 𝙽 𝚄",
