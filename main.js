@@ -162,6 +162,19 @@ console.log(chalk.bold.redBright(mid.methodCode11(chalk)))
 }} while (opcion !== '1' && opcion !== '2' || fs.existsSync(`./${authFile}/creds.json`))
 }
 
+//---------------------------------------------------
+
+const filterStrings = [
+"Q2xvc2luZyBzdGFsZSBvcGVu",
+"Q2xvc2luZyBvcGVuIHNlc3Npb24=",
+"RmFpbGVkIHRvIGRlY3J5cHQ=",
+"U2Vzc2lvbiBlcnJvcg==",
+"RXJyb3I6IEJhZCBNQUM=",
+"RGVjcnlwdGVkIG1lc3NhZ2U="
+]
+
+//--------------------------------------------------------
+
 console.info = () => {} // Las "PreKeys"
 console.debug = () => {} 
 
