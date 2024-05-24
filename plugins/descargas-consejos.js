@@ -40,9 +40,14 @@ conn.sendButton(m.chat, texto.trim(), wm, img, [
 //conn.sendFile(m.chat, img, 'error.png', texto.trim(), m, fkontak)} 
 //await conn.sendButton(m.chat, texto.trim(), wm, img, [[lenguajeGB.smsFras(), `${usedPrefix + command}`], [lenguajeGB.smsConMenu(), `${usedPrefix}menu`]], m, frep)} 
 } catch (e) {
+await conn.sendButton(m.chat, `\n${wm}`, lenguajeGB['smsMalError3']() + '#report ' + usedPrefix + command, null, [[lenguajeGB.smsMensError1(), `#reporte ${lenguajeGB['smsMensError2']()} *${usedPrefix + command}*`]], m)
+console.log(`❗❗ ${lenguajeGB['smsMensError2']()} ${usedPrefix + command} ❗❗`)
+console.log(e)	
+}}
+/*} catch (e) {
 await m.reply(lenguajeGB['smsMalError3']() + '\n*' + lenguajeGB.smsMensError1() + '*\n*' + usedPrefix + `${lenguajeGB.lenguaje() == 'es' ? 'reporte' : 'report'}` + '* ' + `${lenguajeGB.smsMensError2()} ` + usedPrefix + command)
 console.log(`❗❗ ${lenguajeGB['smsMensError2']()} ${usedPrefix + command} ❗❗`)
-console.log(e)}}
+console.log(e)}}*/
 handler.command = ['consejo', 'advice', 'frase2', 'phrase2']
 handler.register = true
 export default handler
