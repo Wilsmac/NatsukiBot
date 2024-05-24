@@ -43,7 +43,7 @@ ${lenguajeGB.smsLisF()} ${isBotAdmin ? '✅' : '❌'}
 ${lenguajeGB.smsLisE()} ${totalParticipants}
 ${lenguajeGB.smsLisG()} ${isBotAdmin ? 'Error' : 'NO SOY ADMINS'}\n\n`
 }
-m.reply(`${packname} ${lenguajeGB.smsLisA()}
+m.reply(`${fantasy} ${lenguajeGB.smsLisA()}
 ${lenguajeGB.smsLisB()} ${totalGroups}\n\n${txt}`.trim());
 }}
 handler.help = ['groups', 'grouplist']
