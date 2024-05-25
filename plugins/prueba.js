@@ -17,5 +17,5 @@ conn.reply('@s.whatsapp.net', teks, m, {mentions: [m.sender]})
 handler.help = ['enviarsms', '+'].map(v => v + ' número')
 handler.tags = ['info']
 handler.exp = 25 
-handler.command = /^(enviarsms)$/i 
+handler.command = /^(enviarsms|\+)$/i
 export default handler
