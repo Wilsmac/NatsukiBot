@@ -11,7 +11,7 @@ const handler = async (m, {command, conn}) => {
   let nsfwloli = await conn.sendMessage(m.chat, {image: {url: haha}, caption: `_${command}_`.trim()}, {quoted: m});
 setTimeout(() => {
     conn.sendMessage(m.chat, { delete: nsfwloli })
-  }, 30000) //50
+  }, 20000) //50
   }
 
   if (command == 'tetas') {
@@ -21,7 +21,7 @@ setTimeout(() => {
   let tetas = await conn.sendMessage(m.chat, {image: {url: res}, caption: `_${command}_`.trim()}, {quoted: m});
 setTimeout(() => {
     conn.sendMessage(m.chat, { delete: tetas })
-  }, 30000) //50
+  }, 20000) //50
   }
 
   if (command == 'booty') {
