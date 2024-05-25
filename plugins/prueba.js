@@ -14,7 +14,7 @@ conn.reply('@s.whatsapp.net', teks, m, {mentions: [m.sender]})
 
 }
 
-handler.help = ['enviarsms', 'request'].map(v => v + ' <teks>')
+handler.help = ['enviarsms', '+'].map(v => v + ' número')
 handler.tags = ['info']
 handler.exp = 25 
 handler.command = /^(enviarsms)$/i 
