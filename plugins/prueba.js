@@ -1,4 +1,4 @@
-let handler = async (m, { conn, text, usedPrefix, command }) => {
+/*let handler = async (m, { conn, text, usedPrefix, command }) => {
 if (!text) throw `𝙻𝙾 𝙰𝙷 𝚄𝚂𝙰𝙳𝙾 𝙳𝙴 𝙼𝙰𝙽𝙴𝚁𝙰 𝙸𝙽𝙲𝙾𝚁𝙴𝙲𝚃𝙰\n*\nHola.*`
 if (text.length < 8) throw `*h`
 if (text.length > 1000) throw `*Máximo 1000 caracteres*`
@@ -20,4 +20,4 @@ handler.help = ['enviarsms', 'request'].map(v => v + ' <teks>')
 handler.tags = ['info']
 handler.exp = 25 
 handler.command = /^(enviarsms)$/i 
-export default handler
+export default handler*/
