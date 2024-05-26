@@ -372,7 +372,7 @@ const sections = [
 {
 title: `${lenguajeGB.smsTex18()}`,
 rows: [
-{ header: lenguajeGB['smsLista2'](), title: "", description: "", id: ` usedPrefix + "creadora" },
+{ header: lenguajeGB['smsLista2'](), title: "", description: "", id: usedPrefix + "creadora" },
 { header: lenguajeGB['smsLista5'](), title: "", description: "", id:  usedPrefix + "infomenu" },
 { header: lenguajeGB['smsLista6'](), title: "", description: "", id: usedPrefix + "allmenu" },  
   
