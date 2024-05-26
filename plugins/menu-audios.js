@@ -368,8 +368,8 @@ let adReply = { fileLength: fsizedoc, seconds: fsizedoc, contextInfo: { forwardi
   
 await conn.sendButtonVid(m.chat, pp, menuA, menuB, lenguajeGB.smsBotonM1(), '.menu', lenguajeGB.smsBotonM2(), '/allmenu', lenguajeGB.smsBotonM3(), '#inventario', fkontak, adReply)
 */
-const sections = [
-{
+let listSections = [];             
+listSections.push({
 title: `${lenguajeGB.smsTex18()}`,
 rows: [
 { header: lenguajeGB['smsLista2'](), title: "", description: "", id: usedPrefix + "creadora" },
@@ -515,7 +515,7 @@ rows: [
 { header: "➥🔊 Se pudrio", description: "", rowId: `Se pudrio`},
 { headere: "➥🔊 Gol!", description: "", id: `Gol`},
 { header: "➥🔊 Las reglas del grupo", description: "", id: `Las reglas del grupo`},
-]}, ]
+]})
 
 const listMessage = {
 text: `${wm}`,
@@ -526,7 +526,7 @@ title: null,
 buttonText: `🔊 ${lenguajeGB['smsTex16']()} 🔊`,
 sections }
 
-await conn.sendList(m.chat, listMessage, null, null, fkontak);
+await natsuki.sendList(m.chat, `*Lista. de todos los audios*`, `${gt}`, `Ver lista`, listSections, {quoted: fkontak});
 
 
 } catch (e) {
