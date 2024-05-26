@@ -395,7 +395,7 @@ rows: [
 { header: "➥🔊 Un pato", description: "", id: `Un pato`},
 { header: "➥🔊 Nyanpasu", description: "", id: `Nyanpasu`},
 { header: "➥🔊 Te amo", description: "", id: `Te amo`},
-{ header: "➥🔊 Yamete", description: "", id `Yamete`},
+{ header: "➥🔊 Yamete", description: "", id: `Yamete`},
 { header: "➥🔊 Te diagnostico con gay", description: "", id: `Te diagnostico con gay`},
 { header: "➥🔊 Quien es tu sempai botsito 7w7", description: "", id: `Quien es tu sempai botsito 7w7`},
 { header: "➥🔊 Bañate", description: "", id: `Bañate`},
