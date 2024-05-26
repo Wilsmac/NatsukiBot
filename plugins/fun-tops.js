@@ -73,7 +73,29 @@ conn.sendFile(m.chat, vn, 'otaku.mp3', null, m, true, {
 type: 'audioMessage', 
 ptt: true 
 })}
-   
+   if (command == 'topsimps') {
+let top = `*🌚 TOP 10 MAS SIMPS DEL GRUPO 🌚*
+    
+*_1.- 🐢 ${user(a)}_* 
+*_2.- 🐢 ${user(b)}_* 
+*_3.- 🐢 ${user(c)}_* 
+*_4.- 🐢 ${user(d)}_* 
+*_5.- 🐢 ${user(e)}_* 
+*_6.- 🐢 ${user(f)}_* 
+*_7.- 🐢 ${user(g)}_* 
+*_8.- 🐢 ${user(h)}_* 
+*_9.- 🐢 ${user(i)}_* 
+*_10.-🐢  ${user(j)}_* `
+m.reply(top, null, { mentions: conn.parseMention(top) })
+//m.reply(top, null, {
+//conn.sendHydrated(m.chat, top, wm, null, md, '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
+//['𝙊𝙩𝙧𝙖 𝙫𝙚𝙯 | 𝘼𝙜𝙖𝙞𝙣 🔮', `${usedPrefix + command}`],
+//['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', '/menu']
+//], m, null, {
+//contextInfo: {
+//mentionedJid: [a, b, c, d, e, f, g, h, i, j]
+//}})
+}
 if (command == 'topintegrantes') {
 let top = `*_💎TOP 10 L@S MEJORES INTEGRANTES👑_*
     
@@ -323,7 +345,7 @@ Genial! 💝, están de Luna de miel 🥵✨❤️‍🔥`
 m.reply(top, null, { mentions: conn.parseMention(top) })}
   
 }
-handler.help = handler.command = ['topgays', 'topotakus', 'topintegrantes', 'topintegrante', 'toplagrasa', 'topgrasa', 'toppanafrescos', 'toppanafresco', 'topshiposters', 'topshipost', 'toppajer@s', 'toplindos', 'toplind@s', 'topput@s', 'topfamosos', 'topfamos@s', 'topparejas', 'top5parejas' ]
+handler.help = handler.command = ['topgays', 'topotakus', 'topsimps', 'topintegrantes', 'topintegrante', 'toplagrasa', 'topgrasa', 'toppanafrescos', 'toppanafresco', 'topshiposters', 'topshipost', 'toppajer@s', 'toplindos', 'toplind@s', 'topput@s', 'topfamosos', 'topfamos@s', 'topparejas', 'top5parejas' ]
 handler.tags = ['games']
 handler.group = true
 export default handler  
