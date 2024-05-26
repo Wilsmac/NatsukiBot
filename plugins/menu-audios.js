@@ -526,7 +526,7 @@ title: null,
 buttonText: `🔊 ${lenguajeGB['smsTex16']()} 🔊`,
 sections }
 
-await conn.sendList(m.chat, `${listMessage.text}\n`, listMessage.footer, `${listMessage.buttonText}`, null, null, fkontak);
+await conn.sendList(m.chat, listMessage, null, null, fkontak);
 
 
 } catch (e) {
