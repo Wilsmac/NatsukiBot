@@ -222,7 +222,7 @@ let adReply = { fileLength: fsizedoc, seconds: fsizedoc, contextInfo: { forwardi
 ╰════• ೋ•✧๑♡๑✧•ೋ •════╯`.trim()
     conn.sendFile(m.chat, pp, 'lp.jpg', str, m, false, { contextInfo: { mentionedJid }})
 /*let menuA = `🎶 ${lenguajeGB['smsConfi2']()} *${username}*`.trim()*/
-let menuB = `
+/*let menuB = `
 ╭┄〔 *${wm}* 〕┄⊱
 ┊დ *${week}, ${date}*
 ┊დ *${lenguajeGB['smsBotonM4']()} » ${Object.keys(global.db.data.users).length}* 
