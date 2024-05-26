@@ -376,7 +376,7 @@ rows: [
 { header: lenguajeGB['smsLista5'](), title: "", description: "", id:  usedPrefix + "infomenu" },
 { header: lenguajeGB['smsLista6'](), title: "", description: "", id: usedPrefix + "allmenu" },  
   
-{ header "➥🔊 Noche de paz", description: "", id: `Noche de paz`},
+{ header: "➥🔊 Noche de paz", description: "", id: `Noche de paz`},
 { header: "➥🔊 Buenos dias", description: "", id: `Buenos dias`},
 { header: "➥🔊 Audio hentai", description: "", id: `Audio hentai`},
 { header: "➥🔊 Fiesta del admin", description: "", id: `Fiesta del admin`},
