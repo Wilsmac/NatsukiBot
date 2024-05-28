@@ -105,7 +105,7 @@ let menu = `╭═══〘 ❀❀❀❀❀❀❀ 〙══╮
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
 ┣═╡♦️ _${usedPrefix}pack_
 ┣═╡♦️ _${usedPrefix}pack3_
-┣═╡♦️ _{usedPrefix}videoxxx_
+┣═╡♦️ _${usedPrefix}videoxxx_
 ┣═╡♦️ _${usedPrefix}videolesbixxx_
 ┣═╡♦️ _${usedPrefix}tetas_
 ┣═╡♦️ _${usedPrefix}booty_
