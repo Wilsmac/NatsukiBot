@@ -71,9 +71,6 @@ let taguser = '@' + m.sender.split("@s.whatsapp.net")[0]
 let pp = gataVidMenu
 let vn = 'https://qu.ax/bfaM.mp3'
 let pareja = global.db.data.users[m.sender].pasangan 
-const numberToEmoji = { "0": "0️⃣", "1": "1️⃣", "2": "2️⃣", "3": "3️⃣", "4": "4️⃣", "5": "5️⃣", "6": "6️⃣", "7": "7️⃣", "8": "8️⃣", "9": "9️⃣", }
-let lvl = level
-let emoji = Array.from(lvl.toString()).map((digit) => numberToEmoji[digit] || "❓").join("")
 
 const lugarFecha = moment().tz('America/Lima')
 const formatoFecha = {
@@ -175,9 +172,9 @@ rows: [
 rows: [
 { header: lenguajeCD['smsLista22'](), title: "", description: "𝙸𝙽𝙵𝙾𝚁𝙼𝙰𝙲𝙸𝙾𝙽: 𝙼𝙴𝙽𝚄 𝙲𝙾𝙳𝙸𝙵𝚄𝙲𝙰𝙳𝙾𝚁 𝙳𝙴 𝙰𝚄𝙳𝙸𝙾𝚂", id: usedPrefix + "menucodificadorau" }
 ]},
-{ title: "(𝙉𝙖𝙩𝙨𝙪𝙠𝙞𝘽𝙤𝙩) 𝙄𝙣𝙛𝙤 𝙈𝙚𝙣𝙪́ 𝙃𝙚𝙧𝙧𝙖𝙢𝙞𝙚𝙣𝙩𝙖𝙨 📚", highlight_label: "Próximamente",
+{ title: "(𝙉𝙖𝙩𝙨𝙪𝙠𝙞𝘽𝙤𝙩) 𝙄𝙣𝙛𝙤 𝙈𝙚𝙣𝙪́ 𝙃𝙚𝙧𝙧𝙖𝙢𝙞𝙚𝙣𝙩𝙖𝙨 📚",
 rows: [
-{ header: lenguajeCD['smsLista22_1'](), title: "", description: "𝙸𝙽𝙵𝙾: 𝙼𝙴𝙽𝚄 𝙷𝙴𝚁𝚁𝙰𝙼𝙸𝙴𝙽𝚃𝙰𝚂", id: usedPrefix + "menuheramientas" }
+{ header: lenguajeCD['smsLista22_1'](), title: "", description: "𝙸𝙽𝙵𝙾: 𝙼𝙴𝙽𝚄 𝙷𝙴𝚁𝚁𝙰𝙼𝙸𝙴𝙽𝚃𝙰𝚂", id: usedPrefix + "menuherramientas" }
 ]},
 { title: "(𝙉𝙖𝙩𝙨𝙪𝙠𝙞𝘽𝙤𝙩) 𝙅𝙪𝙚𝙜𝙤𝙨 𝘿𝙞𝙣𝙖𝙢𝙞𝙘𝙤𝙨 📚", highlight_label: "Próximamente",
 rows: [
