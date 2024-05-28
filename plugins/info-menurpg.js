@@ -105,48 +105,48 @@ let menu = `¡HOLA! 👋🏻 • ${username}\n𝘽𝙄𝙀𝙉𝘽𝙀𝙉𝙄�
 > *╘━ꥇ۬════•| ✿ |•════╝* 
  
 > ✞͙͙͙͙͙͙͙͙͙͙⏜❟︵ֹ̩̥̩̥̩̥̩̩̥⏜੭🏮୧ֹ⏜︵ֹ̩̥̩̥̩̥̩̥̩̥̩̥̩̥❟⏜፞✞͙͙͙͙͙͙͙͙͙͙.
-├┈ ↷ Rᴘɢ - Lɪᴍɪᴛᴇs
-├• ✐; ₊˚✦୧︰ Eᴄᴏɴᴏᴍɪᴀ.
-├┈・──・──・﹕₊˚ ✦・୨୧・
-┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-│  ◦ _${usedPrefix}botemporal *enlace* *cantidad*_
-│  ◦ _${usedPrefix}addbot *enlace* *cantidad*_
-│  ◦ _${usedPrefix}pase premium_
-│  ◦ _${usedPrefix}pass premium_
-│  ◦ _${usedPrefix}listapremium | listprem_
-│  ◦ _${usedPrefix}transfer *tipo cantidad @tag*_
-│  ◦ _${usedPrefix}dar *tipo cantidad @tag*_
-│  ◦ _${usedPrefix}enviar *tipo cantidad @tag*_
-│  ◦ _${usedPrefix}balance_
-│  ◦ _${usedPrefix}cartera | wallet_
-│  ◦ _${usedPrefix}experiencia | exp_
-│  ◦ _${usedPrefix}top | lb | leaderboard_
-│  ◦ _${usedPrefix}nivel | level | lvl_
-│  ◦ _${usedPrefix}rol | rango_
-│  ◦ _${usedPrefix}inventario | inventory_
-│  ◦ _${usedPrefix}aventura | adventure_
-│  ◦ _${usedPrefix}caza | cazar | hunt_
-│  ◦ _${usedPrefix}pescar | fishing_
-│  ◦ _${usedPrefix}animales_
-│  ◦ _${usedPrefix}alimentos_
-│  ◦ _${usedPrefix}curar | heal_
-│  ◦ _${usedPrefix}buy_
-│  ◦ _${usedPrefix}sell_
-│  ◦ _${usedPrefix}verificar | registrar_
-│  ◦ _${usedPrefix}perfil | profile_
-│  ◦ _${usedPrefix}myns_
-│  ◦ _${usedPrefix}unreg *numero de serie*_
-│  ◦ _${usedPrefix}minardiamantes | minargemas_
-│  ◦ _${usedPrefix}minargatacoins | minarcoins_
-│  ◦ _${usedPrefix}minarexperiencia | minarexp_
-│  ◦ _${usedPrefix}minar *:* minar2 *:* minar3_
-│  ◦ _${usedPrefix}reclamar | regalo | claim_
-│  ◦ _${usedPrefix}cadahora | hourly_
-│  ◦ _${usedPrefix}cadasemana | semanal | weekly_
-│  ◦ _${usedPrefix}cadames | mes | monthly_
-│  ◦ _${usedPrefix}cofre | abrircofre | coffer_
-│  ◦ _${usedPrefix}trabajar | work_
-╘━ꥇ۬⏝۬︶⊹̇︶ٜ⊹︶ׅ⊹ֺ︶߭⊹︶۬⊹︶ꥇ̇ꥈׄ̇⏝۬ꥇ
+> ├┈ ↷ Rᴘɢ - Lɪᴍɪᴛᴇs
+> ├• ✐; ₊˚✦୧︰ Eᴄᴏɴᴏᴍɪᴀ.
+> ├┈・──・──・﹕₊˚ ✦・୨୧・
+> ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+> │  ◦ _${usedPrefix}botemporal *enlace* *cantidad*_
+> │  ◦ _${usedPrefix}addbot *enlace* *cantidad*_
+> │  ◦ _${usedPrefix}pase premium_
+> │  ◦ _${usedPrefix}pass premium_
+> │  ◦ _${usedPrefix}listapremium | listprem_
+> │  ◦ _${usedPrefix}transfer *tipo cantidad @tag*_
+> │  ◦ _${usedPrefix}dar *tipo cantidad @tag*_
+> │  ◦ _${usedPrefix}enviar *tipo cantidad @tag*_
+> │  ◦ _${usedPrefix}balance_
+> │  ◦ _${usedPrefix}cartera | wallet_
+> │  ◦ _${usedPrefix}experiencia | exp_
+> │  ◦ _${usedPrefix}top | lb | leaderboard_
+> │  ◦ _${usedPrefix}nivel | level | lvl_
+> │  ◦ _${usedPrefix}rol | rango_
+> │  ◦ _${usedPrefix}inventario | inventory_
+> │  ◦ _${usedPrefix}aventura | adventure_
+> │  ◦ _${usedPrefix}caza | cazar | hunt_
+> │  ◦ _${usedPrefix}pescar | fishing_
+> │  ◦ _${usedPrefix}animales_
+> │  ◦ _${usedPrefix}alimentos_
+> │  ◦ _${usedPrefix}curar | heal_
+> │  ◦ _${usedPrefix}buy_
+> │  ◦ _${usedPrefix}sell_
+> │  ◦ _${usedPrefix}verificar | registrar_
+> │  ◦ _${usedPrefix}perfil | profile_
+> │  ◦ _${usedPrefix}myns_
+> │  ◦ _${usedPrefix}unreg *numero de serie*_
+> │  ◦ _${usedPrefix}minardiamantes | minargemas_
+> │  ◦ _${usedPrefix}minargatacoins | minarcoins_
+> │  ◦ _${usedPrefix}minarexperiencia | minarexp_
+> │  ◦ _${usedPrefix}minar *:* minar2 *:* minar3_
+> │  ◦ _${usedPrefix}reclamar | regalo | claim_
+> │  ◦ _${usedPrefix}cadahora | hourly_
+> │  ◦ _${usedPrefix}cadasemana | semanal | weekly_
+> │  ◦ _${usedPrefix}cadames | mes | monthly_
+> │  ◦ _${usedPrefix}cofre | abrircofre | coffer_
+> │  ◦ _${usedPrefix}trabajar | work_
+> ╘━ꥇ۬⏝۬︶⊹̇︶ٜ⊹︶ׅ⊹ֺ︶߭⊹︶۬⊹︶ꥇ̇ꥈׄ̇⏝۬ꥇ
 > ╰┉ͦ━ᷫ━ⷭ┈ ⃘⵿݂۪۪۪࣭࣭፝۬۬۬͞💙ꫂ❀ᰰ᷒|²⁰|²|²³ ♡┈⊷ꫂ፝۬۬۬͞ᜓ⃘݂۪۪۪࣭࣭.─❤️⃟ᬽ፝֟━❥ᰰຼ᭢╯*`.trim()
 await conn.sendFile(m.chat, picture, 'error.mp4', menu, fake0)
 
