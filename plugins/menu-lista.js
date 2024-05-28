@@ -194,7 +194,7 @@ rows: [
 ]},
 { title: "(𝙉𝙖𝙩𝙨𝙪𝙠𝙞𝘽𝙤𝙩) 𝙄𝙣𝙛𝙤 𝙈𝙚𝙣𝙪 𝙡𝙖 𝙗𝙞𝙗𝙡𝙞𝙖 🥵",
 rows: [
-{ header: lenguajeCD['smsLista30'](), title: "", description: "𝙸𝙽𝙵𝙾(𝙻𝙸𝚂𝚃𝙰 𝙳𝙴 𝙲𝙾𝙼𝙰𝙽𝙳𝙾𝚂 +18", id: usedPrefix + "menuhorny" }
+{ header: lenguajeCD['smsLista30'](), title: "", description: "𝙸𝙽𝙵𝙾(𝙻𝙸𝚂𝚃𝙰 𝙳𝙴 𝙲𝙾𝙼𝙰𝙽𝙳𝙾𝚂 +18", id: usedPrefix + "labiblia" }
 ]},
 { title: "(𝙉𝙖𝙩𝙨𝙪𝙠𝙞𝘽𝙤𝙩) 𝙈𝙚𝙣𝙪́ 𝙥𝙖𝙧𝙖 𝙂𝙧𝙪𝙥𝙤𝙨 🐢", highlight_label: "Próximamente",
 rows: [
