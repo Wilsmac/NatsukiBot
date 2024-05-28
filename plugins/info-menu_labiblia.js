@@ -112,15 +112,12 @@ let menu = `╭═══〘 ❀❀❀❀❀❀❀ 〙══╮
 ┣═╡♦️ _${usedPrefix}ecchi_
 ┣═╡♦️ _${usedPrefix}imagenlesbians_
 ┣═╡♦️ _${usedPrefix}panties_
-┣═╡♦️ _${usedPrefix}pene_
 ┣═╡♦️ _${usedPrefix}porno_
 ┣═╡♦️ _${usedPrefix}randomxxx_
 ┣═╡♦️ _${usedPrefix}pechos_
 ┣═╡♦️ _${usedPrefix}yuri_
 ┣═╡♦️ _${usedPrefix}yuri2_
-┣═╡♦️ _${usedPrefix}trapito_
 ┣═╡♦️ _${usedPrefix}hentai_
-┣═╡♦️ _${usedPrefix}nsfwloli_
 ┣═╡♦️ _${usedPrefix}nsfworgy_
 ┣═╡♦️ _${usedPrefix}nsfwass_
 ┣═╡♦️ _${usedPrefix}nsfwbdsm_
