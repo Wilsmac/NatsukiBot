@@ -1524,7 +1524,7 @@ restrict: lenguajeCD['smsRestrict'](),
 }[type]
 //if (msg) return m.reply(msg)
 let tg = { quoted: m, userJid: conn.user.jid }
-let prep = generateWAMessageFromContent(m.chat, { extendedTextMessage: { text: msg, contextInfo: { externalAdReply: { title: lenguajeCD.smsAvisoAG().slice(0,-2), body: wm, thumbnail: fantasyImg.getRandom(), sourceUrl: md }}}}, tg)
+let prep = generateWAMessageFromContent(m.chat, { extendedTextMessage: { text: msg, contextInfo: { externalAdReply: { title: lenguajeCD.smsAvisoAG().slice(0,-2), body: wm, thumbnail: fantasyImg.getRandom(), sourceUrl: nn }}}}, tg)
 if (msg) return conn.relayMessage(m.chat, prep.message, { messageId: prep.key.id })
 }
 
