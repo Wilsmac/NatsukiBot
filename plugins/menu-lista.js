@@ -148,7 +148,7 @@ rows: [
 rows: [
 { header: lenguajeCD['smsLista9'](), title: "", description: "𝚃𝙴𝚁𝙼𝙸𝙽𝙾𝚂 𝚈 𝙿𝚁𝙸𝚅𝙰𝙲𝙸𝙳𝙰𝙳", id: usedPrefix + "terminos" }
 ]},
-{ title: "(𝙉𝙖𝙩𝙨𝙪𝙠𝙞𝘽𝙤𝙩) 𝙄𝙣𝙛𝙤 𝙈𝙚𝙣𝙪́ 𝙧𝙥𝙜 ✳️", highlight_label: "Próximamente",
+{ title: "(𝙉𝙖𝙩𝙨𝙪𝙠𝙞𝘽𝙤𝙩) 𝙄𝙣𝙛𝙤 𝙈𝙚𝙣𝙪́ 𝙧𝙥𝙜 ✳️",
 rows: [
 { header: lenguajeCD['smsLista15'](), title: "", description: "𝙸𝙽𝙵𝙾 𝙳𝙴𝙻 𝙼𝙴𝙽𝚄 𝚁𝙿𝙶", id: usedPrefix + "menurpg" }
 ]},
