@@ -111,6 +111,10 @@ const buttonParamsJson = JSON.stringify({
 title: "𝙼 𝙴 𝙽 𝚄",
 description: "Infórmate por medios",
 sections: [
+{ title: "(𝙉𝙖𝙩𝙨𝙪𝙠𝙞𝘽𝙤𝙩) 𝙄𝙣𝙛𝙤 𝙈𝙚𝙣𝙪́ 🔮",
+rows: [
+{ header: lenguajeCD['smsLista1'](), title: "", description: "INFORMACIÓN DEL BOT", id: usedPrefix + "estado" }
+]},
 { title: "Información",
 rows: [
 { header: "Redes", title: "", description: "Infórmate por medios oficiales", id: usedPrefix + "cuentasgb" },
