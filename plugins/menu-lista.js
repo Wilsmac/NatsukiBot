@@ -127,7 +127,7 @@ rows: [
 rows: [
 { header: lenguajeCD['smsLista4'](), title: "", description: "𝙸𝙽𝙵𝙾𝚁𝙼𝙰𝙲𝙸𝙾𝙽 𝙳𝙴 𝙻𝙰 𝚅𝙴𝙻𝙸𝙲𝙸𝙳𝙰𝙳 𝙳𝙴𝙻 𝙱𝙾𝚃", id: usedPrefix + "velocidad" }
 ]},
-{ title: "(𝙉𝙖𝙩𝙨𝙪𝙠𝙞𝘽𝙤𝙩) 𝙄𝙣𝙛𝙤 𝙙𝙚𝙡 𝙈𝙚𝙣𝙪́ 🪷",
+{ title: "(𝙉𝙖𝙩𝙨𝙪𝙠𝙞𝘽𝙤𝙩) 𝙄𝙣𝙛𝙤 𝙙𝙚𝙡 𝙈𝙚𝙣𝙪́ 🪷", highlight_label: "Próximamente",
 rows: [
 { header: lenguajeCD['smsLista5'](), title: "", description: "𝙸𝙽𝙵𝙾 𝙳𝙴 𝙻𝙰 𝙻𝙸𝚂𝚃𝙰 𝙳𝙴 𝙲𝙾𝙼𝙰𝙽𝙳𝙾𝚂", id: usedPrefix + "menu" }
 ]},
@@ -151,7 +151,7 @@ rows: [
 rows: [
 { header: lenguajeCD['smsLista9'](), title: "", description: "𝚃𝙴𝚁𝙼𝙸𝙽𝙾𝚂 𝚈 𝙿𝚁𝙸𝚅𝙰𝙲𝙸𝙳𝙰𝙳", id: usedPrefix + "terminos" }
 ]},
-{ title: "(𝙉𝙖𝙩𝙨𝙪𝙠𝙞𝘽𝙤𝙩) 𝙄𝙣𝙛𝙤 𝙈𝙚𝙣𝙪́ 𝙧𝙥𝙜 ✳️",
+{ title: "(𝙉𝙖𝙩𝙨𝙪𝙠𝙞𝘽𝙤𝙩) 𝙄𝙣𝙛𝙤 𝙈𝙚𝙣𝙪́ 𝙧𝙥𝙜 ✳️", highlight_label: "Próximamente",
 rows: [
 { header: lenguajeCD['smsLista15'](), title: "", description: "𝙸𝙽𝙵𝙾 𝙳𝙴𝙻 𝙼𝙴𝙽𝚄 𝚁𝙿𝙶", id: usedPrefix + "menurpg" }
 ]},
@@ -159,27 +159,27 @@ rows: [
 rows: [
 { header: lenguajeCD['smsLista17'](), title: "", description: "𝙸𝙽𝙵𝙾 𝙳𝙴 𝚃𝚄 𝙸𝙽𝚅𝙴𝙽𝚃𝙰𝚁𝙸𝙾", id: usedPrefix + "inventario" }
 ]},
-{ title: "(𝙉𝙖𝙩𝙨𝙪𝙠𝙞𝘽𝙤𝙩) 𝙄𝙣𝙛𝙤 𝙈𝙚𝙣𝙪́ 𝘿𝙚𝙨𝙘𝙖𝙧𝙜𝙖𝙨 📥",
+{ title: "(𝙉𝙖𝙩𝙨𝙪𝙠𝙞𝘽𝙤𝙩) 𝙄𝙣𝙛𝙤 𝙈𝙚𝙣𝙪́ 𝘿𝙚𝙨𝙘𝙖𝙧𝙜𝙖𝙨 📥", highlight_label: "Próximamente",
 rows: [
 { header: lenguajeCD['smsLista19'](), title: "", description: "𝙸𝙽𝙵𝙾 𝙳𝙴 𝙻𝙰 𝙻𝙸𝚂𝚃𝙰 𝙳𝙴 𝙲𝙾𝙼𝙰𝙽𝙳𝙾𝚂 𝙳𝙴 𝙳𝙴𝚂𝙲𝙰𝚁𝙶𝙰𝚂", id: usedPrefix + "menudescargas" }
 ]},
-{ title: "(𝙉𝙖𝙩𝙨𝙪𝙠𝙞𝘽𝙤𝙩) 𝙄𝙣𝙛𝙤 𝙈𝙚𝙣𝙪́ 𝘽𝙪𝙨𝙦𝙪𝙚𝙙𝙖𝙨 📚",
+{ title: "(𝙉𝙖𝙩𝙨𝙪𝙠𝙞𝘽𝙤𝙩) 𝙄𝙣𝙛𝙤 𝙈𝙚𝙣𝙪́ 𝘽𝙪𝙨𝙦𝙪𝙚𝙙𝙖𝙨 📚", highlight_label: "Próximamente",
 rows: [
 { header: lenguajeCD['smsLista20'](), title: "", description: "𝙸𝙽𝙵𝙾 𝙳𝙴𝙻 𝙻𝙰 𝙻𝙸𝚂𝚃𝚀 𝙳𝙴 𝙲𝙾𝙼𝙰𝙽𝙳𝙾𝚂 𝙳𝙴 𝙱𝚄𝚂𝚀𝚄𝙴𝙳𝙰𝚂", id: usedPrefix + "menubusquedas" }
 ]},
-{ title: "(𝙉𝙖𝙩𝙨𝙪𝙠𝙞𝘽𝙤𝙩) 𝙄𝙣𝙛𝙤 𝙈𝙚𝙣𝙪́ 𝙘𝙤𝙣𝙫𝙚𝙧𝙩𝙞𝙙𝙤𝙧 📚",
+{ title: "(𝙉𝙖𝙩𝙨𝙪𝙠𝙞𝘽𝙤𝙩) 𝙄𝙣𝙛𝙤 𝙈𝙚𝙣𝙪́ 𝙘𝙤𝙣𝙫𝙚𝙧𝙩𝙞𝙙𝙤𝙧 📚", highlight_label: "Próximamente",
 rows: [
 { header: lenguajeCD['smsLista21'](), title: "", description: "𝙸𝙽𝙵𝙾𝚁𝙼𝙰𝙲𝙸𝙾𝙽: 𝙼𝙴𝙽𝚄 𝙲𝙾𝙽𝚅𝙴𝚁𝚃𝙸𝙳𝙾𝚁", id: usedPrefix + "menuconvertidor" }
 ]},
-{ title: "(𝙉𝙖𝙩𝙨𝙪𝙠𝙞𝘽𝙤𝙩) 𝘾𝙤𝙙𝙞𝙛𝙞𝙘𝙖𝙙𝙤𝙧 𝙙𝙚 𝘼𝙪𝙙𝙞𝙤𝙨 📚",
+{ title: "(𝙉𝙖𝙩𝙨𝙪𝙠𝙞𝘽𝙤𝙩) 𝘾𝙤𝙙𝙞𝙛𝙞𝙘𝙖𝙙𝙤𝙧 𝙙𝙚 𝘼𝙪𝙙𝙞𝙤𝙨 📚", highlight_label: "Próximamente",
 rows: [
 { header: lenguajeCD['smsLista22'](), title: "", description: "𝙸𝙽𝙵𝙾𝚁𝙼𝙰𝙲𝙸𝙾𝙽: 𝙼𝙴𝙽𝚄 𝙲𝙾𝙳𝙸𝙵𝚄𝙲𝙰𝙳𝙾𝚁 𝙳𝙴 𝙰𝚄𝙳𝙸𝙾𝚂", id: usedPrefix + "menucodificadorau" }
 ]},
-{ title: "(𝙉𝙖𝙩𝙨𝙪𝙠𝙞𝘽𝙤𝙩) 𝙄𝙣𝙛𝙤 𝙈𝙚𝙣𝙪́ 𝙃𝙚𝙧𝙧𝙖𝙢𝙞𝙚𝙣𝙩𝙖𝙨 📚",
+{ title: "(𝙉𝙖𝙩𝙨𝙪𝙠𝙞𝘽𝙤𝙩) 𝙄𝙣𝙛𝙤 𝙈𝙚𝙣𝙪́ 𝙃𝙚𝙧𝙧𝙖𝙢𝙞𝙚𝙣𝙩𝙖𝙨 📚", highlight_label: "Próximamente",
 rows: [
 { header: lenguajeCD['smsLista22_1'](), title: "", description: "𝙸𝙽𝙵𝙾: 𝙼𝙴𝙽𝚄 𝙷𝙴𝚁𝚁𝙰𝙼𝙸𝙴𝙽𝚃𝙰𝚂", id: usedPrefix + "menuheramientas" }
 ]},
-{ title: "(𝙉𝙖𝙩𝙨𝙪𝙠𝙞𝘽𝙤𝙩) 𝙅𝙪𝙚𝙜𝙤𝙨 𝘿𝙞𝙣𝙖𝙢𝙞𝙘𝙤𝙨 📚",
+{ title: "(𝙉𝙖𝙩𝙨𝙪𝙠𝙞𝘽𝙤𝙩) 𝙅𝙪𝙚𝙜𝙤𝙨 𝘿𝙞𝙣𝙖𝙢𝙞𝙘𝙤𝙨 📚", highlight_label: "Próximamente",
 rows: [
 { header: lenguajeCD['smsLista24'](), title: "", description: "𝙼𝙴𝙽𝚄 𝙳𝙴 𝙻𝙾𝚂 𝙹𝚄𝙴𝙶𝙾𝚂 𝙳𝙸𝙽𝙰𝙼𝙸𝙲𝙾𝚂 𝙳𝙴𝙻 𝙱𝙾𝚃", id: usedPrefix + "menujuegos" }
 ]},
@@ -187,11 +187,11 @@ rows: [
 rows: [
 { header: lenguajeCD['smsLista25'](), title: "", description: "𝙸𝙽𝙵𝙾: 𝙼𝙴𝙽𝚄 𝙰𝚄𝙳𝙸𝙾𝚂", id: usedPrefix + "menuaudios" }
 ]},
-{ title: "(𝙉𝙖𝙩𝙨𝙪𝙠𝙞𝘽𝙤𝙩) 𝙄𝙣𝙛𝙤 𝙎𝙩𝙞𝙘𝙠𝙚𝙧𝙨 𝙮 𝙁𝙞𝙡𝙩𝙧𝙤𝙨 📚",
+{ title: "(𝙉𝙖𝙩𝙨𝙪𝙠𝙞𝘽𝙤𝙩) 𝙄𝙣𝙛𝙤 𝙎𝙩𝙞𝙘𝙠𝙚𝙧𝙨 𝙮 𝙁𝙞𝙡𝙩𝙧𝙤𝙨 📚", highlight_label: "Próximamente",
 rows: [
 { header: lenguajeCD['smsLista26'](), title: "", description: "𝙸𝙽𝙵𝙾 𝙼𝙴𝙽𝚄 𝙳𝙴 𝚂𝚃𝙸𝙲𝙺𝙴𝚁𝚂 𝚈 𝙵𝙸𝙻𝚃𝚁𝙾𝚂", id: usedPrefix + "menufiltrios" }
 ]},
-{ title: "(𝙉𝙖𝙩𝙨𝙪𝙠𝙞𝘽𝙤𝙩) 𝙄𝙣𝙛𝙤 𝙈𝙚𝙣𝙪́ 𝙀𝙛𝙚𝙘𝙩𝙤𝙨, 𝙇𝙤𝙜𝙤𝙨 📚",
+{ title: "(𝙉𝙖𝙩𝙨𝙪𝙠𝙞𝘽𝙤𝙩) 𝙄𝙣𝙛𝙤 𝙈𝙚𝙣𝙪́ 𝙀𝙛𝙚𝙘𝙩𝙤𝙨, 𝙇𝙤𝙜𝙤𝙨 📚", highlight_label: "Próximamente",
 rows: [
 { header: lenguajeCD['smsLista27'](), title: "", description: "𝙸𝙽𝙵𝙾: 𝙼𝙴𝙽𝚄 𝙳𝙴 𝙴𝙵𝙴𝙲𝚃𝙾𝚂 𝚈 𝙻𝙾𝙶𝙾𝚂", id: usedPrefix + "menuefectos" }
 ]},
@@ -199,7 +199,7 @@ rows: [
 rows: [
 { header: lenguajeCD['smsLista30'](), title: "", description: "𝙸𝙽𝙵𝙾(𝙻𝙸𝚂𝚃𝙰 𝙳𝙴 𝙲𝙾𝙼𝙰𝙽𝙳𝙾𝚂 +18", id: usedPrefix + "menuhorny" }
 ]},
-{ title: "(𝙉𝙖𝙩𝙨𝙪𝙠𝙞𝘽𝙤𝙩) 𝙈𝙚𝙣𝙪́ 𝙥𝙖𝙧𝙖 𝙂𝙧𝙪𝙥𝙤𝙨 🐢",
+{ title: "(𝙉𝙖𝙩𝙨𝙪𝙠𝙞𝘽𝙤𝙩) 𝙈𝙚𝙣𝙪́ 𝙥𝙖𝙧𝙖 𝙂𝙧𝙪𝙥𝙤𝙨 🐢", highlight_label: "Próximamente",
 rows: [
 { header: lenguajeCD['smsLista32'](), title: "", description: "𝙻𝙸𝚂𝚃𝙰 𝙳𝙴 𝙲𝙾𝙼𝙰𝙽𝙳𝙾𝚂 𝙿𝙰𝚁𝙰 𝙶𝚁𝚄𝙿𝙾𝚂", id: usedPrefix + "menugroups" }
 ]},
