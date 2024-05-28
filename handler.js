@@ -1255,18 +1255,18 @@ m.reply('Exp limit') // Hehehe
 else               
 if (!isPrems && plugin.money && global.db.data.users[m.sender].money < plugin.money * 1) {
 //this.reply(m.chat, `𝑵𝒐 𝒕𝒊𝒆𝒏𝒆 𝑭𝒂𝒏𝒕𝒂𝒔𝒚𝑪𝒐𝒊𝒏𝒔`, m)
-this.sendMessage(m.chat, {text: `𝑵𝒐 𝑻𝒊𝒆𝒏𝒆𝒔 𝑭𝒂𝒏𝒕𝒂𝒔𝒚𝑪𝒐𝒊𝒏𝒔`,  contextInfo: {externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, title: gt, body: ' 𝑭𝒂𝒏𝒕𝒂𝒔𝒚𝑩𝒐𝒕-𝑴𝑫 ', previewType: 0, thumbnail: fantasyImg.getRandom(), sourceUrl: canalofc }}}, { quoted: m })         
+this.sendMessage(m.chat, {text: `𝑵𝒐 𝑻𝒊𝒆𝒏𝒆𝒔 𝑭𝒂𝒏𝒕𝒂𝒔𝒚𝑪𝒐𝒊𝒏𝒔`,  contextInfo: {externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, title: gt, body: ' 𝑭𝒂𝒏𝒕𝒂𝒔𝒚𝑩𝒐𝒕-𝑴𝑫 ', previewType: 0, thumbnail: fantasyImg.getRandom(), sourceUrl: nn }}}, { quoted: m })         
 continue     
 }
 			
 m.exp += xp
 if (!isPrems && plugin.limit && global.db.data.users[m.sender].limit < plugin.limit * 1) {
-this.sendMessage(m.chat, {text: `${lenguajeCD['smsCont7']()} *${usedPrefix}buy*`,  contextInfo: {externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, title: gt, body: ' 𝑭𝒂𝒏𝒕𝒂𝒔𝒚𝑩𝒐𝒕-𝑴𝑫 ', previewType: 0, thumbnail: fantasyImg.getRandom(), sourceUrl: canalofc }}}, { quoted: m })         
+this.sendMessage(m.chat, {text: `${lenguajeCD['smsCont7']()} *${usedPrefix}buy*`,  contextInfo: {externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, title: gt, body: ' 𝑭𝒂𝒏𝒕𝒂𝒔𝒚𝑩𝒐𝒕-𝑴𝑫 ', previewType: 0, thumbnail: fantasyImg.getRandom(), sourceUrl: nn }}}, { quoted: m })         
 //this.reply(m.chat, `${lenguajeCD['smsCont7']()} *${usedPrefix}buy*`, m)
 continue //Sin límite
 }
 if (plugin.level > _user.level) {
-this.sendMessage(m.chat, {text: `${lenguajeCD['smsCont9']()} *${plugin.level}* ${lenguajeCD['smsCont10']()} *${_user.level}* ${lenguajeCD['smsCont11']()} *${usedPrefix}nivel*`,  contextInfo: {externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, title: gt, body: ' 𝑭𝒂𝒏𝒕𝒂𝒔𝒚𝑩𝒐𝒕-𝑴𝑫 ', previewType: 0, thumbnail: fantasyImg.getRandom(), sourceUrl: canalofc }}}, { quoted: m })         
+this.sendMessage(m.chat, {text: `${lenguajeCD['smsCont9']()} *${plugin.level}* ${lenguajeCD['smsCont10']()} *${_user.level}* ${lenguajeCD['smsCont11']()} *${usedPrefix}nivel*`,  contextInfo: {externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, title: gt, body: ' 𝑭𝒂𝒏𝒕𝒂𝒔𝒚𝑩𝒐𝒕-𝑴𝑫 ', previewType: 0, thumbnail: fantasyImg.getRandom(), sourceUrl: nn }}}, { quoted: m })         
 //this.reply(m.chat, `${lenguajeCD['smsCont9']()} *${plugin.level}* ${lenguajeCD['smsCont10']()} *${_user.level}* ${lenguajeCD['smsCont11']()} *${usedPrefix}nivel*`, m)
 continue // Si no se ha alcanzado el nivel
 }
