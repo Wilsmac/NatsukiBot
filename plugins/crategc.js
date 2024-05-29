@@ -1,4 +1,4 @@
-let handler = async (m, { conn: natsuki, text }) => {
+/*let handler = async (m, { conn: natsuki, text }) => {
 
 if (!text) 
   return natsuki.reply('𝙿𝙾𝚁 𝙵𝙰𝚅𝙾𝚁, 𝙴𝚂𝙲𝚁𝚄𝙱𝙰 𝙴𝙻 𝙽𝙾𝙼𝙱𝚁𝚁 𝙳𝙴𝙻 𝙶𝚁𝚄𝙿𝙾 シ︎')
@@ -21,4 +21,4 @@ handler.help = ['creargc *<nombre>*']
 handler.tags = ['owner']
 handler.command = /^(creargrupo|creargroup)$/
 handler.owner = true
-export default handler
+export default handler*/
