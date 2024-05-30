@@ -29,7 +29,6 @@
 "url": "https://github.com/Wilsmac/FantasyBot-MD-v1/issues" },
 "license": "GPL-3.0-or-later",
 "dependencies": {
-"@Wilsmac/baleys": "6.7.2",
 "@whiskeysockets/baileys": "^6.7.2",
 "@adiwajshing/keyed-db": "^0.2.4",
 "@bochilteam/scraper": "^4.2.4",
