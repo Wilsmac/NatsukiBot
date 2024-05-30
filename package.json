@@ -9,7 +9,7 @@
 "lib": "lib",
 "src": "src",
 "plugins": "plugins" },
-    
+  
 "scripts": {
 "start": "node index.js",
 "qr": "node index.js qr",
