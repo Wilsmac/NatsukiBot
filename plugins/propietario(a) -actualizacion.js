@@ -2,7 +2,7 @@ import axios from 'axios';
 let previousCommitSHA = '';
 let previousUpdatedAt = '';
 const owner = 'Wilsmac';
-const repo = 'FantasyBot-MD-v1';
+const repo = 'NatsukiBot';
 let handler = async (m, { conn, text, usedPrefix, command }) => {
   async function checkRepoUpdates() {
     try {
