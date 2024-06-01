@@ -1,7 +1,7 @@
 # Código desarrollado por @+
   
 #!/data/data/com.termux/files/usr/bin/bash 
-BOT_DIR="FantasyBot-MD-v1"  
+BOT_DIR="NatsukiBot"  
 BOT_REPO="https://github.com/Wilsmac/$BOT_DIR"
 DB_FILE="database.json"
  
