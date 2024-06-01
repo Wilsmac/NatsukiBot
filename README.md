@@ -87,7 +87,7 @@ apt update && apt upgrade && pkg install -y git nodejs ffmpeg imagemagick yarn
 ```
 
 ```
-git clone https://github.com/Wilsmac/FantasyBot-MD-v1 && cd FantasyBot-MD-v1
+git clone https://github.com/Wilsmac/NatsukiBot && cd NatsukiBot
 ```
 
 ```
@@ -98,7 +98,7 @@ yarn install && npm install
 npm start
 ```
 
-## usar FantasyBot-MD 24/7
+## usar a Natsuki 24/7
 ```bash
 termux-wake-lock && npm i -g pm2 && pm2 start index.js && pm2 save && pm2 logs
 ```
@@ -110,7 +110,7 @@ termux-wake-lock && npm i -g pm2 && pm2 start index.js && pm2 save && pm2 logs
 ```bash
 ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 > cd
-> cd FantasyBot-MD-v1
+> cd NatsukiBot
 > npm start
 ```
 
