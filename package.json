@@ -17,16 +17,16 @@
 "test": "node test.js",
 "test2": "nodemon index.js" },
     
-"homepage": "https://github.com/Wilsmac/FantasyBot-MD-v1",
+"homepage": "https://github.com/Wilsmac/NatsukiBot",
 "author": {
 "name": "Wilsmac" },
     
 "repository": {
 "type": "git",
-"url": "git+https://github.com/Wilsmac/FantasyBot-MD-v1.git" },
+"url": "git+https://github.com/Wilsmac/NatsukiBot.git" },
 
 "bugs": {
-"url": "https://github.com/Wilsmac/FantasyBot-MD-v1/issues" },
+"url": "https://github.com/Wilsmac/NatsukiBot/issues" },
 "license": "GPL-3.0-or-later",
 "dependencies": {
 "@Wilsmac/baleys": "^6.7.2",
