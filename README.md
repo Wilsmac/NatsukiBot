@@ -2,6 +2,7 @@
 > **aviso**: Yo Wilmer ya me iré retirando de el tema de los bots y en algún momento este bot quedará en obsoleto y sin manteniendo, gracias por este recorrido de los bots y gracias por sus preferencia.
 ------------------
 
+
 <a
 href="https://wa.me/+50587047577" target="white"><img src="https://img.shields.io/badge/☄️-Prueba la IA por tiempo limitado-000000?style=for-the-badge&logo=whatsapp&logoColor=black" /></a>
 
