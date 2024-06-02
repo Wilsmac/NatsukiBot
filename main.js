@@ -429,7 +429,7 @@ return file.startsWith('pre-key-')
 })
 prekey = [...prekey, ...filesFolderPreKeys]
 filesFolderPreKeys.forEach(files => {
-unlinkSync(`./FantasySession/${files}`)
+unlinkSync(`./NatsukiSessions/${files}`)
 })
 } 
 
