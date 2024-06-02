@@ -5,11 +5,11 @@ RUN sudo dnf -y update &&\
     sudo dnf install -y git ffmpeg ImageMagick nodejs yarnpkg libwebp &&\
     sudo dnf clean all -y
 
-RUN git clone https://github.com/Wilsmac/FantasyBot-MD-v1
+RUN git clone https://github.com/Wilsmac/NatsukiBot
 
-WORKDIR /root/FantasyBot-MD-v1
+WORKDIR /root/NatsukiBot
 
-COPY ./root/FantasyBot-MD-v1
+COPY ./root/NatsukiBot
 
 RUN yarn install
 
