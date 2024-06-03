@@ -1,4 +1,4 @@
-let { generateWAMessageFromContent } = (await import(global.baileys)).default 
+/*let { generateWAMessageFromContent } = (await import(global.baileys)).default 
 import { performance } from 'perf_hooks'
 import fs from 'fs'
 import moment from 'moment-timezone';
@@ -62,3 +62,4 @@ handler.botAdmin = false
 handler.fail = null 
 
 export default handler
+*/
