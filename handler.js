@@ -6,7 +6,6 @@ import path, { join } from 'path'
 import { unwatchFile, watchFile } from 'fs'
 import chalk from 'chalk'   
 import fetch from 'node-fetch'
-import './plugins/_content.js'
  
 /**
  * @type {import('@adiwajshing/baileys')}  
