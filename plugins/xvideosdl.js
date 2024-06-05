@@ -1,4 +1,4 @@
-import fetch from 'node-fetch';
+/*import fetch from 'node-fetch';
 import axios from 'axios';
 import cheerio from 'cheerio';
 const handler = async (m, {conn, args, command, usedPrefix, text}) => {
@@ -68,4 +68,4 @@ async function xvideosSearch(url) {
     resolve(hasil);
   });
   });
-  };
+  };*/
