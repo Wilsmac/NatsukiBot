@@ -142,7 +142,13 @@ let menu = `${lenguajeCD['smsConfi2']()} *${user.genero === 0 ? '👤' : user.ge
 ┣ ☬⃝ᩎ⋟᷊᷂᷊᷊᷊᷊᷊᷊᷊᷊᷊᷊᷂᷂᷂᷂᷂᷂᷂᷂᷂᷂᷂᷂᷊᷊᷂᷂᷂᷂ 🌺 _${usedPrefix}saveimage
 ┣ ☬⃝ᩎ⋟᷊᷂᷊᷊᷊᷊᷊᷊᷊᷊᷊᷊᷂᷂᷂᷂᷂᷂᷂᷂᷂᷂᷂᷂᷊᷊᷂᷂᷂᷂ 🌺 _${usedPrefix}viewimage
 ╰┉ͦ━ᷫ━ⷭ┈ ⃘⵿݂۪۪۪࣭࣭፝۬۬۬͞💙ꫂ❀ᰰ᷒|²⁰|²|²³ ♡┈⊷ꫂ፝۬۬۬͞ᜓ⃘݂۪۪۪࣭࣭.─❤️⃟ᬽ፝֟━❥ᰰຼ᭢╯*`.trim()
-await conn.sendFile(m.chat, FantasyVidMenu.getRandom(), 'error.mp4', menu, fake0)
+//await conn.sendFile(m.chat, FantasyVidMenu.getRandom(), 'error.mp4', menu, fake0)
+
+const natsuki = ['https://telegra.ph/file/fc75439751a71e3419c68.mp4',
+'https://telegra.ph/file/389cbd6a7ce870b7e52d3.mp4',
+'https://telegra.ph/file/681dd6f8cd900c6cd8726.mp4']
+
+await conn.sendMessage(m.chat, { video: { url: natsuki.getRandom() }, gifPlayback: true, caption: menu, mentions: [m.sender, global.conn.user.jid] }, { quoted: fake0 }) 
 
 } catch (e) {
 await m.reply(lenguajeCD['smsMalError3']() + '\n*' + lenguajeCD.smsMensError1() + '*\n*' + usedPrefix + `${lenguajeCD.lenguaje() == 'es' ? 'reporte' : 'report'}` + '* ' + `${lenguajeCD.smsMensError2()} ` + usedPrefix + command)
