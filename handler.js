@@ -1313,7 +1313,7 @@ if (e.name)
 for (let [jid] of global.owner.filter(([number, _, isDeveloper]) => isDeveloper && number)) {
 let data = (await conn.onWhatsApp(jid))[0] || {}
 if (data.exists)
-m.reply(`${lenguajeGB['smsCont1']()}\n\n${lenguajeGB['smsCont2']()}\n*_${name}_*\n\n${lenguajeGB['smsCont3']()}\n*_${m.sender}_*\n\n${lenguajeGB['smsCont4']()}\n*_${m.text}_*\n\n${lenguajeGB['smsCont5']()}\n\`\`\`${format(e)}\`\`\`\n\n${lenguajeGB['smsCont6']()}`.trim(), data.jid)
+m.reply(`${lenguajeGB['smsCont1']()}\n\n${lenguajeCD['smsCont2']()}\n*_${name}_*\n\n${lenguajeCD['smsCont3']()}\n*_${m.sender}_*\n\n${lenguajeCD['smsCont4']()}\n*_${m.text}_*\n\n${lenguajeCD['smsCont5']()}\n\`\`\`${format(e)}\`\`\`\n\n${lenguajeCD['smsCont6']()}`.trim(), data.jid)
 }
 m.reply(text)
 }} finally {
@@ -1467,7 +1467,7 @@ mentionedJid:[user],
 "showAdAttribution": true,
 "renderLargerThumbnail": true,
 "thumbnail": apii.data, 
-"title": [wm, '😻 𝗦𝘂𝗽𝗲𝗿 ' + gt + ' 😻', '🌟 wilsmac68@gmail.com'].getRandom(),
+"title": gt,
 "containsAutoReply": true,
 "mediaType": 1, 
 sourceUrl: canalofc }}}, { quoted: fkontak2 })*/
@@ -1559,7 +1559,7 @@ restrict: lenguajeGB['smsRestrict'](),
 //if (msg) return m.reply(msg)
 	
 let tg = { quoted: m, userJid: conn.user.jid }
-let prep = generateWAMessageFromContent(m.chat, { extendedTextMessage: { text: msg, contextInfo: { externalAdReply: { title: lenguajeGB.smsAvisoAG().slice(0,-2), body: [wm, '😻 𝗦𝘂𝗽𝗲𝗿 ' + gt + ' 😻', '🌟 centergatabot.gmail.com'].getRandom(), thumbnail: fantasyImg.getRandom(), sourceUrl: nn }}}}, tg)
+let prep = generateWAMessageFromContent(m.chat, { extendedTextMessage: { text: msg, contextInfo: { externalAdReply: { title: lenguajeGB.smsAvisoAG().slice(0,-2), body: gt, thumbnail: fantasyImg.getRandom(), sourceUrl: nn }}}}, tg)
 if (msg) return conn.relayMessage(m.chat, prep.message, { messageId: prep.key.id })
 }
 
