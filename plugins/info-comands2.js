@@ -1,4 +1,4 @@
-let handler = async (m, { conn, text, command }) => {
+/*let handler = async (m, { conn, text, command }) => {
 
 const isCommand1 = /^(contactgc)$/i.test(command)
 const isCommand2 = /^(privacionline)$/i.test(command)
@@ -42,4 +42,4 @@ break
 }}
 handler.command = /^(contactgc|privacionline)$/i
 handler.owner = true
-export default handler
+export default handler*/
