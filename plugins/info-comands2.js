@@ -28,4 +28,4 @@ break
 }}
 handler.command = /^(ai|gemini|bard)$/i
 //handler.register = true
-export default handler/*
+export default handler*/
