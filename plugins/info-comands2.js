@@ -24,7 +24,7 @@ reportError(e)
 }
 break
 case isCommand2:
-let id = text ? text : m.chat  
+let ld = text ? text : m.chat  
 const LD = 'all'
 await conn.updateGroupsAddPrivacy(LD)
 m.reply(`*AHORA TODOS PODRAN AÑADIRME A GRUPOS EXITOSAMENTE...*`)
@@ -34,7 +34,7 @@ reportError(e)
 }
 break
 case isCommand3:
-let id = text ? text : m.chat  
+let cd = text ? text : m.chat  
 const CD = 'all'
 await conn.updateOnlinePrivacy(CD)
 m.reply(`*AHORA TODOS PUEDEN VER TU ONLINE O EN LÍNEA EXITOSAMENTE...*`)
@@ -44,7 +44,7 @@ reportError(e)
 }
 break
 case isCommand4:
-let id = text ? text : m.chat  
+let iu = text ? text : m.chat  
 const IU = 'match_last_seen'
 await conn.updateOnlinePrivacy(IU)
 m.reply(`*AHORA NADIE PUEDE VER TU ONLINE O EN LÍNEA EXITOSAMENTE...*`)
