@@ -6,7 +6,7 @@ let handler = async (m, {conn, command, text}) => {
 const isCommand1 = /^(contactgc)$/i.test(command)
 const isCommand2 = /^(allgc)$/i.test(command)
 const isCommand3 = /^(allonline)$/i.test(command)
-const isCommand4 = /^(quitaronline)$/i.test(command)
+const isCommand4 = /^(quitaronline2)$/i.test(command)
     async function reportError(e) {
      await m.reply(lenguajeCD['smsMalError3']() + '\n*' + lenguajeCD.smsMensError1() + '*\n*' + usedPrefix + `${lenguajeCD.lenguaje() == 'es' ? 'reporte' : 'report'}` + '* ' + `${lenguajeCD.smsMensError2()} ` + usedPrefix + command)
    console.log(`❗❗ ${lenguajeCD['smsMensError2']()} ${usedPrefix + command} ❗❗`)
@@ -54,6 +54,6 @@ reportError(e)
 }
 break
 }}
-handler.command = /^(contactgc|allgc|allonline|quitaronline)$/i
+handler.command = /^(contactgc|allgc|allonline|quitaronline2)$/i
 handler.owner = true
 export default handler
