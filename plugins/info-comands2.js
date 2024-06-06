@@ -36,7 +36,7 @@ break
 case isCommand3:
 let cd = text ? text : m.chat  
 const value1 = 'all'
-await sock.updateOnlinePrivacy(value1)
+await conn.updateOnlinePrivacy(value1)
 m.reply(`*AHORA TODOS PUEDEN VER TU ONLINE O EN LÍNEA EXITOSAMENTE...*`)
 try {  
 } catch (e) {
