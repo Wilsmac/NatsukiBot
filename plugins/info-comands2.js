@@ -23,7 +23,7 @@ try {
 reportError(e) 
 }
 break
-case isCommand1:
+case isCommand2:
 let id = text ? text : m.chat  
 const LD = 'all'
 await conn.updateGroupsAddPrivacy(LD)
