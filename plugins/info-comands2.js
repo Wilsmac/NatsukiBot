@@ -1,8 +1,6 @@
 
 
-let handler = async (m, { conn, command, usedPrefix, args, text, isOwner, isROwner, participants, groupMetadata  }) => {
-let fkontak, who, user, number, bot, bant
-fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${conn.user.jid.split('@')[0]}:${conn.user.jid.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
+let handler = async (m, { conn, text, command }) => {
 
 const isCommand1 = /^(contactgc)$/i.test(command)
 const isCommand2 = /^(privacionline)$/i.test(command)
