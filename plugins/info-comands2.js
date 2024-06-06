@@ -48,7 +48,7 @@ let iu = text ? text : m.chat
 const value2 = 'match_last_seen'
 await conn.updateOnlinePrivacy(value2)
 m.reply(`*AHORA NADIE PUEDE VER TU ONLINE O EN LÍNEA EXITOSAMENTE...*`)
-try {  
+try { 
 } catch (e) {
 reportError(e) 
 }
