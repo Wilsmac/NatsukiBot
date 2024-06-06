@@ -1,5 +1,3 @@
-
-
 let handler = async (m, { conn, text, command }) => {
 
 const isCommand1 = /^(contactgc)$/i.test(command)
@@ -12,8 +10,6 @@ console.log(e)
 }
 
 switch (true) {
-
-
 
 case isCommand1:
 let id = text ? text : m.chat  
