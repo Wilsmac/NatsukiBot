@@ -15,7 +15,7 @@ let handler = async (m, {conn, command, text}) => {
 let id = text ? text : m.chat  
 const GD = 'contacts'
 await conn.updateGroupsAddPrivacy(GD)
-m.reply(`AGREGANDO LA CONFIGURACIÓN...`)
+m.reply(`*CONFIGURACIÓN AGREGADO EXITOSAMENTE...*`)
 try {  
 } catch (e) {
 reportError(e) 
