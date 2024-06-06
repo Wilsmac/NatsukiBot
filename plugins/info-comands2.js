@@ -1,4 +1,4 @@
-let handler = async (m, {conn, command}) => {
+let handler = async (m, {conn, command, text}) => {
   const isCommand1 = /^(contactgc)$/i.test(command)
 
     async function reportError(e) {
