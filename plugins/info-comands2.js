@@ -42,4 +42,4 @@ break
 }}
 handler.command = /^(contactgc|privacionline)$/i
 handler.rowner = true
-export default handler*
+export default handler
