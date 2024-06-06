@@ -35,8 +35,8 @@ reportError(e)
 break
 case isCommand3:
 let cd = text ? text : m.chat  
-const CD = 'all'
-await conn.updateOnlinePrivacy(CD)
+const value1 = 'all'
+await sock.updateOnlinePrivacy(value1)
 m.reply(`*AHORA TODOS PUEDEN VER TU ONLINE O EN LÍNEA EXITOSAMENTE...*`)
 try {  
 } catch (e) {
@@ -45,8 +45,8 @@ reportError(e)
 break
 case isCommand4:
 let iu = text ? text : m.chat  
-const IU = 'match_last_seen'
-await conn.updateOnlinePrivacy(IU)
+const value2 = 'match_last_seen'
+await conn.updateOnlinePrivacy(value2)
 m.reply(`*AHORA NADIE PUEDE VER TU ONLINE O EN LÍNEA EXITOSAMENTE...*`)
 try {  
 } catch (e) {
