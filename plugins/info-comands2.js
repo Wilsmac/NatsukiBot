@@ -1,3 +1,7 @@
+// código desarrollado por @Wilmer oficial 
+// https://github.com/Wilsmac
+
+
 let handler = async (m, {conn, command, text}) => {
   const isCommand1 = /^(contactgc)$/i.test(command)
 
