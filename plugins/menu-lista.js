@@ -106,7 +106,7 @@ ${conn.user.jid == global.conn.user.jid ? '' : `\n𝙉𝙖𝙩𝙨𝙪𝙠𝙞 [
 \`Coins:\` ${money} 💵
 \`Tokens:\` ${joincount} 🪙\n ┗━━━━⏤͟͟͞͞★꙲⃝͟🌷❈┉━━━━━━┛`.trim()
 
-const buttonParamsJson = JSON.stringify({
+const NatsukiList = JSON.stringify({
 title: lenguajeCD['smsListaMenu'](),
 description: "Infórmate por medios",
 sections: [
@@ -219,7 +219,7 @@ header: { title: `⋆┈┈｡❃ུ۪ ❀ུ۪ ❁ུ۪ ❃ུ۪ ❀ུ۪ ｡�
  ┈──❊:::::::¨¨*:::::::❊──┈\n_${global.saludo}_`, subtitle: "test4", hasMediaAttachment: false },
 nativeFlowMessage: { buttons: [{ 
 name: "single_select",
-buttonParamsJson
+NatsukiList
 }]
 }}
 const message = { messageContextInfo: { deviceListMetadata: {}, deviceListMetadataVersion: 2 }, interactiveMessage }
