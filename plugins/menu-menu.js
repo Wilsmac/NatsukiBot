@@ -705,7 +705,6 @@ console.log(e)}}
 
 //handler.command = /^(menu|menú|memu|memú|help|info|comandos|2help|menu1.2|ayuda|commands|commandos|menucompleto|allmenu|allm|m|\?)$/i
 handler.command = /^(menucompleto|menú|menú|Menú|allmenu|\?)$/i
-//handler.register = true
 export default handler
 
 const more = String.fromCharCode(8206)
