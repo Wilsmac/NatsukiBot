@@ -7,7 +7,7 @@ const { levelling } = '../lib/levelling.js'
 import PhoneNumber from 'awesome-phonenumber'
 import { promises } from 'fs'
 import { join } from 'path'
-let handler = async (m, { conn: natsuki, usedPrefix, usedPrefix: _p, __dirname, text, command }) => {
+let handler = async (m, { conn, usedPrefix, usedPrefix: _p, __dirname, text, command }) => {
 const dispositivo = await getDevice(m.key.id)
 try {
 let _package = JSON.parse(await promises.readFile(join(__dirname, '../package.json')).catch(_ => ({}))) || {}
@@ -84,7 +84,7 @@ if (!/web|desktop|unknown/gi.test(dispositivo)) {
 let menu = `
 \`Fecha y hora:\` undefined 
    ↷ ɪɴғᴏ ᴅᴇ ʙᴏᴛ
-${natsuki.user.jid == global.natsuki.user.jid ? '' : `\n𝙉𝙖𝙩𝙨𝙪𝙠𝙞 [𝙎𝙪𝙗 𝘽𝙤𝙩]⇢ *@${global.natsuki.user.jid.split`@`[0]}*`}
+${conn.user.jid == global.conn.user.jid ? '' : `\n𝙉𝙖𝙩𝙨𝙪𝙠𝙞 [𝙎𝙪𝙗 𝘽𝙤𝙩]⇢ *@${global.conn.user.jid.split`@`[0]}*`}
  *${lenguajeCD['smsTotalUsers']()}* ➺ _${Object.keys(global.db.data.users).length}_
 ─━━━━┉❈⏤͟͟͞͞★꙲⃝͟🍁❈┉━━━━─
  *${lenguajeCD['smsVersion']()}* ➺ _${vs}_
@@ -222,7 +222,7 @@ buttonParamsJson
 }]
 }}
 const message = { messageContextInfo: { deviceListMetadata: {}, deviceListMetadataVersion: 2 }, interactiveMessage }
-await natsuki.relayMessage(m.chat, { viewOnceMessage: { message } }, {})
+await conn.relayMessage(m.chat, { viewOnceMessage: { message } }, {})
 
 } else { 
 let menu = `${lenguajeGB['smsConfi2']()} *${user.genero === 0 ? '👤' : user.genero == 'Ocultado 🕶️' ? `🕶️` : user.genero == 'Mujer 🚺' ? `🚺` : user.genero == 'Hombre 🚹' ? `🚹` : '👤'} ${user.registered === true ? user.name : taguser} 💖*
@@ -310,7 +310,7 @@ let menu = `${lenguajeGB['smsConfi2']()} *${user.genero === 0 ? '👤' : user.ge
 ┃➺ _${usedPrefix}cuentas | cuentas_
 ┃
 *╰━━━━━━━━━━━━━⬣*`.trim()
-await natsuki.sendFile(m.chat, fantasyImg, 'lp.jpg', menu, fkontak, false, { contextInfo: {mentionedJid, externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, title: gt, body: ' 𝐅𝐚𝐧𝐭𝐚𝐬𝐲𝐁𝐨𝐭-𝐌𝐃 ', previewType: 0, thumbnail: imagen4, sourceUrl: canalofc}}}) 
+await conn.sendFile(m.chat, fantasyImg, 'lp.jpg', menu, fkontak, false, { contextInfo: {mentionedJid, externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, title: gt, body: ' 𝐅𝐚𝐧𝐭𝐚𝐬𝐲𝐁𝐨𝐭-𝐌𝐃 ', previewType: 0, thumbnail: imagen4, sourceUrl: canalofc}}}) 
 await conn.sendMessage(m.chat, { audio: { url: vn }, fileName: 'error.mp3', mimetype: 'audio/mp4', ptt: true }, { quoted: m }) 
 //natsuki.sendFile(m.chat, fantasyVidMenu.getRandom(), 'fantasy.mp4', menu, fkontak)
 }} catch (e) {
