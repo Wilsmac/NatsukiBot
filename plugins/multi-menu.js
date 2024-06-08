@@ -273,7 +273,7 @@ ${wm}`,
 title: null,
 buttonText: lenguajeGB.smsList6(),
 sections }
-conn.sendMessage(m.chat, listMessage, {quoted: fkontak})
+conn.sendList(m.chat, listMessage, {quoted: fkontak})
   
   
 } if (command == 'convertidormenu'){ //convertidor
