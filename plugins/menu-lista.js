@@ -84,6 +84,7 @@ if (!/web|desktop|unknown/gi.test(dispositivo)) {
 let menu = `
 \`Fecha y hora:\` undefined 
    ↷ ɪɴғᴏ ᴅᴇ ʙᴏᴛ
+ *${(conn.user.jid == global.conn.user.jid ? '' : `\n⎔ *𝙉𝙖𝙩𝙨𝙪𝙠𝙞 [𝙎𝙪𝙗 𝘽𝙤𝙩] @${global.conn.user.jid.split`@`[0]}*`) || ''}
  *${lenguajeCD['smsTotalUsers']()}* ➺ _${Object.keys(global.db.data.users).length}_
 ─━━━━┉❈⏤͟͟͞͞★꙲⃝͟🍁❈┉━━━━─
  *${lenguajeCD['smsVersion']()}* ➺ _${vs}_
