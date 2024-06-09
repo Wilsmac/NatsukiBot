@@ -21,14 +21,15 @@ const messages = [
 [['Enlace 1', 'https://example.com/link1'], ['Enlace 2', 'https://example.com/link2']],
 [[
 'Lista', 
-'Sección ',  
-'id',  
-'Titulo',  
-'Subtitulo', 
-'Descripcion',
-]]]]
-
-
+   'Sección ',  
+          'id',  
+            'Titulo',  
+               'Subtitulo', 
+                    'Descripcion',
+             ]
+     ]
+          ]
+              ]
 
 
 await conn.sendNatsukisel(m.chat, 'Texto', 'Linea', 'TEXTO', messages, m)
