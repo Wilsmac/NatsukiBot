@@ -3,7 +3,7 @@ let handler = async (m, { conn, usedPrefix, command, text }) => {
 const messages = [
 [
 'Descripción 1', 
-'Footer 1',
+'By Wilmer :b',
 'https://telegra.ph/file/b95059bd21a2bbbd0218b.jpg',
 [['Botón 1', 'id1'], ['Botón 2', 'id2']],
 'Texto para copiar 1',
@@ -15,7 +15,7 @@ const messages = [
 ]],
 [
 'Descripción 2',
-'Footer 2',
+'By Wilmer :3',
 'https://telegra.ph/file/d57ee60a1674082040ad0.jpg',
 [['Botón 1', 'id1'], ['Botón 2', 'id2']],
 'Texto para copiar 2',
@@ -29,7 +29,7 @@ const messages = [
 'Id',
 ]]]]
 
-await conn.sendNatsukisel(m.chat, 'Texto', 'Linea', 'TEXTO', messages, m)
+await conn.sendNatsukisel(m.chat, 'Texto', 'Linea', 'TXT', messages, m)
 
 }
 
