@@ -1,4 +1,4 @@
-let handler = async (m, { conn, usedPrefix, command, text }) => {
+/*let handler = async (m, { conn, usedPrefix, command, text }) => {
 
 const messages = [
 ['Descripción 1', 'Footer 1', 'https://telegra.ph/file/b31cd03f716d362b33716.jpg', [], '', [], []],
@@ -14,4 +14,4 @@ await conn.sendCarousel(m.chat, 'Texto', 'Linea', 'TEXTO', messages, m)
 }
 
 handler.command = /^(lph)$/i
-export default handler
+export default handler*/
