@@ -15,16 +15,6 @@ const messages = [
 'Tema',
 'Descripción', 
 'Id']],
-[['Sección 1', 
-'Título 1', 
-'Tema 1',
-'Descripción 1',
-'Id 1']],
-[['Sección 2', 
-'Título 2', 
-'Tema 2',
-'Descripción 2',
-'Id 2']]
  ]],
 [
 'Descripción 2',
