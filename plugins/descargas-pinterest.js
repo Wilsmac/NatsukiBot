@@ -3,7 +3,7 @@ import fetch from "node-fetch"
 let handler = async (m, { conn, usedPrefix, command, text }) => {
 let query = text.trim()
 
-  /"const sections = [{
+  /*"const sections = [{
     title: `${htki} LISTA ${htka}`,
     rows: [{
       header: 'wwww',
