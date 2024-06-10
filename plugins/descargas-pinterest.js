@@ -51,7 +51,7 @@ null,
 [['🔗 Enlace de imagen', image]], 
 [['DDDDD', sections]]
 ])
-await conn.sedNatsukisel(chat, '💗 *Resultados de Pinterest*', 'Imágenes', '✨ Imágenes de Pinterest', messages)
+await conn.sendNatsukisel(chat, '💗 *Resultados de Pinterest*', 'Imágenes', '✨ Imágenes de Pinterest', messages)
 }
 
 async function sendGoogleCarousel(conn, chat, query, usedPrefix) {
@@ -63,7 +63,8 @@ null,
 [['🔗 Enlace de imagen', image]], 
 []
 ])
-await conn.sendCarousel(chat, '🤩 *Resultados de Google*', 'Imágenes', '✅ Imágenes de Google', messages)
+
+await conn.sendNatsukisel(chat, '🤩 *Resultados de Google*', 'Imágenes', '✅ Imágenes de Google', messages)
 }
 
 if (!query) {
