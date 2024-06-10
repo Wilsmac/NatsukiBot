@@ -3,7 +3,7 @@ import fetch from "node-fetch"
 let handler = async (m, { conn, usedPrefix, command, text }) => {
 let query = text.trim()
 
-  const sections = [{
+  /"const sections = [{
     title: `${htki} LISTA ${htka}`,
     rows: [{
       header: 'wwww',
@@ -20,7 +20,7 @@ let query = text.trim()
       title: "DHJNS",
       id: ".MENU"
     }, ]
-  }, ]  
+  }, ] 
 
 const listMessage = {
 text: 'Texto',
@@ -28,7 +28,7 @@ footer: '┏- - - - -  INFO - - - - -\n┊= Premium\n┊ Ⓕ = Free\n┗•',
 title: `❏––––[ *TEX* ]–––`,
 buttonText: "- -- -",
 sections
-  }
+  }*/
 
 async function getPinterestImages(query) {
 let response = await fetch(`https://aemt.me/pinterest?query=${encodeURIComponent(query)}`)
@@ -46,10 +46,7 @@ async function sendPinterestCarousel(conn, chat, query, usedPrefix) {
 let images = await getPinterestImages(query)
 const messages = images.map((image) => [ null, null, 
 image, 
-[['u', usedPrefix + `pinterest ${query}`], ['Buscar con Google 🌐', usedPrefix + `image2 ${query}`]],
-null, 
-[['🔗 Enlace de imagen', image]], 
-[['DDDDD', sections]]
+[['🔗 Enlace de imagen', image]]
 ])
 await conn.sendNatsukisel(chat, '💗 *Resultados de Pinterest*', 'Imágenes', '✨ Imágenes de Pinterest', messages)
 }
@@ -58,8 +55,6 @@ async function sendGoogleCarousel(conn, chat, query, usedPrefix) {
 let images = await getGoogleImages(query);
 const messages = images.map((image) => [ null, null, 
 image, 
-[['Buscar de nuevo 🔎', usedPrefix + `image2 ${query}`], ['Buscar con Pinterest ✨', usedPrefix + `pinterest ${query}`]], 
-null, 
 [['🔗 Enlace de imagen', image]], 
 []
 ])
