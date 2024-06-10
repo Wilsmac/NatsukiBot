@@ -51,7 +51,7 @@ null,
 [['🔗 Enlace de imagen', image]], 
 [['DDDDD', sections]]
 ])
-await conn.sendCarousel(chat, '💗 *Resultados de Pinterest*', 'Imágenes', '✨ Imágenes de Pinterest', messages)
+await conn.sedNatsukisel(chat, '💗 *Resultados de Pinterest*', 'Imágenes', '✨ Imágenes de Pinterest', messages)
 }
 
 async function sendGoogleCarousel(conn, chat, query, usedPrefix) {
