@@ -73,7 +73,6 @@ const isUrl = (text) => {
 
 
 
-
 /*import { sticker } from '../lib/sticker.js'
 import uploadFile from '../lib/uploadFile.js'
 import uploadImage from '../lib/uploadImage.js'
