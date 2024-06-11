@@ -5,6 +5,4 @@ let texto = `🤤👅🥵 *𝐀𝐂𝐀𝐁𝐀𝐒 𝐃𝐄 𝐅𝐎𝐋𝐋�
 await conn.sendMessage(m.chat, texto, null, { mentions: [user] })
 }
 handler.command = /^(Follar|violar)/i
-handler.fail = null
-handler.register = true
 export default handler
