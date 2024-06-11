@@ -11,7 +11,7 @@ if (global.conn.user.jid !== conn.user.jid) {
 return conn.sendMessage(m.chat, {text: lenguajeGB.smsJBDel() + `\n\n*https://api.whatsapp.com/send/?phone=${global.conn.user.jid.split`@`[0]}&text=${usedPrefix + command}&type=phone_number&app_absent=0*`}, { quoted: m }) 
 } else {
 try {
-await fs.rmdir("./FantasyJadiBot/" + uniqid, { recursive: true, force: true })
+await fs.rmdir("./NatsukiJadiBot/" + uniqid, { recursive: true, force: true })
 await conn.sendMessage(m.chat, { text: lenguajeGB.smsJBAdios() }, { quoted: m })
 await conn.sendMessage(m.chat, { text : lenguajeGB.smsJBCerrarS() } , { quoted: m })
 } catch(err) {
