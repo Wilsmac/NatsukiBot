@@ -4,7 +4,7 @@ import fetch from 'node-fetch'
 const {
     MessageType,
     Mimetype
-} = (await import("@ whiskeysockets/baileys")).default;
+} = (await import("@whiskeysockets/baileys")).default;
 
            const ftrol = {
   key : {
