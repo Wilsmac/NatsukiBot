@@ -5,7 +5,6 @@ const {
     MessageType,
     Mimetype
 } = (await import("@whiskeysockets/baileys")).default;
-
            const ftrol = {
   key : {
                           participant : '0@s.whatsapp.net'
@@ -17,7 +16,7 @@ const {
                             surface : 1,
                             message: `okto\n5 Menit`, // Wilmer :3
                             orderTitle: `Hola dkqbisbjd\n5 Menit`,
-                            thumbnail: fs.readFileSync('./media/menus/Menu1.jpg'),
+                            jpegThumbnail: fs.readFileSync('./media/menus/Menu1.jpg'),
                             sellerJid: '0@s.whatsapp.net' 
                           }
                         }
