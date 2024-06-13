@@ -1,7 +1,6 @@
 import fs from 'fs'
 import fetch from 'node-fetch'
  let handler  = async (m, { conn, usedPrefix: _p }) => {
-let pp = './media/menus/Menu1.jpg'
 const {
     MessageType,
     Mimetype
@@ -18,7 +17,7 @@ const {
                             surface : 1,
                             message: `okto\n5 Menit`, // Wilmer :3
                             orderTitle: `Nakano Nino\n5 Menit`,
-                            thumbnail: pp,
+                            thumbnail: fs.readFileSync ('./media/menus/Menu1.jpg'),
                             sellerJid: '0@s.whatsapp.net' 
                           }
                         }
