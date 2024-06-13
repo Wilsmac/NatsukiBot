@@ -16,8 +16,8 @@ const {
                             status: 1,
                             surface : 1,
                             message: `okto\n5 Menit`, // Wilmer :3
-                            orderTitle: `Nakano Nino\n5 Menit`,
-                            thumbnail: fs.readFileSync ('./media/menus/Menu1.jpg'),
+                            orderTitle: `Hola dkqbisbjd\n5 Menit`,
+                            thumbnail: fs.readFileSync('./media/menus/Menu1.jpg'),
                             sellerJid: '0@s.whatsapp.net' 
                           }
                         }
