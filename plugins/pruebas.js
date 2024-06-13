@@ -1,6 +1,7 @@
 import fs from 'fs'
 import fetch from 'node-fetch'
  let handler  = async (m, { conn, usedPrefix: _p }) => {
+let pp = './media/menus/Menu1.jpg'
 const {
     MessageType,
     Mimetype
@@ -17,7 +18,7 @@ const {
                             surface : 1,
                             message: `HELLO WORLD :3\n5 Menit`, 
                             orderTitle: `WILMER OFICIAL\n5 Menit`,
-                            thumbnail: await (await fetch(Menu1)).buffer(),
+                            thumbnail: pp,
                             sellerJid: '0@s.whatsapp.net' 
                           }
                         }
