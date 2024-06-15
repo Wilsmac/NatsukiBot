@@ -7,6 +7,8 @@ var handler = m => m
 handler.all = async function (m) {
 
 
+global.canal = "https://whatsapp.com/channel/0029VaCUlPX0LKZAlP10pC43"
+
 var canal = [
 { link: canal, id: "120363192435027853@newsletter", name: "『 Natsuki Club Oficial 』" }
 ]
