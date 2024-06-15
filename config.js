@@ -127,7 +127,8 @@ global.año = d.toLocaleDateString('es', {year: 'numeric'})
 global.tiempo = d.toLocaleString('en-US', {hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true})
 
 var canal = [
-{ link: canalofc, id: "120363192435027853@newsletter", name: "『 𝑈𝑁𝐼𝐹𝐼𝑁𝐸𝐷 𝑂𝐹𝐶 』" }
+{ link: canalofc, id: "120363192435027853@newsletter", name:
+"『✯ Team Comunity Natsuki 』" }
 ]
 var channelsLPD = canal
 
