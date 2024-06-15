@@ -219,10 +219,10 @@ global.imagen13 = fs.readFileSync("./media/menus/img12.jpg")
 var canal = [
 { link: canalofc, id: "120363192435027853@newsletter", name: "『 Natsuki Club Oficial 』" }
 ]
-var Channelswa = canal
+var channelsLPD = canal
 
 
-global.channelWa = { contextInfo: { mentionedJid: null, forwardingScore: 1, isForwarded: true, forwardedNewsletterMessageInfo: { newsletterJid: Channelswa.id, serverMessageId: '', newsletterName: Channelswa.name }, externalAdReply: { title: wm, body: gt, mediaType: 1, renderLargerThumbnail: false, previewType: `PHOTO`, thumbnailUrl: fantasyImg.getRandom(), thumbnail: imagen1, sourceUrl: canalofc }}}, { quoted: m }
+global.channelWa = { contextInfo: { mentionedJid: null, forwardingScore: 1, isForwarded: true, forwardedNewsletterMessageInfo: { newsletterJid: ChannelsLPD.id, serverMessageId: '', newsletterName: ChannelsLPD.name }, externalAdReply: { title: wm, body: gt, mediaType: 1, renderLargerThumbnail: false, previewType: `PHOTO`, thumbnailUrl: fantasyImg.getRandom(), thumbnail: imagen1, sourceUrl: canalofc }}}, { quoted: m }
 
 global.img = 'https://telegra.ph/file/6114942024c7658478830.jpg'
 global.img2 = 'https://telegra.ph/file/6114942024c7658478830.jpg'
