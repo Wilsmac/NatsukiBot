@@ -8,7 +8,7 @@ handler.all = async function (m) {
 
 
 var canal = [
-{ link: canal1, id: "120363192435027853@newsletter", name: "『 Natsuki Club Oficial 』" }
+{ link: canal, id: "120363192435027853@newsletter", name: "『 Natsuki Club Oficial 』" }
 ]
 var Channelswa = canal
 
