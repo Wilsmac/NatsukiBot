@@ -1,4 +1,4 @@
-import fetch from 'node-fetch'
+/*import fetch from 'node-fetch'
 import moment from 'moment-timezone'
 import axios from 'axios'
 import fs from 'fs'
@@ -31,4 +31,4 @@ global.imagen13 = fs.readFileSync("./media/menus/img12.jpg")
 global.channelWa = { contextInfo: { mentionedJid: null, forwardingScore: 1, isForwarded: true, forwardedNewsletterMessageInfo: { newsletterJid: Channelswa.id, serverMessageId: '', newsletterName: Channelswa.name }, externalAdReply: { title: wm, body: gt, mediaType: 1, renderLargerThumbnail: false, previewType: `PHOTO`, thumbnailUrl: fantasyImg.getRandom(), thumbnail: imagen1, sourceUrl: canalofc }}}, { quoted: m }
 
 }
-export default handler
+export default handler*/
