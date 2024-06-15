@@ -21,7 +21,6 @@ global.prems = []
 
 global.tagusario = ['50250101139'];
 
-
 global.obtenerQrWeb = 0; //1 o 0
 global.keepAliveRender = 0; // 1 o 0
 
