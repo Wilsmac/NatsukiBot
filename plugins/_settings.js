@@ -8,8 +8,7 @@ var handler = m => m
 handler.all = async function (m) {
 
 var canal = [
-{ link: canalofc, id: "120363192435027853@newsletter", name: "『✯ Team Comunity Natsuki 』" }
-]
+{ link: canalofc, id: "120363192435027853@newsletter", name: "『✯ Team Comunity Natsuki 』" }]
 var channelsLPD = canal
 
 
