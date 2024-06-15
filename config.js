@@ -126,14 +126,6 @@ global.mes = d.toLocaleDateString('es', {month: 'long'})
 global.año = d.toLocaleDateString('es', {year: 'numeric'})
 global.tiempo = d.toLocaleString('en-US', {hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true})
 
-var canal = [
-{ link: "https://whatsapp.com/channel/0029VaCUlPX0LKZAlP10pC43", id: "120363192435027853@newsletter", name:
-"『✯ Team Comunity Natsuki 』" }
-]
-var channelsLPD = canal
-
-
-global.channelWa = { contextInfo: { mentionedJid: null, forwardingScore: 1, isForwarded: true, forwardedNewsletterMessageInfo: { newsletterJid: channelsLPD.id, serverMessageId: '', newsletterName: channelsLPD.name }, externalAdReply: { title: `NatsukiBot`, body: gt, mediaType: 1, renderLargerThumbnail: false, previewType: `PHOTO`, thumbnailUrl: fantasyImg.getRandom(), thumbnail: imagen1, sourceUrl: canalofc }}}, { quoted: m }
 
 //------------------------------------------------
 
