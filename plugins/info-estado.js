@@ -1,3 +1,4 @@
+import '../plugins/_settings.js'
 
 let handler = async (m, { conn, command, usedPrefix }) => {
 let picture = './media/menus/Menu1.jpg'
