@@ -31,11 +31,6 @@ global.botNumberCode = ""
 global.confirmCode = "" 
 //------------------------------------------------
 
-var canal= [
-{ link: canalofc, id: "120363192435027853@newsletter", name: "『 Natsuki Club Oficial 』" }
-]
-var indiceRandom = Math.floor(Math.random() * canal.length)
-var Channelswa = canal[indiceRandom]
 
 //------------------------------------------------
 global.lenguajeCD = es
@@ -295,7 +290,6 @@ global.fin = " • •"
 
 global.botdate = `⫹⫺ Date :  ${moment.tz('America/Los_Angeles').format('DD/MM/YY')}`; //Asia/Jakarta
 global.bottime = `𝐓 𝐈 𝐄 𝐌 𝐏 𝐎 : ${moment.tz('America/Los_Angeles').format('HH:mm:ss')}`;//America/Los_Angeles
-global.channelWa = { contextInfo: { mentionedJid: null, forwardingScore: 1, isForwarded: true, forwardedNewsletterMessageInfo: { newsletterJid: Channelswa.id, serverMessageId: '', newsletterName: Channelswa.name }, externalAdReply: { title: wm, body: gt, mediaType: 1, renderLargerThumbnail: false, previewType: `PHOTO`, thumbnailUrl: fantasyImg.getRandom(), thumbnail: imagen1, sourceUrl: canalofc }}}, { quoted: m }
 global.fgif = {
 key: {
 participant : '0@s.whatsapp.net'},
