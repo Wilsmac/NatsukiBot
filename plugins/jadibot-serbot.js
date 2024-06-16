@@ -138,7 +138,7 @@ global.conns.splice(i, 1)
 if (code !== DisconnectReason.connectionClosed) {
 parent.sendMessage(m.chat, { text: "> ⓘ 𝙲𝙾𝙽𝙴𝚇𝙸𝙾𝙽 𝙿𝙴𝚁𝙳𝙸𝙳𝙰, 𝙿𝙾𝚁 𝙵𝙰𝚅𝙾𝚁 𝚅𝚄𝙴𝙻𝚅𝙰 𝙰 𝙸𝙽𝚃𝙴𝙽𝚃𝙰𝚁𝙻𝙾" }, { quoted: m })
 } else {
-parent.sendMessage(m.chat, { text: `${lenguajeCD['smsJBConexionClose']()} }, { quoted: m })
+parent.sendMessage(m.chat, { text: `${lenguajeCD['smsJBConexionClose']()}` }, { quoted: m })
 }}
 
 if (global.db.data == null) loadDatabase()
