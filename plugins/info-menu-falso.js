@@ -699,7 +699,7 @@ let menu = `¡HOLA! 👋🏻 • ${taguser}\n${fantasy}${conn.user.jid == global
 //await conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', menu, fake0)
 
 const natsuki = ['https://telegra.ph/file/fc75439751a71e3419c68.mp4',
-'https://telegra.ph/file/389cbd6a7ce870b7e52d3.mp4',
+'https://telegra.ph/file/60222a8e88addd43523b7.mp4',
 'https://telegra.ph/file/681dd6f8cd900c6cd8726.mp4']
 
 await conn.sendMessage(m.chat, { video: { url: natsuki.getRandom() }, gifPlayback: true, caption: menu, mentions: [m.sender, global.conn.user.jid] }, { quoted: fake0 }) 
