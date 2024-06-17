@@ -42,3 +42,4 @@ if (typeof args[0] == 'number') return super(Math.min(args[0], 10000))
 else return super(...args)}}
 function pickRandom(list) {
 return list[Math.floor(Math.random() * list.length)]}
+
