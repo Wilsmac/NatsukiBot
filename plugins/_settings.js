@@ -9,7 +9,7 @@ handler.all = async function (m) {
 
 //------------------------------------------------
 
-global.FakeChannel = { contextInfo: { mentionedJid: [m.sender], isForwarded: true, forwardedNewsletterMessageInfo: { newsletterJid: '120363192435027853@newsletter', newsletterName: "『✯ Team Comunity Natsuki 』", serverMessageId: -1 }
+global.FakeChannel = { contextInfo: { isForwarded: true, forwardedNewsletterMessageInfo: { newsletterJid: '120363192435027853@newsletter', newsletterName: "『✯ Team Comunity Natsuki 』", serverMessageId: -1 }
 }}, { quoted: m }
 
 //-----------------------------------------------
