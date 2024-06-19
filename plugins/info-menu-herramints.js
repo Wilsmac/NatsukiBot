@@ -140,7 +140,7 @@ forwardingScore: 999,
 externalAdReply: {
 title: gt,
 body: wm,
-thumbnailUrl: pp,
+thumbnailUrl: picture,
 sourceUrl: md,
 mediaType: 1,
 renderLargerThumbnail: false
