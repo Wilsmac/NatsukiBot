@@ -702,7 +702,26 @@ const natsuki = ['https://telegra.ph/file/fc75439751a71e3419c68.mp4',
 'https://telegra.ph/file/60222a8e88addd43523b7.mp4',
 'https://telegra.ph/file/681dd6f8cd900c6cd8726.mp4']
 
-await conn.sendMessage(m.chat, { video: { url: natsuki.getRandom() }, gifPlayback: true, caption: menu, mentions: [m.sender, global.conn.user.jid] }, { quoted: fake0 }) 
+/*await conn.sendMessage(m.chat, { video: { url: natsuki.getRandom() }, gifPlayback: true, caption: menu, mentions: [m.sender, global.conn.user.jid] }, { quoted: fake0 })*/
+
+await conn.sendMessage(m.chat, { video: { url: natsuki.getRandom() }, gifPlayback: true, caption: menu,
+contextInfo: {
+mentionedJid: [m.sender],
+isForwarded: true,
+forwardedNewsletterMessageInfo: {
+newsletterJid: '120363192435027853@newsletter',
+newsletterName: "『✯ Team Comunity Natsuki 』",
+serverMessageId: -1
+},
+forwardingScore: 999,
+externalAdReply: {
+title: gt,
+body: wm,
+thumbnailUrl: pp,
+sourceUrl: md,
+mediaType: 1,
+renderLargerThumbnail: false
+}}})
 
 } catch (e) {
 await m.reply(lenguajeCD['smsMalError3']() + '\n*' + lenguajeCD.smsMensError1() + '*\n*' + usedPrefix + `${lenguajeCD.lenguaje() == 'es' ? 'reporte' : 'report'}` + '* ' + `${lenguajeCD.smsMensError2()} ` + usedPrefix + command)
