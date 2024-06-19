@@ -27,7 +27,7 @@ let estado = `╭━━━━『 𝙴𝚂𝚃𝙰𝙳𝙾 』━━━━━⬣
 ┃⚠︎ \`Usuario(s) Prohibido(s)\`
 ┃➥ ${Object.entries(global.db.data.users).filter(user => user[1].banned).length} 
 ╰━━━━━━━━━━━━━━━━━━⬣`
-await conn.sendMessage(m.chat, estado, m, Fakechannel)
+await conn.reply(m.chat, estado, m, Fakechannel)
 //conn.sendFile(m.chat, picture, 'fantasy.mp4', estado, fkontak)
 
 /*await conn.sendFile(m.chat, fantasyImg.getRandom(), 'lp.jpg', estado, fkontak, false, { contextInfo: {externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, title: gt, body: ' 𝐅𝐚𝐧𝐭𝐚𝐬𝐲𝐁𝐨𝐭-𝐌𝐃 ', previewType: 0, thumbnail: imagen4, sourceUrl: canalofc}}})*/
