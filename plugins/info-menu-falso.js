@@ -706,7 +706,6 @@ const natsuki = ['https://telegra.ph/file/fc75439751a71e3419c68.mp4',
 
 await conn.sendMessage(m.chat, { video: { url: natsuki.getRandom() }, gifPlayback: true, caption: menu,
 contextInfo: {
-mentionedJid: [m.sender],
 isForwarded: true,
 forwardedNewsletterMessageInfo: {
 newsletterJid: '120363192435027853@newsletter',
