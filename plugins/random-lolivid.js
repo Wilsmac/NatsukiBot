@@ -1,6 +1,6 @@
 let handler  = async (m, { conn, usedPrefix, command }) => {
 let res = await lolivid[Math.floor(Math.random() * lolivid.length)]
-conn.sendMessage(m.chat, { video: { url: res }, caption: `💕💕💕💕` }, { quoted: m })}
+conn.sendMessage(m.chat, { video: { url: res }, caption: `💕💕💕💕` }, FakeChannel )}
 handler.help = ['lolivid']
 handler.tags = ['random']
 handler.command = /^(lolivid|lolivideos|lolívid)$/i
