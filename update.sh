@@ -1,4 +1,4 @@
-# Código desarrollado por @+
+ # Código desarrollado por @+
   
 #!/data/data/com.termux/files/usr/bin/bash 
 BOT_DIR="NatsukiBot"  
