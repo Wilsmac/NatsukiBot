@@ -127,7 +127,7 @@ let menu = `¡HOLA! 👋🏻 • ${username}\n𝘽𝙄𝙀𝙉𝘽𝙀𝙉𝙄�
 > ╰┉ͦ━ᷫ━ⷭ┈ ⃘⵿݂۪۪۪࣭࣭፝۬۬۬͞💙ꫂ❀ᰰ᷒|²⁰|²|²³ ♡┈⊷ꫂ፝۬۬۬͞ᜓ⃘݂۪۪۪࣭࣭.─❤️⃟ᬽ፝֟━❥ᰰຼ᭢╯*`.trim()
 //await conn.sendFile(m.chat, picture, 'error.mp4', menu, fake0)
 
-await conn.sendMessage(m.chat, { imagen: { url: picture }, gifPlayback: true, caption: menu,
+await conn.sendMessage(m.chat, { Imagen: { url: picture }, caption: menu,
 contextInfo: {
 mentionedJid: [m.sender],
 isForwarded: true,
