@@ -162,6 +162,10 @@ global.nnnttt6 = 'https://chat.whatsapp.com/CPASQk25rExCIEdlkrOfBz' // FantasyBo
 global.channel1 = 'https://whatsapp.com/channel/0029VaCUlPX0LKZAlP10pC43'
 global.channel2 = 'https://whatsapp.com/channel/0029VaCUlPX0LKZAlP10pC43'
 global.channel3 = 'https://t.me/'
+//------------------------------------------------
+
+global.Fakechannel = contextInfo: { mentionedJid: [m.sender], isForwarded: true, forwardedNewsletterMessageInfo: { newsletterJid: '120363192435027853@newsletter', newsletterName: "『✯ Team Comunity Natsuki 』", serverMessageId: -1 }, forwardingScore: 999, externalAdReply: { title: gt, body: wm, thumbnailUrl: fs.readFileSync('./media/menus/Menu3.jpg'), sourceUrl: md, mediaType: 1, renderLargerThumbnail: false
+}}})
 
 //------------------------------------------------
 
