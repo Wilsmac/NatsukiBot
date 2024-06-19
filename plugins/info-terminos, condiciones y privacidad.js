@@ -124,12 +124,14 @@ _- Al hacer uso de ciertos comandos que tengan como objetivo socavar la incomodi
 
 *~ Muchas Gracias Por tomarte el tiempo en informate sobre NatsukiBot-GD*` 
 await conn.sendFile(m.chat, pp, 'fantasy.mp4', Terminos)
-/*.trim()
+
+.trim()
 conn.sendHydrated(m.chat, Terminos,  `${wm}\nEstamos de acuerdo en Hacer Colaboraciones con Personas Comprometidas, manteniendo el Respeto Puedes Contactar si ese es el caso a esta Cuenta Oficial | https://www.instagram.com/cmwiler4`, pp, 'https://github.com/Wilsmac/NatsukiBot', '饾檪饾櫀饾櫓饾櫀饾樈饾櫎饾櫓-饾檲饾樋', null, null, [
 ['饾檲饾櫄饾櫍饾櫔虂 饾櫂饾櫎饾櫌饾櫏饾櫋饾櫄饾櫓饾櫎 | 饾檨饾櫔饾櫋饾櫋 饾檲饾櫄饾櫍饾櫔 馃挮', '.allmenu'],
 ['饾檲饾櫄饾櫍饾櫔 饾櫃饾櫄饾櫒饾櫏饾櫋饾櫄饾櫆饾櫀饾櫁饾櫋饾櫄 | 饾檲饾櫄饾櫍饾櫔 饾檱饾櫈饾櫒饾櫓 馃専', '/menulista'],
 ['饾檲饾櫄饾櫍饾櫔 饾檵饾櫑饾櫈饾櫍饾櫂饾櫈饾櫏饾櫀饾櫋 | 饾檲饾櫀饾櫈饾櫍 饾櫌饾櫄饾櫍饾櫔 鈿?', '#menu']
-], m,)*/
+], m,)
+
 }
 handler.customPrefix = /terminos|t茅rminos|t茅rminos, condiciones y privacidad|terminos, condiciones y privacidad|t茅rminos y condiciones y privacidad|terminosycondicionesyprivacidad|terminosycondiciones|terminos y condiciones y privacidad|terminos y condiciones|terminos y condiciones|terminos de uso|Terminos de uso|Termin贸 se uso|t茅rminos de uso|T茅rminos de uso|T茅rminos y condiciones/i
 handler.command = new RegExp
