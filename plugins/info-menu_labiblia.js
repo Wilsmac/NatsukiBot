@@ -99,7 +99,7 @@ let menu = `
 \`Tokens:\` ${joincount} 🪙\n ┗━━━━⏤͟͟͞͞★꙲⃝͟🌷❈┉━━━━━━┛`.trim()
 
 const buttonParamsJson = JSON.stringify({
-title: lenguajeCD['smsListaMenu'](),
+title: "✩ 𝙻𝙸𝚂𝚃𝙰 𝙷𝙾𝚁𝙽𝚈 ✩",
 description: "Infórmate por medios",
 sections: [
 { title: "𝙸𝙼𝙰𝙶𝙴𝙽 (𝙋𝘼𝘾𝙆)",
