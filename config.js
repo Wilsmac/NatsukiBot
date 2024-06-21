@@ -30,7 +30,7 @@ global.botNumberCode = ""
 global.confirmCode = "" 
 //-----------------------------------------------
 
-global.catalogo = fs.readFileSync('./media/menus/estilos.jpg')
+global.catalogo = fs.readFileSync('./media/menus/estilos.png')
 
 //------------------------------------------------
 global.lenguajeCD = es
