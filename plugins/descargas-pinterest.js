@@ -44,9 +44,8 @@ return data.result
 
 async function sendPinterestCarousel(conn, chat, query, usedPrefix) {
 let images = await getPinterestImages(query)
-const messages = images.map((image) => [ null, null, 
+const messages = images.map((image) => [
 image,
-null, 
 [['🔗 Enlace de imagen', image]]
 ])
 await conn.sendNatsukisel(chat, '💗 *Resultados de Pinterest*', 'Imágenes', '✨ Imágenes de Pinterest', messages)
@@ -54,10 +53,8 @@ await conn.sendNatsukisel(chat, '💗 *Resultados de Pinterest*', 'Imágenes', '
 
 async function sendGoogleCarousel(conn, chat, query, usedPrefix) {
 let images = await getGoogleImages(query);
-const messages = images.map((image) => [ null, null, 
-image, 
-[['Buscar de nuevo 🔎', usedPrefix + `image2 ${query}`], ['Buscar con Pinterest ✨', usedPrefix + `pinterest ${query}`]], 
-null, 
+const messages = images.map((image) => [
+image,
 [['🔗 Enlace de imagen', image]], 
 []
 ])
