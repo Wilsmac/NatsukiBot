@@ -1,4 +1,4 @@
-const handler = async (m, { conn }) => {
+/*const handler = async (m, { conn }) => {
 
 conn.sendMessage(m.chat, "hola", {quoted: {key: {
 fromMe: false,
@@ -23,7 +23,7 @@ message: {
 }}})
 }
 handler.command = /^(hoka)$/i
-export default handler
+export default handler*/
 
 /*const handler = async (m, {conn, usedPrefix}) => {
   const datas = global
