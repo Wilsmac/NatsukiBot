@@ -28,7 +28,7 @@ contoh: ${usedPrefix}math hard
 }
 handler.help = ['math <mode>']
 handler.tags = ['game']
-handler.command = /^math/i
+handler.command = /^prueb/i
 
 export default handler
 
