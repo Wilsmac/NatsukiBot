@@ -1,4 +1,4 @@
-import fetch from 'node-fetch'
+/*import fetch from 'node-fetch'
 let handler = async (m, { conn, args }) => {
   let response = args.join(' ').split('|')
   if (!args[0]) throw 'mmmmm'
@@ -13,4 +13,4 @@ handler.register = true
 
 handler.limit = true
 
-export default handler
+export default handler*/
