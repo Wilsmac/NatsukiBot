@@ -131,7 +131,7 @@ m.reply('' + nyanya + '');
 console.log(e)}}
 handler.help = ['acertijo']
 handler.tags = ['game']
-handler.command = /^(acertijo|acert|adivinanza|tekateki|advpe|adv|peliculas|pelicula|cancion|canción|ordenar|order|hint|pista)$/i
+handler.command = /^(acertijo|acert|adivinanza|tekateki|advpe|adv|peliculas|pelicula|cancion|canción|hint|pista)$/i
 
 export default handler
 
