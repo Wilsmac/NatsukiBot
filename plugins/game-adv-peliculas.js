@@ -1,4 +1,4 @@
-import fs from 'fs'
+/*import fs from 'fs'
 let timeout = 30000
 let poin = 600
 
@@ -29,4 +29,4 @@ delete conn.tekateki[id]
 handler.help = ['peliculas']
 handler.tags = ['game']
 handler.command = /^(advpe|adv|peliculas|pelicula)$/i
-export default handler
+export default handler*/
