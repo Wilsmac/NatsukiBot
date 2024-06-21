@@ -1,6 +1,6 @@
 import fetch from 'node-fetch'
 let handler = async (m, { conn, args }) => {
-   response = args.join(' ').split('|')
+  let response = args.join(' ').split('|')
   if (!args[0]) throw 'mmmmm'
   m.reply('Procesando...')
   let res = `https://bx-hunter.herokuapp.com/api/canvas/gfx2?apikey=FuckBitch&nama=${response[0]}`
