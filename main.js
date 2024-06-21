@@ -135,52 +135,52 @@ opcion = '1'
 }
 if (!methodCodeQR && !methodCode && !fs.existsSync(`./${authFile}/creds.json`)) {
 do {
-let lineM = '⋯ ⋯ ⋯ ⋯ ⋯ ⋯ ⋯ ⋯ ⋯ ⋯ ⋯ 》'
+let lineM = '┎━─━──━──━─━─━─◈─━─━─━──━─━─━≫'
 opcion = await question(`╭${lineM}  
-┊ ${chalk.blueBright('╭┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅')}
-┊ ${chalk.blueBright('┊')} ${chalk.blue.bgBlue.bold.cyan(mid.methodCode1)}
-┊ ${chalk.blueBright('╰┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅')}   
-┊ ${chalk.blueBright('╭┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅')}     
-┊ ${chalk.blueBright('┊')} ${chalk.green.bgMagenta.bold.yellow(mid.methodCode2)}
-┊ ${chalk.blueBright('┊')} ${chalk.bold.redBright(`⇢  ${mid.methodCode3} 1:`)} ${chalk.greenBright(mid.methodCode4)}
-┊ ${chalk.blueBright('┊')} ${chalk.bold.redBright(`⇢  ${mid.methodCode3} 2:`)} ${chalk.greenBright(mid.methodCode5)}
-┊ ${chalk.blueBright('╰┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅')}
-┊ ${chalk.blueBright('╭┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅')}     
-┊ ${chalk.blueBright('┊')} ${chalk.italic.magenta(mid.methodCode6)}
-┊ ${chalk.blueBright('┊')} ${chalk.italic.magenta(mid.methodCode7)}
-┊ ${chalk.blueBright('╰┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅')} 
-┊ ${chalk.blueBright('╭┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅')}    
-┊ ${chalk.blueBright('┊')} ${chalk.red.bgRed.bold.green(mid.methodCode8)}
-┊ ${chalk.blueBright('┊')} ${chalk.italic.cyan(mid.methodCode9)}
-┊ ${chalk.blueBright('┊')} ${chalk.italic.cyan(mid.methodCode10)}
-┊ ${chalk.blueBright('┊')} ${chalk.bold.yellow(`npm run qr ${chalk.italic.magenta(`(${mid.methodCode12})`)}`)}
-┊ ${chalk.blueBright('┊')} ${chalk.bold.yellow(`npm run code ${chalk.italic.magenta(`(${mid.methodCode13})`)}`)}
-┊ ${chalk.blueBright('┊')} ${chalk.bold.yellow(`npm start ${chalk.italic.magenta(`(${mid.methodCode14})`)}`)}
-┊ ${chalk.blueBright('╰┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅')} 
-╰${lineM}\n${chalk.bold.magentaBright('---> ')}`)
+│ ${chalk.blueBright('╔════❖•ೋ°¡Hola!°ೋ•❖════╗')}
+│ ${chalk.blueBright('┊')} ${chalk.blue.bgBlue.bold.cyan('MÉTODO DE VINCULACIÓN')}
+│ ${chalk.blueBright('╚════❖•ೋ° ♥️ °ೋ•❖════╝')}   
+│ ${chalk.blueBright('╔─━━━━━━░ ░━━━━━━─╗')}     
+│ ${chalk.blueBright('▎')} ${chalk.green.bgMagenta.bold.yellow('¿CÓMO DESEA CONECTARSE?')}
+│ ${chalk.blueBright('▎')} ${chalk.bold.redBright('⇢  Opción 1:')} ${chalk.greenBright('Código QR.')}
+│ ${chalk.blueBright('▎')} ${chalk.bold.redBright('⇢  Opción 2:')} ${chalk.greenBright('Código de 8 digitos.')}
+│ ${chalk.blueBright('╚─━━━━━━░★░━━━━━━─╝')}
+│ ${chalk.blueBright('╔─━━━━━━░ ░━━━━━━─╗')}     
+│ ${chalk.blueBright('▎')} ${chalk.italic.magenta('Escriba sólo el número de')}
+│ ${chalk.blueBright('▎')} ${chalk.italic.magenta('la opción para conectarse.')}
+│ ${chalk.blueBright('╚─━━━━━━░★░━━━━━━─╝')} 
+│ ${chalk.blueBright('╔─━━━━━━░ ░━━━━━━─╗')}    
+│ ${chalk.blueBright('▎')} ${chalk.red.bgRed.bold.green('CONSEJO:')}
+│ ${chalk.blueBright('▎')} ${chalk.italic.cyan('Si usa Termux, Replit, Linux, o Windows')}
+│ ${chalk.blueBright('▎')} ${chalk.italic.cyan('Use estos comandos para una ejecución directa:')}
+│ ${chalk.blueBright('▎')} ${chalk.bold.yellow(`npm run qr ${chalk.italic.magenta('(Inicia con código QR)')}`)}
+│ ${chalk.blueBright('▎')} ${chalk.bold.yellow(`npm run code ${chalk.italic.magenta('(Inicia con código de 8 dígitos)')}`)}
+│ ${chalk.blueBright('▎')} ${chalk.bold.yellow(`npm start ${chalk.italic.magenta('(Inicio predeterminado con opciones)')}`)}
+│ ${chalk.blueBright('╚─━━━━━━░★░━━━━━━─╝')} 
+╰${lineM}\n${chalk.bold.magentaBright('--->')}`)
 if (!/^[1-2]$/.test(opcion)) {
 console.log(chalk.bold.redBright(mid.methodCode11(chalk)))
 }} while (opcion !== '1' && opcion !== '2' || fs.existsSync(`./${authFile}/creds.json`))
 }
 
-const filterStrings = [
-"Q2xvc2luZyBzdGFsZSBvcGVu", // "Closing stable open"
-"Q2xvc2luZyBvcGVuIHNlc3Npb24=", // "Closing open session"
-"RmFpbGVkIHRvIGRlY3J5cHQ=", // "Failed to decrypt"
-"U2Vzc2lvbiBlcnJvcg==", // "Session error"
-"RXJyb3I6IEJhZCBNQUM=", // "Error: Bad MAC" 
-"RGVjcnlwdGVkIG1lc3NhZ2U=" // "Decrypted message" 
+const bugsfilt = [
+"Q2xvc2luZyBzdGFsZSBvcGVu",
+"Q2xvc2luZyBvcGVuIHNlc3Npb24=",
+"RmFpbGVkIHRvIGRlY3J5cHQ=", 
+"U2Vzc2lvbiBlcnJvcg==",
+"RXJyb3I6IEJhZCBNQUM=",
+"RGVjcnlwdGVkIG1lc3NhZ2U=" 
 ]
 
 console.info = () => {} 
 console.debug = () => {} 
-['log', 'warn', 'error'].forEach(methodName => redefineConsoleMethod(methodName, filterStrings))
+['log', 'warn', 'error'].forEach(methodName => redefineConsoleMethod(methodName, bugsfilt))
 
 const connectionOptions = {
 logger: pino({ level: 'silent' }),
 printQRInTerminal: opcion == '1' ? true : methodCodeQR ? true : false,
 mobile: MethodMobile, 
-browser: opcion == '1' ? ['GataBot-MD', 'Edge', '2.0.0'] : methodCodeQR ? ['GataBot-MD', 'Edge', '2.0.0'] : ['Ubuntu', 'Edge', '110.0.1587.56'],
+browser: opcion == '1' ? ['NatsukiBot', 'Edge', '2.0.0'] : methodCodeQR ? ['NatsukiBot', 'Edge', '2.0.0'] : ['Ubuntu', 'Edge', '110.0.1587.56'],
 auth: {
 creds: state.creds,
 keys: makeCacheableSignalKeyStore(state.keys, Pino({ level: "fatal" }).child({ level: "fatal" })),
@@ -229,7 +229,7 @@ conn.well = false
 if (!opts['test']) {
 if (global.db) setInterval(async () => {
 if (global.db.data) await global.db.write()
-if (opts['autocleartmp'] && (global.support || {}).find) (tmp = [os.tmpdir(), 'tmp', "GataJadiBot"], tmp.forEach(filename => cp.spawn('find', [filename, '-amin', '2', '-type', 'f', '-delete'])))}, 30 * 1000)}
+if (opts['autocleartmp'] && (global.support || {}).find) (tmp = [os.tmpdir(), 'tmp', "NatsukiJadiBot"], tmp.forEach(filename => cp.spawn('find', [filename, '-amin', '2', '-type', 'f', '-delete'])))}, 30 * 1000)}
 if (opts['server']) (await import('./server.js')).default(global.conn, PORT)
 
 async function getMessage(key) {
@@ -258,26 +258,26 @@ console.log(chalk.bold.greenBright(mid.mConexion))}
 let reason = new Boom(lastDisconnect?.error)?.output?.statusCode
 if (connection === 'close') {
 if (reason === DisconnectReason.badSession) {
-console.log(chalk.bold.cyanBright(lenguajeGB['smsConexionOFF']()))
+console.log(chalk.bold.cyanBright(lenguajeCD['smsConexionOFF']()))
 } else if (reason === DisconnectReason.connectionClosed) {
-console.log(chalk.bold.magentaBright(lenguajeGB['smsConexioncerrar']()))
+console.log(chalk.bold.magentaBright(lenguajeCD['smsConexioncerrar']()))
 await global.reloadHandler(true).catch(console.error)
 } else if (reason === DisconnectReason.connectionLost) {
-console.log(chalk.bold.blueBright(lenguajeGB['smsConexionperdida']()))
+console.log(chalk.bold.blueBright(lenguajeCD['smsConexionperdida']()))
 await global.reloadHandler(true).catch(console.error)
 } else if (reason === DisconnectReason.connectionReplaced) {
-console.log(chalk.bold.yellowBright(lenguajeGB['smsConexionreem']()))
+console.log(chalk.bold.yellowBright(lenguajeCD['smsConexionreem']()))
 } else if (reason === DisconnectReason.loggedOut) {
-console.log(chalk.bold.redBright(lenguajeGB['smsConexionOFF']()))
+console.log(chalk.bold.redBright(lenguajeCD['smsConexionOFF']()))
 await global.reloadHandler(true).catch(console.error)
 } else if (reason === DisconnectReason.restartRequired) {
-console.log(chalk.bold.cyanBright(lenguajeGB['smsConexionreinicio']()))
+console.log(chalk.bold.cyanBright(lenguajeCD['smsConexionreinicio']()))
 await global.reloadHandler(true).catch(console.error)
 } else if (reason === DisconnectReason.timedOut) {
-console.log(chalk.bold.yellowBright(lenguajeGB['smsConexiontiem']()))
+console.log(chalk.bold.yellowBright(lenguajeCD['smsConexiontiem']()))
 await global.reloadHandler(true).catch(console.error) //process.send('reset')
 } else {
-console.log(chalk.bold.redBright(lenguajeGB['smsConexiondescon'](reason, connection)))
+console.log(chalk.bold.redBright(lenguajeCD['smsConexiondescon'](reason, connection)))
 }}
 }
 process.on('uncaughtException', console.error);
@@ -314,14 +314,14 @@ conn.ev.off('creds.update', conn.credsUpdate);
 }
 
 //Información para Grupos
-conn.welcome = lenguajeGB['smsWelcome']() 
-conn.bye = lenguajeGB['smsBye']() 
-conn.spromote = lenguajeGB['smsSpromote']() 
-conn.sdemote = lenguajeGB['smsSdemote']() 
-conn.sDesc = lenguajeGB['smsSdesc']() 
-conn.sSubject = lenguajeGB['smsSsubject']() 
-conn.sIcon = lenguajeGB['smsSicon']() 
-conn.sRevoke = lenguajeGB['smsSrevoke']() 
+conn.welcome = lenguajeCD['smsWelcome']() 
+conn.bye = lenguajeCD['smsBye']() 
+conn.spromote = lenguajeCD['smsSpromote']() 
+conn.sdemote = lenguajeCD['smsSdemote']() 
+conn.sDesc = lenguajeCD['smsSdesc']() 
+conn.sSubject = lenguajeCD['smsSsubject']() 
+conn.sIcon = lenguajeCD['smsSicon']() 
+conn.sRevoke = lenguajeCD['smsSrevoke']() 
 
 conn.handler = handler.handler.bind(global.conn);
 conn.participantsUpdate = handler.participantsUpdate.bind(global.conn);
@@ -419,41 +419,41 @@ unlinkSync(filePath)})
 
 function purgeSession() {
 let prekey = []
-let directorio = readdirSync("./GataBotSession")
+let directorio = readdirSync("./NatsukiSessions")
 let filesFolderPreKeys = directorio.filter(file => {
 return file.startsWith('pre-key-')
 })
 prekey = [...prekey, ...filesFolderPreKeys]
 filesFolderPreKeys.forEach(files => {
-unlinkSync(`./GataBotSession/${files}`)
+unlinkSync(`./NatsukiSessions/${files}`)
 })
 } 
 
 function purgeSessionSB() {
 try {
-const listaDirectorios = readdirSync('./GataJadiBot/');
+const listaDirectorios = readdirSync('./NatsukiJadiBot/');
 let SBprekey = [];
 listaDirectorios.forEach(directorio => {
-if (statSync(`./GataJadiBot/${directorio}`).isDirectory()) {
-const DSBPreKeys = readdirSync(`./GataJadiBot/${directorio}`).filter(fileInDir => {
+if (statSync(`./NatsukiJadiBot/${directorio}`).isDirectory()) {
+const DSBPreKeys = readdirSync(`./NatsukiJadiBot/${directorio}`).filter(fileInDir => {
 return fileInDir.startsWith('pre-key-')
 })
 SBprekey = [...SBprekey, ...DSBPreKeys];
 DSBPreKeys.forEach(fileInDir => {
 if (fileInDir !== 'creds.json') {
-unlinkSync(`./GataJadiBot/${directorio}/${fileInDir}`)
+unlinkSync(`./NatsukiJadiBot/${directorio}/${fileInDir}`)
 }})
 }})
 if (SBprekey.length === 0) {
-console.log(chalk.bold.green(lenguajeGB.smspurgeSessionSB1()))
+console.log(chalk.bold.green(lenguajeCD.smspurgeSessionSB1()))
 } else {
-console.log(chalk.bold.cyanBright(lenguajeGB.smspurgeSessionSB2()))
+console.log(chalk.bold.cyanBright(lenguajeCD.smspurgeSessionSB2()))
 }} catch (err) {
-console.log(chalk.bold.red(lenguajeGB.smspurgeSessionSB3() + err))
+console.log(chalk.bold.red(lenguajeCD.smspurgeSessionSB3() + err))
 }}
 
 function purgeOldFiles() {
-const directories = ['./GataBotSession/', './GataJadiBot/']
+const directories = ['./NatsukiSessions/', './NatsukiJadiBot/']
 directories.forEach(dir => {
 readdirSync(dir, (err, files) => {
 if (err) throw err
@@ -462,17 +462,17 @@ if (file !== 'creds.json') {
 const filePath = path.join(dir, file);
 unlinkSync(filePath, err => {
 if (err) {
-console.log(chalk.bold.red(`${lenguajeGB.smspurgeOldFiles3()} ${file} ${lenguajeGB.smspurgeOldFiles4()}` + err))
+console.log(chalk.bold.red(`${lenguajeCD.smspurgeOldFiles3()} ${file} ${lenguajeCD.smspurgeOldFiles4()}` + err))
 } else {
-console.log(chalk.bold.green(`${lenguajeGB.smspurgeOldFiles1()} ${file} ${lenguajeGB.smspurgeOldFiles2()}`))
+console.log(chalk.bold.green(`${lenguajeCD.smspurgeOldFiles1()} ${file} ${lenguajeCD.smspurgeOldFiles2()}`))
 } }) }
 }) }) }) }
 
-function redefineConsoleMethod(methodName, filterStrings) {
+function redefineConsoleMethod(methodName, bugsfilt) {
 const originalConsoleMethod = console[methodName]
 console[methodName] = function() {
 const message = arguments[0]
-if (typeof message === 'string' && filterStrings.some(filterString => message.includes(atob(filterString)))) {
+if (typeof message === 'string' && bugsfilt.some(bugsfilt => message.includes(atob(bugsfilt)))) {
 arguments[0] = ""
 }
 originalConsoleMethod.apply(console, arguments)
@@ -481,12 +481,12 @@ originalConsoleMethod.apply(console, arguments)
 setInterval(async () => {
 if (stopped === 'close' || !conn || !conn.user) return
 await clearTmp()
-console.log(chalk.bold.cyanBright(lenguajeGB.smsClearTmp()))}, 1000 * 60 * 4) // 4 min 
+console.log(chalk.bold.cyanBright(lenguajeCD.smsClearTmp()))}, 1000 * 60 * 4) // 4 min 
 
 //setInterval(async () => {
 //if (stopped === 'close' || !conn || !conn.user) return
 //await purgeSession()
-//console.log(chalk.bold.cyanBright(lenguajeGB.smspurgeSession()))}, 1000 * 60 * 10) // 10 min
+//console.log(chalk.bold.cyanBright(lenguajeCD.smspurgeSession()))}, 1000 * 60 * 10) // 10 min
 
 //setInterval(async () => {
 //if (stopped === 'close' || !conn || !conn.user) return
@@ -495,13 +495,13 @@ console.log(chalk.bold.cyanBright(lenguajeGB.smsClearTmp()))}, 1000 * 60 * 4) //
 setInterval(async () => {
 if (stopped === 'close' || !conn || !conn.user) return
 await purgeOldFiles()
-console.log(chalk.bold.cyanBright(lenguajeGB.smspurgeOldFiles()))}, 1000 * 60 * 10)
+console.log(chalk.bold.cyanBright(lenguajeCD.smspurgeOldFiles()))}, 1000 * 60 * 10)
 
-_quickTest().then(() => conn.logger.info(chalk.bold(lenguajeGB['smsCargando']().trim()))).catch(console.error)
+_quickTest().then(() => conn.logger.info(chalk.bold(lenguajeCD['smsCargando']().trim()))).catch(console.error)
 
 let file = fileURLToPath(import.meta.url)
 watchFile(file, () => {
 unwatchFile(file)
-console.log(chalk.bold.greenBright(lenguajeGB['smsMainBot']().trim()))
+console.log(chalk.bold.greenBright(lenguajeCD['smsMainBot']().trim()))
 import(`${file}?update=${Date.now()}`)
 })
