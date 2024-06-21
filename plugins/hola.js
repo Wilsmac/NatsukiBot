@@ -1,7 +1,7 @@
 const handler = async (m, { conn }) => {
 
 let texto = `hola`
-conn.sendMessage(m.chat, hola, "La", {quoted: {key: {
+conn.sendMessage(m.chat, texto, "La", {quoted: {key: {
 fromMe: false,
 participant: `0@s.whatsapp.net`
 },
