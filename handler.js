@@ -1473,7 +1473,7 @@ mentionedJid:[user],
 "mediaType": 1, 
 sourceUrl: canalofc }}}, { quoted: fkontak2 })*/
 apii.data = ''
-this.sendFile(id, apii.data, 'pp.jpg', text, null, false, { mentions: [user] }, { quoted: estilo2 })
+this.sendFile(id, apii.data, 'pp.jpg', text, null, false, { mentions: [user] }, { quoted: fkontak2})
 }}}
 			    
 break
