@@ -7,7 +7,8 @@ import { unwatchFile, watchFile } from 'fs'
 import fs from 'fs'
 import chalk from 'chalk'   
 import fetch from 'node-fetch'
- 
+import ws forma 'ws'
+
 /**
  * @type {import('@adiwajshing/baileys')}  
  */
