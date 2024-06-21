@@ -26,8 +26,8 @@ conn.reply(m.chat, teks, m, { mentions: { mentionedJid: [m.sender] }})}
 let teks = `${pickRandom([`no puedo esta contra las política del grupo.😸`, `_uff miren un pajero_`, `_pagame y paso mi pack😏🥵_`, `_que_`, `_que quiere pija dice 🤣_`, `_pasa el pack de tu hermana😏_`, `_mire un gilipolla_`, `_siuuu sexo sexo sexo😈_`, '_callate putito_'])}`.trim()
 conn.reply(m.chat, teks, m, { mentions: { mentionedJid: [m.sender] }})}*/
 
-/*if (/^Hola|Holi|hola$/i.test(m.text) ) { //sin prefijo 
-conn.reply(m.chat, `*Holi, como estás? 🥹♥️*`, ftoko, m)}*/
+if (/^Hola|Holi|hola$/i.test(m.text) ) { //sin prefijo 
+conn.reply(m.chat, `*Holi, como estás? 🥹♥️*`, estilo2, m)}*/
 
 
 //--------------------------------------------------------------
