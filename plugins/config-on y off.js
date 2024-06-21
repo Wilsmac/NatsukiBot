@@ -220,14 +220,6 @@ chat.antiTelegram = isEnable
 break
  bot.antiPrivate = isEnable;
       break;
-    case 'modejadibot':
-      isAll = true;
-      if (!isROwner) {
-        global.dfail('rowner', m, conn);
-        throw false;
-      }
-      bot.modejadibot = isEnable;
-      break;
 
 case 'antifacebook': case 'antifb': case 'antifbook':
 if (m.isGroup) {
@@ -355,6 +347,15 @@ throw false
 }
 bot.jadibotmd = isEnable
 break 
+
+case 'game': case 'juegos': case 'fun':
+if (m.isGroup) {
+if (!(isAdmin || isOwner)) {
+global.dfail('admin', m, conn)
+throw false
+}}
+chat.game = isEnable          
+break
 
 case 'restrict': case 'restringir':
 isAll = true
