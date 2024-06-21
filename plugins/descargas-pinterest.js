@@ -44,17 +44,22 @@ return data.result
 
 async function sendPinterestCarousel(conn, chat, query, usedPrefix) {
 let images = await getPinterestImages(query)
-const messages = images.map((image) => [
-image,
-[['🔗 Enlace de imagen', image]]
+const messages = images.map((image) => [ null, null, 
+image, 
+[['u', usedPrefix + `pinterest ${query}`], ['Buscar con Google 🌐', usedPrefix + `image2 ${query}`]],
+null, 
+[['🔗 Enlace de imagen', image]], 
+[['DDDDD', sections]]
 ])
 await conn.sendNatsukisel(chat, '💗 *Resultados de Pinterest*', 'Imágenes', '✨ Imágenes de Pinterest', messages)
 }
 
 async function sendGoogleCarousel(conn, chat, query, usedPrefix) {
 let images = await getGoogleImages(query);
-const messages = images.map((image) => [
-image,
+const messages = images.map((image) => [ null, null, 
+image, 
+[['Buscar de nuevo 🔎', usedPrefix + `image2 ${query}`], ['Buscar con Pinterest ✨', usedPrefix + `pinterest ${query}`]], 
+null, 
 [['🔗 Enlace de imagen', image]], 
 []
 ])
@@ -75,7 +80,6 @@ await sendGoogleCarousel(conn, m.chat, query)
 
 handler.command = /^(pinterest|image2)$/i
 export default handler
-
 
 
 /*import { pinterest } from '@bochilteam/scraper'
