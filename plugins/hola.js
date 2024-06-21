@@ -10,7 +10,7 @@ message: {
 "product": {
 "productImage":{
 "mimetype": "image/jpeg",
-"jpegThumbnail": fs.readFileSync(`./media/call.png`)
+"jpegThumbnail": fs.readFileSync(`./media/menus/Menu1.jpg`)
 },
 "title": `🚫hola hola hola`,
 "description": "",
