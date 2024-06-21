@@ -7,7 +7,7 @@ let handler = async (m, { conn, args, usedPrefix }) => {
 contoh: ${usedPrefix}math hard
 `.trim(), watermark, 'Easy', '.math easy', 'Medium', '.math medium', m)
   let mode = args[0].toLowerCase()
-  if (!(mode in modes)) return await conn.send2Button(m.chat, `
+  if (!(mode in modes)) return await conn.sendButton(m.chat, `
 ┌─「 Mode 」
 ├ ${Object.keys(modes).join('\n├ ')}
 └────
