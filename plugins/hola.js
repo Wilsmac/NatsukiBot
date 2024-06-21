@@ -1,4 +1,32 @@
-const handler = async (m, {conn, usedPrefix}) => {
+const handler = async (m, { conn }) => {
+
+let texto = `hola`
+conn.sendMessage(m.chat, hola, "La", {quoted: {key: {
+fromMe: false,
+participant: `0@s.whatsapp.net`
+},
+message: {
+"productMessage": {
+"product": {
+"productImage":{
+"mimetype": "image/jpeg",
+"jpegThumbnail": fs.readFileSync(`./media/call.png`)
+},
+"title": `🚫hola hola hola`,
+"description": "",
+"currencyCode": "SYP",
+"priceAmount1000": "999999999999999999",
+"retailerId": "",
+"productImageCount": 999
+},
+"businessOwnerJid": `0@s.whatsapp.net`
+}
+}}})
+}
+handler.command = /^(hoka)$/i
+export default handler
+
+/*const handler = async (m, {conn, usedPrefix}) => {
   const datas = global
 
   const doc = ['pdf', 'zip'];
@@ -29,4 +57,4 @@ const handler = async (m, {conn, usedPrefix}) => {
 handler.help = ['hoka'];
 handler.tags = ['info'];
 handler.command = /^(hoka)$/i;
-export default handler;
+export default handler;*/
