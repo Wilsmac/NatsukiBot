@@ -129,4 +129,4 @@ await conn.relayMessage(msg.key.remoteJid, msg.message, { messageId: msg.key.id 
 }
 handler.command = /^(tu)$/i
 
-export default handler 
+export default handler
