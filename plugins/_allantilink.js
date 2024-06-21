@@ -91,4 +91,3 @@ return m.reply(`${lenguajeGB['smsAvisoAG']()}${lenguajeGB['smsSoloOwner']()}`)
 }}
 return !0
 }
-
