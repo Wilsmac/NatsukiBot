@@ -1,6 +1,6 @@
 let handler = async (m, { conn, args, usedPrefix }) => {
   conn.math = conn.math ? conn.math : {}
-  if (args.length < 1) return await conn.send2Button(m.chat, `
+  if (args.length < 1) return await conn.sendButton(m.chat, `
 ┌─「 Mode 」
 ├ ${Object.keys(modes).join('\n├ ')}
 └────
