@@ -1,18 +1,18 @@
 {
-  "name": "NatsukiBot", 
-  "description": "Super Bot WhatsApp",
-  "repository": "https://github.com/Wilsmac/NatsukiBot",
-  "logo": "https://i.imgur.com/8fK4h6F.jpg",
-  "keywords": ["java", "bot", "whatsapp-bot", "whatsapp-automation"],
-  "buildpacks": [
-    {
-      "url": "heroku/nodejs"
-    },
-    {
-      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
-    },
-    {
-      "url": "https://github.com/bogini/heroku-buildpack-graphicsmagick"
-    }    
- ]
+"name": "GataBot-MD",
+"website": "https://github.com/Wilsmac",
+"description": "Super Bot WhatsApp",
+"repository": "https://github.com/Wilsmac/NatsukiBot",
+"logo": "https://telegra.ph/file/b46f45b5b69f311db31c7.jpg",
+"success_url": "https://github.com/Wilsmac/NatsukiBot",
+"keywords": [
+"nodejs", "heroku", "bot", "spanish", "english", "indonesian", "arab", "portuguese", "italian", "french", "whatsapp",
+"termux", "superbot", "multi-device", "md", "official", "javascript", "natsukibot"],
+"image": "heroku/nodejs",
+"buildpacks": [
+{ "url": "heroku/nodejs" },
+{ "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest" },
+{ "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git" },
+{ "url": "https://github.com/bogini/heroku-buildpack-graphicsmagick" }    
+]
 }
