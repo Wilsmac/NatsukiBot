@@ -1,6 +1,6 @@
 import fetch from 'node-fetch'
 import fs from 'fs' 
-import '../plugins/settings.js'
+import '../plugins/_settings.js'
 let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isROwner, text }) => { 
 //try{
 let chat = global.db.data.chats[m.chat]
