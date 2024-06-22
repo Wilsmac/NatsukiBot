@@ -1,67 +1,8 @@
 import fetch from 'node-fetch'
 import fs from 'fs' 
+import '../plugins/settings.js'
 let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isROwner, text }) => { 
 //try{
-const _0x44713f = _0x34b6;
-function _0x34b6(_0x355db8, _0x38a593) {
-    const _0x400972 = _0x5695();
-    return _0x34b6 = function (_0x16a5bb, _0x27e0c3) {
-        _0x16a5bb = _0x16a5bb - (0x1 * 0x12fa + -0x12dc + -0x16 * -0xb);
-        let _0x5e2a77 = _0x400972[_0x16a5bb];
-        return _0x5e2a77;
-    }, _0x34b6(_0x355db8, _0x38a593);
-}
-function _0x5695() {
-    const _0x4cecf4 = [
-        '10QkaAWA',
-        '50166towazJ',
-        'split',
-        '7930580BDnYXG',
-        '16rFbvUv',
-        ',;;;\x0aFN:',
-        ',\x0aitem1.TEL;waid=',
-        '1528180FrsxKo',
-        'sender',
-        '855510JLyYbE',
-        './media/menus/Menu1.jpg',
-        '2370321JHDFol',
-        '2784531yQdyIG',
-        'readFileSync',
-        '46058790kkljpF',
-        '25WXxsFt',
-        '\x0aitem1.X-ABLabell:Ponsel\x0aEND:VCARD'
-    ];
-    _0x5695 = function () {
-        return _0x4cecf4;
-    };
-    return _0x5695();
-}
-(function (_0x4d3b1a, _0x58b11c) {
-    const _0x423612 = _0x34b6, _0x34f90f = _0x4d3b1a();
-    while (!![]) {
-        try {
-            const _0x37ec1c = parseInt(_0x423612(0x111)) / (-0x1e * 0x11a + 0x2 * -0x4e4 + -0x891 * -0x5) * (-parseInt(_0x423612(0x112)) / (0x6b6 + 0x6a9 + -0xd5d)) + -parseInt(_0x423612(0x11d)) / (0x1ee + 0x255e + -0x2749) + -parseInt(_0x423612(0x118)) / (0x1 * 0x219d + -0x1156 + 0x17 * -0xb5) + parseInt(_0x423612(0x120)) / (-0x14a9 + -0x1 * -0xb5d + 0x3 * 0x31b) * (-parseInt(_0x423612(0x11a)) / (0x1e * 0x47 + 0x1588 + -0x1dd4)) + -parseInt(_0x423612(0x114)) / (-0x1c9c + 0x8a9 + 0x13fa) + parseInt(_0x423612(0x115)) / (0x12d * -0x1d + -0x257d + 0xb2 * 0x67) * (-parseInt(_0x423612(0x11c)) / (0x222 * 0x3 + -0x3af * -0x1 + -0x1 * 0xa0c)) + parseInt(_0x423612(0x11f)) / (0x89f * -0x1 + -0x15 * -0x81 + 0xf6 * -0x2);
-            if (_0x37ec1c === _0x58b11c)
-                break;
-            else
-                _0x34f90f['push'](_0x34f90f['shift']());
-        } catch (_0x47fdc1) {
-            _0x34f90f['push'](_0x34f90f['shift']());
-        }
-    }
-}(_0x5695, 0xf371d + -0x1 * -0x6f85a + -0xbed97));
-let fkontak2 = {
-    'key': { 'participant': '0@s.whatsapp.net' },
-    'message': {
-        'contactMessage': {
-            'displayName': wilmerofc,
-            'vcard': 'BEGIN:VCARD\x0aVERSION:3.0\x0aN:XL;' + author + _0x44713f(0x116) + author + _0x44713f(0x117) + m[_0x44713f(0x119)][_0x44713f(0x113)]('@')[-0x1484 * 0x1 + -0x666 + 0x1aea] + ':' + m['sender'][_0x44713f(0x113)]('@')[-0x162a + 0x546 + 0x10e4] + _0x44713f(0x110),
-            'jpegThumbnail': fs[_0x44713f(0x11e)](_0x44713f(0x11b)),
-            'thumbnail': fs['readFileSync']('./media/menus/Menu1.jpg'),
-            'sendEphemeral': !![]
-        }
-    }
-};
 let chat = global.db.data.chats[m.chat]
 let user = global.db.data.users[m.sender]
 let bot = global.db.data.settings[conn.user.jid] || {}
@@ -108,9 +49,9 @@ rows: [{ title: `${nombre[v]} : ${command} ${comando[v]}`, description: `${1 + i
 let name = await conn.getName(m.sender)
 const listMessage = {
 text: `${lenguajeGB.smsConfi10()}`,
-footer: `╭━━━✦ *${lenguajeGB.smsConfi1()}* ✦━━━━⬣
+footer: `╭━━━✦ ${lenguajeGB.smsConfi1()} ✦━━━━⬣
 ┃
-┃ 💓 ${lenguajeGB.smsConfi2()} *${name}*
+┃${lenguajeGB.smsConfi2()} ${name}
 ┃
 ${lenguajeGB.smsConfi3()}
 ${lenguajeGB.smsConfi4()}
@@ -128,7 +69,6 @@ sections }
 let isEnable = /true|enable|(turn)?on|1/i.test(command)
 let type = (args[0] || '').toLowerCase()
 let isAll = false, isUser = false
-
 switch (type) {
 case 'welcome': case 'bienvenida':
 if (!m.isGroup) {
@@ -181,8 +121,8 @@ global.dfail('admin', m, conn)
 throw false
 }}
 chat.antiLink = isEnable
-  break
-  
+break
+
 case 'antilink2': case 'antienlace2':
 if (m.isGroup) {
 if (!(isAdmin || isOwner)) {
@@ -218,8 +158,6 @@ throw false
 }}
 chat.antiTelegram = isEnable 
 break
- bot.antiPrivate = isEnable;
-      break;
 
 case 'antifacebook': case 'antifb': case 'antifbook':
 if (m.isGroup) {
@@ -239,7 +177,7 @@ throw false
 chat.antiInstagram = isEnable 
 break
 
-case 'antitwitter': case 'antitw': case 'antitwit': case 'antitwter': case 'antitwiter': case 'antiTwr':
+case 'antitwitter': case 'antitw': case 'antitwit': case 'antitwter': case 'antitwiter': case 'antix':
 if (m.isGroup) {
 if (!(isAdmin || isOwner)) {
 global.dfail('admin', m, conn)
@@ -248,7 +186,34 @@ throw false
 chat.antiTwitter = isEnable 
 break
 
-case 'modohorny': case 'modocaliente':
+case 'antidiscord':
+if (m.isGroup) {
+if (!(isAdmin || isOwner)) {
+global.dfail('admin', m, conn)
+throw false
+}}
+chat.antiDiscord = isEnable 
+break
+
+case 'antithreads':
+if (m.isGroup) {
+if (!(isAdmin || isOwner)) {
+global.dfail('admin', m, conn)
+throw false
+}}
+chat.antiThreads = isEnable 
+break
+
+case 'antitwitch':
+if (m.isGroup) {
+if (!(isAdmin || isOwner)) {
+global.dfail('admin', m, conn)
+throw false
+}}
+chat.antiTwitch = isEnable 
+break
+
+case 'modohorny': case 'modocaliente': case 'modehorny':
 if (m.isGroup) {
 if (!(isAdmin || isOwner)) {
 global.dfail('admin', m, conn)
@@ -264,6 +229,24 @@ global.dfail('admin', m, conn)
 throw false
 }}
 chat.stickers = isEnable          
+break
+
+case 'game': case 'juegos': case 'fun':
+if (m.isGroup) {
+if (!(isAdmin || isOwner)) {
+global.dfail('admin', m, conn)
+throw false
+}}
+chat.game = isEnable          
+break
+
+case 'ruleta': case 'game2':
+if (m.isGroup) {
+if (!(isAdmin || isOwner)) {
+global.dfail('admin', m, conn)
+throw false
+}}
+chat.game2 = isEnable          
 break
 
 case 'temporal':
@@ -329,7 +312,6 @@ throw false
 chat.antiver = isEnable 
 break
 
-
 case 'antiinternacional': case 'antinternacional': case 'antinternational': case 'antifake': case 'antifalsos': case 'antivirtuales': case 'antiextranjeros':                
 if (m.isGroup) {
 if (!(isAdmin || isOwner)) {
@@ -339,7 +321,7 @@ throw false
 chat.antifake = isEnable          
 break
 
-case 'jadibotmd': case 'modojadibot': case 'serbotmd': case 'modoserbot': 
+case 'jadibot': case 'modojadibot': case 'serbot': case 'modoserbot': 
 isAll = true
 if (!isROwner) {
 global.dfail('rowner', m, conn)
@@ -347,15 +329,6 @@ throw false
 }
 bot.jadibotmd = isEnable
 break 
-
-case 'game': case 'juegos': case 'fun':
-if (m.isGroup) {
-if (!(isAdmin || isOwner)) {
-global.dfail('admin', m, conn)
-throw false
-}}
-chat.game = isEnable          
-break
 
 case 'restrict': case 'restringir':
 isAll = true
@@ -412,7 +385,16 @@ throw false
 bot.antiSpam = isEnable
 break
 
-case 'modoadmin': case 'soloadmin':
+case 'antispam2':
+isAll = true
+if (!isOwner) {
+global.dfail('owner', m, conn)
+throw false
+}
+bot.antiSpam2 = isEnable
+break
+
+case 'modoadmin': case 'soloadmin': case 'modeadmin':
 if (m.isGroup) {
 if (!(isAdmin || isOwner)) {
 global.dfail('admin', m, conn)
@@ -438,8 +420,7 @@ throw false
 }
 global.opts['gconly'] = isEnable
 break
-
-case 'antiprivado':
+case 'antiprivado': case 'antiprivate':
 case 'privado':
 isAll = true
 if (!isROwner) {
@@ -448,9 +429,7 @@ throw false
 }
 bot.antiPrivate = isEnable
 break
-
-case 'antitrabas':
-case 'antitraba':
+case 'antitrabas': case 'antitraba': case 'antilag':
 if (m.isGroup) {
 if (!(isAdmin || isOwner)) {
 global.dfail('admin', m, conn)
@@ -458,8 +437,7 @@ throw false
 }}
 chat.antiTraba = isEnable
 break
-
-case 'simi':
+case 'simi': case 'chatbot':
 if (m.isGroup) {
 if (!(isAdmin || isOwner)) {
 global.dfail('admin', m, conn)
@@ -467,10 +445,7 @@ throw false
 }}
 chat.simi = isEnable
 break
-
-case 'modoia':
-case 'chatgpt':
-case 'ia':
+case 'modoia': case 'chatgpt': case 'ia':
 isAll = true;
 if (!isOwner) {
 global.dfail('owner', m, conn);
@@ -488,7 +463,7 @@ throw false
 global.opts['swonly'] = isEnable
 break
 default:
-if (!/[01]/.test(command)) return await conn.sendList(m.chat, `${listMessage.text}\n`, listMessage.footer, `${listMessage.buttonText}`, sections, null, null, fkontak2);
+if (!/[01]/.test(command)) return await conn.sendList(m.chat, `${listMessage.text}\n`, listMessage.footer, `${listMessage.buttonText}`, sections, null, null, estilo2);
 
 /*if (!/[01]/.test(command)) return await conn.reply(m.chat, `${lenguajeGB.smsConfi10()}\n\n🌟 ${lenguajeGB.smsConfi2()} *@${toUser}*
 
