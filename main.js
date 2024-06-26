@@ -80,6 +80,12 @@ loadDatabase();
 
 /* ------------------------------------------------*/
 
+if (global.conns instanceof Array) {
+console.log('Conexiones ya inicializados...');
+} else {
+global.conns = [];
+}
+
 global.chatgpt = new Low(new JSONFile(path.join(__dirname, '/db/chatgpt.json')));
 global.loadChatgptDB = async function loadChatgptDB() {
 if (global.chatgpt.READ) {
@@ -284,6 +290,45 @@ process.on('uncaughtException', console.error);
 //process.on('uncaughtException', (err) => {
 //console.error('Se ha cerrado la conexión:\n', err)
 //process.send('reset') })
+
+async function connectSubBots() {
+const subBotDirectory = './NatsukiJadiBot';
+if (!existsSync(subBotDirectory)) {
+console.log('No se encontraron ningun sub bots.');
+return;
+}
+
+const subBotFolders = readdirSync(subBotDirectory).filter(file => 
+statSync(join(subBotDirectory, file)).isDirectory()
+);
+
+const botPromises = subBotFolders.map(async folder => {
+const authFile = join(subBotDirectory, folder);
+if (existsSync(join(authFile, 'creds.json'))) {
+return await connectionUpdate(authFile);
+}
+});
+
+const bots = await Promise.all(botPromises);
+global.conns = bots.filter(Boolean);
+console.log(chalk.bold.greenBright(`TODOS LOS SUB BOTS SE HAN CONECTADO CORRECTAMENTE`))
+}
+
+(async () => {
+global.conns = [];
+
+const mainBotAuthFile = 'NatsukiSessions';
+try {
+const mainBot = await connectionUpdate(mainBotAuthFile);
+global.conns.push(mainBot);
+console.log(chalk.bold.greenBright(`BOT PRINCIPAL CONECTADO CORRECTAMENTE`))
+
+await connectSubBots();
+} catch (error) {
+console.error(chalk.bold.cyanBright(`OCURRIÓ UN ERROR AL INICIAR EL BOT PRINCIPAL: `, error))
+}
+})();
+
 
 let isInit = true;
 let handler = await import('./handler.js');
