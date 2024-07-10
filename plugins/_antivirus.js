@@ -1,4 +1,4 @@
-let handler = m => m
+xlet handler = m => m
 
 handler.all = async function (m, { isBotAdmin }) {
 // borrado automático cuando hay un mensaje que no se puede ver en el escritorio | auto clear ketika terdapat pesan yang tidak dapat dilihat di wa desktop 
