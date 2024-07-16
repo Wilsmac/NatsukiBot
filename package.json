@@ -1,26 +1,26 @@
 {
 "name": "NatsukiBot",
-"version": "1.8.5",
+"version": "1.7.0", 
 "description": "Super Bot WhatsApp",
 "main": "index.js",
 "type": "module",
-       
+
 "directories": {
 "lib": "lib",
 "src": "src",
 "plugins": "plugins" },
-  
+
 "scripts": {
 "start": "node index.js",
 "qr": "node index.js qr",
 "code": "node index.js code",
 "test": "node test.js",
 "test2": "nodemon index.js" },
-    
+
 "homepage": "https://github.com/Wilsmac/NatsukiBot",
 "author": {
 "name": "Wilsmac" },
-    
+
 "repository": {
 "type": "git",
 "url": "git+https://github.com/Wilsmac/NatsukiBot.git" },
