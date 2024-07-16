@@ -1458,7 +1458,7 @@ if (responseb[0].status === "404") return
 }}
 	
 let fkontak2 = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${user.split('@')[0]}:${user.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }      
-/*this.sendMessage(id, { text: text, 
+this.sendMessage(id, { text: text, 
 contextInfo:{
 forwardingScore: 9999999,
 isForwarded: true, 
@@ -1470,9 +1470,9 @@ mentionedJid:[user],
 "title": gt,
 "containsAutoReply": true,
 "mediaType": 1, 
-sourceUrl: accountsgb }}}, { quoted: fkontak2 })*/
+sourceUrl: accountsgb }}}, { quoted: estilo2 })
 apii.data = ''
-this.sendFile(id, apii.data, 'pp.jpg', text, null, false, { mentions: [user] }, { quoted: fkontak2 })
+//this.sendFile(id, apii.data, 'pp.jpg', text, null, false, { mentions: [user] }, { quoted: estilo2 })
 }}}
 			    
 break
