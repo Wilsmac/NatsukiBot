@@ -1,4 +1,4 @@
-import {WAMessageStubType} from '@whiskeysockets/baileys'
+/*import {WAMessageStubType} from '@whiskeysockets/baileys'
 import fetch from 'node-fetch'
 
 export async function before(m, {conn: this, participants, groupMetadata}) {
@@ -59,4 +59,4 @@ mentionedJid:[user],
 "mediaType": 1, 
 sourceUrl: canalofc }}}, { quoted: estilo2 })
 //await conn.sendNatsuki2(m.chat, gt, textia, kick, img, img, canalofc, estilo2)
-}}
+}}*/
