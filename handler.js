@@ -1467,10 +1467,10 @@ mentionedJid:[user],
 "showAdAttribution": true,
 "renderLargerThumbnail": true,
 "thumbnail": apii.data, 
-"title": gt,
+"title": textia + wm,
 "containsAutoReply": true,
 "mediaType": 1, 
-sourceUrl: accountsgb }}}, { quoted: estilo2 })
+sourceUrl: canalofc }}}, { quoted: estilo2 })
 apii.data = ''
 //this.sendFile(id, apii.data, 'pp.jpg', text, null, false, { mentions: [user] }, { quoted: estilo2 })
 }}}
