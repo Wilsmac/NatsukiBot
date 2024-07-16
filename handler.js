@@ -1467,7 +1467,7 @@ mentionedJid:[user],
 "showAdAttribution": true,
 "renderLargerThumbnail": true,
 "thumbnail": apii.data, 
-"title": textia + wm,
+"title": textia,
 "containsAutoReply": true,
 "mediaType": 1, 
 sourceUrl: canalofc }}}, { quoted: estilo2 })
