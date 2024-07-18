@@ -8,6 +8,7 @@ const { levelling } = '../lib/levelling.js'
 import PhoneNumber from 'awesome-phonenumber'
 import { promises } from 'fs'
 import { join } from 'path'
+const os = require('os')
 let handler = async (m, { conn, usedPrefix, usedPrefix: _p, __dirname, text, command }) => {
 try {
 let _package = JSON.parse(await promises.readFile(join(__dirname, '../package.json')).catch(_ => ({}))) || {}
@@ -72,6 +73,7 @@ let pp = gataVidMenu.getRandom()
 let pareja = global.db.data.users[m.sender].pasangan 
 let fkontak55 = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: `status@broadcast` } : {}) }, message: { 'contactMessage': { 'displayName': wm, 'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:XL;${wm},;;;\nFN:${wm},\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabell:Ponsel\nEND:VCARD`, 'jpegThumbnail': imagen1, thumbnail: imagen1 ,sendEphemeral: true}}}
 let taguser = '@' + m.sender.split("@s.whatsapp.net")[0]
+let Natsukiia = m.key.id.length > 21 ? 'Android' : m.key.id.substring(0, 2) == '3A' ? 'IOS' : 'whatsapp web'
 let fake0 = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: `status@broadcast` } : {}) }, message: { 'contactMessage': { 'displayName': saludo, 'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:XL;${saludo},;;;\nFN:${saludo},\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabell:Ponsel\nEND:VCARD`, 'jpegThumbnail': imagen1, thumbnail: imagen1 ,sendEphemeral: true}}}
 const numberToEmoji = { "0": "0️⃣", "1": "1️⃣", "2": "2️⃣", "3": "3️⃣", "4": "4️⃣", "5": "5️⃣", "6": "6️⃣", "7": "7️⃣", "8": "8️⃣", "9": "9️⃣", }
 let lvl = level
@@ -109,6 +111,7 @@ let menu = `\`¡HOLA!\` 👋🏻 • @${m.sender.split`@`[0]}\n${fantasy}${conn.
 > ┣ 𝙵𝙴𝙲𝙷𝙰 𝚈 𝙷𝙾𝚁𝙰: \`${formatDate}\`
 > ┣ 𝙿𝙰𝙸𝚂: \`${nombreLugar}\`
 > ┣ 𝙲𝙸𝚄𝙳𝙰𝙳: \`${ciudad}\`
+> ┣ 𝚄𝚃𝙸𝙻𝙸𝚉𝙰: ${Natsukiia}
 > *╘━ꥇ۬════•| ✿ |•════╝* 
  ${readMore}
 
