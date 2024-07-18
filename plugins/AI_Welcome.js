@@ -3,7 +3,7 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
   try {
     let pp = await conn.profilePictureUrl(m.sender, 'image')
 
-    const nst = {
+    let nst = {
       "key": {
         "fromMe": false,
         "participant": "0@s.whatsapp.net",
@@ -22,7 +22,7 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
 
     conn.reply(m.chat, `Hola soy Hola, soy Natsuki, en que puedo ayudarte?`, m, nst)
   } catch (error) {
-    conn.reply(m.chat, 'Hola, soy Natsuki, en que puedo ayudarte?', 'conversation', { quoted: m })
+    conn.reply(m.chat, `Hola soy Hola, soy Natsuki, en que puedo ayudarte?`, m, nst)
   }
 }
 
