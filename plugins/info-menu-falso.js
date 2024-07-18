@@ -722,7 +722,7 @@ thumbnailUrl: pp,
 sourceUrl: md,
 mediaType: 1,
 renderLargerThumbnail: false
-}}} estilo2)
+}}})
 
 } catch (e) {
 await m.reply(lenguajeCD['smsMalError3']() + '\n*' + lenguajeCD.smsMensError1() + '*\n*' + usedPrefix + `${lenguajeCD.lenguaje() == 'es' ? 'reporte' : 'report'}` + '* ' + `${lenguajeCD.smsMensError2()} ` + usedPrefix + command)
