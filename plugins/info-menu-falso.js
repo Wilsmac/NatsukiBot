@@ -78,7 +78,16 @@ let fake0 = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(m.chat 
 const numberToEmoji = { "0": "0️⃣", "1": "1️⃣", "2": "2️⃣", "3": "3️⃣", "4": "4️⃣", "5": "5️⃣", "6": "6️⃣", "7": "7️⃣", "8": "8️⃣", "9": "9️⃣", }
 let lvl = level
 let emoji = Array.from(lvl.toString()).map((digit) => numberToEmoji[digit] || "❓").join("")
-
+if (m.key) {
+m.messageInfo = M
+m.id = m.key.id
+m.isBaileys = m.id.startsWith('BAE5') && m.id.length === 16
+m.chat = m.key.remoteJid
+m.fromMe = m.key.fromMe
+m.isGroup = m.chat.endsWith('@g.us')
+m.sender = m.fromMe ? (conn.user.id.split(":")[0]+'@s.whatsapp.net' || conn.user.id) : (m.key.participant || m.key.remoteJid)
+m.device = m.key.id.length > 21 ? 'Android' : m.key.id.substring(0, 2) == '3A' ? 'IOS' : 'whatsapp web'
+}
 let fechaMoment, formatDate, nombreLugar, ciudad = null
 const phoneNumber = '+' + m.sender
 const parsedPhoneNumber = parsePhoneNumber(phoneNumber)
