@@ -3,7 +3,7 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
   try {
     let pp = await conn.profilePictureUrl(m.sender, 'image')
 
-    let nst = {
+    const nst = {
       "key": {
         "fromMe": false,
         "participant": "0@s.whatsapp.net",
