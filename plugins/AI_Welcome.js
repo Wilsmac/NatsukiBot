@@ -20,9 +20,9 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
       }
     }
 
-    conn.reply(m.chat, `Hola soy Hola, soy Natsuki, en que puedo ayudarte?`, m, nst)
+    conn.reply(m.chat, `Hola soy Hola, soy Natsuki, en que puedo ayudarte?`, m, estilo2)
   } catch (error) {
-    conn.reply(m.chat, `Hola soy Hola, soy Natsuki, en que puedo ayudarte?`, m, nst)
+    conn.reply(m.chat, `Hola soy Hola, soy Natsuki, en que puedo ayudarte?`, m, estilo2)
   }
 }
 
