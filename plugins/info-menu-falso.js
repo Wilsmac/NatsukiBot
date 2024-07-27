@@ -716,7 +716,7 @@ serverMessageId: -1
 forwardingScore: 999,
 externalAdReply: {
 mentionedJid: [m.sender],
-title: gt,
+title: textia,
 body: wm,
 thumbnailUrl: pp,
 sourceUrl: md,
