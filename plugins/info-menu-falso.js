@@ -718,7 +718,7 @@ externalAdReply: {
 mentionedJid: [m.sender],
 title: gt,
 body: textia,
-thumbnailUrl: catalogo,
+thumbnailUrl: pp,
 sourceUrl: md,
 mediaType: 1,
 renderLargerThumbnail: false
