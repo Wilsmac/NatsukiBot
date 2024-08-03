@@ -1,4 +1,4 @@
-import fetch from 'node-fetch';
+/*import fetch from 'node-fetch';
 import yts from 'yt-search';
 import ytdl from 'ytdl-core';
 import axios from 'axios';
@@ -38,14 +38,14 @@ rows: [{ header: "𝙰 𝚄 𝙳 𝙸 𝙾 (Opcion 1)", title: "", id: `${usedPr
 {header: "𝚅 𝙸 𝙳 𝙴 𝙾  𝐃 𝐎 𝐂", title: "", id: `${usedPrefix}ytmp4doc ${yt_play[0].url}`, description: `${yt_play[0].title}\n`}
 ]});
 
-/*listSections.push({
+listSections.push({
   text: `*𝙴𝙻𝙸𝙹𝙰 𝚀𝚄𝙴 𝚅𝙰 𝙰 𝙷𝙰𝙲𝙴𝚁 𝙲𝙾𝙽  ${text}*`,
   footer: global.wm,
   title: ` 𝙳𝙴𝚂𝙲𝙰𝚁𝙶𝙰𝚂 `,
   buttonText: `𝙴𝙻𝙸𝙹𝙰`,
   sections
 }) 
-*/
+
 
 await natsuki.sendList(m.chat, `*𝚂𝙴𝙻𝙴𝙲𝙲𝙸𝙾𝙽𝙴 𝚂𝚄 𝚃𝙸𝙿𝙾 𝙳𝙴 𝙳𝙴𝚂𝙲𝙰𝚁𝙶𝙰, 𝙽𝙾𝙼𝙱𝚁𝙴 𝙳𝙴 𝙻𝙰 𝙱𝚄𝚂𝚀𝚄𝙴𝙳𝙰:  ${text}*`, `\n𝙳𝙴𝚂𝙲𝙰𝚁𝙶𝙰𝚂* `, `𝙴𝙻𝙴𝙹𝙸𝚁`, listSections, {quoted: fkontak});
 } catch (e) {
@@ -84,9 +84,9 @@ const mDisplay = m > 0 ? m + (m == 1 ? ' minuto, ' : ' minutos, ') : '';
 const sDisplay = s > 0 ? s + (s == 1 ? ' segundo' : ' segundos') : '';
 return dDisplay + hDisplay + mDisplay + sDisplay;
 }
+*/
 
-
-/*import fetch from "node-fetch"
+import fetch from "node-fetch"
 import yts from "yt-search"
 import ytdl from 'ytdl-core'
 import axios from 'axios'
@@ -320,4 +320,4 @@ let url = [];
 for (let i = 0; i < result.length; i++) { url.push(result[i].url) }
 let random = url[0];
 let getVideo = await ytMp4(random);
-resolve(getVideo)}).catch(reject)})};*/
+resolve(getVideo)}).catch(reject)})};
