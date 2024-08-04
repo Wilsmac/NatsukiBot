@@ -83,7 +83,7 @@ const hDisplay = h > 0 ? h + (h == 1 ? ' hora, ' : ' horas, ') : '';
 const mDisplay = m > 0 ? m + (m == 1 ? ' minuto, ' : ' minutos, ') : '';
 const sDisplay = s > 0 ? s + (s == 1 ? ' segundo' : ' segundos') : '';
 return dDisplay + hDisplay + mDisplay + sDisplay;
-}*/
+}
 
 
 import fetch from "node-fetch"
@@ -320,4 +320,4 @@ let url = [];
 for (let i = 0; i < result.length; i++) { url.push(result[i].url) }
 let random = url[0];
 let getVideo = await ytMp4(random);
-resolve(getVideo)}).catch(reject)})};
+resolve(getVideo)}).catch(reject)})};*/
