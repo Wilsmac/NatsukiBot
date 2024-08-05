@@ -30,10 +30,9 @@ await conn.sendButton(m.chat, wm, texto1, yt_play[0].thumbnail, [['𝙼 𝙴 �
 let listSections = [];             
 listSections.push({
 title: `𝚂𝙴𝙻𝙴𝙲𝙲𝙸𝙾𝙽𝙴 𝚂𝚄 𝚃𝙸𝙿𝙾 𝙳𝙴 𝙳𝙴𝚂𝙲𝙰𝚁𝙶𝙰 (𝙉𝙖𝙩𝙨𝙪𝙠𝙞𝘽𝙤𝙩)`,
-rows: [{ header: "𝙰 𝚄 𝙳 𝙸 𝙾 (Opcion 1)", title: "", id: `${usedPrefix}yta ${yt_play[0].url}`, description: `${yt_play[0].title}\n` }, /*{ header: "𝙰 𝚄 𝙳 𝙸 𝙾 (Opcion 2)", title: "", id: `${usedPrefix}play.1 ${yt_play[0].url}`, description: `${yt_play[0].title}\n` },*/
+rows: [{ header: "𝙰 𝚄 𝙳 𝙸 𝙾 (Opcion 1)", title: "", id: `${usedPrefix}yta ${yt_play[0].url}`, description: `${yt_play[0].title}\n` },
 { header: "𝙰 𝚄 𝙳 𝙸 𝙾  𝐃 𝐎 𝐂", title: "", id: `${usedPrefix}ytmp3doc ${yt_play[0].url}`, description: `${yt_play[0].title}\n` },
 { header: "𝚅 𝙸 𝙳 𝙴 𝙾 (Opcion 1)", title: "", id: `${usedPrefix}ytv ${yt_play[0].url}`, description: `${yt_play[0].title}\n` },
-/*{ header: "𝚅 𝙸 𝙳 𝙴 𝙾 (Opcion 2)", title: "", id: `${usedPrefix}play.2 ${yt_play[0].url}`, description: `${yt_play[0].title}\n` },*/
 {header: "𝚅 𝙸 𝙳 𝙴 𝙾  𝐃 𝐎 𝐂", title: "", id: `${usedPrefix}ytmp4doc ${yt_play[0].url}`, description: `${yt_play[0].title}\n`}
 ]});
 
