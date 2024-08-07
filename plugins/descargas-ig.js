@@ -73,5 +73,5 @@ handler.help = ['instagram <link ig>']
 handler.tags = ['downloader']
 handler.command =/^(instagram|ig(dl)?)$/i
 handler.limit = 2
-handler.register = true
+//handler.register = true
 export default handler
