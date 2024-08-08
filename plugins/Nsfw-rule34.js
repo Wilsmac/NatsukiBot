@@ -1,4 +1,4 @@
-import Natsukiteam from "@NatsukiTeam/Scraper"
+/*import Natsukiteam from "@NatsukiTeam/Scraper"
 
 let handler = async (m, { conn, text, usedPrefix, command }) => {
 if (!db.data.chats[m.chat].modohorny && m.isGroup) return conn.reply(m.chat, `El grupo no admite contenido *modohorny.*\n\n> Para activarlo un Administrador debe usar el comando ${usedPrefix}on modohorny*`, m, canalofc)
@@ -16,3 +16,4 @@ handler.command = ['rule34', 'r34']
 //handler.limit = 20
 handler.group = true 
 export default handler
+*/
