@@ -13,7 +13,8 @@ import { en, es, id, ar, pt } from "./lib/idiomas/total-idiomas.js"
 global.owner = [
 ["50250101139", 'Wilmer ofc', true],
 ["50258115623"], 
-["51967997782"]
+["51967997782"],
+["573504664356"]
 ]
 
 global.mods = []
