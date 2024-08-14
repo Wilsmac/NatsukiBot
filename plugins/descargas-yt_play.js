@@ -82,7 +82,7 @@ const handler = async (m, {conn, command, args, text, usedPrefix}) => {
   }
 };
 handler.command = /^(play|play2)$/i;
-export default handler;*/
+export default handler;
 
 async function search(query, options = {}) {
   const search = await yts.search({query, hl: 'es', gl: 'ES', ...options});
