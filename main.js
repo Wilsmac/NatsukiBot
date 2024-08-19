@@ -289,7 +289,7 @@ process.on('uncaughtException', console.error);
 //console.error('Se ha cerrado la conexión:\n', err)
 //process.send('reset') })
 
-async function connectSubBots() {
+/*async function connectSubBots() {
 const subBotDirectory = './NatsukiJadiBot';
 if (!existsSync(subBotDirectory)) {
 console.log('No se encontraron ningun sub bots.');
@@ -325,7 +325,7 @@ await connectSubBots();
 } catch (error) {
 console.error(chalk.bold.cyanBright(`OCURRIÓ UN ERROR AL INICIAR EL BOT PRINCIPAL: `, error))
 }
-})();
+})();*/
 
 
 let isInit = true;
