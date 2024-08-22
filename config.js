@@ -20,6 +20,8 @@ global.owner = [
 global.mods = []
 global.prems = []
 
+global.isBaileysFail = false
+
 global.tagusario = ['50250101139'];
 
 global.obtenerQrWeb = 0; //1 o 0
