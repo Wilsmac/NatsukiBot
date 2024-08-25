@@ -1,4 +1,4 @@
-import translate from '@vitalets/google-translate-api'
+/*import translate from '@vitalets/google-translate-api'
 import * as fs from 'fs'
 import { es, en, id, ar, pt } from '../lib/idiomas/total-idiomas.js'
 
@@ -64,4 +64,4 @@ console.log(e)
 handler.command = /^(idioma|languaje|idiomas|languajes|languages)$/i
 handler.owner = true
 
-export default handler
+export default handler*/
