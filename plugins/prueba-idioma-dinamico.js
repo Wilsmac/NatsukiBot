@@ -1,4 +1,4 @@
-/*import translate from '@vitalets/google-translate-api'
+import translate from '@vitalets/google-translate-api'
 import * as fs from 'fs'
 import { es, en, id, ar, pt } from '../lib/idiomas/total-idiomas.js'
 
@@ -15,23 +15,23 @@ let idioma3 = await translate(`${bot3}`, { to: lenguajeCD.lenguaje(), autoCorrec
 
 try {  
 if (args[0] == 'es'){
-global.lenguajeGB = es
+global.lenguajeCD = es
 await conn.sendButton(m.chat, lenguajeCD['smsAvisoEG']() + idioma.text + '\n' + 'Español', igfg, null, [[`𝙼 𝙴 𝙽 𝚄 ☃️`, `${usedPrefix}menu`]], fkontak, m)
 
 }else if (args[0] == 'en'){
-global.lenguajeGB = en
+global.lenguajeCD = en
 await conn.sendButton(m.chat, lenguajeCD['smsAvisoEG']() + idioma.text + '\n' + 'English', igfg, null, [[`𝙼 𝙴 𝙽 𝚄 ☃️`, `${usedPrefix}menu`]], fkontak, m)
 
 }else if (args[0] == 'id'){
-global.lenguajeGB = id
+global.lenguajeCD = id
 await conn.sendButton(m.chat, lenguajeCD['smsAvisoEG']() + idioma.text + '\n' + 'Bahasa Indonesia', igfg, null, [[`𝙼 𝙴 𝙽 𝚄 ☃️`, `${usedPrefix}menu`]], fkontak, m)
 
 }else if (args[0] == 'ar'){
-global.lenguajeGB = ar
+global.lenguajeCD = ar
 await conn.sendButton(m.chat, lenguajeCD['smsAvisoEG']() + idioma.text + '\n' + 'عرب', igfg, null, [[`𝙼 𝙴 𝙽 𝚄 ☃️`, `${usedPrefix}menu`]], fkontak, m)
 
 }else if (args[0] == 'pt'){
-global.lenguajeGB = pt
+global.lenguajeCD = pt
 await conn.sendButton(m.chat, lenguajeCD['smsAvisoEG']() + idioma.text + '\n' + 'Português', igfg, null, [[`𝙼 𝙴 𝙽 𝚄 ☃️`, `${usedPrefix}menu`]], fkontak, m)
 }else{
 
