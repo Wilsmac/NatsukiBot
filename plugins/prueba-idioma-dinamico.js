@@ -15,23 +15,23 @@ let idioma3 = await translate(`${bot3}`, { to: lenguajeCD.lenguaje(), autoCorrec
 
 try {  
 if (args[0] == 'es'){
-global.lenguajeCD = es
+global.lenguajeGB = es
 await conn.sendButton(m.chat, lenguajeCD['smsAvisoEG']() + idioma.text + '\n' + 'Español', igfg, null, [[`𝙼 𝙴 𝙽 𝚄 ☃️`, `${usedPrefix}menu`]], fkontak, m)
 
 }else if (args[0] == 'en'){
-global.lenguajeCD = en
+global.lenguajeGB = en
 await conn.sendButton(m.chat, lenguajeCD['smsAvisoEG']() + idioma.text + '\n' + 'English', igfg, null, [[`𝙼 𝙴 𝙽 𝚄 ☃️`, `${usedPrefix}menu`]], fkontak, m)
 
 }else if (args[0] == 'id'){
-global.lenguajeCD = id
+global.lenguajeGB = id
 await conn.sendButton(m.chat, lenguajeCD['smsAvisoEG']() + idioma.text + '\n' + 'Bahasa Indonesia', igfg, null, [[`𝙼 𝙴 𝙽 𝚄 ☃️`, `${usedPrefix}menu`]], fkontak, m)
 
 }else if (args[0] == 'ar'){
-global.lenguajeCD = ar
+global.lenguajeGB = ar
 await conn.sendButton(m.chat, lenguajeCD['smsAvisoEG']() + idioma.text + '\n' + 'عرب', igfg, null, [[`𝙼 𝙴 𝙽 𝚄 ☃️`, `${usedPrefix}menu`]], fkontak, m)
 
 }else if (args[0] == 'pt'){
-global.lenguajeCD = pt
+global.lenguajeGB = pt
 await conn.sendButton(m.chat, lenguajeCD['smsAvisoEG']() + idioma.text + '\n' + 'Português', igfg, null, [[`𝙼 𝙴 𝙽 𝚄 ☃️`, `${usedPrefix}menu`]], fkontak, m)
 }else{
 
