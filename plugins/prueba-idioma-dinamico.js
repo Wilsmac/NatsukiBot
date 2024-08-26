@@ -64,4 +64,4 @@ console.log(e)
 handler.command = /^(idioma|languaje|languages)$/i
 //handler.owner = true
 
-export default handler*/
+export default handler
