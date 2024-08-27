@@ -20,9 +20,9 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
       }
     }
 
-    conn.sendMessage(m.chat, { text: 'Hola, soy Natsuki, en que puedo ayudarte?' }, { quoted: estilo2 })
+    conn.sendMessage(m.chat, { text: 'Hola, soy Natsuki, en que puedo ayudarte?' }, { quoted: nst })
   } catch (error) {
-    conn.sendMessage(m.chat, 'Hola, soy Natsuki, en que puedo ayudarte?', 'conversation', { quoted: estilo2 })
+    conn.sendMessage(m.chat, 'Hola, soy Natsuki, en que puedo ayudarte?', 'conversation', { quoted: m })
   }
 }
 handler.customPrefix = /^(Ai)$/i
