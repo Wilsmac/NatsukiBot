@@ -65,7 +65,7 @@ return response.data;
 return text;
 }}
 let handler = async (m, { conn, text, usedPrefix, command }) => {
-if (!text) throw `${lenguajeGB.smsMalused2()} ⊱ *${usedPrefix + command} Bellyache*`
+if (!text) throw `> ⓘ  𝙳𝙴𝙱𝙴 𝙳𝙴 𝚄𝚂𝙰𝚁 𝙴𝚂𝚃𝙴 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 𝙲𝙾𝙼𝙾 𝙴𝚂𝚃𝙴 𝙴𝙹𝙴𝙼𝙿𝙻𝙾: \`Ari Abdul babydoll\``
 try {
 m.react('⌛️')
 let songInfo = await spotifyxv(text)
