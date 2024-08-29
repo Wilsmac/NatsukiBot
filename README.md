@@ -3,9 +3,6 @@
 ------------------
 
 
-<a
-href="https://wa.me/+50587047577" target="white"><img src="https://img.shields.io/badge/☄️-Prueba la IA por tiempo limitado-000000?style=for-the-badge&logo=whatsapp&logoColor=black" /></a>
-
 <p align="center">
 <img src="https://telegra.ph/file/b95059bd21a2bbbd0218b.jpg" alt="FantasyBot-MD-v1" width="900"/>
 </p>
