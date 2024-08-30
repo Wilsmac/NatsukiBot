@@ -44,8 +44,7 @@ let menu = `
 ┆ ⋮
 ┆ ⋮  *Usuario* ${editMenu.mencion ? `@${m.sender.split("@")[0]}` : await conn.getName(m.sender) }
 ┆ ⋮  *Lugar* ${nombreLugar} - ${ciudad}
-┆ ⋮  *Registrados* \`\`\`${Object.values(global.db.data.users).filter(user => user.registered == true).length}/${Object.keys(global.db.data.users).length}\`\`\`
-┆ ⋮  *Versión* \`${version}\`
+┆ ⋮ 
 ┆ ⋮  *Menú de Audios* \`${_p}menu2\`
 ╰・・・・☆・・・・・・☆ ・・・・
 ${editMenu.dividir ? readMore : ''}
