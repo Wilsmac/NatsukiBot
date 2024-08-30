@@ -424,11 +424,11 @@ serverMessageId: 100
 }}
 
 if (editMenu.imagen) {
-await conn.sendMessage(m.chat, { image: { url: yartexImg.getRandom() }, caption: menu, mentions: [m.sender], contextInfo: contextInfo }, { quoted: editMenu.verificado ? fkontak : m })
+await conn.sendMessage(m.chat, { image: { url: imagen2 }, caption: menu, mentions: [m.sender], contextInfo: contextInfo }, { quoted: editMenu.verificado ? fkontak : m })
 } else if (editMenu.video) {
-await conn.sendMessage(m.chat, { video: { url: yartexVid.getRandom() }, gifPlayback: true, caption: menu, mentions: [m.sender], contextInfo: contextInfo }, { quoted: editMenu.verificado ? fkontak : m })
+await conn.sendMessage(m.chat, { video: { url: nskvid.getRandom() }, gifPlayback: true, caption: menu, mentions: [m.sender], contextInfo: contextInfo }, { quoted: editMenu.verificado ? fkontak : m })
 } else if (editMenu.dinamico) {
-const mediaFiles = [{ image: { url: yartexImg.getRandom() } }, { video: { url: yartexVid.getRandom(), gifPlayback: true } }]
+const mediaFiles = [{ image: { url: nskvid.getRandom() } }, { video: { url: nskvid.getRandom(), gifPlayback: true } }]
 let randomMedia = getRandom(mediaFiles)
 await conn.sendMessage(m.chat, { ...randomMedia, caption: menu, mentions: [m.sender], contextInfo: contextInfo }, { quoted: editMenu.verificado ? fkontak : m })
 } else if (editMenu.simple) {
@@ -437,7 +437,7 @@ await conn.sendMessage(m.chat, { text: menu, mentions: [m.sender], contextInfo: 
 let newImg = await cropImageToSquare(editMenu.personalizado)
 await conn.sendMessage(m.chat, { image: newImg, caption: menu, mentions: [m.sender], contextInfo: contextInfo }, { quoted: editMenu.verificado ? fkontak : m })
 } else {
-await conn.sendMessage(m.chat, { video: { url: yartexVid.getRandom() }, gifPlayback: true, caption: menu, mentions: [m.sender], contextInfo: contextInfo }, { quoted: fkontak })
+await conn.sendMessage(m.chat, { video: { url: nskvid.getRandom() }, gifPlayback: true, caption: menu, mentions: [m.sender], contextInfo: contextInfo }, { quoted: fkontak })
 }
 }
 handler.command = ['help', 'pruebakk'] 
