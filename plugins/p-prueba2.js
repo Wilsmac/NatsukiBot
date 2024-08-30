@@ -1,4 +1,4 @@
-import fs from 'fs'
+/*import fs from 'fs'
 import fetch from 'node-fetch'
 import jimp from 'jimp'
 import { fileURLToPath } from 'url'
@@ -479,7 +479,7 @@ return console.error('Error:', error)
 
 
 
-/*import fetch from 'node-fetch'
+import fetch from 'node-fetch'
 let handler = async (m, { conn, args }) => {
   let response = args.join(' ').split('|')
   if (!args[0]) throw 'mmmmm'
