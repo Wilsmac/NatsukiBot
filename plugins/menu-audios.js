@@ -1,4 +1,4 @@
-import { xpRange } from '../lib/levelling.js'
+/*import { xpRange } from '../lib/levelling.js'
 import PhoneNumber from 'awesome-phonenumber'
 import { promises } from 'fs'
 import { join } from 'path'
@@ -69,7 +69,7 @@ let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status
 let fsizedoc = '1'.repeat(10)
 let adReply = { fileLength: fsizedoc, seconds: fsizedoc, contextInfo: { forwardingScore: fsizedoc, externalAdReply: { showAdAttribution: true, title: wm, body: '👋 ' + username, mediaUrl: ig, description: 'Hola', previewType: 'PHOTO', thumbnail: await(await fetch(gataMenu.getRandom())).buffer(), sourceUrl: redesMenu.getRandom() }}}
 
-/*let str = `
+let str = `
 ╭┄〔 *${wm}* 〕┄⊱
 ┊ *🎶 ${lenguajeGB['smsConfi2']()} ${username}*
 ┊დ *${week}, ${date}*
@@ -221,8 +221,8 @@ let adReply = { fileLength: fsizedoc, seconds: fsizedoc, contextInfo: { forwardi
          VOLUMEN: ▁▂▃▄▅▆▇ 100%
 ╰════• ೋ•✧๑♡๑✧•ೋ •════╯`.trim()
     conn.sendFile(m.chat, pp, 'lp.jpg', str, m, false, { contextInfo: { mentionedJid }})
-/*let menuA = `🎶 ${lenguajeGB['smsConfi2']()} *${username}*`.trim()*/
-/*let menuB = `
+/*let menuA = `🎶 ${lenguajeGB['smsConfi2']()} *${username}*`.trim()
+let menuB = `
 ╭┄〔 *${wm}* 〕┄⊱
 ┊დ *${week}, ${date}*
 ┊დ *${lenguajeGB['smsBotonM4']()} » ${Object.keys(global.db.data.users).length}* 
@@ -367,7 +367,7 @@ let adReply = { fileLength: fsizedoc, seconds: fsizedoc, contextInfo: { forwardi
 ∘ _Gol!_`.trim()
   
 await conn.sendButtonVid(m.chat, pp, menuA, menuB, lenguajeGB.smsBotonM1(), '.menu', lenguajeGB.smsBotonM2(), '/allmenu', lenguajeGB.smsBotonM3(), '#inventario', fkontak, adReply)
-*/
+
 let listSections = [];             
 listSections.push({
 title: `${lenguajeGB.smsTex18()}`,
