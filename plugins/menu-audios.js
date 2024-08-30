@@ -221,7 +221,7 @@ let str = `
          VOLUMEN: ▁▂▃▄▅▆▇ 100%
 ╰════• ೋ•✧๑♡๑✧•ೋ •════╯`.trim()
     conn.sendFile(m.chat, pp, 'lp.jpg', str, m, false, { contextInfo: { mentionedJid }})
-/*let menuA = `🎶 ${lenguajeGB['smsConfi2']()} *${username}*`.trim()
+let menuA = `🎶 ${lenguajeGB['smsConfi2']()} *${username}`.trim()
 let menuB = `
 ╭┄〔 *${wm}* 〕┄⊱
 ┊დ *${week}, ${date}*
