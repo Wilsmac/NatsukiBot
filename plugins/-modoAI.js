@@ -74,7 +74,7 @@ console.log(e)
 }
 handler.help = ['menu3', 'audios']
 handler.tags = ['bot']
-handler.command = /^(teamnsk)$/i
+handler.command = /^(menuaudios)$/i
 
 //handler.register = true
 
