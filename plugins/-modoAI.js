@@ -76,7 +76,7 @@ handler.help = ['menu3', 'audios']
 handler.tags = ['bot']
 handler.command = /^(teamnsk)$/i
 
-handler.register = true
+//handler.register = true
 
 export default handler
 
