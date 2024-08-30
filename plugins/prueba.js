@@ -1,4 +1,4 @@
-import uploadImage from '../lib/uploadImage.js'
+/*import uploadImage from '../lib/uploadImage.js'
 import { webp2png } from '../lib/webp2mp4.js'
 import fetch from 'node-fetch'
 import axios from 'axios'
@@ -273,4 +273,4 @@ pngBytes[i + 3] === acTLChunk[3]) {
 return true
 }}
 return false
-}
+}*/
