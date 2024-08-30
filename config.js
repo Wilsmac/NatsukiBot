@@ -251,6 +251,11 @@ global.img17 = 'https://telegra.ph/file/6114942024c7658478830.jpg'
 global.img18 = 'https://telegra.ph/file/6114942024c7658478830.jpg'
 
 global.logogit = 'https://tinyurl.com/2qvl9vgs'
+
+let nskvid = 'https://telegra.ph/file/fc75439751a71e3419c68.mp4'
+let nskvid2 = 'https://telegra.ph/file/60222a8e88addd43523b7.mp4'
+let nskvid3 = 'https://telegra.ph/file/efc37a04ba264b60ea1ec.mp4'
+global.nskvid = [nskvid, nskvid2, nskvid3]
 // • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
 
 // • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
