@@ -1,4 +1,3 @@
-
 import fetch from 'node-fetch'
 
 var handler = async (m, { conn, usedPrefix, usedPrefix: _p, __dirname, text, command }) => {
