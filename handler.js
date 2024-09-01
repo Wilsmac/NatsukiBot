@@ -996,6 +996,7 @@ if (!('antiDiscord' in chat)) chat.antiDiscord = false
 if (!('antiThreads' in chat)) chat.antiThreads = false
 if (!('antiTwitch' in chat)) chat.antiTwitch = false
 if (!('antifake' in chat)) chat.antifake = false
+if (!('antiBot' in chat))  chat.antiBot = false
 if (!('reaction' in chat)) chat.reaction = true    
 if (!('viewonce' in chat)) chat.viewonce = false       
 if (!('modoadmin' in chat)) chat.modoadmin = false    
@@ -1035,6 +1036,7 @@ antiDiscord: false,
 antiThreads: false,
 antiTwitch: false,
 antifake: false,
+antiBot: false,
 reaction: true,
 viewonce: true,
 modoadmin: false,
