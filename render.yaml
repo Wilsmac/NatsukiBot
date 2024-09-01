@@ -1,10 +1,6 @@
 services:
-- type: web
-  name: natsukibot
-  runtime: docker
-  repo: https://github.com/Wilsmac/NatsukiBot
-  plan: free
-  region: frankfurt
-  dockerContext: .
-  dockerfilePath: ./Dockerfile
-version: "1"
+  - type: web
+    name: natsukibot 
+    env: docker
+    region: Frankfurt
+    plan: free
