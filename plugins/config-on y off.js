@@ -213,6 +213,15 @@ throw false
 chat.antiTwitch = isEnable 
 break
 
+case 'antibot': case 'antibots':
+if (m.isGroup) {
+if (!(isAdmin || isOwner)) {
+global.dfail('admin', m, conn)
+throw false
+}}
+chat.antiBot = isEnable
+break
+
 case 'modohorny': case 'modocaliente': case 'modehorny':
 if (m.isGroup) {
 if (!(isAdmin || isOwner)) {
