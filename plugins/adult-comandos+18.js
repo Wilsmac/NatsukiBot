@@ -29,18 +29,27 @@ setTimeout(() => {
     let res = await conn.getFile(`https://api-fgmods.ddns.net/api/nsfw/ass?apikey=fg-dylux`).data;
     if (res == '' || !res || res == null) res = await resError[Math.floor(resError.length * Math.random())];
     conn.sendMessage(m.chat, {image: {url: res}, caption: `_${command}_`.trim()}, {quoted: m});
+setTimeout(() => {
+    conn.sendMessage(m.chat, { delete: booty })
+  }, 20000) //50
   }
 
   if (command == 'ecchi') {
     const res = (await axios.get(`https://raw.githubusercontent.com/BrunoSobrino/TheMystic-Bot-MD/master/src/JSON/ecchi.json`)).data;
     const url = await res[Math.floor(res.length * Math.random())];
     conn.sendMessage(m.chat, {image: {url: url}, caption: `_${command}_`.trim()}, {quoted: m});
+setTimeout(() => {
+    conn.sendMessage(m.chat, { delete: ecchi })
+  }, 20000) //50
   }
 
   if (command == 'porno') {
     const res = (await axios.get(`https://raw.githubusercontent.com/BrunoSobrino/TheMystic-Bot-MD/master/src/JSON/porno.json`)).data;
     const url = await res[Math.floor(res.length * Math.random())];
     conn.sendMessage(m.chat, {image: {url: url}, caption: `_${command}_`.trim()}, {quoted: m});
+setTimeout(() => {
+    conn.sendMessage(m.chat, { delete: porno })
+  }, 20000) //50
   }
 
   if (command == 'randomxxx') {
@@ -49,6 +58,9 @@ setTimeout(() => {
     const res = (await axios.get(rawjson)).data;
     const url = await res[Math.floor(res.length * Math.random())];
     conn.sendMessage(m.chat, {image: {url: url}, caption: `_${command}_`.trim()}, {quoted: m});
+setTimeout(() => {
+    conn.sendMessage(m.chat, { delete: randomxxx })
+  }, 20000) //50
   }
 
   if (command == 'pechos') {
