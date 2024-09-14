@@ -1,7 +1,7 @@
 import teamnatsuki from "@teamnastuki/scraper"
 
 let handler = async (m, { conn, text, usedPrefix, command }) => {
-if (!global.db.data.chats[m.chat].modohorny) return conn.reply(m.chat, `El grupo no admite contenido *Nsfw.*\n\n> Para activarlo un *Administrador* debe usar el comando /enable modohorny`, m, canalofc)
+if (!global.db.data.chats[m.chat].modohorny && m.isGroup) throw `El grupo no admite contenido *Nsfw.*\n\n> Para activarlo un *Administrador* debe usar el comando /enable modohorny`
 if (!text) return m.reply('🚩 Ingresa el nombre de la imágen que estas buscando.')
 await m.react('🕓')
 try {
