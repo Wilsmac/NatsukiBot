@@ -1,4 +1,4 @@
-import teamnatsuki from "@teamnastuki/scraper"
+/*import teamnatsuki from "@teamnastuki/scraper"
 
 let handler = async (m, { conn, text, usedPrefix, command }) => {
 if (!global.db.data.chats[m.chat].modohorny && m.isGroup) throw `El grupo no admite contenido *Nsfw.*\n\n> Para activarlo un *Administrador* debe usar el comando /enable modohorny`
@@ -16,7 +16,7 @@ handler.tags = ['nsfw']
 handler.command = ['rule34', 'r34']
 //handler.register = true 
 //handler.limit = 20
-export default handler
+export default handler*/
 
 
 
