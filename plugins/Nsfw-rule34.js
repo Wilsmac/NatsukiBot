@@ -6,7 +6,7 @@ if (!text) return m.reply('🚩 Ingresa el nombre de la imágen que estas buscan
 await m.react('🕓')
 try {
 let { dl_url } = await teamnatsuki.rule34(text)
-await conn.sendFile(m.chat, dl_url, 'thumbnail.jpg', `*» Resultado* : ${text}`, m, null, rcanal)
+await conn.sendFile(m.chat, dl_url, 'thumbnail.jpg', `*» Resultado* : ${text}`, m, null, canalofc)
 await m.react('✅')
 } catch {
 await m.react('✖️')
