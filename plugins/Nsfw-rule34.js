@@ -16,7 +16,6 @@ handler.tags = ['nsfw']
 handler.command = ['rule34', 'r34']
 //handler.register = true 
 //handler.limit = 20
-handler.group = true 
 export default handler
 
 
