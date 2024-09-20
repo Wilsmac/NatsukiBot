@@ -61,8 +61,8 @@ if (!db.data.chats[m.chat].modohorny && m.isGroup) throw ' *¡Estos comandos est
           title: packname,
           body: wm,
           previewType: 0, 
-          thumbnail: icons,
-          sourceUrl: redes 
+          thumbnail: imagen1,
+          sourceUrl: canalofc
         }
       }
     });
