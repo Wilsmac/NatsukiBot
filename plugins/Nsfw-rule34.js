@@ -41,18 +41,17 @@ const cleanDb = async () => {
       delete db[url];
     }
   }
-
   await writeDb(db);
 };
 
 const handler = async (m, { conn, usedPrefix, command, text }) => {
 if (!db.data.chats[m.chat].modohorny && m.isGroup) throw ' *¡Estos comandos están desactivados!*';
   if (!text) {
-    throw `*Por favor, proporciona un texto*\n*Ejemplo:* ${usedPrefix + command} Alya`;
+    throw `*Por favor, ingresa un texto*\n*Ejemplo:* ${usedPrefix + command} Alya`;
   }
 
   try {
-  conn.reply(m.chat, '*Enviando Los Resultados...*', m, {
+  conn.reply(m.chat, '*Enviando Resultados...*', m, {
       contextInfo: { 
         externalAdReply: { 
           mediaUrl: null, 
