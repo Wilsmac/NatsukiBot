@@ -1,4 +1,4 @@
-/*let handler = async (m, { conn, args, usedPrefix, command }) => {
+let handler = async (m, { conn, args, usedPrefix, command }) => {
     let isClose = {
         'abrir': 'not_announcement',
         'cerrar': 'announcement',
@@ -15,10 +15,10 @@ handler.botAdmin = true
 
 export default handler
 
-*/
 
 
-let handler = async (m, { conn, args, usedPrefix, command }) => {
+
+/*let handler = async (m, { conn, args, usedPrefix, command }) => {
 const pp = await conn.profilePictureUrl(m.chat, 'image').catch(_ => null) || './src/grupos.jpg'  
 let isClose = { // Switch Case Like :v
 'open': 'not_announcement',
@@ -49,4 +49,4 @@ handler.command = /^(group|grupo)$/i
 handler.admin = true
 handler.botAdmin = true
 handler.exp = 200
-export default handler
+export default handler*/
