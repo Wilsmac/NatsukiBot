@@ -76,7 +76,7 @@ thumbnailUrl: yt_play[0].thumbnail,
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: true
-}}} , { quoted: m })*/
+}}} , { quoted: m })
 } catch {
 try {
 const searchh = await yts(yt_play[0].url);
