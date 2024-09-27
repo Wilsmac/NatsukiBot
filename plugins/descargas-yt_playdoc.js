@@ -1,4 +1,4 @@
-import TeamNsk from '@teamnatsuki/Scraper'
+import TeamNsk from '@teamnatsuki-Scraper'
 import fetch from 'node-fetch' 
 let limit = 200
 
