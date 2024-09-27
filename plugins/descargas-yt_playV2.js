@@ -1,4 +1,4 @@
-import fetch from 'node-fetch';
+ import fetch from 'node-fetch';
 import yts from 'yt-search';
 import ytdl from 'ytdl-core';
 import axios from 'axios';
@@ -8,7 +8,7 @@ const handler = async (m, {command, usedPrefix, conn, text}) => {
 if (!text) throw `${mg}${mid.smsMalused4}\n*${usedPrefix + command} Billie Eilish - Bellyache*`
 try {
 if (command == 'play.1') {
-conn.reply(m.chat, lenguajeGB['smsAvisoEG']() + `𝙎𝙀 𝙀𝙎𝙏𝘼 𝘿𝙀𝙎𝘾𝘼𝙍𝙂𝘼𝙉𝘿𝙊 𝙎𝙐 𝘼𝙐𝘿𝙄𝙊, 𝙀𝙎𝙋𝙀𝙍𝙀 𝙐𝙉 𝙈𝙊𝙈𝙀𝙉𝙏𝙊 𝙋𝙊𝙍 𝙁𝘼𝙑𝙊𝙍`, m, { contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, title: wm, body: textia, previewType: 0, thumbnail: imagen1, sourceUrl: canalofc }}})
+conn.reply(m.chat, lenguajeCD['smsAvisoEG']() + `𝙎𝙀 𝙀𝙎𝙏𝘼 𝘿𝙀𝙎𝘾𝘼𝙍𝙂𝘼𝙉𝘿𝙊 𝙎𝙐 𝘼𝙐𝘿𝙄𝙊, 𝙀𝙎𝙋𝙀𝙍𝙀 𝙐𝙉 𝙈𝙊𝙈𝙀𝙉𝙏𝙊 𝙋𝙊𝙍 𝙁𝘼𝙑𝙊𝙍`, m, { contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, title: wm, body: gt, previewType: 0, thumbnail: imagen1, sourceUrl: canalofc }}})
 try {
 const mediaa = await ytPlay(text);
 const audiocore = mediaa.result2?.[0]?.audio || mediaa.result2?.[1]?.audio || mediaa.result2?.[2]?.audio || null;
@@ -16,7 +16,7 @@ const aa = await conn.sendMessage(m.chat, {audio: {url: audiocore}, fileName: `e
 if (!aa) {
 throw new Error();
 }} catch {
-try{const res = await fetch(`https://deliriusapi-official.vercel.app/download/ytmp3?&query=${text}`);
+try{const res = await fetch(`https://deliriusapi-official.vercel.app/download/ytmp3?url=${text}`);
 const json = await res.json();
 const aa_1 = await conn.sendMessage(m.chat, {audio: {url: json.result.audio}, fileName: `error.mp3`, mimetype: 'audio/mp4'}, {quoted: m});
 if (!aa_1) aa_1 = await conn.sendFile(m.chat, json.result.audio, 'error.mp3', null, m, false, {mimetype: 'audio/mp4'});
@@ -27,13 +27,13 @@ res=res.videos[0]
 let yt = await fg.yta(res.url,'128kbps')
 await conn.sendMessage(m.chat, {audio: {url: yt.dl_url}, fileName: `error.mp3`, mimetype: 'audio/mp4'}, {quoted: m});
 }catch(e){ 
-await conn.reply(m.chat, `${lenguajeGB['smsMalError3']()}#report ${lenguajeGB['smsMensError2']()} ${usedPrefix + command}\n\n${wm}`, m)
-console.log(`❗❗ ${lenguajeGB['smsMensError2']()} ${usedPrefix + command} ❗❗`)
+await conn.reply(m.chat, `${lenguajeCD['smsMalError3']()}#report ${lenguajeCD['smsMensError2']()} ${usedPrefix + command}\n\n${wm}`, m)
+console.log(`❗❗ ${lenguajeCD['smsMensError2']()} ${usedPrefix + command} ❗❗`)
 console.log(e)
 handler.limit = 0 //No gastada limite si fallas
 }}}}
 if (command == 'play.2') {
-conn.reply(m.chat, lenguajeGB['smsAvisoEG']() + `𝙎𝙀 𝙀𝙎𝙏𝘼 𝘿𝙀𝙎𝘾𝘼𝙍𝙂𝘼𝙉𝘿𝙊 𝙎𝙐 𝙑𝙄𝘿𝙀𝙊, 𝙀𝙎𝙋𝙀𝙍𝙀 𝙐𝙉 𝙈𝙊𝙈𝙀𝙉𝙏𝙊 𝙋𝙊𝙍 𝙁𝘼𝙑𝙊𝙍`, m, {contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, title: wm, body: textia, previewType: 0, thumbnail: imagen1, sourceUrl: canalofc }}}) 
+conn.reply(m.chat, lenguajeCD['smsAvisoEG']() + `𝙎𝙀 𝙀𝙎𝙏𝘼 𝘿𝙀𝙎𝘾𝘼𝙍𝙂𝘼𝙉𝘿𝙊 𝙎𝙐 𝙑𝙄𝘿𝙀𝙊, 𝙀𝙎𝙋𝙀𝙍𝙀 𝙐𝙉 𝙈𝙊𝙈𝙀𝙉𝙏𝙊 𝙋𝙊𝙍 𝙁𝘼𝙑𝙊𝙍`, m, {contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, title: wm, body: gt, previewType: 0, thumbnail: imagen1, sourceUrl: canalofc }}}) 
 try {
 const mediaa = await ytPlayVid(text);
 const aa_2 = await conn.sendMessage(m.chat, {video: {url: mediaa.result}, fileName: `error.mp4`, caption: `${wm}`, thumbnail: mediaa.thumb, mimetype: 'video/mp4'}, {quoted: m});
@@ -48,7 +48,7 @@ let yt0 = await fg.ytv(res0.url,'360p')
 await conn.sendFile(m.chat, yt0.dl_url, 'error.mp4', `${wm}`, m);
 }
 catch{
-const res = await fetch(`https://api.lolhuman.xyz/api/ytplay2?apikey=${lolkeysapi}&query=${text}`);
+const res = await fetch(`https://deliriusapi-official.vercel.app/download/ytmp3?url=${text}`);
 const json = await res.json();
 await conn.sendFile(m.chat, json.result.video, 'error.mp4', `${wm}`, m);  
 }
@@ -56,7 +56,7 @@ await conn.sendFile(m.chat, json.result.video, 'error.mp4', `${wm}`, m);
 await conn.reply(m.chat, `${lenguajeCD['smsMalError3']()}#report ${lenguajeCD['smsMensError2']()} ${usedPrefix + command}\n\n${wm}`, m)
 console.log(`❗❗ ${lenguajeCD['smsMensError2']()} ${usedPrefix + command} ❗❗`)
 console.log(e)
-handler.limit = 0
+handler.limit = 0 
 }}
 handler.help = ['play.1' , 'play.2'].map(v => v + ' <texto>')
 handler.tags = ['downloader']
@@ -85,7 +85,7 @@ const bytes = await bytesToSize(contentLength);
 result[i] = {audio: item.url, size: bytes};
 }}
 const resultFix = result.filter((x) => x.audio != undefined && x.size != undefined);
-const tiny = await axios.get(`https://tinyurl.com/api-create.php?url=${resultFix[0].audio}`);
+const tiny = await axios.get(`https://deliriusapi-official.vercel.app/download/ytmp3?url=${resultFix[0].audio}`);
 const tinyUrl = tiny.data;
 const title = getUrl.videoDetails.title;
 const thumb = getUrl.player_response.microformat.playerMicroformatRenderer.thumbnail.thumbnails[0].url;
@@ -105,7 +105,7 @@ const bytes = await bytesToSize(contentLength);
 result[i] = {video: item.url, quality: qualityLabel, size: bytes};
 }}
 const resultFix = result.filter((x) => x.video != undefined && x.size != undefined && x.quality != undefined);
-const tiny = await axios.get(`https://tinyurl.com/api-create.php?url=${resultFix[0].video}`);
+const tiny = await axios.get(`https://deliriusapi-official.vercel.app/download/ytmp3?url=${resultFix[0].video}`);
 const tinyUrl = tiny.data;
 const title = getUrl.videoDetails.title;
 const thumb = getUrl.player_response.microformat.playerMicroformatRenderer.thumbnail.thumbnails[0].url;
@@ -139,9 +139,7 @@ const random = url[0];
 const getVideo = await ytMp4(random);
 resolve(getVideo);
 }).catch(reject);
-})}
-
-
+})} 
 
 
 
