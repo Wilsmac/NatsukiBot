@@ -3,7 +3,7 @@ import fetch from 'node-fetch'
 let limit = 200
 
 let handler = async (m, { conn: nsk, args, text, isPrems, isOwner, usedPrefix, command }) => {
-if (!args[0].match(/youtu/gi)) return star.reply(m.chat, '> 𝚁𝙴𝙲𝚄𝙴𝚁𝙳𝙰 𝙸𝙽𝙶𝚁𝙴𝚂𝙰𝚁 𝙴𝙻 𝙴𝙽𝙻𝙰𝙲𝙴 𝙳𝙴𝙻 𝚅𝙸𝙳𝙴𝙾 𝙳𝙴 𝚈𝙾𝚄𝚃𝚄𝙱𝙴 𝙲𝙾𝙽 𝙴𝙻 𝙲𝙾𝙼𝙰𝙽𝙳𝙾.\n\n`Ejemplo:`\n' + `> *${usedPrefix + command}* https://youtu.be/JkvaCSo8lsks`, m, canalofc)
+if (!args[0].match(/youtu/gi)) return nsk.reply(m.chat, '> 𝚁𝙴𝙲𝚄𝙴𝚁𝙳𝙰 𝙸𝙽𝙶𝚁𝙴𝚂𝙰𝚁 𝙴𝙻 𝙴𝙽𝙻𝙰𝙲𝙴 𝙳𝙴𝙻 𝚅𝙸𝙳𝙴𝙾 𝙳𝙴 𝚈𝙾𝚄𝚃𝚄𝙱𝙴 𝙲𝙾𝙽 𝙴𝙻 𝙲𝙾𝙼𝙰𝙽𝙳𝙾.\n\n`Ejemplo:`\n' + `> *${usedPrefix + command}* https://youtu.be/JkvaCSo8lsks`, m, canalofc)
 
 await m.react('🕓')
 try {
