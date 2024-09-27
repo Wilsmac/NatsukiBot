@@ -39,7 +39,7 @@
 "@shineiichijo/marika": "^2.0.6",
 "@vitalets/google-translate-api": "^8.0.0",
 "@xct007/frieren-scraper": "^0.0.2",
-"teamnatsuki-scraper": "github:Wilsmac/teamnatsuki-scraper",
+"@teamnatauki/scraper": "github:Wilsmac/teamnatsuki-scraper",
 "acrcloud": "^1.4.0",
 "api-dylux": "^1.5.6",
 "express": "^4.18.1",    
