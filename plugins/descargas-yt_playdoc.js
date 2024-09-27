@@ -10,7 +10,7 @@ try {
 let { title, size, quality, thumbnail, dl_url } = await TeamNsk.ytmp3(args[0])
 
 let img = await (await fetch(`${thumbnail}`)).buffer()
-if (size.split('MB')[0] >= limit) return star.reply(m.chat, `El archivo pesa mas de ${limit} MB, se canceló la Descarga.`, m, canalofc).then(_ => m.react('✖️'))
+if (size.split('MB')[0] >= limit) return nsk.reply(m.chat, `El archivo pesa mas de ${limit} MB, se canceló la Descarga.`, m, canalofc).then(_ => m.react('✖️'))
         let txt = '`《 𝙳 𝙴 𝚂 𝙲 𝙰 𝚁 𝙶 𝙰 𝚂  -  𝙼 𝙿 3 (𝙳𝙾𝙲) 》`\n\n'
        txt += `        ◈   *𝚃𝙸𝚃𝚄𝙻𝙾* : ${title}\n`
        txt += `        ◈   *𝙲𝙰𝙻𝙸𝙳𝙰𝙳* : ${quality}\n`
