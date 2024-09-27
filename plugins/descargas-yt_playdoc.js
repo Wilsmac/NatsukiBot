@@ -1,4 +1,4 @@
-import TeamNsk from '@wilsmac/scraper'
+import TeamNsk from 'wilsmac-scraper'
 import fetch from 'node-fetch' 
 let limit = 200
 
