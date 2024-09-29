@@ -1,33 +1,75 @@
-import TeamNsk from '@StarlightsTeam/Scraper'
+import fg from 'api-dylux'
+import yts from 'yt-search'
+import { youtubedl, youtubedlv2 } from '@bochilteam/scraper'
 import fetch from 'node-fetch' 
 let limit = 200
 
-let handler = async (m, { conn: nsk, args, text, isPrems, isOwner, usedPrefix, command }) => {
-if (!args[0].match(/youtu/gi)) return nsk.reply(m.chat, '> 𝚁𝙴𝙲𝚄𝙴𝚁𝙳𝙰 𝙸𝙽𝙶𝚁𝙴𝚂𝙰𝚁 𝙴𝙻 𝙴𝙽𝙻𝙰𝙲𝙴 𝙳𝙴𝙻 𝚅𝙸𝙳𝙴𝙾 𝙳𝙴 𝚈𝙾𝚄𝚃𝚄𝙱𝙴 𝙲𝙾𝙽 𝙴𝙻 𝙲𝙾𝙼𝙰𝙽𝙳𝙾.\n\n`Ejemplo:`\n' + `> *${usedPrefix + command}* https://youtu.be/JkvaCSo8lsks`, m, canalofc)
+let handler = async (m, { conn: star, args, text, isPrems, isOwner, usedPrefix, command }) => {
+if (!args || !args[0]) return star.reply(m.chat, '🚩 Ingresa el enlace del vídeo de YouTube junto al comando.\n\n`Ejemplo:`\n' + `> *${usedPrefix + command}* https://youtu.be/QSvaCSt8ixs`, m, canalofc)
+if (!args[0].match(/youtu/gi)) return star.reply(m.chat, `Verifica que el enlace sea de YouTube.`, m, canalofc).then(_ => m.react('✖️'))
+let q = '128kbps'
 
 await m.react('🕓')
 try {
-let { title, size, quality, thumbnail, dl_url } = await TeamNsk.ytmp3(args[0])
+let v = args[0]
+let yt = await youtubedl(v).catch(async () => await youtubedlv2(v))
+let dl_url = await yt.audio[q].download()
+let title = await yt.title
+let size = await yt.audio[q].fileSizeH
+let thumbnail = await yt.thumbnail
 
-let img = await (await fetch(`${thumbnail}`)).buffer()
-if (size.split('MB')[0] >= limit) return nsk.reply(m.chat, `El archivo pesa mas de ${limit} MB, se canceló la Descarga.`, m, canalofc).then(_ => m.react('✖️'))
-        let txt = '`《 𝙳 𝙴 𝚂 𝙲 𝙰 𝚁 𝙶 𝙰 𝚂  -  𝙼 𝙿 3 (𝙳𝙾𝙲) 》`\n\n'
-       txt += `        ◈   *𝚃𝙸𝚃𝚄𝙻𝙾* : ${title}\n`
-       txt += `        ◈   *𝙲𝙰𝙻𝙸𝙳𝙰𝙳* : ${quality}\n`
-       txt += `        ◈   *𝚃𝙰𝙼𝙰ñ𝙾* : ${size}\n\n`
-       txt += `> *-𝙴𝙻 𝙰𝚄𝙳𝙸𝙾 𝚂𝙴 𝙴𝚂𝚃𝙰 𝙴𝙽𝚅𝙸𝙰𝙽𝙳𝙾, 𝙴𝚂𝙿𝙴𝚁𝙴 𝚄𝙽 𝙼𝙾𝙼𝙴𝙽𝚃𝙾 𝙿𝙾𝚁 𝙵𝙰𝚅𝙾𝚁. . .*`
-await nsk.sendFile(m.chat, img, 'thumbnail.jpg', txt, m, null, canalofc)
-await nsk.sendMessage(m.chat, { document: { url: dl_url }, caption: '', mimetype: 'audio/mpeg', fileName: `${title}.mp3`}, { quoted: m })
+let img = await (await fetch(`${thumbnail}`)).buffer()  
+if (size.split('MB')[0] >= limit) return star.reply(m.chat, `El archivo pesa mas de ${limit} MB, se canceló la Descarga.`, m, rcanal).then(_ => m.react('✖️'))
+        let txt = '`乂  Y O U T U B E  -  M P 3 D O C`\n\n'
+       txt += `        ✩   *Titulo* : ${title}\n`
+       txt += `        ✩   *Calidad* : ${q}\n`
+       txt += `        ✩   *Tamaño* : ${size}\n\n`
+       txt += `> *- ↻ El audio se esta enviando espera un momento, soy lenta. . .*`
+await star.sendFile(m.chat, img, 'thumbnail.jpg', txt, m, null, canalofc)
+await star.sendMessage(m.chat, { document: { url: dl_url }, caption: '', mimetype: 'audio/mpeg', fileName: `${title}.mp3`}, { quoted: m })
+await m.react('✅')
+} catch {
+try {
+let yt = await fg.yta(args[0], q)
+let { title, dl_url, size } = yt 
+let vid = (await yts(text)).all[0]
+let { thumbnail, url } = vid
+
+let img = await (await fetch(`${vid.thumbnail}`)).buffer()  
+if (size.split('MB')[0] >= limit) return star.reply(m.chat, `El archivo pesa mas de ${limit} MB, se canceló la Descarga.`, m, rcanal).then(_ => m.react('✖️'))
+        let txt = '`乂  Y O U T U B E  -  M P 3 D O C`\n\n'
+       txt += `        ✩   *Titulo* : ${title}\n`
+       txt += `        ✩   *Calidad* : ${q}\n`
+       txt += `        ✩   *Tamaño* : ${size}\n\n`
+       txt += `> *- ↻ El audio se esta enviando espera un momento, soy lenta. . .*`
+await star.sendFile(m.chat, img, 'thumbnail.jpg', txt, m, null, canalofc)
+await star.sendMessage(m.chat, { document: { url: dl_url }, caption: '', mimetype: 'audio/mpeg', fileName: `${title}.mp3`}, { quoted: m })
+await m.react('✅')
+} catch {
+try {
+let yt = await fg.ytmp3(args[0], q)
+let { title, dl_url, size, thumb } = yt 
+
+let img = await (await fetch(`${thumb}`)).buffer()
+if (size.split('MB')[0] >= limit) return star.reply(m.chat, `El archivo pesa mas de ${limit} MB, se canceló la Descarga.`, m, canalofc).then(_ => m.react('✖️'))
+        let txt = '`乂  Y O U T U B E  -  M P 3 D O C`\n\n'
+       txt += `        ✩   *Titulo* : ${title}\n`
+       txt += `        ✩   *Calidad* : ${q}\n`
+       txt += `        ✩   *Tamaño* : ${size}\n\n`
+       txt += `> *- ↻ El audio se esta enviando espera un momento, soy lenta. . .*`
+await star.sendFile(m.chat, img, 'thumbnail.jpg', txt, m, null, canalofc)
+await star.sendMessage(m.chat, { document: { url: dl_url }, caption: '', mimetype: 'audio/mpeg', fileName: `${title}.mp3`}, { quoted: m })
 await m.react('✅')
 } catch {
 await m.react('✖️')
-}}
+}}}}
 handler.help = ['ytmp3doc *<link yt>*']
 handler.tags = ['downloader']
-handler.command = ['ytmp3doc', 'ytadoc']  
+handler.command = ['ytmp3doc', 'ytadoc'] 
+//handler.limit = 1
+handler.register = true 
 
 export default handler
-
 
 
 
