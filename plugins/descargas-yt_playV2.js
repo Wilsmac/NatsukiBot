@@ -39,7 +39,7 @@ let yt = await fg.ytmp3(vid.url, q)
 let { title, dl_url, size } = yt
 let limit = 100
 
-if (size.split('MB')[0] >= limit) return star.reply(m.chat, `El archivo pesa mas de ${limit} MB, se canceló la Descarga.`, m, rcanal).then(_ => m.react('✖️'))
+if (size.split('MB')[0] >= limit) return star.reply(m.chat, `El archivo pesa mas de ${limit} MB, se canceló la Descarga.`, m, canalofc).then(_ => m.react('✖️'))
 
 await conn.sendMessage(m.chat, { audio: { url: dl_url }, fileName: title + '.mp3', mimetype: 'audio/mp4' }, { quoted: m })
 await m.react('✅')
@@ -48,7 +48,7 @@ await m.react('✖️')
 }}}
 
 if (feature == "mp4" || feature == "ytv" || feature == "video" || feature == "video") {
-if (!inputs) return conn.reply(m.chat, 'Ingresa el título de un video o canción de YouTube.\n\n`Ejemplo:`\n' + `> *${usedPrefix + command}* Gemini Aaliyah - If Only`, m, rcanal)
+if (!inputs) return conn.reply(m.chat, 'Ingresa el título de un video o canción de YouTube.\n\n`Ejemplo:`\n' + `> *${usedPrefix + command}* Gemini Aaliyah - If Only`, m, canalofc)
 await m.react('🕓')
 let res = await yts(text)
 let vid = res.videos[0]
