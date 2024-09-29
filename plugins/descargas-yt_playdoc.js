@@ -1,7 +1,8 @@
 import fg from 'api-dylux'
 import yts from 'yt-search'
 import { youtubedl, youtubedlv2 } from '@bochilteam/scraper'
-import fetch from 'node-fetch' 
+import fetch from 'node-fetch'
+import cheerio from 'cheerio'
 let limit = 200
 
 let handler = async (m, { conn: star, args, text, isPrems, isOwner, usedPrefix, command }) => {
