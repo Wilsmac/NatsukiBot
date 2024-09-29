@@ -9,6 +9,7 @@ if (!args || !args[0]) return star.reply(m.chat, '🚩 Ingresa el enlace del ví
 if (!args[0].match(/youtu/gi)) return star.reply(m.chat, `Verifica que el enlace sea de YouTube.`, m, canalofc).then(_ => m.react('✖️'))
 let q = '128kbps'
 
+
 await m.react('🕓')
 try {
 let v = args[0]
