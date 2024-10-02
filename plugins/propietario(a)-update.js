@@ -4,7 +4,7 @@ const handler = async (m, { conn, text }) => {
 try {
 const stdout = execSync('git pull' + (m.fromMe && text ? ' ' + text : ''));
 let messager = stdout.toString()
-if (messager.includes('Already up to date.')) messager = `${lenguajeGB.smsAvisoIIG()} 𝙔𝘼 𝙀𝙎𝙏𝘼 𝘼𝘾𝙏𝙐𝘼𝙇𝙄𝙕𝘼𝘿𝙊 𝘼 𝙇𝘼 𝙑𝙀𝙍𝙎𝙄𝙊́𝙉 𝙍𝙀𝘾𝙄𝙀𝙉𝙏𝙀.`
+if (messager.includes('Already up to date.')) messager = `${lenguajeCD.smsAvisoIIG()} 𝙔𝘼 𝙀𝙎𝙏𝘼 𝘼𝘾𝙏𝙐𝘼𝙇𝙄𝙕𝘼𝘿𝙊 𝘼 𝙇𝘼 𝙑𝙀𝙍𝙎𝙄𝙊́𝙉 𝙍𝙀𝘾𝙄𝙀𝙉𝙏𝙀.`
 if (messager.includes('Updating')) messager = `${lenguajeCD.smsAvisoEG()}` + stdout.toString()
 conn.reply(m.chat, messager, m);
 } catch {      
