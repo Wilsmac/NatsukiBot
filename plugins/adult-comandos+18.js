@@ -107,7 +107,7 @@ setTimeout(() => {
   }, 20000) //50
   }
 };
-handler.help = ['nsfwloli', 'pussy', 'yuri', 'tetas', 'booty', 'ecchi', 'porno', 'randomxxx', 'pechos', 'panties'];
-handler.command = ['nsfwloli', 'pussy',  'yuri', 'tetas', 'booty', 'ecchi', 'porno', 'randomxxx', 'pechos', 'panties'];
+handler.help = ['nsfwloli', 'pussy', 'yuri', 'imagenlesbians', 'tetas', 'booty', 'ecchi', 'porno', 'randomxxx', 'pechos', 'panties'];
+handler.command = ['nsfwloli', 'pussy',  'yuri', 'imagenlesbians', 'tetas', 'booty', 'ecchi', 'porno', 'randomxxx', 'pechos', 'panties'];
 handler.tags = ['nsfw'];
 export default handler;
