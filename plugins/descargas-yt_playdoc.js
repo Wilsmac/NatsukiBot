@@ -113,7 +113,7 @@ handler.help = ['ytmp4doc', 'ytmp3doc'].map((v) => v + ' < busqueda >');
 handler.tags = ['downloader'];
 handler.command = /^(ytmp4doc|ytmp3doc|playaudiodoc|playdoc|playdoc2|playvideodoc)$/i;
 //handler.limit = 3
-handler.register = true
+//handler.register = true
 export default handler;
 
 async function search(query, options = {}) {
