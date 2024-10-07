@@ -13,7 +13,7 @@ additionalText = '𝘼𝙐𝘿𝙄𝙊'
 } else if (command == 'playvideodoc' || command == 'ytmp4doc') {
 additionalText = '𝙑𝙄𝘿𝙀𝙊'
 }
-conn.reply(m.chat, `${lenguajeCD['smsAvisoEG']()}𝙋𝙍𝙊𝙉𝙏𝙊 𝙏𝙀𝙉𝘿𝙍𝘼 𝙎𝙐 𝘿𝙊𝘾𝙐𝙈𝙀𝙉𝙏𝙊 ${additionalText}, 𝙀𝙎𝙋𝙀𝙍𝙀 𝙋𝙊𝙍 𝙁𝘼𝙑𝙊𝙍`, fkontak,  m)
+conn.reply(m.chat, `${lenguajeCD['smsAvisoEG']()}𝙋𝙍𝙊𝙉𝙏𝙊 𝙏𝙀𝙉𝘿𝙍𝘼 𝙎𝙐 𝘿𝙊𝘾𝙐𝙈𝙀𝙉𝙏𝙊 ${additionalText}, 𝙀𝙎𝙋𝙀𝙍𝙀 𝙋𝙊𝙍 𝙁𝘼𝙑𝙊𝙍`, estilo2,  m)
 if (command == 'playaudiodoc' || command == 'ytmp3doc') {
 try {
 const q = '128kbps';
