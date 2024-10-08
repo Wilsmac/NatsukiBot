@@ -151,7 +151,7 @@ global.fb = "https://www.facebook.com/groups/1039865800178898/?ref=share"
 global.tk = "https://www.tiktok.com/@wilsmac4"
 global.ths = "https://www.threads.net/@cmwilmer4"
 global.paypal = 'https://paypal.me/'
-global.asistencia = 'https://wa.me/message/C45GXBEFTPONE1' //Contacto
+global.asistencia = 'https://wa.me/message/H6DKJA6N3J6PD1' //Contacto
 global.bot = 'wa.me/50250101139'
 
 global.nna = 'https://www.atom.bio/Wilsmac/' // Cuentas
