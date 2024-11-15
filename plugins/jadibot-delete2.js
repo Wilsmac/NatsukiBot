@@ -1,4 +1,4 @@
-import { readdirSync, unlinkSync, existsSync, promises as fs, rmSync } from 'fs';
+/*import { readdirSync, unlinkSync, existsSync, promises as fs, rmSync } from 'fs';
 import path from 'path';
 const handler = async (m, { conn, usedPrefix }) => {
 const chatId = m.isGroup ? m.chat : m.sender;
@@ -29,4 +29,4 @@ await conn.sendMessage(m.chat, {text: `${lenguajeGB['smsAvisoRG']()} 𝙃𝙊�
 handler.help = ['deletebot'];
 handler.tags = ['jadibot'];
 handler.command = /^(msgespera|ds)$/i;
-export default handler;
+export default handler;*/
