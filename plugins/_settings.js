@@ -1,4 +1,4 @@
-import fetch from 'node-fetch'
+/*import fetch from 'node-fetch'
 import moment from 'moment-timezone'
 import axios from 'axios'
 import fs from 'fs'
@@ -26,3 +26,4 @@ global.channelWa = { contextInfo: { mentionedJid: null, forwardingScore: 1, isFo
 
 }
 export default handler
+*/
