@@ -3,9 +3,11 @@
 ------------------
 
 
-<p align="center">
-<img src="https://telegra.ph/file/b95059bd21a2bbbd0218b.jpg" alt="FantasyBot-MD-v1" width="900"/>
-</p>
+<div align="center" style"border-radius:15px">
+      <a href="#">
+        <img src="./media/menus/natsukibot.gif" />
+    </a>
+</div>
 <a href="https://x.com/wilmerofc1" target="black"><img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=back" />
 <a href="https://www.facebook.com/profile.php?id=100088614427458&mibextid=ZbWKwL" target="black"><img src="https://img.shields.io/badge/Facebook-000000?style=for-the-badge&logo=facebook&logoColor=back" />
 <a
