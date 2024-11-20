@@ -11,14 +11,14 @@ import { en, es, id, ar, pt } from "./lib/idiomas/total-idiomas.js"
 
 // [ Agrega el número que será Bot y los que serán propietarios. ]
 global.owner = [
-["50250101139", 'Wilmer ofc', true],
+["573246150760", 'Níðhöggr', true],
 ["50258115623"], 
 ["51967997782"],
 ["573504664356"]
 ]
 
-global.mods = []
-global.prems = []
+global.mods = [573246150760]
+global.prems = [573246150760]
 
 global.isBaileysFail = false
 
