@@ -65,4 +65,4 @@ rl.on('line', (line) => {
 p.emit('message', line.trim())
 })
 }}}
-start('main.js')
+start('natsuki.js')
