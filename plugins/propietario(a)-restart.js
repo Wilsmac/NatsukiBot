@@ -1,6 +1,6 @@
 import { spawn } from 'child_process'
 let handler = async (m, { conn, isROwner, text }) => {
-    if (!process.send) throw 'Dont: node natsuki.js\nDo: node index.js'
+    if (!process.send) throw 'Dont: node main.js\nDo: node index.js'
     if (conn.user.jid == conn.user.jid) {
     const { key } = await conn.sendMessage(m.chat, {text: `\`[10%]\``}, {quoted: m});
 await delay(1000 * 1);
