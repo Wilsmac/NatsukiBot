@@ -68,6 +68,8 @@ href="https://whatsapp.com/channel/0029VaCUlPX0LKZAlP10pC43" target="white"><img
 </p>
 
 [![Run on Repl.it](https://repl.it/badge/github/Wilsmac/FantasyBot-MD-v1)](https://repl.it/github/Wilsmac/FantasyBot-MD-v1) 
+----
+</details>
 
 ## <h1>Instalación automática por termux</h1>
 
