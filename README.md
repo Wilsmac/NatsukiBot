@@ -83,7 +83,8 @@ apt update -y && yes | apt upgrade && pkg install -y bash wget mpv && wget -O - 
 > ACTIVA EL BOT EN TERMUX
 <details>
   <summary><b>Click aquí.</b></summary>
-## Actualmente no funciona la instalación por termux ni la automática.
+
+> *Actualmente no funciona la instalación por termux ni la automática*
  <p align="center"> 
 <a href="https://github.com/Wilsmac"><img src="http://readme-typing-svg.herokuapp.com?font=mono&size=20&duration=3000&color=[00FFFF]&center=falso&vCenter=falso&lines=𝚃𝚎𝚛𝚖𝚞𝚡++;𝙰𝚌𝚝𝚒𝚟𝚊+𝙴𝙻+𝙱𝚘𝚝+𝙴𝚗" height="50px"></a> 
 </p>
