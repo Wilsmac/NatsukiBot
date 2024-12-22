@@ -30,7 +30,9 @@ src="https://img.shields.io/badge/PayPal-000000?style=for-the-badge&logo=paypal&
 <p align="center"> 
 <a href="https://github.com/Wilsmac/FantasyBot-MD-v1"><img src="http://readme-typing-svg.herokuapp.com?font=mono&size=15&duration=4000&color=[00FFFF]&center=falso&vCenter=falso&lines=𝙉𝙖𝙩𝙨𝙪𝙠𝙞𝘽𝙤𝙩++;𝙷𝚘𝚕𝚊,+𝙶𝚛𝚊𝚌𝚒𝚊𝚜+𝙿𝚘𝚛+𝚅𝚒𝚜𝚒𝚝𝚊𝚛+𝙴𝚕+𝚁𝚎𝚙𝚘𝚜𝚒𝚝𝚘𝚛𝚒𝚘" height="40px"></a> 
 </p>
- 
+## GRUPOS OFICIALES DEL BOT
+<details>
+  <summary><b>Click aquí.</b></summary>
 <p align="center"> 
 <a href="https://github.com/Wilsmac"><img src="http://readme-typing-svg.herokuapp.com?font=mono&size=19&duration=4000&color=[00FFFF]&center=falso&vCenter=falso&lines=𝙉𝙖𝙩𝙨𝙪𝙠𝙞𝘽𝙤𝙩++;𝙶𝚛𝚞𝚙𝚘𝚜+𝙾𝚏𝚒𝚌𝚒𝚊𝚕𝚎𝚜+𝙳𝚎" height="35px"></a> 
 </p>
@@ -42,13 +44,21 @@ href="https://whatsapp.com/channel/0029VaCUlPX0LKZAlP10pC43" target="white"><img
 --------------------------
 > LOS NUMEROS QUE NO SEAN BOTS DE FANTASY NO SE ADMITEN POR LO TANTO SERÁN ELIMINADOS.
 --------------------------
+----
+</details>
+
+## BOT OFICIALES
+
+<details>
+  <summary><b>Click aquí.</b></summary>
 <p align="center"> 
 <a href="https://github.com/Wilsmac"><img src="http://readme-typing-svg.herokuapp.com?font=mono&size=15&duration=4000&color=[00FFFF]&center=falso&vCenter=falso&lines=𝙉𝙖𝙩𝙨𝙪𝙠𝙞𝘽𝙤𝙩++;𝙱𝚘𝚝𝚜+𝙾𝚏𝚒𝚌𝚒𝚊𝚕𝚎𝚜+𝙳𝚎" height="35px"></a> 
 </p>
 <a href="https://api.whatsapp.com/send/?phone=50250101139&text=Hola,%20vengo%20a%20pedir%20el%20numero%20del%20bot.&type=phone_number&app_absent=0" target="blank"><img src="https://img.shields.io/badge/BOT_OFICIAL_1-000000?style=for-the-badge&logo=whatsapp&logoColor=white" />
 
 > NO SPAMEAR COMANDOS
-
+----
+</details>
 
 
 <p align="center"> 
