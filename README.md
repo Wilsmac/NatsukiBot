@@ -160,11 +160,11 @@ ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 > *EL ADD Y EL KICK PUEDEN OCASIONAR QUE EL NUMERO SE VAYA A SOPORTE POR ELLO SE ACTIVA CON #enable restrict, UNIFINED NO SE HACE RESPONSABLE DEL USO, NUMEROS, PRIVACIDAD Y CONTENIDO MANDADO, USADO O GESTIONADO POR USTEDES O EL BOT*
 
  ### ` DUDAS SOBRE EL BOT?, CONTACTAME`
-<a href="http://wa.me/50258115623" target="blank"><img src="https://img.shields.io/badge/Wilmer oficial-000000?style=for-the-badge&logo=whatsapp&logoColor=white" />
+<a href="http://wa.me/50258115623" target="blank"><img src="https://img.shields.io/badge/Team Nsk-000000?style=for-the-badge&logo=whatsapp&logoColor=white" />
 
 
 ## <h2>`PROPIETARIO DEL BOT`</h2> 
 
 <a href="https://github.com/Wilsmac"><img src="https://github.com/Wilsmac.png" width="200" height="200" alt="Wilsmac"/></a>
 
-`DESARROLLADOR DEL BOT (@WILMER OFC)`
+`Powered by Team Nsk`
