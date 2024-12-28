@@ -72,6 +72,22 @@ href="https://whatsapp.com/channel/0029VaCUlPX0LKZAlP10pC43" target="white"><img
 
 <a href="https://github.com/Wilsmac/FantasyBot-MD-v1/blob/main/config.js" target="black"><img src="https://img.shields.io/badge/♥️-Cambiar el owner del bot-000000?style=for-the-badge&logo=GitHub&logoColor=black" /></a>
 
+
+----
+### Team Nsk cloud 
+[![YouTube](https://img.shields.io/badge/Team-Nsk-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be/fZbcCLpSH6Y?si=1sDen7Bzmb7jVpAI)
+
+<a href="https://dash.teamnsk.xyz"><img src="./media/menus/teamnsk.jpg" height="125px"></a>
+
+### Información
+- **Dashboard:** [`Aquí`](https://dash.teamnsk.xyz)
+- **Panel:** [`Aquí`](https://panel.teamnsk.xyz)
+- **Canal de WhatsApp:** [`Aquí`](https://whatsapp.com/channel/0029VaCUlPX0LKZAlP10pC43)
+- **Contacto(s):** [`Team Nsk`](https://wa.me/message/H6DKJA6N3J6PD1) / [`Russell`](https://api.whatsapp.com/send/?phone=50258115623&text&type=phone_number&app_absent=0)
+- **Discord:** [`Team Nsk`](https://discord.gg/wuwkfmTz)
+----
+
+
 > Activa el bot en replit
 <details>
   <summary><b>Click aquí.</b></summary>
@@ -92,19 +108,6 @@ termux-setup-storage
 ```ts
 apt update -y && yes | apt upgrade && pkg install -y bash wget mpv && wget -O - https://raw.githubusercontent.com/Wilsmac/NatsukiBot/master/Fantasy.sh | bash
 ```
-
-### Team Nsk cloud 
-[![YouTube](https://img.shields.io/badge/Team-Nsk-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be/fZbcCLpSH6Y?si=1sDen7Bzmb7jVpAI)
-
-<a href="https://dash.teamnsk.xyz"><img src="./media/menus/teamnsk.jpg" height="125px"></a>
-
-### Información
-- **Dashboard:** [`Aquí`](https://dash.teamnsk.xyz)
-- **Panel:** [`Aquí`](https://panel.teamnsk.xyz)
-- **Canal de WhatsApp:** [`Aquí`](https://whatsapp.com/channel/)
-- **Contacto(s):** [`Team Nsk`](https://wa.me/message/) / [`Russell`](https://api.whatsapp.com/send/?phone=50258115623&text&type=phone_number&app_absent=0)
-- **Discord:** [`SkyUltraPlus`](https://discord.gg/)
-----
 > ACTIVA EL BOT EN TERMUX
 <details>
   <summary><b>Click aquí.</b></summary>
