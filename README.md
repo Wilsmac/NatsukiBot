@@ -94,7 +94,7 @@ apt update -y && yes | apt upgrade && pkg install -y bash wget mpv && wget -O - 
 ```
 
 ### Team Nsk cloud 
-[![YouTube](https://img.shields.io/badge/SkyUltraPlus-Host-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be/fZbcCLpSH6Y?si=1sDen7Bzmb7jVpAI)
+[![YouTube](https://img.shields.io/badge/Team-Nsk-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be/fZbcCLpSH6Y?si=1sDen7Bzmb7jVpAI)
 
 <a href="https://dash.teamnsk.xyz"><img src="./media/menu/teamnsk.jpg" height="125px"></a>
 
