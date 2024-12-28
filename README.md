@@ -92,6 +92,19 @@ termux-setup-storage
 ```ts
 apt update -y && yes | apt upgrade && pkg install -y bash wget mpv && wget -O - https://raw.githubusercontent.com/Wilsmac/NatsukiBot/master/Fantasy.sh | bash
 ```
+
+### Team Nsk cloud 
+[![YouTube](https://img.shields.io/badge/SkyUltraPlus-Host-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be/fZbcCLpSH6Y?si=1sDen7Bzmb7jVpAI)
+
+<a href="https://dash.teamnsk.xyz"><img src="./media/menu/teamnsk.jpg" height="125px"></a>
+
+### Información
+- **Dashboard:** [`Aquí`](https://dash.teamnsk.xyz)
+- **Panel:** [`Aquí`](https://panel.teamnsk.xyz)
+- **Canal de WhatsApp:** [`Aquí`](https://whatsapp.com/channel/)
+- **Contacto(s):** [`Team Nsk`](https://wa.me/message/) / [`Russell`](https://api.whatsapp.com/send/?phone=50258115623&text&type=phone_number&app_absent=0)
+- **Discord:** [`SkyUltraPlus`](https://discord.gg/)
+----
 > ACTIVA EL BOT EN TERMUX
 <details>
   <summary><b>Click aquí.</b></summary>
