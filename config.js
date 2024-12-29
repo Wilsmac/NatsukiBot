@@ -20,6 +20,8 @@ global.owner = [
 global.mods = []
 global.prems = []
 
+
+global.jadibotsnsk = true
 global.isBaileysFail = false
 
 global.tagusario = ['50250101139'];
