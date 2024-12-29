@@ -100,7 +100,7 @@ conn.sendMessage(m.chat, { text: caption, caption: "1234", imagen1, footer: wm, 
       displayText: 'menu' 
     }
   }
-]
+],
   viewOnce: true,
   headerType: 1,
 }, { quoted: m })
