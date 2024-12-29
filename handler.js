@@ -1003,7 +1003,7 @@ if (!('game' in chat)) chat.game = true
 if (!('game2' in chat)) chat.game2 = true
 if (!('simi' in chat)) chat.simi = false
 if (!('antiTraba' in chat)) chat.antiTraba = true
-if (!('autolevelup' in chat))  chat.autolevelup = true
+if (!('autolevelup' in chat))  chat.autolevelup = false
 if (!isNumber(chat.expired)) chat.expired = 0
 if (!('horarioNsfw' in chat)) { 
 chat.horarioNsfw = {
@@ -1050,7 +1050,7 @@ game: true,
 game2: true, 
 simi: false,
 antiTraba: true,
-autolevelup: true,
+autolevelup: false,
 expired: 0,
 horarioNsfw: {
 inicio: "00:00", 
