@@ -20,7 +20,7 @@ import {Low, JSONFile} from 'lowdb'
 import store from './lib/store.js'
 import readline from 'readline'
 import NodeCache from 'node-cache' 
-import { jadibotnsk } from './plugins/jadibot-serbot.js';
+import { natsukiJadiBot } from './plugins/jadibot-serbot.js';
 import pkg from 'google-libphonenumber'
 const { PhoneNumberUtil } = pkg
 const phoneUtil = PhoneNumberUtil.getInstance()
@@ -374,7 +374,7 @@ return true
 }
 /* ------------------------------------------------
  */
-if (global.jadibotnsk) {
+if (global.jadibotsnsk) {
 const readRutaJadiBot = readdirSync(rutaJadiBot)
 if (readRutaJadiBot.length > 0) {
 const creds = 'creds.json'
@@ -382,7 +382,7 @@ for (const gjbts of readRutaJadiBot) {
 const botPath = join(rutaJadiBot, gjbts)
 const readBotPath = readdirSync(botPath)
 if (readBotPath.includes(creds)) {
-jadibotnsk({pathNatsukiJadiBot: botPath, m: null, conn, args: '', usedPrefix: '/', command: 'serbot'})
+natsukiJadiBot({pathNatsukiJadiBot: botPath, m: null, conn, args: '', usedPrefix: '/', command: 'serbot'})
 }
 
 }
