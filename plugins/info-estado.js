@@ -27,7 +27,7 @@ let estado = `╭━━━━『 𝙴𝚂𝚃𝙰𝙳𝙾 』━━━━━⬣
 ┃⚠︎ \`Usuario(s) Prohibido(s)\`
 ┃➥ ${Object.entries(global.db.data.users).filter(user => user[1].banned).length} 
 ╰━━━━━━━━━━━━━━━━━━⬣`
-conn.sendMessage(m.chat, {image: {url: picture}, { text: estado, caption: "1234", footer: wm, buttons: [
+conn.sendMessage(m.chat, {image: {url: picture}, { text: estado, caption: "1234"}, footer: wm, buttons: [
   {
     buttonId: ".ping", 
     buttonText: { 
