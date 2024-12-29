@@ -63,7 +63,7 @@ await natsuki.reply(m.chat, `𝙿𝚁𝚄𝙴𝙱𝙰 𝙳𝙴 𝚅𝙴𝙻𝙾�
 
 let neww = performance.now()
 let speed = neww - old
-let captions = `*[ 𝚅𝙴𝙻𝙾𝙲𝙸𝙳𝙰𝙳 ]*
+let caption = `*[ 𝚅𝙴𝙻𝙾𝙲𝙸𝙳𝙰𝙳 ]*
 
  *${Math.round(neww - old)}* ms
  *${speed}* ms
