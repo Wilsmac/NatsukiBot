@@ -21,7 +21,7 @@ global.mods = []
 global.prems = []
 
 
-global.jadibotnsk = true
+global.jadibotsnsk = true
 global.isBaileysFail = false
 
 global.tagusario = ['50250101139'];
