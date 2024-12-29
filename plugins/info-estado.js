@@ -38,7 +38,6 @@ conn.sendMessage(m.chat, { text: estado, caption: "1234", footer: wm, buttons: [
   viewOnce: true,
   headerType: 1,
 }, { quoted: m })
-}
 
 //await conn.reply(m.chat, estado, m, Fakechannel)
 //conn.sendFile(m.chat, picture, 'fantasy.mp4', estado, fkontak)
