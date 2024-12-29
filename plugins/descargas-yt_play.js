@@ -287,13 +287,13 @@ rows: [{ header: "𝙰 𝚄 𝙳 𝙸 𝙾 (Opcion 1)", title: "", id: `${usedPr
 {header: "𝚅 𝙸 𝙳 𝙴 𝙾  𝐃 𝐎 𝐂", title: "", id: `${usedPrefix}ytmp4doc ${yt_play[0].url}`, description: `${yt_play[0].title}\n`}
 ]});
 
-/*listSections.push({
+listSections.push({
   text: `*ELIJA QUE VA A HACER CON:  ${text}*`,
   footer: global.wm,
   title: `${htki} *DESCARGAS* ${htka}`,
   buttonText: `ELEJIR 🍁`,
   sections
-})*/
+})
 
 await conn.sendList(m.chat, `𝚂𝙴𝙻𝙴𝙲𝙲𝙸𝙾𝙽𝙴 𝚂𝚄 𝚃𝙸𝙿𝙾 𝙳𝙴 𝙳𝙴𝚂𝙲𝙰𝚁𝙶𝙰, 𝙽𝙾𝙼𝙱𝚁𝙴 𝙳𝙴 𝙻𝙰 𝙱𝚄𝚂𝚀𝚄𝙴𝙳𝙰:  ${text}`, `\n${htki} 𝙳𝙴𝚂𝙲𝙰𝚁𝙶𝙰𝚂 ${htka}`, `𝙴 𝙻 𝙴 𝙹 𝙸 𝚁`, listSections, {quoted: estilo2});
 } catch (e) {
