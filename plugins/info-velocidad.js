@@ -93,7 +93,7 @@ ${cpus[0].model.trim()} (${cpu.speed} MHZ)\n${Object.keys(cpu.times).map(type =>
 
 *CPU Core(s) Uso (${cpus.length} Core CPU)*
 ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Object.keys(cpu.times).map(type => `- *${(type + '*').padEnd(6)}: ${(100 * cpu.times[type] / cpu.total).toFixed(2)}%`).join('\n')}`).join('\n\n')}` : ''}`
-conn.sendMessage(m.chat, { text: captions, caption: "1234", footer: wm, buttons: [
+natsuki.sendMessage(m.chat, { text: captions, caption: "1234", footer: wm, buttons: [
   {
     buttonId: ".menu", 
     buttonText: { 
