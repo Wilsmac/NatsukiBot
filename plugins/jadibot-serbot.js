@@ -36,33 +36,33 @@ let drm2 = "IHBvciBAQWlkZW5fTm90TG9naWM"
 let rtx = `${lenguajeGB['smsIniJadi']()}`
 let rtx2 = `${lenguajeGB['smsIniJadi2']()}`
 
-const gataJBOptions = {}
+const nskJBOptions = {}
 if (global.conns instanceof Array) console.log()
 else global.conns = []
 let handler = async (m, { conn, args, usedPrefix, command, isOwner }) => {
-if (!global.db.data.settings[conn.user.jid].jadibotmd) return m.reply(`${lenguajeGB['smsSoloOwnerJB']()}`)
-//if (conn.user.jid !== global.conn.user.jid) return conn.reply(m.chat, `${lenguajeGB['smsJBPrincipal']()} wa.me/${global.conn.user.jid.split`@`[0]}&text=${usedPrefix + command}`, m) 
+if (!global.db.data.settings[conn.user.jid].jadibotmd) return m.reply(`${lenguajeCD['smsSoloOwnerJB']()}`)
+//if (conn.user.jid !== global.conn.user.jid) return conn.reply(m.chat, `${lenguajeCD['smsJBPrincipal']()} wa.me/${global.conn.user.jid.split`@`[0]}&text=${usedPrefix + command}`, m) 
 let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 let id = `${who.split`@`[0]}`  //conn.getName(who)
-let pathGataJadiBot = path.join("./GataJadiBot/", id)
-if (!fs.existsSync(pathGataJadiBot)){
-fs.mkdirSync(pathGataJadiBot, { recursive: true })
+let pathNatsukiJadiBot = path.join("./NatsukiJadiBot/", id)
+if (!fs.existsSync(pathNatsukiJadiBot)){
+fs.mkdirSync(pathNatsukiJadiBot, { recursive: true })
 }
-gataJBOptions.pathGataJadiBot = pathGataJadiBot
-gataJBOptions.m = m
-gataJBOptions.conn = conn
-gataJBOptions.args = args
-gataJBOptions.usedPrefix = usedPrefix
-gataJBOptions.command = command
+nskJBOptions.pathNatsukiJadiBot = pathNatsukiJadiBot
+nskJBOptions.m = m
+nskJBOptions.conn = conn
+nskJBOptions.args = args
+nskJBOptions.usedPrefix = usedPrefix
+nskJBOptions.command = command
 //let id = m.sender
-gataJadiBot(gataJBOptions)
+natsukiJadiBot(nskJBOptions)
 } 
 handler.command = /^(jadibot|serbot|rentbot)/i
 handler.register = true
 export default handler 
 
-export async function gataJadiBot(options) {
-let { pathGataJadiBot, m, conn, args, usedPrefix, command } = options
+export async function natsukiJadiBot(options) {
+let { pathNatsukiJadiBot, m, conn, args, usedPrefix, command } = options
 const mcode = args[0] && /(--code|code)/.test(args[0].trim()) ? true : args[1] && /(--code|code)/.test(args[1].trim()) ? true : false
 let txtCode, codeBot, txtQR
 if (mcode) {
@@ -70,9 +70,9 @@ args[0] = args[0].replace(/^--code$|^code$/, "").trim()
 if (args[1]) args[1] = args[1].replace(/^--code$|^code$/, "").trim()
 if (args[0] == "") args[0] = undefined
 }
-const pathCreds = path.join(pathGataJadiBot, "creds.json")
-if (!fs.existsSync(pathGataJadiBot)){
-fs.mkdirSync(pathGataJadiBot, { recursive: true })}
+const pathCreds = path.join(pathNatsukiJadiBot, "creds.json")
+if (!fs.existsSync(pathNatsukiJadiBot)){
+fs.mkdirSync(pathNatsukiJadiBot, { recursive: true })}
 args[0] && args[0] != undefined ? fs.writeFileSync(pathCreds, JSON.stringify(JSON.parse(Buffer.from(args[0], "base64").toString("utf-8")), null, '\t')) : ""
 
 if (fs.existsSync(pathCreds)) {
@@ -89,7 +89,7 @@ const drmer = Buffer.from(drm1 + drm2, `base64`)
 let { version, isLatest } = await fetchLatestBaileysVersion()
 const msgRetry = (MessageRetryMap) => { }
 const msgRetryCache = new NodeCache()
-const { state, saveState, saveCreds } = await useMultiFileAuthState(pathGataJadiBot)
+const { state, saveState, saveCreds } = await useMultiFileAuthState(pathNatsukiJadiBot)
    
 const connectionOptions = {
 printQRInTerminal: false,
@@ -99,14 +99,14 @@ msgRetry,
 msgRetryCache,
 version: [2, 3000, 1015901307],
 syncFullHistory: true,
-browser: mcode ? ['Ubuntu', 'Chrome', '110.0.5585.95'] : ['GataBot-MD (Sub Bot)', 'Chrome','2.0.0'],
+browser: mcode ? ['Ubuntu', 'Chrome', '110.0.5585.95'] : ['NatsikiBot (Sub Bot)', 'Chrome','2.0.0'],
 defaultQueryTimeoutMs: undefined,
 getMessage: async (key) => {
 if (store) {
 //const msg = store.loadMessage(key.remoteJid, key.id)
 //return msg.message && undefined
 } return {
-conversation: 'GataBot-MD',
+conversation: 'NatsukiBot',
 }}} 
 
 let sock = makeWASocket(connectionOptions)
@@ -124,7 +124,7 @@ setTimeout(() => { conn.sendMessage(m.sender, { delete: txtQR.key })}, 30000)
 return
 } 
 if (qr && mcode) {
-txtCode = await conn.sendMessage(m.chat, { image: { url: 'https://qu.ax/wyUjT.jpg' || gataMenu.getRandom() }, caption: rtx2.trim() + '\n' + drmer.toString("utf-8") }, { quoted: m })
+txtCode = await conn.sendMessage(m.chat, { image: { url: 'https://qu.ax/wyUjT.jpg' || imagen1 }, caption: rtx2.trim() + '\n' + drmer.toString("utf-8") }, { quoted: m })
 await sleep(3000)
 let secret = await sock.requestPairingCode((m.sender.split`@`[0]))
 codeBot = await m.reply(secret)}
@@ -153,41 +153,41 @@ const reason = lastDisconnect?.error?.output?.statusCode || lastDisconnect?.erro
 if (connection === 'close') {
 console.log(reason)
 if (reason == 405) {
-//await fs.unlinkSync("./GataJadiBot/" + id + "/creds.json")
+//await fs.unlinkSync("./NatsukiJadiBot/" + id + "/creds.json")
 fs.unlinkSync(pathCreds);
 //thank you aiden_notLogic
 return await conn.sendMessage(m.chat, {text : lenguajeGB['smsreenvia']() }, { quoted: null })
 }
 if (reason === DisconnectReason.restartRequired) {
 await creloadHandler(true).catch(console.error)
-return console.log(lenguajeGB['smsConexionreem']());  
+return console.log(lenguajeCD['smsConexionreem']());  
 } else if (reason === DisconnectReason.loggedOut) {
 sleep(4000)
 if (m === null) return
-return conn.sendMessage(m.chat, {text : lenguajeGB['smsJBConexionClose2']() }, { quoted: null })
-//m.reply(lenguajeGB['smsJBConexionClose2']())
+return conn.sendMessage(m.chat, {text : lenguajeCD['smsJBConexionClose2']() }, { quoted: null })
+//m.reply(lenguajeCD['smsJBConexionClose2']())
 } else if (reason == 428) {
 await endSesion(false)
 if (m === null) return
 return conn.sendMessage(m.chat, {text : lenguajeGB['smsJBConexion']() }, { quoted: null })
-//m.reply(lenguajeGB['smsJBConexion']())
+//m.reply(lenguajeCD['smsJBConexion']())
 } else if (reason === DisconnectReason.connectionLost) {
 await creloadHandler(true).catch(console.error)
-return console.log(lenguajeGB['smsConexionperdida']()); 
+return console.log(lenguajeCD['smsConexionperdida']()); 
 } else if (reason === DisconnectReason.badSession) {
 if (m === null) return
 return await conn.sendMessage(m.chat, {text : lenguajeGB['smsJBConexionClose']() }, { quoted: null })
-//m.reply(lenguajeGB['smsJBConexionClose']())
+//m.reply(lenguajeCD['smsJBConexionClose']())
 } else if (reason === DisconnectReason.timedOut) {
 await endSesion(false)
-return console.log(lenguajeGB['smsConexiontiem']())
+return console.log(lenguajeCD['smsConexiontiem']())
 } else {
-console.log(lenguajeGB['smsConexiondescon']()); 
+console.log(lenguajeCD['smsConexiondescon']()); 
 }}
 if (connection == `open`) {
 if (global.db.data == null) global.loadDatabase()
-const nameOrNumber = conn.getName(`${path.basename(pathGataJadiBot)}@s.whatsapp.net`)
-const baseName = path.basename(pathGataJadiBot)
+const nameOrNumber = conn.getName(`${path.basename(pathNatsukiJadiBot)}@s.whatsapp.net`)
+const baseName = path.basename(pathNatsukiJadiBot)
 const displayName = nameOrNumber.replace(/\D/g, '') === baseName ? `+${baseName}` : `${nameOrNumber} (${baseName})`
 console.log(chalk.bold.cyanBright(`\n❒⸺⸺⸺⸺【• CONECTADO •】⸺⸺⸺⸺❒\n│\n│ 🟢 ${displayName} Sub-Bot conectado exitosamente.\n│\n❒⸺⸺⸺⸺【• CONECTADO •】⸺⸺⸺⸺❒`))
 sock.isInit = true
@@ -195,14 +195,14 @@ global.conns.push(sock)
 if (m !== null) {
 let user = global.db.data.users[m.sender]
 //let user = global.db.data.users[`${path.basename(pathGataJadiBot)}@s.whatsapp.net`]
-m?.chat ? await conn.sendMessage(m.chat, {text : args[0] ? `${lenguajeGB['smsJBCargando'](usedPrefix)}` : `${lenguajeGB['smsJBConexionTrue2']()}` + ` ${usedPrefix + command}`}, { quoted: m }) : ''
+m?.chat ? await conn.sendMessage(m.chat, {text : args[0] ? `${lenguajeCD['smsJBCargando'](usedPrefix)}` : `${lenguajeCD['smsJBConexionTrue2']()}` + ` ${usedPrefix + command}`}, { quoted: m }) : ''
 let chtxt = `
 👤 *Usuario:* ${m.pushName || 'Anónimo'}
 🗃️ *Registrado:* ${user.registered ? 'Si' : 'No'}
 ✅ *Verificación:* ${user.registered ? user.name : 'No'}
 🔑 *Método de conexión:* ${mcode ? 'Código de 8 dígitos' : 'Código QR'}
 💻 *Browser:* ${mcode ? 'Ubuntu' : 'Chrome'}
-🐈 *Bot:* ${gt}
+💌 *Bot:* ${gt}
 ⭐ *Versión del bot:* \`${vs}\`
 💫 *Versión sub bot:* \`${vsJB}\`\n
 > *¡Conviértete en sub-bot ahora!*
@@ -214,9 +214,9 @@ await sleep(3000)
 await conn.sendMessage(ch.ch1, { text: chtxt, contextInfo: {
 externalAdReply: {
 title: "【 🔔 Notificación General 🔔 】",
-body: '🙀 ¡Nuevo sub-bot encontrado!',
+body: '¡Nuevo sub-bot encontrado!',
 thumbnailUrl: ppch,
-sourceUrl: accountsgb,
+sourceUrl: canalofc,
 mediaType: 1,
 showAdAttribution: false,
 renderLargerThumbnail: false
@@ -268,14 +268,14 @@ sock.ev.off('call', sock.onCall)
 sock.ev.off('connection.update', sock.connectionUpdate)
 sock.ev.off('creds.update', sock.credsUpdate)
 }
-sock.welcome = lenguajeGB['smsWelcome']() 
-sock.bye = lenguajeGB['smsBye']() 
-sock.spromote = lenguajeGB['smsSpromote']() 
-sock.sdemote = lenguajeGB['smsSdemote']() 
-sock.sDesc = lenguajeGB['smsSdesc']() 
-sock.sSubject = lenguajeGB['smsSsubject']() 
-sock.sIcon = lenguajeGB['smsSicon']() 
-sock.sRevoke = lenguajeGB['smsSrevoke']()
+sock.welcome = lenguajeCD['smsWelcome']() 
+sock.bye = lenguajeCD['smsBye']() 
+sock.spromote = lenguajeCD['smsSpromote']() 
+sock.sdemote = lenguajeCD['smsSdemote']() 
+sock.sDesc = lenguajeCD['smsSdesc']() 
+sock.sSubject = lenguajeCD['smsSsubject']() 
+sock.sIcon = lenguajeCD['smsSicon']() 
+sock.sRevoke = lenguajeCD['smsSrevoke']()
 
 sock.handler = handler.handler.bind(sock)
 sock.participantsUpdate = handler.participantsUpdate.bind(sock)
