@@ -323,6 +323,15 @@ message: {
 
 global.multiplier = 85 // Cuanto más alto, más difícil subir de nivel 
 
+
+
+
+
+global.ns = {
+ns1: ''
+ns2: ''
+}
+
 //Emojis RPG - Referencias
 global.rpg = {
 emoticon(string) {
