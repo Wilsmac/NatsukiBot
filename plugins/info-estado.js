@@ -31,9 +31,8 @@ conn.sendMessage(m.chat, { text: estado, caption: "1234", footer: wm, buttons: [
   {
     buttonId: ".ping", 
     buttonText: { 
-      displayText: 'VELOCIDAD' 
-    }
-  }, 
+      displayText: 'VELOCIDAD'} 
+      }, 
 ],
   viewOnce: true,
   headerType: 1,
