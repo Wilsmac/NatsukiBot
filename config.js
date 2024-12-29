@@ -140,7 +140,7 @@ global.tiempo = d.toLocaleString('en-US', {hour: 'numeric', minute: 'numeric', s
 
 //------------------------------------------------
 
-global.vs = "1.8.0"
+global.vs = "1.9.0"
 global.vsJB = "3.0"
 global.gt = "𝐍𝐚𝐭𝐬𝐮𝐤𝐢𝐁𝐨𝐭 ☃️"
 
