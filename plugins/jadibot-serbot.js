@@ -595,7 +595,7 @@ console.log(sock.chats, `Omitiendo mensajes en espera.`, sock.ev);
 Object.keys(sock.chats).forEach(jid => {
 sock.chats[jid].isBanned = true
 })
-}*/
+}
 
 sock.ev.on(`messages.upsert`, sock.handler)
 sock.ev.on(`group-participants.update`, sock.participantsUpdate)
