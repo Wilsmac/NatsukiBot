@@ -83,7 +83,7 @@ href="https://whatsapp.com/channel/0029VaCUlPX0LKZAlP10pC43" target="white"><img
 - **Dashboard:** [`Aquí`](https://dash.teamnsk.xyz)
 - **Panel:** [`Aquí`](https://panel.teamnsk.xyz)
 - **Canal de WhatsApp:** [`Aquí`](https://whatsapp.com/channel/0029VaCUlPX0LKZAlP10pC43)
-- **Contacto(s):** [`Team Nsk`](https://wa.me/message/H6DKJA6N3J6PD1) / [`Russell`](https://api.whatsapp.com/send/?phone=50258115623&text&type=phone_number&app_absent=0)
+- **Contacto(s):** [`Team Nsk`](https://wa.me/message/H6DKJA6N3J6PD1)
 - **Discord:** [`Team Nsk`](https://discord.gg/wuwkfmTz)
 ----
 
