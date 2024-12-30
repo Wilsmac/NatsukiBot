@@ -34,7 +34,7 @@ let pathNatsukiJadiBot = path.join("./NatsukiJadiBot/", id)
 if (!fs.existsSync(pathNatsukiJadiBot)){
 fs.mkdirSync(pathNatsukiJadiBot, { recursive: true })
 }
-nskJBOptions.pathGataJadiBot = pathGataJadiBot
+nskJBOptions.pathNatsukiJadiBot = pathNatsukiJadiBot 
 nskJBOptions.m = m
 nskJBOptions.conn = conn
 nskJBOptions.args = args
