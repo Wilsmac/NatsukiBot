@@ -209,7 +209,7 @@ wa.me/${path.basename(pathNatsukiJadiBot)}?text=${usedPrefix + command}%20code
 let ppch = await sock.profilePictureUrl(userJid, 'image').catch(_ => gataMenu)
 await sleep(3000)
 //if (global.conn.user.jid.split`@`[0] != sock.user.jid.split`@`[0]) {
-await conn.sendMessage(ch.ch1, { text: chtxt, contextInfo: {
+await conn.sendMessage(ns.ns2, { text: chtxt, contextInfo: {
 externalAdReply: {
 title: "【 Notificación General 】",
 body: '¡Nuevo sub-bot encontrado!',
