@@ -1,5 +1,8 @@
 [!IMPORTANT]\ 
-> Hola, Se ah lanzado una nueva versión `1.9.0` en la cual el bot esta funcionando correctamente y cualquier prolema que tengan contáctame estaré encantado de ayudarte.
+> Hola queridos usuarios: Se ah lanzado una nueva versión `1.9.0` en la cual el bot esta funcionando correctamente y cualquier prolema que tengan contáctame estaré encantado de ayudarte
+
+<!--- > [!IMPORTANT]\
+> Queridos usuarios: Yo principal creador del bot me iré retirando ya del tema de los bots y `Natsuki` dejará de funcionar algún momento y estoy agradecido por sus apoyo y si tienen alguna duda pueden conectarme por WhatsApp o alguna sugerencia. Natsuki tendrá algunas actualizaciónes cada cierto tiempo--->
 
 <div align="center" style"border-radius:15px">
       <a href="#">
