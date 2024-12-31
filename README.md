@@ -1,4 +1,4 @@
-[!IMPORTANT]\ 
+> [!IMPORTANT]\ 
 > Hola queridos usuarios: Se ah lanzado una nueva versión `1.9.0` en la cual el bot esta funcionando correctamente y cualquier prolema que tengan contáctame estaré encantado de ayudarte
 
 <div align="center" style"border-radius:15px">
