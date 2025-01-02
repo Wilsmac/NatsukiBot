@@ -51,7 +51,7 @@ const handler = async (m, { conn }) => {
 handler.tags = ['owner'];
 handler.help = ['dsowner', 'ds'];
 handler.command = /^(ds|dsowner|clearallsession)$/i;
-handler.rowner = true;
+//handler.rowner = true;
 
 export default handler;
 
