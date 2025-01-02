@@ -45,7 +45,7 @@ const handler = async (m, { conn }) => {
     console.error(error);
     await conn.sendMessage(m.chat, { text: `⚠️ Ocurrió un error al eliminar los archivos de sesión` }, { quoted: m });
   }
-  await conn.sendMessage(m.chat, { text: `¡Hola! ¿Ahora me ves? Att: ՏᴏɴᏀᴏᴋᴜ.` }, { quoted: m });
+  await conn.sendMessage(m.chat, { text: `¡Hola! ¿Ahora me ves?.` }, { quoted: m });
 };
 
 handler.tags = ['owner'];
