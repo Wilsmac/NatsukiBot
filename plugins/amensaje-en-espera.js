@@ -11,7 +11,7 @@ const handler = async (m, { conn }) => {
   await conn.sendMessage(m.chat, { text: '✅ Iniciando...' }, { quoted: m });
   try {
     if (!existsSync(sessionPath)) {
-      return await conn.sendMessage(m.chat, { text: '⚠️ La carpeta de sesión de 孫ՏᴏɴᏀᴏᴋᴜ孫 no existe o está vacía.' }, { quoted: m });
+      return await conn.sendMessage(m.chat, { text: `⚠️ La carpeta de sesión de ${wm} no existe o está vacía.` }, { quoted: m });
     }
     const files = await fs.readdir(sessionPath);
     const totalFiles = files.length;
