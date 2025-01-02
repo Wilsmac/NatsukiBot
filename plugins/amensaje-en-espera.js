@@ -11,7 +11,7 @@ const handler = async (m, { conn }) => {
   await conn.sendMessage(m.chat, { text: '✅ Iniciando...' }, { quoted: m });
   try {
     if (!existsSync(sessionPath)) {
-      return await conn.sendMessage(m.chat, { text: `⚠️ La carpeta de sesión de ${wm} no existe o está vacía.` }, { quoted: m });
+      return await conn.sendMessage(m.chat, { text: `⚠️ La carpeta de sesión de ${gt} no existe o está vacía.` }, { quoted: m });
     }
     const files = await fs.readdir(sessionPath);
     const totalFiles = files.length;
@@ -38,7 +38,7 @@ const handler = async (m, { conn }) => {
       if (filesDeleted === 0) {
         await conn.sendMessage(m.chat, { text: '⚠️ No se encontró ningún archivo para eliminar en la carpeta de sessions.' }, { quoted: m });
       } else {
-        await conn.sendMessage(m.chat, { text: `✅ Se eliminaron ${filesDeleted} archivos de ${wm} manualmente.` }, { quoted: m });
+        await conn.sendMessage(m.chat, { text: `✅ Se eliminaron ${filesDeleted} archivos de ${gt} manualmente.` }, { quoted: m });
       }
     }
   } catch (error) {
