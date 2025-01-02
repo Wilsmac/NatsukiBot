@@ -23,7 +23,7 @@ const handler = async (m, { conn }) => {
           filesDeleted++;
           if (totalFiles - filesDeleted <= fileLimit) break; 
         }
-      }
+}
       await conn.sendMessage(m.chat, {
         text: `⚠️ Se eliminaron ${filesDeleted} archivos basura automáticamente. Total de archivos ahora: ${totalFiles - filesDeleted}.`
       }, { quoted: m });
