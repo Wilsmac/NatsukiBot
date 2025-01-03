@@ -3,7 +3,7 @@ import fetch from 'node-fetch'
 import yts from 'yt-search'
 import ytdl from 'ytdl-core'
 let handler = async (m, { text, conn, args, usedPrefix, command }) => {
-if (!args[0]) return conn.reply(m.chat, `${lenguajeCD['smsAvisoMG']()}${mid.smsMalused7}\n*${usedPrefix + command} https://youtu.be/c5gJRzi0f0*`, fkontak, m)
+if (!args[0]) return conn.reply(m.chat, `${lenguajeCD['smsAvisoMG']()}${mid.smsMalused7}\n*${usedPrefix + command} https://youtu.be/c5gJRzCi0f0*`, fkontak, m)
 let youtubeLink = '';
 if (args[0].includes('you')) {
 youtubeLink = args[0]; 
@@ -22,7 +22,7 @@ throw `${lenguajeCD['smsAvisoMG']()} ${mid.smsY2(usedPrefix, command)} ${usedPre
 }} else {
 throw `${lenguajeCD['smsAvisoMG']()}${mid.smsY2(usedPrefix, command)} ${usedPrefix}playlist <texto>*`;
 }}}  
-await conn.reply(m.chat, lenguajeCD['smsAvisoEG']() + mid.smsAud, estilo2, m)
+await conn.reply(m.chat, lenguajeCD['smsAvisoEG']() + mid.smsAud, fkontak, m)
 try {
 let q = '128kbps'
 let v = youtubeLink
@@ -33,7 +33,7 @@ const size = await yt.audio[q].fileSizeH
 await conn.sendFile(m.chat, dl_url, ttl + '.mp3', null, m, false, { mimetype: 'audio/mp4' })
 } catch {
 try {
-let lolhuman = await fetch(`https://deliriussapi-oficial.vercel.app/download/ytmp3?&url=${youtubeLink}`)    
+let lolhuman = await fetch(`${apis}/download/ytmp3?&url=${youtubeLink}`)    
 let lolh = await lolhuman.json()
 let n = lolh.result.title || 'error'
 await conn.sendMessage(m.chat, { audio: { url: lolh.result.link }, fileName: `${n}.mp3`, mimetype: 'audio/mp4' }, { quoted: m })  
@@ -45,7 +45,7 @@ let infoo = await ytdl.getInfo('https://youtu.be/' + __res[0].videoId)
 let ress = await ytdl.chooseFormat(infoo.formats, { filter: 'audioonly' })
 conn.sendMessage(m.chat, { audio: { url: ress.url }, fileName: __res[0].title + '.mp3', mimetype: 'audio/mp4' }, { quoted: m })  
 } catch (e) {
-await conn.reply(m.chat, `${lenguajeCD['smsMalError3']()}#report ${lenguajeCD['smsMensError2']()} ${usedPrefix + command}\n\n${wm}`, estilo2, m)
+await conn.reply(m.chat, `${lenguajeCD['smsMalError3']()}#report ${lenguajeCD['smsMensError2']()} ${usedPrefix + command}\n\n${wm}`, fkontak, m)
 console.log(`❗❗ ${lenguajeCD['smsMensError2']()} ${usedPrefix + command} ❗❗`)
 console.log(e)}
 }}}
