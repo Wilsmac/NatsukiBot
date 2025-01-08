@@ -215,7 +215,7 @@ externalAdReply: {
 title: "【 Notificación General 】",
 body: '¡Nuevo sub-bot encontrado!',
 thumbnailUrl: ppch,
-sourceUrl: accountsgb,
+sourceUrl: canalofc,
 mediaType: 1,
 showAdAttribution: false,
 renderLargerThumbnail: false
