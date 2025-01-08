@@ -18,8 +18,7 @@ export default handler;
 
 
 
-/* 
-import uploadFile from '../lib/uploadFile.js'
+/*import uploadFile from '../lib/uploadFile.js'
 import uploadImage from '../lib/uploadImage.js'
 import fetch from 'node-fetch'
 let handler = async (m) => {
