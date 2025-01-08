@@ -18,12 +18,12 @@ let crm3 = "SBpbmZvLWRvbmFyLmpz"
 let crm4 = "IF9hdXRvcmVzcG9uZGVyLmpzIGluZm8tYm90Lmpz"
 let drm1 = "CkphZGlib3QsIEhlY2hv"
 let drm2 = "IHBvciBAQWlkZW5fTm90TG9naWM"
-let rtx = `${lenguajeGB['smsIniJadi']()}`
-let rtx2 = `${lenguajeGB['smsIniJadi2']()}`
+let rtx = `${lenguajeCD['smsIniJadi']()}`
+let rtx2 = `${lenguajeCD['smsIniJadi2']()}`
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
-const gataJBOptions = {}
+const nskJBOptions = {}
 if (global.conns instanceof Array) console.log()
 else global.conns = []
 let handler = async (m, { conn, args, usedPrefix, command, isOwner }) => {
@@ -193,7 +193,7 @@ console.log(chalk.bold.cyanBright(`\n❒⸺⸺⸺⸺【• SUB-BOT •】⸺⸺�
 sock.isInit = true
 global.conns.push(sock)
 
-let user = global.db.data?.users[`${path.basename(pathGataJadiBot)}@s.whatsapp.net`]
+let user = global.db.data?.users[`${path.basename(pathNatsukiJadiBot)}@s.whatsapp.net`]
 m?.chat ? await conn.sendMessage(m.chat, {text : args[0] ? `${lenguajeCD['smsJBCargando'](usedPrefix)}` : `${lenguajeCD['smsJBConexionTrue2']()}` + ` ${usedPrefix + command}`}, { quoted: m }) : ''
 let chtxt = `
 👤 *Usuario:* ${userName}
