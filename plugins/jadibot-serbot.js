@@ -314,7 +314,7 @@ function sleep(ms) {
 return new Promise(resolve => setTimeout(resolve, ms));}
 
 async function joinChannels(conn) {
-for (const channelId of Object.values(global.ch)) {
+for (const channelId of Object.values(global.ns)) {
 await conn.newsletterFollow(channelId).catch(() => {})
 }}
 
