@@ -22,7 +22,7 @@ throw `${lenguajeCD['smsAvisoMG']()} ${mid.smsY2(usedPrefix, command)} ${usedPre
 }} else {
 throw `${lenguajeCD['smsAvisoMG']()}${mid.smsY2(usedPrefix, command)} ${usedPrefix}playlist <texto>*`;
 }}}  
-await conn.reply(m.chat, lenguajeGB['smsAvisoEG']() + mid.smsAud, estilo2, m)
+await conn.reply(m.chat, lenguajeCD['smsAvisoEG']() + mid.smsAud, estilo2, m)
 try {
 const res = await fetch(`https://api.siputzx.my.id/api/d/ytmp3?url=${encodeURIComponent(args)}`);
 let { data } = await res.json();
