@@ -78,7 +78,7 @@ await conn.sendMessage(m.chat, { audio: { url: result.download.url }, mimetype: 
 } catch (error) {
 }}
 } else if (text === '📥' || text === 'video') {
-await conn.reply(m.chat, lenguajeCD['smsAvisoEG']() + mid.smsVid, fkontak, m || null)
+await conn.reply(m.chat, lenguajeCD['smsAvisoEG']() + mid.smsVid, estilo2, m || null)
 const res = await fetch(`https://api.siputzx.my.id/api/d/ytmp4?url=${userVideoData.url}`);
 let { data } = await res.json();
 await conn.sendMessage(m.chat, { video: { url: data.dl }, fileName: `video.mp4`, mimetype: 'video/mp4', caption: `⟡ *${userVideoData.title}*\n> ${wm}`}, { quoted: m || null })
