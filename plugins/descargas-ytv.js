@@ -4,7 +4,7 @@ import yts from 'yt-search'
 import ytdl from 'ytdl-core'
 import axios from 'axios'
 let handler = async (m, { conn, args, usedPrefix, command }) => {
-if (!args[0]) return conn.reply(m.chat, `${lenguajeCD['smsAvisoMG']()}${mid.smsMalused7}\n*${usedPrefix + command} https://youtu.be/JRzCi0f0*`, fkontak, m)
+if (!args[0]) return conn.reply(m.chat, `${lenguajeCD['smsAvisoMG']()}${mid.smsMalused7}\n*${usedPrefix + command} https://youtu.be/JRzCi0f0*`, estilo2, m)
 let youtubeLink = '';
 if (args[0].includes('you')) {
 youtubeLink = args[0]; 
