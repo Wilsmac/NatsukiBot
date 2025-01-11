@@ -28,7 +28,7 @@ if (global.conns instanceof Array) console.log()
 else global.conns = []
 let handler = async (m, { conn, args, usedPrefix, command, isOwner }) => {
 if (!global.db.data.settings[conn.user.jid].jadibotmd) return m.reply(`${lenguajeCD['smsSoloOwnerJB']()}`)
-if (m.fromMe) return
+if (m.fromMe || conn.user.jid === m.sender) return
 //if (conn.user.jid !== global.conn.user.jid) return conn.reply(m.chat, `${lenguajeCD['smsJBPrincipal']()} wa.me/${global.conn.user.jid.split`@`[0]}&text=${usedPrefix + command}`, m) 
 let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 let id = `${who.split`@`[0]}`  //conn.getName(who)
@@ -44,12 +44,16 @@ nskJBOptions.usedPrefix = usedPrefix
 nskJBOptions.command = command
 natsukiJadiBot(nskJBOptions)
 } 
-handler.command = /^(jadibot|serbot|rentbot)/i
+handler.command = /^(jadibot|serbot|rentbot|code)/i
 export default handler 
 
 export async function natsukiJadiBot(options) {
 let { pathNatsukiJadiBot, m, conn, args, usedPrefix, command } = options
-const mcode = args[0] && /(--code|code)/.test(args[0].trim()) ? true : args[1] && /(--code|code)/.test(args[1].trim()) ? true : false
+if (command === 'code') {
+command = 'jadibot'; 
+args.unshift('code')}
+
+const mcode = args[0] && /(--code|code)/.test(args[0].trim()) ? true : args[1] && /(--code|code)/.test(args[1].trim()) ? true : false;
 let txtCode, codeBot, txtQR
 if (mcode) {
 args[0] = args[0].replace(/^--code$|^code$/, "").trim()
