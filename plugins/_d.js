@@ -1,1 +1,46 @@
-/*const _0x545fbb = _0x12ac;(function (_0x5e36fb, _0x5abbd6) {const _0x2ad444 = _0x12ac, _0x2cc996 = _0x5e36fb();while (!![]) {try { const _0x3566f4 = parseInt(_0x2ad444(0x1fa)) / (0x29 * -0xc7 + 0x2189 + -0x1a9) + parseInt(_0x2ad444(0x1e8)) / (-0x1285 * 0x1 + -0x56 * -0x4 + 0x112f) + parseInt(_0x2ad444(0x1e3)) / (-0x1099 + -0x69d * 0x1 + 0xcd * 0x1d) + -parseInt(_0x2ad444(0x1de)) / (-0x10b * -0x1d + 0x828 + 0x13d * -0x1f) + parseInt(_0x2ad444(0x1f1)) / (-0x4e4 * 0x2 + 0x5 * -0x242 + 0x1517) + -parseInt(_0x2ad444(0x1e9)) / (-0x9b6 * -0x2 + -0x17fd + 0x5 * 0xeb) + parseInt(_0x2ad444(0x1e2)) / (-0xcd4 + 0x21f8 + 0xeb * -0x17) * (-parseInt(_0x2ad444(0x1ea)) / (0x332 * 0x8 + -0x1882 + 0x83 * -0x2));if (_0x3566f4 === _0x5abbd6)break; else _0x2cc996['push'](_0x2cc996['shift']()); } catch (_0x4c7991) {_0x2cc996['push'](_0x2cc996['shift']());}} }(_0x595c, -0xe5 * 0x367 + -0x50f8 + 0x4 * 0x17f1a)); import _0x383e3b from 'node-fetch'; let handler = async function (_0x36fc53, {conn: _0x455006, text: _0x3bb09e, usedPrefix: _0x5751bd }) { const _0x36bc6a = _0x12ac, _0x5505fe = { 'SHTfE': _0x36bc6a(0x1ef), 'HeCjE': _0x36bc6a(0x1df), 'nwtcI': function (_0x3b2874, _0x432502) { return _0x3b2874(_0x432502); }}, _0x12904f = _0x36bc6a(0x1f3) + _0x3bb09e + _0x36bc6a(0x1f8); _0x5505fe[_0x36bc6a(0x1e0)](_0x383e3b, _0x12904f)[_0x36bc6a(0x1f9)](_0xf7d829 => { const _0x591cd5 = _0x36bc6a; if (!_0xf7d829['ok']) return console[_0x591cd5(0x1ee)](_0x5505fe[_0x591cd5(0x1f5)]); return _0xf7d829[_0x591cd5(0x1f0)](); })['then'](_0x250cb0 => { const _0x3e08fc = _0x36bc6a, _0x1b0baa = _0x3e08fc(0x1f2) + _0x3bb09e + _0x3e08fc(0x1e1) + _0x250cb0[_0x3e08fc(0x1f4)] + _0x3e08fc(0x1ed) + _0x250cb0[_0x3e08fc(0x1f7)] + _0x3e08fc(0x1e5) + _0x250cb0[_0x3e08fc(0x1f6)] + _0x3e08fc(0x1ec); _0x36fc53['reply'](_0x1b0baa['trim']());})[_0x36bc6a(0x1e7)](_0x291717 => {const _0x16b0ef = _0x36bc6a; console[_0x16b0ef(0x1eb)](_0x5505fe[_0x16b0ef(0x1e4)], _0x291717);}); }; function _0x12ac(_0x2ac035, _0x1ef74f) { const _0x4d26f0 = _0x595c(); return _0x12ac = function (_0x595692, _0x2b47f2) { _0x595692 = _0x595692 - (-0x53 * -0x27 + -0x1a2e + -0x1 * -0xf67); let _0x352cac = _0x4d26f0[_0x595692]; return _0x352cac; }, _0x12ac(_0x2ac035, _0x1ef74f); }handler[_0x545fbb(0x1e6)] = /^(dni)$/i; export default handler;function _0x595c() {const _0x5e185e = [ 'https://api.apis.net.pe/v2/reniec/dni?numero=','nombres','SHTfE','apellidoMaterno','apellidoPaterno','&token=apis-token-7946.-LODBsCL6vKrK7tS4sh0l3fgi6wK6ElW','then','78575eabTPK','307436bxcpZs','Error:','nwtcI','\x0a*𝙽𝙾𝙼𝙽𝚁𝙴:*\x20','507843JdITLV','939333wvZLsk','HeCjE','\x0a*𝙰𝙿𝙴𝙻𝙻𝙸𝙳𝙾\x20𝙼𝙰𝚃𝙴𝚁𝙽𝙾:*\x20','command','catch','397748QHlCSS','1833816hxRfYp','8GTBelt','error','\x0a\x0a>\x20𝙱𝚢\x20𝚞𝚗𝚍𝚎𝚏𝚒𝚗𝚎𝚍\x20𝚘𝚏𝚌\x0a','\x0a*𝙰𝙿𝙴𝙻𝙻𝙸𝙳𝙾\x20𝙿𝙰𝚃𝙴𝚁𝙽𝙾:*\x20','log','𝙴𝚁𝚁𝙾𝚁,\x20𝙻𝙰\x20𝙿𝙰𝙶𝙸𝙽𝙰\x20𝙽𝙾\x20𝙵𝚄𝙽𝙺𝙰\x20𝙲𝙾𝚁𝚁𝙴𝙲𝚃𝙰𝙼𝙴𝙽𝚃𝙴','json','182965CzKdMM','\x0a*𝙳𝙽𝙸:*\x20'];_0x595c = function () {return _0x5e185e; }; return _0x595c();}*/
+import axios from 'axios';
+
+let handler = async (m, { conn, text }) => {
+  await m.reply("Buscando...");
+  if (!text) return conn.reply(m.chat, "Ingrese una dirección IP válida", m);
+
+  try {
+    let res = await axios.get(`http://ip-api.com/json/${text}?fields=status,message,country,countryCode,region,regionName,city,district,zip,lat,lon,timezone,isp,org,as,mobile,hosting,query`);
+    const data = res.data;
+
+    if (data.status !== "success") {
+      return conn.reply(m.chat, data.message || "Falló", m);
+    }
+
+    let ipsearch = ` 
+    𝐈𝐏 𝐈𝐍𝐅𝐎
+
+    IP : ${data.query}
+    País : ${data.country}
+    Código de País : ${data.countryCode}
+    Provincia : ${data.regionName}
+    Código de Provincia : ${data.region}
+    Ciudad : ${data.city}
+    Distrito : ${data.district}
+    Código Postal : ${data.zip}
+    Coordenadas : ${data.lat}, ${data.lon}
+    Zona Horaria : ${data.timezone}
+    ISP : ${data.isp}
+    Organización : ${data.org}
+    AS : ${data.as}
+    Mobile : ${data.mobile ? "Si" : "No"}
+    Hosting : ${data.hosting ? "Si" : "No"}
+    `.trim();
+
+    await conn.reply(m.chat, ipsearch, m);
+  } catch (error) {
+    console.error(error);
+    await conn.reply(m.chat, 'Ocurrió un error al obtener la información de la IP.', m);
+  }
+}
+
+handler.tags = ['tools'];
+handler.command = /^(ip|ipcheck|ipcek)$/i;
+handler.owner = true;
+
+export default handler;
