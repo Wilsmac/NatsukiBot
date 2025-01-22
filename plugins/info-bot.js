@@ -18,11 +18,11 @@ message: {
 "audioMessage": { "mimetype":"audio/ogg; codecs=opus", "seconds": "99569", "ptt": "true"   
 }}}  
 
-if (/^Oyep$/i.test(m.text)) {
+if (/^Te puedo decir algo?$/i.test(m.text)) {
     
 conn.sendPresenceUpdate('recording', m.chat)    
 //await conn.sendMessage(m.chat, {text: bot, mentions: [m.sender]}, {quoted: fakemek})
-conn.sendFile(m.chat, vn, 'nyp.mp3', null, m, true, { type: 'audioMessage', ptt: true, sendEphemeral: true, quoted: m })   
+conn.sendFile(m.chat, vn, 'nyp.mp3', null, m, true, { type: 'audioMessage', ptt: true, sendEphemeral: true, quoted: fakemek })   
 }
 return !0
 }
