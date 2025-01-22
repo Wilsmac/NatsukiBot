@@ -1,4 +1,3 @@
-
 let handler = m => m
 handler.all = async function (m) {
 let vn = './media/nyp.mp3'
