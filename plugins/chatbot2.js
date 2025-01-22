@@ -20,7 +20,7 @@ let name = conn.getName(m.sender)
 if (chat.isBanned) return
 
 
-if (/^uwu$/i.test(m.text)) {  
+if (/^noc$/i.test(m.text)) {  
 await conn.sendFile(m.chat, vn, 'nyp.mp3', null, m, true, { type: 'audioMessage', ptt: true, sendEphemeral: true, quoted: m })   
 }
 
