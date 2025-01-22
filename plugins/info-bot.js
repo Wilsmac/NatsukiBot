@@ -22,7 +22,6 @@ if (/^Oyep$/i.test(m.text)) {
     
 conn.sendPresenceUpdate('recording', m.chat)    
 //await conn.sendMessage(m.chat, {text: bot, mentions: [m.sender]}, {quoted: fakemek})
-conn.sendButton(m.chat, `${bot}`, wm, [['𝚅 𝙴 𝚁 | 𝙼 𝙴 𝙽 𝚄', `#menu`]], 'conversation', { sendEphemeral: true, quoted: fakemek})
 conn.sendFile(m.chat, vn, 'nyp.mp3', null, m, true, { type: 'audioMessage', ptt: true, sendEphemeral: true, quoted: m })   
 }
 return !0
