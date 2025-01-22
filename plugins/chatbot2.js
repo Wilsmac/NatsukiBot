@@ -20,11 +20,6 @@ let name = conn.getName(m.sender)
 if (chat.isBanned) return
 
 
-if (/^noc$/i.test(m.text)) {  
-await conn.sendFile(m.chat, vn, 'nyp.mp3', null, m, true, { type: 'audioMessage', ptt: true, sendEphemeral: true, quoted: m })   
-}
-
-
 if (/^e$/i.test(m.text) ) { //sin prefijo 
 let teks = `${pickRandom([`Que bueno sabe la letra E`, `eeeeee`])}`.trim()
 conn.reply(m.chat, teks, m, { mentions: { mentionedJid: [m.sender] }})}
