@@ -1,6 +1,7 @@
 
 let handler = m => m
 handler.all = async function (m) {
+let vn = './media/nyp.mp3'
 let ftoko = {
 key: {
 participant : '0@s.whatsapp.net'},
@@ -17,6 +18,13 @@ let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status
 let chat = global.db.data.chats[m.chat]
 let name = conn.getName(m.sender)
 if (chat.isBanned) return
+
+
+if (/^uwu$/i.test(m.text)) {
+await conn.sendPresenceUpdate('recording', m.chat)    
+await conn.sendFile(m.chat, vn, 'nyp.mp3', null, m, true, { type: 'audioMessage', ptt: true, sendEphemeral: true, quoted: m })   
+}
+
 
 if (/^e$/i.test(m.text) ) { //sin prefijo 
 let teks = `${pickRandom([`Que bueno sabe la letra E`, `eeeeee`])}`.trim()
