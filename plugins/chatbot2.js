@@ -19,7 +19,7 @@ let chat = global.db.data.chats[m.chat]
 let name = conn.getName(m.sender)
 if (chat.isBanned) return
 
-if (/^te digo algo :3$/i.test(m.text)) {  
+if (/^Te digo algo :3$/i.test(m.text)) {  
 if (!db.data.chats[m.chat].audios && m.isGroup) throw 0    
 let vn = './media/nyp.mp3'
 conn.sendPresenceUpdate('recording', m.chat)       
