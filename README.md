@@ -1,5 +1,5 @@
 > [!IMPORTANT]\
-> Hola queridos usuarios: Se ah lanzado una nueva versión `1.9.0` en la cual el bot esta funcionando correctamente y cualquier prolema que tengan contáctame estaré encantado de ayudarte
+> Hola, queridos usuarios en este gran viaje por el mundo de los bots tuve la mejor experiencia gracias a ustedes apoyándome y gracias por todo. NatsukiBot bot por ahora dejará de recibir actualizaciones, hasta pronto…
 
 <div align="center" style"border-radius:15px">
       <a href="#">
