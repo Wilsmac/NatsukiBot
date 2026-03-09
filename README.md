@@ -1,5 +1,5 @@
 > [!IMPORTANT]\
-> Hola, queridos usuarios en este gran viaje por el mundo de los bots tuve la mejor experiencia gracias a ustedes apoyándome y gracias por todo. NatsukiBot bot por ahora dejará de recibir actualizaciones, hasta pronto…
+> Hola, muchas gracias por su apoyo que me dieron en su momento y el bot ``` NatsukiBot ``` quedará obsoleto y sin mantenimiento, todo tiene su fin y este fue el fin de Natsuki y si alguien que quiera revivirlo o algo más contáctame y Gracias por todo, quizás en un futuro vuelva a en el tema de los bots pero por ahora me retiraré del tema de los bots, Hasta pronto…
 
 <div align="center" style"border-radius:15px">
       <a href="#">
