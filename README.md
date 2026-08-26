@@ -6,7 +6,7 @@
         <img src="./media/menus/natsukibot.gif" />
     </a>
 </div>
-<a href="https://x.com/wilmerofc1" target="black"><img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=back" />
+<a href="https://x.com/SeriMlbb" target="black"><img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=back" />
 <a href="https://www.facebook.com/profile.php?id=100088614427458&mibextid=ZbWKwL" target="black"><img src="https://img.shields.io/badge/Facebook-000000?style=for-the-badge&logo=facebook&logoColor=back" />
 <a
 href="https://www.paypal.com/paypalme/wilmermacu1" target="black"><img
@@ -21,9 +21,6 @@ src="https://img.shields.io/badge/PayPal-000000?style=for-the-badge&logo=paypal&
 
 <a href="https://github.com/Wilsmac/FantasyBot-MD-v1/watchers"><img title="espectadores" src="https://img.shields.io/github/watchers/Wilsmac/FantasyBot-MD-v1?label=Espectadores&style=social"></a>
 </p>
-
-</p>
-<p align="center"><img src="https://profile-counter.glitch.me/{FantasyBot-MD}/count.svg" alt="Wilsmac :: Visitor's Count" /></p>
 
 </p>
 <p align="center"> 
